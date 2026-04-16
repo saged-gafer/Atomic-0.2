@@ -43,13 +43,13 @@ function CompletionArc({ pct, color }: { pct: number; color: string }) {
   );
 }
 
-export default function SubjectCard({
+const SubjectCard = React.memo(({
   subject, index, language
 }: {
   subject: Subject;
   index: number;
   language: Language;
-}) {
+}) => {
   const { setUserData, userData } = useAppContext();
   const [showAnalysis, setShowAnalysis] = useState(false);
   const [analysis, setAnalysis] = useState<VideoAnalysisResult | null>(null);
@@ -259,4 +259,8 @@ export default function SubjectCard({
       </AnimatePresence>
     </GlassCard>
   );
-}
+});
+
+SubjectCard.displayName = 'SubjectCard';
+
+export default SubjectCard;

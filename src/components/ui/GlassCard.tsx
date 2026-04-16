@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import {
   motion, HTMLMotionProps,
   useMotionTemplate, useMotionValue,
-  useSpring, useTransform
+  useSpring
 } from "framer-motion";
 
 interface GlassCardProps extends HTMLMotionProps<"div"> {
