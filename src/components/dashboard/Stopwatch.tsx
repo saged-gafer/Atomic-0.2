@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Save, Coffee, BookOpen, ExternalLink } from 'lucide-react';
-import { Language, translations } from '@/lib/i18n';
+import { Language } from '@/lib/i18n';
 import { useAppContext } from '@/context/AppContext';
 import TimerWidget, { TimerWidgetRef } from './TimerWidget';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -90,7 +90,6 @@ export default function Stopwatch({
   const [showWidget, setShowWidget] = useState(false);
   const [saved, setSaved] = useState(false);
   const widgetRef = useRef<TimerWidgetRef>(null);
-  const t = translations[language || 'en'];
 
   useEffect(() => {
     let interval: ReturnType<typeof setInterval> | undefined;

@@ -65,12 +65,29 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (typeof window !== 'undefined' && !hydrated.current) {
-      // Do not auto-login — just signal that hydration is done.
-      // userData stays null until the user explicitly logs in or registers.
-      setTimeout(() => setIsLoading(false), 0);
+      // Defer state updates to avoid cascading renders during hydration
+      setTimeout(() => {
+        const saved = localStorage.getItem('study_planner_user_data');
+        if (saved) {
+          try {
+            const data = JSON.parse(saved);
+            setUserDataState(data);
+            setIsAuthenticated(true);
+          } catch (e) {
+            console.error('Failed to parse saved user data:', e);
+          }
+        }
+        setIsLoading(false);
+      }, 0);
       hydrated.current = true;
     }
   }, []);
+
+  useEffect(() => {
+    if (userData && typeof window !== 'undefined') {
+      localStorage.setItem('study_planner_user_data', JSON.stringify(userData));
+    }
+  }, [userData]);
 
   const login = useCallback((username: string, password: string): boolean => {
     const saved = localStorage.getItem('study_planner_user_data');
@@ -87,7 +104,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const setUserData = useCallback((data: UserData) => {
     setUserDataState(data);
     setIsAuthenticated(true);
-    localStorage.setItem('study_planner_user_data', JSON.stringify(data));
   }, []);
 
   const clearData = () => {
@@ -102,92 +118,113 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  const addTask = (subjectId: string, title: string) => {
-    if (!userData) return;
-    const newTask = { id: Math.random().toString(36).substr(2, 9), title, completed: false, subjectId, date: new Date().toISOString().split('T')[0] };
-    const nextSubjects = userData.subjects.map(s => s.id === subjectId ? { ...s, tasks: [...s.tasks, newTask] } : s);
-    setUserData({ ...userData, subjects: nextSubjects });
-  };
-
-  const toggleTask = (subjectId: string, taskId: string) => {
-    if (!userData) return;
-    const nextSubjects = userData.subjects.map(s => s.id === subjectId ? { ...s, tasks: s.tasks.map(t => t.id === taskId ? { ...t, completed: !t.completed } : t) } : s);
-    setUserData({ ...userData, subjects: nextSubjects });
-  };
-
-  const deleteTask = (subjectId: string, taskId: string) => {
-    if (!userData) return;
-    const nextSubjects = userData.subjects.map(s => s.id === subjectId ? { ...s, tasks: s.tasks.filter(t => t.id !== taskId) } : s);
-    setUserData({ ...userData, subjects: nextSubjects });
-  };
-
-  const addFile = (subjectId: string, file: SubjectFile) => {
-    if (!userData) return;
-    const nextSubjects = userData.subjects.map(s => s.id === subjectId ? { ...s, files: [...(s.files || []), file] } : s);
-    setUserData({ ...userData, subjects: nextSubjects });
-  };
-
-  const removeFile = (subjectId: string, fileId: string) => {
-    if (!userData) return;
-    const nextSubjects = userData.subjects.map(s => s.id === subjectId ? { ...s, files: (s.files || []).filter(f => f.id !== fileId) } : s);
-    setUserData({ ...userData, subjects: nextSubjects });
-  };
-
-  const addGeneratedContent = (subjectId: string, content: GeneratedContent) => {
-    if (!userData) return;
-    const nextSubjects = userData.subjects.map(s => s.id === subjectId ? { ...s, generatedContent: [...(s.generatedContent || []), content] } : s);
-    setUserData({ ...userData, subjects: nextSubjects });
-  };
-
-  const addLog = (log: StudyLog) => {
-    if (!userData) return;
-    if (log.duration <= 0) return;
-    setUserData({ ...userData, logs: [...(userData.logs || []), { ...log, date: log.date || new Date().toISOString() }] });
-  };
-
-  const addSideTask = (title: string) => {
-    if (!userData) return;
-    const newTask = { id: Math.random().toString(36).substr(2, 9), title, completed: false, subjectId: 'side', date: new Date().toISOString().split('T')[0] };
-    setUserData({ ...userData, sideTasks: [...(userData.sideTasks || []), newTask] });
-  };
-
-  const toggleSideTask = (taskId: string) => {
-    if (!userData) return;
-    const nextSideTasks = (userData.sideTasks || []).map(t => t.id === taskId ? { ...t, completed: !t.completed } : t);
-    setUserData({ ...userData, sideTasks: nextSideTasks });
-  };
-
-  const deleteSideTask = (taskId: string) => {
-    if (!userData) return;
-    const nextSideTasks = (userData.sideTasks || []).filter(t => t.id !== taskId);
-    setUserData({ ...userData, sideTasks: nextSideTasks });
-  };
-
-  const addSuggestion = (suggestion: string) => {
-    if (!userData) return;
-    setUserData({ ...userData, suggestions: [...(userData.suggestions || []), suggestion] });
-  };
-
-  const togglePrayer = (prayerId: string) => {
-    if (!userData) return;
-    const today = new Date().toISOString().split('T')[0];
-    const currentLogs = userData.prayerLogs || {};
-    const todayLogs = currentLogs[today] || [];
-
-    const nextTodayLogs = todayLogs.includes(prayerId)
-      ? todayLogs.filter(id => id !== prayerId)
-      : [...todayLogs, prayerId];
-
-    setUserData({
-      ...userData,
-      prayerLogs: { ...currentLogs, [today]: nextTodayLogs }
+  const addTask = useCallback((subjectId: string, title: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const newTask = { id: Math.random().toString(36).substr(2, 9), title, completed: false, subjectId, date: new Date().toISOString().split('T')[0] };
+      const nextSubjects = prev.subjects.map(s => s.id === subjectId ? { ...s, tasks: [...s.tasks, newTask] } : s);
+      return { ...prev, subjects: nextSubjects };
     });
-  };
+  }, []);
 
-  const updateUserData = (data: Partial<UserData>) => {
-    if (!userData) return;
-    setUserData({ ...userData, ...data });
-  };
+  const toggleTask = useCallback((subjectId: string, taskId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const nextSubjects = prev.subjects.map(s => s.id === subjectId ? { ...s, tasks: s.tasks.map(t => t.id === taskId ? { ...t, completed: !t.completed } : t) } : s);
+      return { ...prev, subjects: nextSubjects };
+    });
+  }, []);
+
+  const deleteTask = useCallback((subjectId: string, taskId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const nextSubjects = prev.subjects.map(s => s.id === subjectId ? { ...s, tasks: s.tasks.filter(t => t.id !== taskId) } : s);
+      return { ...prev, subjects: nextSubjects };
+    });
+  }, []);
+
+  const addFile = useCallback((subjectId: string, file: SubjectFile) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const nextSubjects = prev.subjects.map(s => s.id === subjectId ? { ...s, files: [...(s.files || []), file] } : s);
+      return { ...prev, subjects: nextSubjects };
+    });
+  }, []);
+
+  const removeFile = useCallback((subjectId: string, fileId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const nextSubjects = prev.subjects.map(s => s.id === subjectId ? { ...s, files: (s.files || []).filter(f => f.id !== fileId) } : s);
+      return { ...prev, subjects: nextSubjects };
+    });
+  }, []);
+
+  const addGeneratedContent = useCallback((subjectId: string, content: GeneratedContent) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const nextSubjects = prev.subjects.map(s => s.id === subjectId ? { ...s, generatedContent: [...(s.generatedContent || []), content] } : s);
+      return { ...prev, subjects: nextSubjects };
+    });
+  }, []);
+
+  const addLog = useCallback((log: StudyLog) => {
+    if (log.duration <= 0) return;
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      return { ...prev, logs: [...(prev.logs || []), { ...log, date: log.date || new Date().toISOString() }] };
+    });
+  }, []);
+
+  const addSideTask = useCallback((title: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const newTask = { id: Math.random().toString(36).substr(2, 9), title, completed: false, subjectId: 'side', date: new Date().toISOString().split('T')[0] };
+      return { ...prev, sideTasks: [...(prev.sideTasks || []), newTask] };
+    });
+  }, []);
+
+  const toggleSideTask = useCallback((taskId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const nextSideTasks = (prev.sideTasks || []).map(t => t.id === taskId ? { ...t, completed: !t.completed } : t);
+      return { ...prev, sideTasks: nextSideTasks };
+    });
+  }, []);
+
+  const deleteSideTask = useCallback((taskId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const nextSideTasks = (prev.sideTasks || []).filter(t => t.id !== taskId);
+      return { ...prev, sideTasks: nextSideTasks };
+    });
+  }, []);
+
+  const addSuggestion = useCallback((suggestion: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      return { ...prev, suggestions: [...(prev.suggestions || []), suggestion] };
+    });
+  }, []);
+
+  const togglePrayer = useCallback((prayerId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const today = new Date().toISOString().split('T')[0];
+      const currentLogs = prev.prayerLogs || {};
+      const todayLogs = currentLogs[today] || [];
+      const nextTodayLogs = todayLogs.includes(prayerId)
+        ? todayLogs.filter(id => id !== prayerId)
+        : [...todayLogs, prayerId];
+      return { ...prev, prayerLogs: { ...currentLogs, [today]: nextTodayLogs } };
+    });
+  }, []);
+
+  const updateUserData = useCallback((data: Partial<UserData>) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      return { ...prev, ...data };
+    });
+  }, []);
 
   return <AppContext.Provider value={{
     userData,

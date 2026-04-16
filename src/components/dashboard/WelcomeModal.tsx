@@ -17,12 +17,12 @@ const ARABIC_ADHKAR = [
   { text: "رب زدني علماً", title: "آية كريمة • طه ١١٤", icon: Moon },
 ];
 
-function FloatingParticle({ delay, x, size }: { delay: number; x: string; size: number }) {
+function FloatingParticle({ delay, x, size, duration }: { delay: number; x: string; size: number; duration: number }) {
   return (
     <motion.div
       initial={{ y: '110%', opacity: 0 }}
       animate={{ y: '-20%', opacity: [0, 0.6, 0] }}
-      transition={{ duration: 5 + Math.random() * 3, delay, repeat: Infinity, ease: 'linear' }}
+      transition={{ duration, delay, repeat: Infinity, ease: 'linear' }}
       className="absolute rounded-full pointer-events-none"
       style={{ left: x, bottom: 0, width: size, height: size, background: 'radial-gradient(circle, rgba(99,102,241,0.6), transparent 70%)' }}
     />
@@ -37,7 +37,7 @@ export default function WelcomeModal({ isOpen, onClose, userData }: WelcomeModal
 
   useEffect(() => {
     if (isOpen) {
-      setStep(0);
+      setTimeout(() => setStep(0), 0);
       const timer = setInterval(() => {
         setStep(s => (s < ARABIC_ADHKAR.length - 1 ? s + 1 : s));
       }, 2500);
@@ -47,14 +47,14 @@ export default function WelcomeModal({ isOpen, onClose, userData }: WelcomeModal
 
   const prayerTimes = userData.prayerTimes;
 
-  const particles = [
-    { x: '10%', delay: 0,   size: 6 },
-    { x: '25%', delay: 1.2, size: 4 },
-    { x: '45%', delay: 0.6, size: 8 },
-    { x: '65%', delay: 1.8, size: 5 },
-    { x: '80%', delay: 0.3, size: 6 },
-    { x: '90%', delay: 2.1, size: 4 },
-  ];
+  const particles = React.useMemo(() => [
+    { x: '10%', delay: 0,   size: 6, duration: 6.2 },
+    { x: '25%', delay: 1.2, size: 4, duration: 7.5 },
+    { x: '45%', delay: 0.6, size: 8, duration: 5.8 },
+    { x: '65%', delay: 1.8, size: 5, duration: 6.9 },
+    { x: '80%', delay: 0.3, size: 6, duration: 7.1 },
+    { x: '90%', delay: 2.1, size: 4, duration: 6.4 },
+  ], []);
 
   return (
     <AnimatePresence>

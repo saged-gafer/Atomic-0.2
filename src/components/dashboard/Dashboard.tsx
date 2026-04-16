@@ -39,12 +39,30 @@ export default function Dashboard() {
     }
   }, [userData, setUserData]);
 
-  if (!userData) return null;
+  const t = translations[userData?.language || 'en'];
+  const isRTL = userData?.language === 'ar';
+  const todaySubjects = React.useMemo(() => userData ? getTodaySubjects(userData) : [], [userData]);
+  const todayName = React.useMemo(() => getTodayName(), []);
 
-  const t = translations[userData.language || 'en'];
-  const isRTL = userData.language === 'ar';
-  const todaySubjects = getTodaySubjects(userData);
-  const todayName = getTodayName();
+  const stats = React.useMemo(() => {
+    if (!userData) return [];
+    const allTasks = userData.subjects.flatMap(s => s.tasks || []);
+    const doneTasks = allTasks.filter(t => t.completed).length;
+    const logs = userData.logs || [];
+    const todayStr = new Date().toISOString().split('T')[0];
+    const todayStudySec = logs.filter(l => l.type === 'study' && l.date.startsWith(todayStr)).reduce((s, l) => s + l.duration, 0);
+    const todayStudyH = (todayStudySec / 3600).toFixed(1);
+    const completedPrayers = (userData.prayerLogs?.[todayStr] || []).length;
+
+    return [
+      { icon: Clock,         label: 'Study Today', value: `${todayStudyH}h`,          color: '#6366f1', glow: 'rgba(99,102,241,0.3)'   },
+      { icon: CheckCircle2,  label: 'Tasks Done',  value: `${doneTasks}/${allTasks.length}`, color: '#10b981', glow: 'rgba(16,185,129,0.3)'  },
+      { icon: Zap,           label: "Today's Load", value: `${todaySubjects.length}`,  color: '#f59e0b', glow: 'rgba(245,158,11,0.3)'   },
+      { icon: TrendingUp,    label: 'Prayers',     value: `${completedPrayers}/5`,     color: '#06b6d4', glow: 'rgba(6,182,212,0.3)'    },
+    ];
+  }, [userData, todaySubjects.length]);
+
+  if (!userData) return null;
 
   return (
     <div className="min-h-screen relative flex flex-col lg:flex-row" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -135,50 +153,31 @@ export default function Dashboard() {
           </header>
 
           {/* Quick Stats Row */}
-          {(() => {
-            const allTasks = userData.subjects.flatMap(s => s.tasks || []);
-            const doneTasks = allTasks.filter(t => t.completed).length;
-            const logs = userData.logs || [];
-            const todayStr = new Date().toISOString().split('T')[0];
-            const todayStudySec = logs.filter(l => l.type === 'study' && l.date.startsWith(todayStr)).reduce((s, l) => s + l.duration, 0);
-            const todayStudyH = (todayStudySec / 3600).toFixed(1);
-            const completedPrayers = (userData.prayerLogs?.[todayStr] || []).length;
-
-            const stats = [
-              { icon: Clock,         label: 'Study Today', value: `${todayStudyH}h`,          color: '#6366f1', glow: 'rgba(99,102,241,0.3)'   },
-              { icon: CheckCircle2,  label: 'Tasks Done',  value: `${doneTasks}/${allTasks.length}`, color: '#10b981', glow: 'rgba(16,185,129,0.3)'  },
-              { icon: Zap,           label: "Today's Load", value: `${todaySubjects.length}`,  color: '#f59e0b', glow: 'rgba(245,158,11,0.3)'   },
-              { icon: TrendingUp,    label: 'Prayers',     value: `${completedPrayers}/5`,     color: '#06b6d4', glow: 'rgba(6,182,212,0.3)'    },
-            ];
-
-            return (
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-                {stats.map(({ icon: Icon, label, value, color, glow }, i) => (
-                  <motion.div
-                    key={label}
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.15 + i * 0.07, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                    className="relative overflow-hidden rounded-2xl p-4 border border-white/5 group hover:border-white/10 transition-colors"
-                    style={{ background: 'rgba(255,255,255,0.02)' }}
-                  >
-                    <div className="absolute top-0 right-0 w-20 h-20 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      style={{ background: `radial-gradient(circle, ${glow} 0%, transparent 70%)`, transform: 'translate(30%,-30%)' }} />
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-7 h-7 rounded-xl flex items-center justify-center shrink-0"
-                        style={{ background: `${color}18` }}>
-                        <Icon size={14} style={{ color }} />
-                      </div>
-                      <p className="text-[9px] font-black uppercase tracking-widest text-slate-500 truncate">{label}</p>
-                    </div>
-                    <p className="text-2xl font-black text-white leading-none" style={{ textShadow: `0 0 20px ${color}40` }}>
-                      {value}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            );
-          })()}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            {stats.map(({ icon: Icon, label, value, color, glow }, i) => (
+              <motion.div
+                key={label}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.15 + i * 0.07, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                className="relative overflow-hidden rounded-2xl p-4 border border-white/5 group hover:border-white/10 transition-colors"
+                style={{ background: 'rgba(255,255,255,0.02)' }}
+              >
+                <div className="absolute top-0 right-0 w-20 h-20 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{ background: `radial-gradient(circle, ${glow} 0%, transparent 70%)`, transform: 'translate(30%,-30%)' }} />
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-7 h-7 rounded-xl flex items-center justify-center shrink-0"
+                    style={{ background: `${color}18` }}>
+                    <Icon size={14} style={{ color }} />
+                  </div>
+                  <p className="text-[9px] font-black uppercase tracking-widest text-slate-500 truncate">{label}</p>
+                </div>
+                <p className="text-2xl font-black text-white leading-none" style={{ textShadow: `0 0 20px ${color}40` }}>
+                  {value}
+                </p>
+              </motion.div>
+            ))}
+          </div>
 
           {/* Subjects Grid */}
           <section className="space-y-6">

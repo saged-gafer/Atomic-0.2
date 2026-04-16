@@ -79,10 +79,17 @@ export default function AuthScreen() {
   const rotateY = useTransform(mouseX, [-300, 300], [-6, 6]);
 
   useEffect(() => {
-    setMounted(true);
-    const stored = localStorage.getItem('study_planner_user_data');
-    if (stored) { setHasStoredAccount(true); setMode('login'); }
-    else { setHasStoredAccount(false); setMode('register'); }
+    setTimeout(() => {
+      setMounted(true);
+      const stored = localStorage.getItem('study_planner_user_data');
+      if (stored) {
+        setHasStoredAccount(true);
+        setMode('login');
+      } else {
+        setHasStoredAccount(false);
+        setMode('register');
+      }
+    }, 0);
   }, []);
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -225,7 +232,7 @@ export default function AuthScreen() {
           transition={{ delay: 1.2 }}
           className="relative z-10 text-xs text-slate-600 font-medium"
         >
-          "Knowledge is the most precious thing — invest in it wisely."
+          &quot;Knowledge is the most precious thing — invest in it wisely.&quot;
         </motion.p>
       </motion.div>
 
