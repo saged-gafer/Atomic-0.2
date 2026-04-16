@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, RotateCcw, Save, Coffee, BookOpen, ExternalLink } from 'lucide-react';
+import { Play, Pause, RotateCcw, Save, Coffee, BookOpen, ExternalLink, Maximize2, X } from 'lucide-react';
 import { Language } from '@/lib/i18n';
 import { useAppContext } from '@/context/AppContext';
 import TimerWidget, { TimerWidgetRef } from './TimerWidget';
@@ -8,14 +8,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const STUDY_GOAL_SECONDS = 90 * 60; // 90 min default Pomodoro cycle
 
+function formatTimeWithMs(totalMs: number) {
+  const ms = Math.floor((totalMs % 1000) / 10);
+  const totalSeconds = Math.floor(totalMs / 1000);
+  const s = totalSeconds % 60;
+  const totalMinutes = Math.floor(totalSeconds / 60);
+  const m = totalMinutes % 60;
+  const h = Math.floor(totalMinutes / 60);
+
+  return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}.${ms.toString().padStart(2, '0')}`;
+}
+
 function CircularTimer({
-  seconds,
+  ms,
   goal,
   isRunning,
   color,
   type,
 }: {
-  seconds: number;
+  ms: number;
   goal: number;
   isRunning: boolean;
   color: string;
@@ -23,10 +34,11 @@ function CircularTimer({
 }) {
   const radius = 28;
   const circumference = 2 * Math.PI * radius;
+  const seconds = Math.floor(ms / 1000);
   const progress = Math.min(seconds / goal, 1);
   const strokeDashoffset = circumference * (1 - progress);
 
-  const formatTime = (s: number) => {
+  const formatShortTime = (s: number) => {
     const m = Math.floor(s / 60);
     const sec = s % 60;
     return `${m.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
@@ -67,7 +79,7 @@ function CircularTimer({
 
       {/* Time text */}
       <div className="flex flex-col items-center z-10">
-        <span className="font-mono text-[11px] font-black text-white leading-none">{formatTime(seconds)}</span>
+        <span className="font-mono text-[10px] font-black text-white leading-none">{formatShortTime(seconds)}</span>
         <span className="text-[8px] font-black uppercase tracking-wider mt-0.5"
           style={{ color: `${color}99` }}>
           {type === 'study' ? 'study' : 'break'}
@@ -83,38 +95,73 @@ export default function Stopwatch({
   subjectId: string; subjectName: string; subjectColor: string; language: Language;
 }) {
   const { addLog } = useAppContext();
-  const [studyTime, setStudyTime] = useState(0);
-  const [breakTime, setBreakTime] = useState(0);
+  // Time in milliseconds for high precision
+  const [studyTimeMs, setStudyTimeMs] = useState(0);
+  const [breakTimeMs, setBreakTimeMs] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
+  const [isFocusMode, setIsFocusMode] = useState(false);
   const [type, setType] = useState<'study' | 'break'>('study');
   const [showWidget, setShowWidget] = useState(false);
   const [saved, setSaved] = useState(false);
-  const widgetRef = useRef<TimerWidgetRef>(null);
 
+  const widgetRef = useRef<TimerWidgetRef>(null);
+  const startTimeRef = useRef<number>(0);
+  const baseTimeRef = useRef<number>(0);
+
+  // High precision timer effect
   useEffect(() => {
-    let interval: ReturnType<typeof setInterval> | undefined;
+    let requestRef: number;
+
+    const update = () => {
+      const now = performance.now();
+      const delta = now - startTimeRef.current;
+      const total = baseTimeRef.current + delta;
+
+      if (type === 'study') setStudyTimeMs(total);
+      else setBreakTimeMs(total);
+
+      requestRef = requestAnimationFrame(update);
+    };
+
     if (isRunning) {
-      interval = setInterval(() => {
-        if (type === 'study') setStudyTime(p => p + 1);
-        else setBreakTime(p => p + 1);
-      }, 1000);
+      startTimeRef.current = performance.now();
+      baseTimeRef.current = type === 'study' ? studyTimeMs : breakTimeMs;
+      requestRef = requestAnimationFrame(update);
     }
-    return () => { if (interval) clearInterval(interval); };
+
+    return () => {
+      if (requestRef) cancelAnimationFrame(requestRef);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isRunning, type]);
 
+  // Toggle Focus Mode Body Class
+  useEffect(() => {
+    if (isFocusMode) {
+      document.body.classList.add('focus-mode');
+    } else {
+      document.body.classList.remove('focus-mode');
+    }
+    return () => document.body.classList.remove('focus-mode');
+  }, [isFocusMode]);
+
   const handleSave = () => {
-    if (studyTime > 0) addLog({ date: new Date().toISOString(), duration: studyTime, type: 'study', subjectId });
-    if (breakTime > 0) addLog({ date: new Date().toISOString(), duration: breakTime, type: 'break', subjectId });
-    setStudyTime(0);
-    setBreakTime(0);
+    const studySec = Math.floor(studyTimeMs / 1000);
+    const breakSec = Math.floor(breakTimeMs / 1000);
+
+    if (studySec > 0) addLog({ date: new Date().toISOString(), duration: studySec, type: 'study', subjectId });
+    if (breakSec > 0) addLog({ date: new Date().toISOString(), duration: breakSec, type: 'break', subjectId });
+
+    setStudyTimeMs(0);
+    setBreakTimeMs(0);
     setIsRunning(false);
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   };
 
   const handleReset = () => {
-    setStudyTime(0);
-    setBreakTime(0);
+    setStudyTimeMs(0);
+    setBreakTimeMs(0);
     setIsRunning(false);
   };
 
@@ -125,14 +172,14 @@ export default function Stopwatch({
 
   const breakGoal = 15 * 60;
   const activeColor = type === 'study' ? '#6366f1' : '#f59e0b';
-  const currentTime = type === 'study' ? studyTime : breakTime;
+  const currentTime = type === 'study' ? Math.floor(studyTimeMs / 1000) : Math.floor(breakTimeMs / 1000);
   const currentGoal = type === 'study' ? STUDY_GOAL_SECONDS : breakGoal;
 
   return (
     <div className="flex flex-wrap items-center gap-3">
       {/* Circular timer display */}
       <CircularTimer
-        seconds={currentTime}
+        ms={type === 'study' ? studyTimeMs : breakTimeMs}
         goal={currentGoal}
         isRunning={isRunning}
         color={activeColor}
@@ -232,11 +279,71 @@ export default function Stopwatch({
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.92 }}
             className="h-8 w-8 rounded-xl bg-white/5 border border-white/8 text-slate-500 hover:text-blue-400 hover:bg-blue-500/10 transition-all flex items-center justify-center"
+            title="External Widget"
           >
             <ExternalLink size={12} />
           </motion.button>
+
+          <motion.button
+            onClick={() => setIsFocusMode(true)}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.92 }}
+            className="h-8 px-2 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 hover:bg-indigo-500/20 transition-all flex items-center gap-1 font-bold text-[9px] uppercase tracking-wider"
+          >
+            <Maximize2 size={12} /> Focus
+          </motion.button>
         </div>
       </div>
+
+      {/* Focus Mode Overlay */}
+      <AnimatePresence>
+        {isFocusMode && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[9999] bg-[#0b0e14] flex flex-col items-center justify-center overflow-hidden"
+          >
+            <button
+              onClick={() => setIsFocusMode(false)}
+              className="absolute top-8 right-8 p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-all flex items-center gap-2 font-bold text-sm"
+            >
+              <X size={20} /> Exit Focus
+            </button>
+
+            <div className="flex flex-col items-center select-none">
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="text-white/30 font-black uppercase tracking-[0.3em] text-sm mb-4"
+              >
+                {subjectName} • {type}
+              </motion.div>
+
+              <motion.div
+                key={type}
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                className="font-mono font-black tabular-nums tracking-tighter text-white"
+                style={{ fontSize: 'min(22vw, 200px)', lineHeight: 1 }}
+              >
+                {formatTimeWithMs(type === 'study' ? studyTimeMs : breakTimeMs)}
+              </motion.div>
+
+              <div className="mt-12 flex gap-4">
+                 {/* Progress indicator in Focus Mode */}
+                 <div className="h-1 w-64 bg-white/5 rounded-full overflow-hidden">
+                    <motion.div
+                      className="h-full bg-primary"
+                      animate={{ width: `${Math.min((currentTime / currentGoal) * 100, 100)}%` }}
+                    />
+                 </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <TimerWidget
         ref={widgetRef}
@@ -244,8 +351,8 @@ export default function Stopwatch({
         onClose={() => setShowWidget(false)}
         subjectName={subjectName}
         subjectColor={subjectColor}
-        studyTime={studyTime}
-        breakTime={breakTime}
+        studyTime={Math.floor(studyTimeMs / 1000)}
+        breakTime={Math.floor(breakTimeMs / 1000)}
         isRunning={isRunning}
         type={type}
         onToggle={() => setIsRunning(!isRunning)}
