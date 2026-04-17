@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { Play, Pause, RotateCcw, Save, Coffee, BookOpen, ExternalLink, Maximize2, X } from 'lucide-react';
-import { Language } from '@/lib/i18n';
+import { Language, translations } from '@/lib/i18n';
 import { useAppContext } from '@/context/AppContext';
 import TimerWidget, { TimerWidgetRef } from './TimerWidget';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -95,6 +96,9 @@ export default function Stopwatch({
   subjectId: string; subjectName: string; subjectColor: string; language: Language;
 }) {
   const { addLog } = useAppContext();
+  const t = translations[language || 'en'];
+  const isRTL = language === 'ar';
+
   // Time in milliseconds for high precision
   const [studyTimeMs, setStudyTimeMs] = useState(0);
   const [breakTimeMs, setBreakTimeMs] = useState(0);
@@ -103,8 +107,13 @@ export default function Stopwatch({
   const [type, setType] = useState<'study' | 'break'>('study');
   const [showWidget, setShowWidget] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const widgetRef = useRef<TimerWidgetRef>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const startTimeRef = useRef<number>(0);
   const baseTimeRef = useRef<number>(0);
 
@@ -297,51 +306,148 @@ export default function Stopwatch({
 
       {/* Focus Mode Overlay */}
       <AnimatePresence>
-        {isFocusMode && (
+        {isFocusMode && mounted && createPortal(
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[9999] bg-[#0b0e14] flex flex-col items-center justify-center overflow-hidden"
+            className="fixed inset-0 z-[9999] bg-slate-950/80 backdrop-blur-3xl flex flex-col items-center justify-center overflow-hidden"
+            dir={isRTL ? 'rtl' : 'ltr'}
           >
+            {/* Background Blobs */}
+            <div className="liquid-bg !absolute opacity-40">
+              <div className="liquid-blob w-[700px] h-[700px] top-[-15%] left-[-10%]" style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.22) 0%, transparent 70%)', animationDuration: '28s' }} />
+              <div className="liquid-blob w-[600px] h-[600px] bottom-[-10%] right-[-8%]" style={{ background: 'radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)', animationDuration: '22s', animationDelay: '-8s' }} />
+              <div className="liquid-blob w-[500px] h-[500px] top-[35%] left-[25%]" style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.14) 0%, transparent 70%)', animationDuration: '35s', animationDelay: '-14s' }} />
+              <div className="liquid-blob w-[350px] h-[350px] top-[60%] right-[20%]" style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)', animationDuration: '20s', animationDelay: '-5s' }} />
+            </div>
+
             <button
               onClick={() => setIsFocusMode(false)}
-              className="absolute top-8 right-8 p-3 rounded-full bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-all flex items-center gap-2 font-bold text-sm"
+              className="absolute top-8 right-8 px-6 py-3 rounded-2xl glass-panel glass-reflection bg-white/5 hover:bg-white/10 text-white hover:glow-primary transition-all flex items-center gap-3 font-black text-xs uppercase tracking-widest z-20 group"
             >
-              <X size={20} /> Exit Focus
+              <X size={18} className="group-hover:rotate-90 transition-transform duration-300" />
+              <span>{t.exit_focus}</span>
             </button>
 
-            <div className="flex flex-col items-center select-none">
+            <div className="flex flex-col items-center select-none relative px-4 text-center">
+              {/* Large Circular Progress for Focus Mode */}
+              <div className="absolute inset-0 -m-24 pointer-events-none flex items-center justify-center overflow-visible">
+                <svg className="w-[160%] h-[160%] max-w-[900px] -rotate-90 opacity-20" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="48" stroke="white" strokeWidth="0.1" fill="none" strokeOpacity="0.1" />
+                  <motion.circle
+                    cx="50" cy="50" r="48"
+                    stroke={activeColor}
+                    strokeWidth="0.5"
+                    fill="none"
+                    strokeDasharray="301.59"
+                    initial={{ strokeDashoffset: 301.59 }}
+                    animate={{ strokeDashoffset: 301.59 * (1 - Math.min(currentTime / currentGoal, 1)) }}
+                    transition={{ duration: 1, ease: "linear" }}
+                    style={{ filter: `drop-shadow(0 0 15px ${activeColor})` }}
+                  />
+                </svg>
+              </div>
+
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="text-white/30 font-black uppercase tracking-[0.3em] text-sm mb-4"
+                className="text-white/30 font-black uppercase tracking-[0.4em] text-xs sm:text-sm mb-6 z-10"
               >
-                {subjectName} • {type}
+                {subjectName} <span className="mx-2 opacity-20">•</span> {type === 'study' ? t.study : t.break}
               </motion.div>
 
               <motion.div
                 key={type}
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                className="font-mono font-black tabular-nums tracking-tighter text-white"
-                style={{ fontSize: 'min(22vw, 200px)', lineHeight: 1 }}
+                className="font-mono font-black tabular-nums tracking-tighter text-white text-glow z-10"
+                style={{
+                  fontSize: 'min(20vw, 220px)',
+                  lineHeight: 0.9,
+                  willChange: 'transform'
+                }}
               >
                 {formatTimeWithMs(type === 'study' ? studyTimeMs : breakTimeMs)}
               </motion.div>
 
-              <div className="mt-12 flex gap-4">
+              <div className="mt-16 flex flex-col items-center gap-5 w-full max-w-lg px-8 sm:px-12 z-10">
                  {/* Progress indicator in Focus Mode */}
-                 <div className="h-1 w-64 bg-white/5 rounded-full overflow-hidden">
+                 <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden relative border border-white/5 shadow-inner">
                     <motion.div
-                      className="h-full bg-primary"
-                      animate={{ width: `${Math.min((currentTime / currentGoal) * 100, 100)}%` }}
+                      className="absolute inset-y-0 left-0 bg-gradient-to-r from-primary via-accent to-primary transition-all duration-300"
+                      style={{
+                        backgroundColor: activeColor,
+                        boxShadow: `0 0 20px ${activeColor}80`,
+                        backgroundSize: '200% 100%'
+                      }}
+                      animate={{
+                        width: `${Math.min((currentTime / currentGoal) * 100, 100)}%`,
+                        backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                      }}
+                      transition={{
+                        width: { duration: 0.3 },
+                        backgroundPosition: { duration: 4, repeat: Infinity, ease: "linear" }
+                      }}
                     />
                  </div>
+                 <div className="flex justify-between w-full text-[10px] font-black uppercase tracking-[0.3em] text-white/20">
+                    <span>00:00</span>
+                    <span className="text-white/40">{formatTimeWithMs(currentGoal * 1000).split('.')[0]}</span>
+                 </div>
               </div>
+
+              {/* Focus Mode Controls */}
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="mt-20 flex items-center gap-8 sm:gap-12 z-10"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.08)' }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={handleReset}
+                  className="w-16 h-16 rounded-2xl glass-panel glass-reflection flex items-center justify-center text-white/40 hover:text-white transition-all overflow-hidden relative"
+                >
+                  <div className="glass-shine" />
+                  <RotateCcw size={28} />
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => setIsRunning(!isRunning)}
+                  className={`w-24 h-24 rounded-[3rem] flex items-center justify-center text-white transition-all shadow-2xl relative overflow-hidden group ${
+                    isRunning
+                      ? 'bg-amber-500 shadow-amber-500/30'
+                      : 'bg-primary shadow-primary/30'
+                  }`}
+                  style={{
+                    boxShadow: isRunning
+                      ? '0 0 50px rgba(245, 158, 11, 0.4), inset 0 2px 10px rgba(255,255,255,0.2)'
+                      : '0 0 50px rgba(99, 102, 241, 0.4), inset 0 2px 10px rgba(255,255,255,0.2)'
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
+                  <div className="glass-shine" />
+                  {isRunning ? <Pause size={40} fill="white" /> : <Play size={40} fill="white" className="ml-1.5" />}
+                </motion.button>
+
+                <motion.button
+                  whileHover={{ scale: 1.1, backgroundColor: 'rgba(16,185,129,0.1)' }}
+                  whileTap={{ scale: 0.9 }}
+                  onClick={handleSave}
+                  className="w-16 h-16 rounded-2xl glass-panel glass-reflection flex items-center justify-center text-white/40 hover:text-emerald-400 transition-all overflow-hidden relative"
+                >
+                  <div className="glass-shine" />
+                  <Save size={28} />
+                </motion.button>
+              </motion.div>
             </div>
-          </motion.div>
+          </motion.div>,
+          document.body
         )}
       </AnimatePresence>
 

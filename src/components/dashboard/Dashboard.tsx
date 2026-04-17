@@ -160,19 +160,24 @@ export default function Dashboard() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15 + i * 0.07, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                className="relative overflow-hidden rounded-2xl p-4 border border-white/5 group hover:border-white/10 transition-colors"
+                className="relative overflow-hidden rounded-2xl p-4 border border-white/5 group hover:border-white/10 transition-all duration-300 glass-reflection"
                 style={{ background: 'rgba(255,255,255,0.02)' }}
               >
-                <div className="absolute top-0 right-0 w-20 h-20 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                <div className="absolute top-0 right-0 w-24 h-24 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{ background: `radial-gradient(circle, ${glow} 0%, transparent 70%)`, transform: 'translate(30%,-30%)' }} />
-                <div className="flex items-center gap-2 mb-3">
+
+                {/* Bottom hover glow line */}
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-current to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{ color }} />
+
+                <div className="flex items-center gap-2 mb-3 relative z-10">
                   <div className="w-7 h-7 rounded-xl flex items-center justify-center shrink-0"
                     style={{ background: `${color}18` }}>
                     <Icon size={14} style={{ color }} />
                   </div>
                   <p className="text-[9px] font-black uppercase tracking-widest text-slate-500 truncate">{label}</p>
                 </div>
-                <p className="text-2xl font-black text-white leading-none" style={{ textShadow: `0 0 20px ${color}40` }}>
+                <p className="text-2xl font-black text-white leading-none relative z-10" style={{ textShadow: `0 0 20px ${color}40` }}>
                   {value}
                 </p>
               </motion.div>
