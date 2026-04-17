@@ -93,6 +93,11 @@ export const translations = {
     session_duration: "Current Session",
     prayer_progress: "Prayer Progress",
     azkar: "Azkar & Supplications",
+    exit_focus: "Exit Focus",
+    start: "Start",
+    pause: "Pause",
+    reset: "Reset",
+    save: "Save",
   },
   ar: {
     welcome: "مرحباً بك",
@@ -188,6 +193,11 @@ export const translations = {
     session_duration: "مدة الجلسة الحالية",
     prayer_progress: "تقدم الصلوات",
     azkar: "الأذكار والأدعية",
+    exit_focus: "إنهاء التركيز",
+    start: "بدء",
+    pause: "إيقاف",
+    reset: "إعادة ضبط",
+    save: "حفظ",
   }
 };
 
