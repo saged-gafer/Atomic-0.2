@@ -215,29 +215,90 @@ export default function OnboardingFlow() {
           </div>
         </div>
 
-        <div className="space-y-3 max-h-[30vh] overflow-y-auto pr-2 custom-scrollbar">
-          {DAYS.map((day) => (
-            <div key={day} className="p-3 rounded-xl border border-white/5 bg-white/[0.02]">
-              <p className="text-xs font-black text-slate-500 uppercase mb-2">{day}</p>
-              <div className="flex flex-wrap gap-2">
-                {formData.subjects.map((sub) => (
-                  <label key={sub.id} className="flex items-center gap-2 cursor-pointer group">
-                    <input
-                      type="checkbox" 
-                      className="w-4 h-4 rounded border-white/10 bg-white/5 text-primary focus:ring-primary/20"
-                      checked={formData.weeklySchedule[day]?.includes(sub.id) ?? false} 
-                      onChange={(e) => {
-                        const current = formData.weeklySchedule[day] || [];
-                        const next = e.target.checked ? [...current, sub.id] : current.filter(id => id !== sub.id);
-                        setFormData({ ...formData, weeklySchedule: { ...formData.weeklySchedule, [day]: next } });
-                      }} 
-                    />
-                    <span className="text-xs text-slate-400 group-hover:text-white transition-colors">{sub.name}</span>
-                  </label>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="space-y-2 max-h-[32vh] overflow-y-auto pr-1 custom-scrollbar">
+          {DAYS.map((day, dayIdx) => {
+            const daySubjects = formData.weeklySchedule[day] || [];
+            const hasSubjects = daySubjects.length > 0;
+            return (
+              <motion.div
+                key={day}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: dayIdx * 0.05, type: 'spring', stiffness: 300, damping: 25 }}
+                className="rounded-2xl border overflow-hidden"
+                style={{
+                  background: hasSubjects ? 'rgba(99,102,241,0.04)' : 'rgba(255,255,255,0.015)',
+                  borderColor: hasSubjects ? 'rgba(99,102,241,0.2)' : 'rgba(255,255,255,0.05)',
+                }}
+              >
+                <div className="flex items-center gap-2 px-3 pt-2.5 pb-1.5">
+                  <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest flex-1">{day}</span>
+                  <AnimatePresence>
+                    {hasSubjects && (
+                      <motion.span
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0 }}
+                        className="text-[9px] font-black text-indigo-400 bg-indigo-500/10 px-1.5 py-0.5 rounded-full"
+                      >
+                        {daySubjects.length}
+                      </motion.span>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <div className="flex flex-wrap gap-1.5 px-3 pb-3">
+                  {formData.subjects.map((sub, subIdx) => {
+                    const checked = formData.weeklySchedule[day]?.includes(sub.id) ?? false;
+                    return (
+                      <motion.button
+                        key={sub.id}
+                        type="button"
+                        onClick={() => {
+                          const current = formData.weeklySchedule[day] || [];
+                          const next = checked ? current.filter(id => id !== sub.id) : [...current, sub.id];
+                          setFormData({ ...formData, weeklySchedule: { ...formData.weeklySchedule, [day]: next } });
+                        }}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: dayIdx * 0.03 + subIdx * 0.03, type: 'spring', stiffness: 400, damping: 20 }}
+                        whileHover={{ scale: 1.08, y: -1 }}
+                        whileTap={{ scale: 0.92 }}
+                        className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all duration-150 relative overflow-hidden"
+                        style={{
+                          background: checked ? `${sub.color}20` : 'rgba(255,255,255,0.04)',
+                          border: `1px solid ${checked ? sub.color + '50' : 'rgba(255,255,255,0.07)'}`,
+                          color: checked ? sub.color : 'rgba(148,163,184,0.8)',
+                        }}
+                      >
+                        <motion.div
+                          className="w-1.5 h-1.5 rounded-full shrink-0"
+                          animate={{
+                            background: checked ? sub.color : 'rgba(100,116,139,0.4)',
+                            boxShadow: checked ? `0 0 6px ${sub.color}` : 'none',
+                          }}
+                          transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+                        />
+                        {sub.name}
+                        <AnimatePresence>
+                          {checked && (
+                            <motion.div
+                              key="check"
+                              initial={{ scale: 0, opacity: 0 }}
+                              animate={{ scale: 1, opacity: 1 }}
+                              exit={{ scale: 0, opacity: 0 }}
+                              transition={{ type: 'spring', stiffness: 600, damping: 20 }}
+                            >
+                              <Check size={10} />
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </motion.button>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
         <div className="flex gap-3 pt-4">
           <Button variant="outline" onClick={prevStep} className="flex-1">{t.back}</Button>
