@@ -43,6 +43,19 @@ export default function Stopwatch({
   const [isFull, setIsFull] = useState(false);
   const [mounted, setMounted] = useState(false);
 
+  // Handle browser fullscreen API
+  useEffect(() => {
+    if (isFull) {
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      }
+    } else {
+      if (document.fullscreenElement) {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+  }, [isFull]);
+
   // Refs
   const startTimeRef = useRef<number>(0);
   const accumulatedRef = useRef<number>(0);
@@ -50,7 +63,18 @@ export default function Stopwatch({
 
   useEffect(() => {
     const timer = setTimeout(() => setMounted(true), 0);
-    return () => clearTimeout(timer);
+
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement) {
+        setIsFull(false);
+      }
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    };
   }, []);
 
   const updateTimerRef = useRef<() => void>(null);
