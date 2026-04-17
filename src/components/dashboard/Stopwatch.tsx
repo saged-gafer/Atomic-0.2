@@ -51,19 +51,7 @@ export default function Stopwatch({
 
   }, []);
 
-  // Keyboard shortcuts (only when this stopwatch's focus mode is active or when no input is focused)
-  useEffect(() => {
-    if (!isFocusMode) return;
-    const handler = (e: KeyboardEvent) => {
-      const tag = (e.target as HTMLElement)?.tagName;
-      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-      if (e.code === 'Space') { e.preventDefault(); isRunning && mode === 'study' ? handlePause() : handleStart(); }
-      if (e.code === 'KeyS' && !e.metaKey && !e.ctrlKey) handleSave();
-      if (e.code === 'Escape') setIsFocusMode(false);
-    };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, [isFocusMode, isRunning, mode, handlePause, handleStart, handleSave]);
+  // Keyboard shortcuts — moved below function declarations (see after handleSave)
 
   // Rotate focus quotes every 20s
   useEffect(() => {
@@ -132,6 +120,20 @@ export default function Stopwatch({
     setStudyMs(0);
     accumulatedRef.current = 0;
   }, [studyMs, addLog, subjectId]);
+
+  // Keyboard shortcuts — declared after handlePause/handleStart/handleSave to avoid TDZ errors
+  useEffect(() => {
+    if (!isFocusMode) return;
+    const handler = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+      if (e.code === 'Space') { e.preventDefault(); isRunning && mode === 'study' ? handlePause() : handleStart(); }
+      if (e.code === 'KeyS' && !e.metaKey && !e.ctrlKey) handleSave();
+      if (e.code === 'Escape') setIsFocusMode(false);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [isFocusMode, isRunning, mode, handlePause, handleStart, handleSave]);
 
   const toggleBreak = useCallback(() => {
     if (mode === 'break' && isRunning) {
