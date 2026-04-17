@@ -25,6 +25,7 @@ export type UserData = {
   prayerLogs?: Record<string, string[]>;
   monthlyTasks?: Record<string, MonthlyTask[]>;
   sessionStartTime?: string;
+  loginCount?: number;
 };
 
 export const defaultSubjects: Subject[] = [
@@ -97,9 +98,16 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const login = useCallback((username: string, password: string): boolean => {
     const saved = localStorage.getItem('study_planner_user_data');
     if (!saved) return false;
-    const data: UserData = JSON.parse(saved);
+    let data: UserData;
+    try {
+      data = JSON.parse(saved);
+    } catch {
+      return false;
+    }
     if (data.username === username && data.password === password) {
-      setUserDataState(data);
+      const updatedData = { ...data, loginCount: (data.loginCount || 0) + 1 };
+      localStorage.setItem('study_planner_user_data', JSON.stringify(updatedData));
+      setUserDataState(updatedData);
       setIsAuthenticated(true);
       return true;
     }
@@ -107,7 +115,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const setUserData = useCallback((data: UserData) => {
-    setUserDataState(data);
+    const dataWithCount = { ...data, loginCount: data.loginCount ?? 1 };
+    setUserDataState(dataWithCount);
     setIsAuthenticated(true);
   }, []);
 
@@ -123,10 +132,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
+  const sanitizeText = (text: string, maxLength = 500): string =>
+    text.replace(/[<>"'`]/g, '').trim().slice(0, maxLength);
+
   const addTask = useCallback((subjectId: string, title: string) => {
+    const safe = sanitizeText(title);
+    if (!safe) return;
     setUserDataState(prev => {
       if (!prev) return prev;
-      const newTask = { id: Math.random().toString(36).substr(2, 9), title, completed: false, subjectId, date: new Date().toISOString().split('T')[0] };
+      const newTask = { id: Math.random().toString(36).substr(2, 9), title: safe, completed: false, subjectId, date: new Date().toISOString().split('T')[0] };
       const nextSubjects = prev.subjects.map(s => s.id === subjectId ? { ...s, tasks: [...s.tasks, newTask] } : s);
       return { ...prev, subjects: nextSubjects };
     });
@@ -181,9 +195,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const addSideTask = useCallback((title: string) => {
+    const safe = sanitizeText(title);
+    if (!safe) return;
     setUserDataState(prev => {
       if (!prev) return prev;
-      const newTask = { id: Math.random().toString(36).substr(2, 9), title, completed: false, subjectId: 'side', date: new Date().toISOString().split('T')[0] };
+      const newTask = { id: Math.random().toString(36).substr(2, 9), title: safe, completed: false, subjectId: 'side', date: new Date().toISOString().split('T')[0] };
       return { ...prev, sideTasks: [...(prev.sideTasks || []), newTask] };
     });
   }, []);

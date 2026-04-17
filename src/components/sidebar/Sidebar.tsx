@@ -84,16 +84,28 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
   const t = translations[userData.language || 'en'];
   const isRTL = userData.language === 'ar';
 
+  const MAX_FILE_SIZE_MB = 5;
+  const ALLOWED_TYPES = ['application/pdf', 'text/plain', 'image/jpeg', 'image/png', 'image/webp', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>, subjectId: string) => {
     const files = e.target.files;
     if (!files) return;
     for (const file of Array.from(files)) {
+      if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
+        alert(`File "${file.name}" is too large. Maximum size is ${MAX_FILE_SIZE_MB}MB.`);
+        continue;
+      }
+      if (ALLOWED_TYPES.length > 0 && file.type && !ALLOWED_TYPES.includes(file.type)) {
+        alert(`File type "${file.type}" is not supported.`);
+        continue;
+      }
       const reader = new FileReader();
       reader.onload = async (ev) => {
         const base64 = ev.target?.result as string;
+        const safeFileName = file.name.replace(/[<>"'&]/g, '_').slice(0, 200);
         const subjectFile: SubjectFile = {
-          id: `file-${Date.now()}-${Math.random().toString(36).substr(2, 5)}`,
-          name: file.name,
+          id: `file-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+          name: safeFileName,
           type: file.type || 'unknown',
           size: file.size,
           data: base64,
@@ -101,6 +113,7 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
         };
         addFile(subjectId, subjectFile);
       };
+      reader.onerror = () => console.error(`Failed to read file: ${file.name}`);
       reader.readAsDataURL(file);
     }
     if (fileInputRef.current) fileInputRef.current.value = '';
@@ -477,12 +490,13 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
       <motion.aside
         animate={
           isMobile
-            ? { x: mobileOpen ? 0 : -300, width: 280 }
-            : { x: 0, width: isCollapsed ? 72 : 280 }
+            ? { x: mobileOpen ? 0 : (isRTL ? 300 : -300), width: 280 }
+            : { x: isCollapsed ? (isRTL ? 300 : -300) : 0, width: 280 }
         }
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 ${isRTL ? 'right-0' : 'left-0'} h-full bg-[#020617]/95 backdrop-blur-2xl border-${isRTL ? 'l' : 'r'} border-white/5 z-40 flex flex-col overflow-hidden shadow-2xl`}
         aria-label="Main Navigation"
+        aria-hidden={!isMobile && isCollapsed}
       >
         {sidebarContent}
       </motion.aside>

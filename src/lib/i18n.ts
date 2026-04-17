@@ -1,6 +1,7 @@
 export const translations = {
   en: {
-    welcome: "Welcome back",
+    welcome: "Hello",
+    welcome_back: "Welcome back",
     today_is: "Today is",
     subjects_to_study: "subjects to study",
     no_subjects: "No subjects scheduled for today. Enjoy your break!",
@@ -102,9 +103,15 @@ export const translations = {
     save: "Save",
     hours: "Hours",
     end_session_confirm: "End Session",
+    download: "Download",
+    copy: "Copy",
+    copied: "Copied!",
+    sidebar_open: "Open sidebar",
+    sidebar_close: "Close sidebar",
   },
   ar: {
-    welcome: "مرحباً بك",
+    welcome: "مرحباً",
+    welcome_back: "مرحباً بالعودة",
     today_is: "اليوم هو",
     subjects_to_study: "مواد للدراسة",
     no_subjects: "لا يوجد مواد مجدولة اليوم. استمتع بوقتك!",
@@ -206,6 +213,11 @@ export const translations = {
     save: "حفظ",
     hours: "ساعات",
     end_session_confirm: "إنهاء الجلسة",
+    download: "تحميل",
+    copy: "نسخ",
+    copied: "تم النسخ!",
+    sidebar_open: "فتح الشريط الجانبي",
+    sidebar_close: "إغلاق الشريط الجانبي",
   }
 };
 

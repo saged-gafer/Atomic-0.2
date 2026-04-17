@@ -13,7 +13,7 @@ import { translations } from '@/lib/i18n';
 import WelcomeModal from './WelcomeModal';
 import TrackingView from '@/components/analytics/TrackingView';
 import ScheduleEditor from './ScheduleEditor';
-import { Sparkles, Calendar, Menu, Atom, Clock, CheckCircle2, TrendingUp, Zap } from 'lucide-react';
+import { Sparkles, Calendar, Menu, Atom, Clock, CheckCircle2, TrendingUp, Zap, PanelLeftOpen } from 'lucide-react';
 import MonthlyTasksWidget from '@/components/monthly/MonthlyTasksWidget';
 
 export default function Dashboard() {
@@ -91,12 +91,29 @@ export default function Dashboard() {
         </div>
       </header>
 
-      {/* Spacer for desktop sidebar */}
+      {/* Spacer for desktop sidebar — collapses to 0 when fully hidden */}
       <motion.div
-        animate={{ width: sidebarCollapsed ? 72 : 280 }}
+        animate={{ width: sidebarCollapsed ? 0 : 280 }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
         className="hidden lg:block shrink-0 pointer-events-none order-first"
       />
+
+      {/* Floating re-open button — only visible when sidebar is collapsed */}
+      <AnimatePresence>
+        {sidebarCollapsed && (
+          <motion.button
+            initial={{ opacity: 0, x: isRTL ? 40 : -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: isRTL ? 40 : -40 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            onClick={() => setSidebarCollapsed(false)}
+            className={`hidden lg:flex fixed top-1/2 -translate-y-1/2 z-50 ${isRTL ? 'right-0' : 'left-0'} w-8 h-16 items-center justify-center rounded-${isRTL ? 'l' : 'r'}-2xl bg-primary/20 border border-primary/30 text-primary hover:bg-primary/30 hover:w-10 transition-all duration-200 shadow-lg backdrop-blur-sm`}
+            aria-label={t.sidebar_open}
+          >
+            <PanelLeftOpen size={16} className={isRTL ? 'rotate-180' : ''} />
+          </motion.button>
+        )}
+      </AnimatePresence>
 
       <Sidebar
         isCollapsed={sidebarCollapsed}
@@ -130,7 +147,7 @@ export default function Dashboard() {
                 </h1>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
-                {t.welcome},{' '}
+                {(userData.loginCount ?? 1) <= 1 ? t.welcome : t.welcome_back},{' '}
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent break-words">
                   {userData.name}
                 </span>
