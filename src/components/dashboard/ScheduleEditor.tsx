@@ -76,7 +76,7 @@ export default function ScheduleEditor() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm"
+              className="fixed inset-0 z-[400] bg-black/75 backdrop-blur-sm"
             />
 
             {/* Modal — full screen on mobile, centered dialog on md+ */}
@@ -86,12 +86,12 @@ export default function ScheduleEditor() {
               exit={{ opacity: 0, y: 40, scale: 0.97 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="fixed z-[110] flex flex-col
-                inset-0
-                md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2
-                md:w-[90vw] md:max-w-3xl md:max-h-[88vh] md:rounded-3xl
-                overflow-hidden shadow-2xl"
-              style={{ background: 'rgba(8,10,24,0.98)', backdropFilter: 'blur(24px)', border: '1px solid rgba(255,255,255,0.07)' }}
+              className="fixed z-[410] flex flex-col overflow-hidden shadow-2xl
+                top-0 left-0 right-0 bottom-0
+                md:top-1/2 md:left-1/2 md:right-auto md:bottom-auto
+                md:-translate-x-1/2 md:-translate-y-1/2
+                md:w-[90vw] md:max-w-3xl md:max-h-[88vh] md:rounded-3xl"
+              style={{ background: '#080a18', border: '1px solid rgba(255,255,255,0.08)' }}
               dir={isRTL ? 'rtl' : 'ltr'}
             >
               {/* Header */}

@@ -2,6 +2,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 
 export type Task = { id: string; title: string; completed: boolean; subjectId: string; date: string; };
+export type MonthlyTask = { id: string; title: string; completed: boolean; date: string; };
 export type SubjectFile = { id: string; name: string; type: string; size: number; data: string; uploadedAt: string; };
 export type GeneratedContent = { id: string; type: 'exam' | 'summary' | 'notes' | 'mindmap'; title: string; content: string; createdAt: string; };
 export type Subject = { id: string; name: string; color: string; icon: string; link?: string; tasks: Task[]; files?: SubjectFile[]; generatedContent?: GeneratedContent[]; };
@@ -21,7 +22,8 @@ export type UserData = {
   logs: StudyLog[];
   suggestions?: string[];
   prayerTimes?: Record<string, string>;
-  prayerLogs?: Record<string, string[]>; // date -> completed prayer ids
+  prayerLogs?: Record<string, string[]>;
+  monthlyTasks?: Record<string, MonthlyTask[]>;
   sessionStartTime?: string;
 };
 
@@ -52,6 +54,9 @@ type AppContextType = {
   addSuggestion: (suggestion: string) => void;
   togglePrayer: (prayerId: string) => void;
   updateUserData: (data: Partial<UserData>) => void;
+  addMonthlyTask: (date: string, title: string) => void;
+  toggleMonthlyTask: (date: string, taskId: string) => void;
+  deleteMonthlyTask: (date: string, taskId: string) => void;
   isLoading: boolean;
 };
 
@@ -226,6 +231,31 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
+  const addMonthlyTask = useCallback((date: string, title: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const newTask: MonthlyTask = { id: Math.random().toString(36).substr(2, 9), title, completed: false, date };
+      const current = prev.monthlyTasks || {};
+      return { ...prev, monthlyTasks: { ...current, [date]: [...(current[date] || []), newTask] } };
+    });
+  }, []);
+
+  const toggleMonthlyTask = useCallback((date: string, taskId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const current = prev.monthlyTasks || {};
+      return { ...prev, monthlyTasks: { ...current, [date]: (current[date] || []).map(t => t.id === taskId ? { ...t, completed: !t.completed } : t) } };
+    });
+  }, []);
+
+  const deleteMonthlyTask = useCallback((date: string, taskId: string) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const current = prev.monthlyTasks || {};
+      return { ...prev, monthlyTasks: { ...current, [date]: (current[date] || []).filter(t => t.id !== taskId) } };
+    });
+  }, []);
+
   return <AppContext.Provider value={{
     userData,
     isAuthenticated,
@@ -245,6 +275,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     addSuggestion,
     togglePrayer,
     updateUserData,
+    addMonthlyTask,
+    toggleMonthlyTask,
+    deleteMonthlyTask,
     isLoading
   }}>{children}</AppContext.Provider>;
 }

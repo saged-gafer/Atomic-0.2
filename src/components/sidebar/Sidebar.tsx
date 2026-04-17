@@ -9,8 +9,9 @@ import {
   Trash2, Sparkles, Loader2, X,
   ListTodo, BarChart2, Plus,
   CheckCircle2, Circle, Heart,
-  ChevronLeft, ChevronRight
+  ChevronLeft, ChevronRight, CalendarDays
 } from 'lucide-react';
+import MonthlyCalendar from '@/components/monthly/MonthlyCalendar';
 import { parseFile, generateExam, generateSummary, generateNotes, generateAllContent, generateMindMap } from '@/services/aiFileParser';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -64,7 +65,7 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
     togglePrayer
   } = useAppContext();
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'subjects' | 'tasks' | 'azkar' | 'tracking' | 'salat'>('subjects');
+  const [activeTab, setActiveTab] = useState<'subjects' | 'tasks' | 'calendar' | 'azkar' | 'salat'>('subjects');
   const [isGenerating, setIsGenerating] = useState(false);
   const [generatingType, setGeneratingType] = useState<string>('');
   const [newSideTask, setNewSideTask] = useState('');
@@ -207,21 +208,21 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
 
       {/* Navigation Tabs */}
       <nav className="flex border-b border-white/5 bg-white/[0.02] shrink-0" role="tablist">
-        {(['subjects', 'tasks', 'azkar', 'tracking', 'salat'] as const).map((tab) => (
+        {(['subjects', 'tasks', 'calendar', 'azkar', 'salat'] as const).map((tab) => (
           <button
             key={tab}
             role="tab"
             aria-selected={activeTab === tab}
             onClick={() => setActiveTab(tab)}
-            className={`flex-1 p-3 flex justify-center transition-all relative ${
+            className={`flex-1 py-2.5 px-1 flex justify-center transition-all relative ${
               activeTab === tab ? 'text-primary' : 'text-slate-500 hover:text-slate-300'
             }`}
           >
-            {tab === 'subjects' && <Book size={18} />}
-            {tab === 'tasks' && <ListTodo size={18} />}
-            {tab === 'azkar' && <Heart size={18} />}
-            {tab === 'tracking' && <BarChart2 size={18} />}
-            {tab === 'salat' && <CheckCircle2 size={18} />}
+            {tab === 'subjects' && <Book size={17} />}
+            {tab === 'tasks' && <ListTodo size={17} />}
+            {tab === 'calendar' && <CalendarDays size={17} />}
+            {tab === 'azkar' && <Heart size={17} />}
+            {tab === 'salat' && <CheckCircle2 size={17} />}
             {activeTab === tab && (
               <motion.div
                 layoutId="activeTab"
@@ -390,19 +391,8 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
           </div>
         )}
 
-        {activeTab === 'tracking' && (
-          <div className="space-y-4">
-            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">{t.performance_tracking}</h3>
-            <div className="glass-panel p-4 rounded-2xl border-white/5 space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-500 flex items-center justify-center">
-                <BarChart2 size={20} />
-              </div>
-              <p className="text-sm text-slate-400 leading-relaxed">Deep insights into your productivity, learning patterns, and consistency.</p>
-              <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-sm" onClick={() => document.getElementById('tracking-section')?.scrollIntoView({ behavior: 'smooth' })}>
-                Open Analytics
-              </Button>
-            </div>
-          </div>
+        {activeTab === 'calendar' && (
+          <MonthlyCalendar />
         )}
       </div>
 

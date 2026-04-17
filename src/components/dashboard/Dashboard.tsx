@@ -14,6 +14,7 @@ import WelcomeModal from './WelcomeModal';
 import TrackingView from '@/components/analytics/TrackingView';
 import ScheduleEditor from './ScheduleEditor';
 import { Sparkles, Calendar, Menu, Atom, Clock, CheckCircle2, TrendingUp, Zap } from 'lucide-react';
+import MonthlyTasksWidget from '@/components/monthly/MonthlyTasksWidget';
 
 export default function Dashboard() {
   const { userData, setUserData } = useAppContext();
@@ -183,6 +184,9 @@ export default function Dashboard() {
               </motion.div>
             ))}
           </div>
+
+          {/* Monthly Tasks Widget */}
+          <MonthlyTasksWidget />
 
           {/* Subjects Grid */}
           <section className="space-y-6">
