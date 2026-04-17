@@ -101,6 +101,24 @@ export const translations = {
     save: "Save",
     focus_quote: "Efficiency is doing things right; effectiveness is doing the right things.",
     hours: "Hours",
+    continue_studying: "Continue Studying",
+    end_session_confirm: "End Session",
+    short_session_warning: "You've only studied {min} minutes. Are you sure you want to end? Try to continue a bit more!",
+    exit_warning: "Your session is still running. Are you sure you want to exit? Your progress might be lost.",
+    phrases: [
+      "Keep going! 🌟",
+      "You're doing great!",
+      "Focus fuels success. 🚀",
+      "Small steps lead to big results.",
+      "Your future self will thank you.",
+      "Stay in the zone! 💎",
+      "Progress, not perfection.",
+      "Concentrate and conquer.",
+      "You've got this! 💪",
+      "One task at a time.",
+      "Consistency is key. 🗝️",
+      "Deep work mode: Activated."
+    ]
   },
   ar: {
     welcome: "مرحباً بك",
@@ -204,6 +222,24 @@ export const translations = {
     save: "حفظ",
     focus_quote: "الكفاءة هي فعل الأشياء بشكل صحيح؛ الفعالية هي فعل الأشياء الصحيحة.",
     hours: "ساعات",
+    continue_studying: "متابعة الدراسة",
+    end_session_confirm: "إنهاء الجلسة",
+    short_session_warning: "لقد درست لمدة {min} دقيقة فقط. هل أنت متأكد من رغبتك في الإنهاء؟ حاول الاستمرار قليلاً!",
+    exit_warning: "جلستك لا تزال جارية. هل أنت متأكد من الخروج؟ قد تفقد تقدمك.",
+    phrases: [
+      "استمر! 🌟",
+      "أنت تبلي بلاءً حسناً!",
+      "التركيز يغذي النجاح. 🚀",
+      "الخطوات الصغيرة تؤدي لنتائج كبيرة.",
+      "سوف يشكرك مستقبلك.",
+      "ابقَ في منطقتك! 💎",
+      "التقدم وليس الكمال.",
+      "ركز وانتصر.",
+      "تستطيع فعلها! 💪",
+      "مهمة واحدة في كل مرة.",
+      "الاستمرارية هي المفتاح. 🗝️",
+      "وضع العمل العميق: مفعل."
+    ]
   }
 };
 
