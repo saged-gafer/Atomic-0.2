@@ -9,7 +9,7 @@ const withPWA = withPWAInit({
 const nextConfig: NextConfig = {
   // Turbopack options
   turbopack: {},
-  allowedDevOrigins: ['*.replit.dev', '*.picard.replit.dev'],
+  allowedDevOrigins: ['*.replit.dev', '*.picard.replit.dev', '*.janeway.replit.dev'],
   async headers() {
     return [
       {
