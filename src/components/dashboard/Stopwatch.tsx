@@ -41,6 +41,8 @@ export default function Stopwatch({
   const [mode, setMode] = useState<'study' | 'break'>('study');
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [quoteIndex, setQuoteIndex] = useState(0);
+  const [breathPhase, setBreathPhase] = useState<'inhale' | 'hold' | 'exhale'>('inhale');
 
   const startTimeRef = useRef<number>(0);
   const accumulatedRef = useRef<number>(0);
@@ -48,7 +50,7 @@ export default function Stopwatch({
   const updateTimerRef = useRef<() => void>(null);
 
   useEffect(() => {
-
+    setMounted(true);
   }, []);
 
   // Keyboard shortcuts — moved below function declarations (see after handleSave)
