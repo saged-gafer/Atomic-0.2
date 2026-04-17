@@ -41,15 +41,14 @@ export default function Stopwatch({
   const [mode, setMode] = useState<'study' | 'break'>('study');
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [quoteIndex, setQuoteIndex] = useState(0);
-  const [breathPhase, setBreathPhase] = useState<'inhale' | 'hold' | 'exhale'>('inhale');
+
   const startTimeRef = useRef<number>(0);
   const accumulatedRef = useRef<number>(0);
   const requestRef = useRef<number>(0);
   const updateTimerRef = useRef<() => void>(null);
 
   useEffect(() => {
-    setMounted(true);
+
   }, []);
 
   // Keyboard shortcuts (only when this stopwatch's focus mode is active or when no input is focused)
