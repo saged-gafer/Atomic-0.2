@@ -5,7 +5,7 @@ import {
   Play, Pause, RotateCcw, X, Maximize2, Minimize2, 
   TrendingUp, Clock, Calendar, Award, Target, Zap,
   BarChart3, ChevronLeft, ChevronRight, BookOpen, Brain, Atom,
-  FlaskConical, Pi, Quill, Calculator, GraduationCap
+  FlaskConical, Pi, PenTool, Calculator, GraduationCap
 } from 'lucide-react';
 import { useAppContext, Subject } from '@/context/AppContext';
 import { translations, Language } from '@/lib/i18n';
@@ -130,7 +130,7 @@ const SubjectIcon: React.FC<{ icon: string; size?: number; className?: string }>
     Atom: <Atom size={size} className={className} />,
     FlaskConical: <FlaskConical size={size} className={className} />,
     Pi: <Pi size={size} className={className} />,
-    Quill: <Quill size={size} className={className} />,
+    Quill: <PenTool size={size} className={className} />,
     Calculator: <Calculator size={size} className={className} />,
     GraduationCap: <GraduationCap size={size} className={className} />,
   };
