@@ -9,6 +9,7 @@ import { GlassCard } from '@/components/ui/GlassCard';
 import { translations } from '@/lib/i18n';
 import { Plus, Trash2, Clock, Calendar, Sparkles, Check, Loader2 } from 'lucide-react';
 import { fetchPrayerTimes } from '@/services/prayerTimes';
+import AuraDial from './AuraDial';
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -246,28 +247,25 @@ export default function OnboardingFlow() {
     ),
     // Step 3: Goal
     (
-      <motion.div key="step3" custom={isRTL} variants={pageVariants} initial="initial" animate="animate" exit="exit" className="text-center space-y-8">
-        <div className="relative inline-block">
-          <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
-          <motion.div animate={{ rotate: 360 }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }} className="relative p-6 glass-panel rounded-full">
-            <Clock className="text-primary" size={48} />
-          </motion.div>
+      <motion.div key="step3" custom={isRTL} variants={pageVariants} initial="initial" animate="animate" exit="exit" className="text-center space-y-4">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-black text-white">{t.daily_study_goal}</h2>
+          <p className="text-slate-500 text-sm font-medium">{t.daily_study_goal_subtitle || 'Consistency is the key to mastery'}</p>
         </div>
         
-        <div>
-          <h2 className="text-3xl font-bold mb-2">{t.daily_study_goal}</h2>
-          <div className="flex items-center justify-center gap-4 py-6">
-            <motion.span key={formData.dailyStudyHours} initial={{ scale: 1.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-7xl font-black text-primary">
-              {formData.dailyStudyHours}
-            </motion.span>
-            <span className="text-slate-500 font-bold uppercase tracking-widest text-xs">{t.hours_per_day}</span>
-          </div>
-          <input type="range" min="1" max="12" value={formData.dailyStudyHours} onChange={(e) => setFormData({...formData, dailyStudyHours: parseInt(e.target.value)})} className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-primary" />
-        </div>
+        <AuraDial
+          value={formData.dailyStudyHours}
+          onChange={(val) => setFormData({...formData, dailyStudyHours: val})}
+          language={formData.language}
+        />
 
-        <div className="flex gap-3 pt-4">
-          <Button variant="outline" onClick={prevStep} className="flex-1">{t.back}</Button>
-          <Button onClick={handleComplete} disabled={isFinishing} className="flex-1 bg-gradient-to-r from-primary to-secondary">
+        <div className="flex gap-3 pt-6">
+          <Button variant="outline" onClick={prevStep} className="flex-1 h-12 rounded-2xl">{t.back}</Button>
+          <Button
+            onClick={handleComplete}
+            disabled={isFinishing}
+            className="flex-1 h-12 rounded-2xl bg-gradient-to-r from-primary to-indigo-400 shadow-lg shadow-primary/25 font-black uppercase tracking-widest"
+          >
             {isFinishing ? <Loader2 className="animate-spin" size={20} /> : t.start_planning}
           </Button>
         </div>
