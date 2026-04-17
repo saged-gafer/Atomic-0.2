@@ -212,7 +212,7 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
             key={tab}
             role="tab"
             aria-selected={activeTab === tab}
-            onClick={() => { setActiveTab(tab); if (isMobile) onMobileClose(); }}
+            onClick={() => setActiveTab(tab)}
             className={`flex-1 p-3 flex justify-center transition-all relative ${
               activeTab === tab ? 'text-primary' : 'text-slate-500 hover:text-slate-300'
             }`}
@@ -471,15 +471,14 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
 
   return (
     <>
-      {/* Mobile backdrop */}
+      {/* Mobile backdrop — tap outside does NOT close; only X button closes */}
       <AnimatePresence>
         {isMobile && mobileOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={onMobileClose}
-            className="fixed inset-0 bg-black/60 z-30 lg:hidden backdrop-blur-sm"
+            className="fixed inset-0 bg-black/50 z-30 lg:hidden backdrop-blur-sm pointer-events-none"
           />
         )}
       </AnimatePresence>

@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppContext } from '@/context/AppContext';
-import { Button } from '@/components/ui/button';
 import { translations } from '@/lib/i18n';
-import { Settings, Trash2, LogOut, X, User, ShieldAlert } from 'lucide-react';
+import { Settings, Trash2, LogOut, X, User, ShieldAlert, MapPin, Globe } from 'lucide-react';
 
 export default function SettingsPanel() {
   const { userData, setUserData, clearData } = useAppContext();
   const [isOpen, setIsOpen] = useState(false);
+  const [confirmClear, setConfirmClear] = useState(false);
 
   if (!userData) return null;
 
@@ -23,10 +23,18 @@ export default function SettingsPanel() {
   };
 
   const handleClear = () => {
-    if (window.confirm(t.clear_data_confirm)) {
-      clearData();
-      setIsOpen(false);
+    if (!confirmClear) {
+      setConfirmClear(true);
+      return;
     }
+    clearData();
+    setIsOpen(false);
+    setConfirmClear(false);
+  };
+
+  const close = () => {
+    setIsOpen(false);
+    setConfirmClear(false);
   };
 
   return (
@@ -48,118 +56,169 @@ export default function SettingsPanel() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-black/60 z-50 backdrop-blur-sm"
+              onClick={close}
+              className="fixed inset-0 bg-black/65 z-[200] backdrop-blur-sm"
             />
 
-            {/* Panel — bottom sheet on mobile, centered modal on desktop */}
+            {/* Modal — centered on all screen sizes */}
             <motion.div
-              initial={{ opacity: 0, y: 60, scale: 0.97 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 60, scale: 0.97 }}
-              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed z-50 w-full sm:max-w-md sm:w-full
-                         bottom-0 left-0 right-0
-                         sm:bottom-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2
-                         rounded-t-[2rem] sm:rounded-[2rem]
-                         border border-white/10 shadow-2xl overflow-hidden"
-              style={{ background: 'rgba(10,12,30,0.97)', backdropFilter: 'blur(24px)' }}
-              dir={isRTL ? 'rtl' : 'ltr'}
+              initial={{ opacity: 0, scale: 0.94, y: 16 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.94, y: 16 }}
+              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
+              className="fixed z-[210] inset-x-4 sm:inset-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-full sm:max-w-sm rounded-3xl overflow-hidden shadow-2xl"
+              style={{
+                background: 'rgba(8,10,24,0.98)',
+                backdropFilter: 'blur(28px)',
+                WebkitBackdropFilter: 'blur(28px)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                top: '50%',
+                transform: 'translateY(-50%)',
+              }}
+              dir={isRTL ? 'rtl' : 'ltr'}
             >
-              {/* Drag handle — mobile only */}
-              <div className="sm:hidden flex justify-center pt-3 pb-1">
-                <div className="w-10 h-1 rounded-full bg-white/20" />
-              </div>
+              {/* Gradient top border */}
+              <div className="h-[2px] w-full" style={{ background: 'linear-gradient(90deg, transparent, rgba(99,102,241,0.6), rgba(139,92,246,0.4), transparent)' }} />
 
               {/* Header */}
-              <div className="flex items-center justify-between px-6 py-5 border-b border-white/5">
+              <div className="flex items-center justify-between px-5 py-4 border-b border-white/5">
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-primary/15 flex items-center justify-center">
-                    <Settings size={18} className="text-primary" />
+                  <div className="w-8 h-8 rounded-xl bg-indigo-500/15 flex items-center justify-center">
+                    <Settings size={16} className="text-indigo-400" />
                   </div>
-                  <h2 className="text-lg font-black text-white">{t.settings}</h2>
+                  <h2 className="text-base font-black text-white">{t.settings}</h2>
                 </div>
                 <button
-                  onClick={() => setIsOpen(false)}
-                  className="p-2 rounded-xl hover:bg-white/5 text-slate-500 hover:text-white transition-colors"
+                  onClick={close}
+                  className="p-1.5 rounded-xl hover:bg-white/8 text-slate-500 hover:text-white transition-colors"
                   aria-label="Close"
                 >
-                  <X size={18} />
+                  <X size={17} />
                 </button>
               </div>
 
-              <div className="p-6 space-y-4 max-h-[70vh] sm:max-h-none overflow-y-auto">
-                {/* Account Section */}
-                <div className="p-4 rounded-2xl border border-white/5" style={{ background: 'rgba(255,255,255,0.03)' }}>
-                  <h3 className="font-bold mb-3 flex items-center gap-2 text-white text-sm">
-                    <User size={16} className="text-primary" />
-                    {t.username}
-                  </h3>
+              {/* Content */}
+              <div className="p-4 space-y-3 overflow-y-auto" style={{ maxHeight: 'calc(100dvh - 200px)' }}>
+
+                {/* Account */}
+                <div className="rounded-2xl border border-white/5 overflow-hidden" style={{ background: 'rgba(255,255,255,0.025)' }}>
+                  <div className="px-4 py-3 border-b border-white/5 flex items-center gap-2">
+                    <User size={13} className="text-indigo-400" />
+                    <span className="text-[11px] font-black text-slate-500 uppercase tracking-widest">{t.username}</span>
+                  </div>
 
                   {userData.username ? (
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3 p-3 rounded-xl bg-white/5">
-                        <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-sm font-black shrink-0">
+                    <div className="p-4 space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-white text-sm font-black shrink-0 shadow-lg">
                           {userData.username.charAt(0).toUpperCase()}
                         </div>
-                        <div className="min-w-0">
-                          <p className="text-sm font-bold text-white truncate">@{userData.username}</p>
-                          {userData.name && <p className="text-xs text-slate-500 truncate">{userData.name}</p>}
+                        <div className="min-w-0 flex-1">
+                          <p className="text-sm font-black text-white truncate">@{userData.username}</p>
+                          {userData.name && (
+                            <p className="text-xs text-slate-500 truncate">{userData.name}</p>
+                          )}
                         </div>
                       </div>
-                      {userData.email && (
-                        <p className="text-xs text-slate-500 px-1">{userData.email}</p>
-                      )}
-                      <Button
-                        variant="outline"
+
+                      <motion.button
+                        whileHover={{ scale: 1.01 }}
+                        whileTap={{ scale: 0.98 }}
                         onClick={handleLogout}
-                        className="w-full flex items-center justify-center gap-2 border-red-500/25 hover:bg-red-500/10 hover:text-red-400 text-red-400/80 h-11 rounded-xl"
+                        className="w-full h-10 flex items-center justify-center gap-2 rounded-xl border border-red-500/25 bg-red-500/5 text-red-400 text-sm font-bold hover:bg-red-500/12 transition-all"
                       >
-                        <LogOut size={15} />
+                        <LogOut size={14} />
                         {t.logout}
-                      </Button>
+                      </motion.button>
                     </div>
                   ) : (
-                    <p className="text-sm text-slate-500">{t.please_fill_all}</p>
+                    <div className="p-4">
+                      <p className="text-sm text-slate-500">{t.please_fill_all}</p>
+                    </div>
                   )}
                 </div>
 
-                {/* Language info */}
+                {/* Location / Language */}
                 {userData.city && (
-                  <div className="p-4 rounded-2xl border border-white/5 flex items-center justify-between" style={{ background: 'rgba(255,255,255,0.03)' }}>
-                    <div>
-                      <p className="text-xs font-black text-slate-500 uppercase tracking-widest mb-1">Location</p>
-                      <p className="text-sm font-bold text-white">{userData.city}, {userData.country}</p>
+                  <div className="rounded-2xl border border-white/5 p-4 flex items-center justify-between gap-3" style={{ background: 'rgba(255,255,255,0.025)' }}>
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <MapPin size={14} className="text-slate-500 shrink-0" />
+                      <div className="min-w-0">
+                        <p className="text-[10px] font-black text-slate-600 uppercase tracking-widest">Location</p>
+                        <p className="text-sm font-bold text-white truncate">{userData.city}, {userData.country}</p>
+                      </div>
                     </div>
-                    <div className="px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-[10px] font-bold text-primary uppercase">
-                      {userData.language === 'ar' ? 'العربية' : 'English'}
+                    <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 shrink-0">
+                      <Globe size={10} className="text-indigo-400" />
+                      <span className="text-[10px] font-bold text-indigo-400">
+                        {userData.language === 'ar' ? 'العربية' : 'English'}
+                      </span>
                     </div>
                   </div>
                 )}
 
                 {/* Danger Zone */}
-                <div className="p-4 rounded-2xl border border-red-500/20" style={{ background: 'rgba(239,68,68,0.06)' }}>
-                  <h3 className="font-bold mb-3 text-red-400 flex items-center gap-2 text-sm">
-                    <ShieldAlert size={16} />
-                    {t.clear_data}
-                  </h3>
-                  <p className="text-xs text-slate-500 mb-4 leading-relaxed">
-                    This will permanently delete all your data including subjects, tasks, logs, and settings.
-                  </p>
-                  <Button
-                    variant="outline"
-                    onClick={handleClear}
-                    className="w-full border-red-500/30 hover:bg-red-500/20 hover:text-red-300 text-red-400 h-11 rounded-xl flex items-center justify-center gap-2"
-                  >
-                    <Trash2 size={15} />
-                    {t.clear_data}
-                  </Button>
+                <div className="rounded-2xl border border-red-500/18 overflow-hidden" style={{ background: 'rgba(239,68,68,0.05)' }}>
+                  <div className="px-4 py-3 border-b border-red-500/10 flex items-center gap-2">
+                    <ShieldAlert size={13} className="text-red-400" />
+                    <span className="text-[11px] font-black text-red-400/70 uppercase tracking-widest">{t.clear_data}</span>
+                  </div>
+                  <div className="p-4 space-y-3">
+                    <p className="text-xs text-slate-500 leading-relaxed">
+                      This will permanently delete all your subjects, tasks, logs, and settings.
+                    </p>
+
+                    <AnimatePresence mode="wait">
+                      {!confirmClear ? (
+                        <motion.button
+                          key="first"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          whileHover={{ scale: 1.01 }}
+                          whileTap={{ scale: 0.98 }}
+                          onClick={handleClear}
+                          className="w-full h-10 flex items-center justify-center gap-2 rounded-xl border border-red-500/25 bg-red-500/5 text-red-400 text-sm font-bold hover:bg-red-500/12 transition-all"
+                        >
+                          <Trash2 size={14} />
+                          {t.clear_data}
+                        </motion.button>
+                      ) : (
+                        <motion.div
+                          key="confirm"
+                          initial={{ opacity: 0, y: 6 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0 }}
+                          className="space-y-2"
+                        >
+                          <p className="text-xs font-black text-red-400 text-center">Are you sure? This cannot be undone.</p>
+                          <div className="flex gap-2">
+                            <button
+                              onClick={() => setConfirmClear(false)}
+                              className="flex-1 h-10 rounded-xl border border-white/10 bg-white/5 text-slate-400 text-sm font-bold hover:text-white transition-all"
+                            >
+                              Cancel
+                            </button>
+                            <motion.button
+                              whileTap={{ scale: 0.97 }}
+                              onClick={handleClear}
+                              className="flex-1 h-10 rounded-xl bg-red-500 text-white text-sm font-black flex items-center justify-center gap-1.5 hover:bg-red-600 transition-all"
+                            >
+                              <Trash2 size={13} />
+                              Delete All
+                            </motion.button>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 </div>
+
               </div>
 
-              {/* Safe area spacer for mobile */}
-              <div className="sm:hidden h-safe-bottom pb-4" />
+              {/* Bottom accent */}
+              <div className="h-[1px] w-full" style={{ background: 'linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent)' }} />
             </motion.div>
           </>
         )}
