@@ -503,6 +503,7 @@ export default function FocusMode() {
                 fill="none" stroke="url(#ringGrad)" strokeWidth="10"
                 strokeLinecap="round"
                 strokeDasharray={circumference}
+                initial={{ strokeDashoffset: circumference }}
                 animate={{
                   strokeDashoffset: dashOffset,
                   filter: pulseGlow
@@ -525,10 +526,8 @@ export default function FocusMode() {
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <motion.div
                 className="flex items-baseline gap-1"
-                animate={{
-                  scale: isPaused ? [1, 1.025, 1] : 1,
-                }}
-                transition={{ scale: { duration: 0.7, repeat: isPaused ? Infinity : 0 } }}
+                animate={{ scale: isPaused ? 1.025 : 1 }}
+                transition={{ scale: { duration: 0.4, repeat: isPaused ? Infinity : 0, repeatType: 'reverse', type: 'tween', ease: 'easeInOut' } }}
               >
                 <motion.span
                   className="font-mono text-7xl font-black text-white select-none"
@@ -647,12 +646,12 @@ export default function FocusMode() {
                   className="w-2.5 h-2.5 rounded-full"
                   animate={{
                     backgroundColor: reached ? (isActive ? '#6366f1' : '#f59e0b') : 'rgba(255,255,255,0.15)',
-                    scale:           reached ? [1, 1.45, 1] : 1,
+                    scale:           reached ? 1.3 : 1,
                     boxShadow:       reached
                       ? `0 0 12px ${isActive ? 'rgba(99,102,241,0.8)' : 'rgba(245,158,11,0.8)'}`
-                      : 'none',
+                      : '0 0 0px rgba(0,0,0,0)',
                   }}
-                  transition={{ scale: { duration: 0.35 }, backgroundColor: { duration: 0.4 } }}
+                  transition={{ scale: { type: 'spring', stiffness: 500, damping: 12 }, backgroundColor: { duration: 0.4 } }}
                 />
               );
             })}

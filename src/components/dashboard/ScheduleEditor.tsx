@@ -63,7 +63,7 @@ function SubjectCard({
       <motion.div
         className="w-3 h-3 rounded-full shrink-0 relative"
         animate={{
-          boxShadow: active ? `0 0 12px 3px ${accentColor}80` : 'none',
+          boxShadow: active ? `0 0 12px 3px ${accentColor}80` : '0 0 0px rgba(0,0,0,0)',
           scale: active ? 1.2 : 1,
         }}
         transition={{ type: 'spring', stiffness: 400, damping: 20 }}
@@ -79,10 +79,10 @@ function SubjectCard({
         className="w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors duration-200"
         animate={{
           borderColor: active ? accentColor : 'rgba(100,116,139,0.5)',
-          background: active ? accentColor : 'transparent',
-          scale: active ? [1, 1.25, 1] : 1,
+          background: active ? accentColor : 'rgba(0,0,0,0)',
+          scale: active ? 1.2 : 1,
         }}
-        transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+        transition={{ type: 'spring', stiffness: 500, damping: 20 }}
       >
         <AnimatePresence>
           {active && (

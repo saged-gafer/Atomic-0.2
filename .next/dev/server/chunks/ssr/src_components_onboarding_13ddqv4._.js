@@ -767,7 +767,7 @@ function StepIndicator({ step, total }) {
                                 className: "w-9 h-9 rounded-2xl flex items-center justify-center relative overflow-hidden",
                                 animate: {
                                     borderColor: done ? 'rgba(0,0,0,0)' : active ? `${THEME.primary}60` : 'rgba(255,255,255,0.08)',
-                                    boxShadow: active ? `0 0 20px ${THEME.primary}50` : done ? `0 0 10px ${THEME.primary}30` : 'none'
+                                    boxShadow: active ? `0 0 20px ${THEME.primary}50` : done ? `0 0 10px ${THEME.primary}30` : '0 0 0px rgba(0,0,0,0)'
                                 },
                                 style: {
                                     border: '1px solid',
@@ -1075,7 +1075,7 @@ function SecondaryButton({ onClick, children }) {
                 className: "w-1.5 h-1.5 rounded-full shrink-0",
                 animate: {
                     background: checked ? subject.color : 'rgba(100,116,139,0.4)',
-                    boxShadow: checked ? `0 0 6px ${subject.color}` : 'none'
+                    boxShadow: checked ? `0 0 6px ${subject.color}` : '0 0 0px rgba(0,0,0,0)'
                 },
                 transition: {
                     type: 'spring',
@@ -1587,7 +1587,7 @@ function OnboardingFlow() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                             className: "w-2 h-2 rounded-full shrink-0",
                                             animate: {
-                                                boxShadow: sub.link ? `0 0 8px ${sub.color}` : 'none',
+                                                boxShadow: sub.link ? `0 0 8px ${sub.color}` : '0 0 0px rgba(0,0,0,0)',
                                                 background: sub.link ? sub.color : 'rgba(100,116,139,0.4)'
                                             },
                                             transition: {

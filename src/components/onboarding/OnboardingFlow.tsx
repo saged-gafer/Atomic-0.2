@@ -149,7 +149,7 @@ function StepIndicator({ step, total }: { step: number; total: number }) {
                     : active
                       ? `${THEME.primary}60`
                       : 'rgba(255,255,255,0.08)',
-                  boxShadow: active ? `0 0 20px ${THEME.primary}50` : done ? `0 0 10px ${THEME.primary}30` : 'none',
+                  boxShadow: active ? `0 0 20px ${THEME.primary}50` : done ? `0 0 10px ${THEME.primary}30` : '0 0 0px rgba(0,0,0,0)',
                 }}
                 style={{
                   border: '1px solid',
@@ -268,7 +268,7 @@ function SubjectChip({
       }}
     >
       <motion.div className="w-1.5 h-1.5 rounded-full shrink-0"
-        animate={{ background: checked ? subject.color : 'rgba(100,116,139,0.4)', boxShadow: checked ? `0 0 6px ${subject.color}` : 'none' }}
+        animate={{ background: checked ? subject.color : 'rgba(100,116,139,0.4)', boxShadow: checked ? `0 0 6px ${subject.color}` : '0 0 0px rgba(0,0,0,0)' }}
         transition={{ type: 'spring', stiffness: 500, damping: 25 }}
       />
       {subject.name}
@@ -458,7 +458,7 @@ export default function OnboardingFlow() {
           >
             <div className="flex items-center gap-3 px-4 pt-3 pb-1.5">
               <motion.div className="w-2 h-2 rounded-full shrink-0"
-                animate={{ boxShadow: sub.link ? `0 0 8px ${sub.color}` : 'none', background: sub.link ? sub.color : 'rgba(100,116,139,0.4)' }}
+                animate={{ boxShadow: sub.link ? `0 0 8px ${sub.color}` : '0 0 0px rgba(0,0,0,0)', background: sub.link ? sub.color : 'rgba(100,116,139,0.4)' }}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
               />
               <span className="text-sm font-bold text-white flex-1">{sub.name}</span>
