@@ -19,6 +19,8 @@ interface AuraDialProps {
   min?: number;
   max?: number;
   label?: string;
+  primaryColor?: string;
+  secondaryColor?: string;
 }
 
 export default function AuraDial({
@@ -26,7 +28,9 @@ export default function AuraDial({
   onChange,
   min = 1,
   max = 12,
-  label = "Hours"
+  label = "Hours",
+  primaryColor = '#ec4899',
+  secondaryColor = '#f59e0b',
 }: AuraDialProps) {
   const [isDragging, setIsDragging] = useState(false);
   const dialRef = useRef<HTMLDivElement>(null);
@@ -126,21 +130,37 @@ export default function AuraDial({
         className={`relative w-72 h-72 sm:w-80 sm:h-80 rounded-full flex items-center justify-center cursor-pointer outline-none select-none transition-transform duration-500 ${isDragging ? 'scale-105' : 'hover:scale-[1.02]'}`}
       >
         {/* Background Aura */}
-        <div className="absolute inset-0 rounded-full bg-slate-900/40 backdrop-blur-2xl border border-white/5 shadow-[0_0_50px_rgba(0,0,0,0.3)]" />
+        <motion.div className="absolute inset-0 rounded-full backdrop-blur-2xl border border-white/5"
+          style={{ background: 'rgba(15,5,8,0.6)' }}
+          animate={{ boxShadow: [`0 0 50px ${primaryColor}15`, `0 0 80px ${primaryColor}25`, `0 0 50px ${primaryColor}15`] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        />
 
         {/* Animated Glow Ring */}
         <svg className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" className="stroke-white/5 fill-none" strokeWidth="1" />
+          <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="1" />
+          {/* Background track */}
+          <circle cx="50" cy="50" r="45" fill="none"
+            stroke={`${primaryColor}18`} strokeWidth="8" strokeLinecap="round"
+            strokeDasharray="283" strokeDashoffset="0"
+          />
           <motion.circle
             cx="50" cy="50" r="45"
-            className="stroke-primary fill-none"
-            strokeWidth="3"
+            fill="none"
+            stroke={`url(#dialGrad)`}
+            strokeWidth="8"
             strokeLinecap="round"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: value / 12 }}
             transition={{ type: "spring", stiffness: 40, damping: 15 }}
-            style={{ filter: 'drop-shadow(0 0 12px rgba(99, 102, 241, 0.8))' }}
+            style={{ filter: `drop-shadow(0 0 10px ${primaryColor}cc)` }}
           />
+          <defs>
+            <linearGradient id="dialGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor={primaryColor} />
+              <stop offset="100%" stopColor={secondaryColor} />
+            </linearGradient>
+          </defs>
         </svg>
 
         {/* Hour Markers */}
@@ -148,7 +168,7 @@ export default function AuraDial({
           const angle = (m * 30) - 90;
           const rad = (angle * Math.PI) / 180;
           const dist = 36;
-          const isActive = m <= value || (value === 12);
+          const isActive = m <= value;
 
           return (
             <div
@@ -158,10 +178,13 @@ export default function AuraDial({
                 left: `${50 + dist * Math.cos(rad)}%`,
                 top: `${50 + dist * Math.sin(rad)}%`,
                 transform: 'translate(-50%, -50%)',
-                opacity: m <= value ? 1 : 0.2
+                opacity: isActive ? 1 : 0.15,
               }}
             >
-              <div className={`w-1 h-1 rounded-full ${isActive ? 'bg-primary glow-primary' : 'bg-white'}`} />
+              <div className="w-1.5 h-1.5 rounded-full" style={{
+                background: isActive ? primaryColor : 'rgba(255,255,255,0.4)',
+                boxShadow: isActive ? `0 0 6px ${primaryColor}` : 'none',
+              }} />
             </div>
           );
         })}
@@ -173,11 +196,13 @@ export default function AuraDial({
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
           style={{ width: '100%', height: '100%' }}
         >
-          <div
-            className="absolute left-1/2 -translate-x-1/2 top-[1.5%]"
-            style={{ width: '24px', height: '24px' }}
-          >
-             <div className="w-full h-full rounded-full bg-white border-[6px] border-primary shadow-[0_0_20px_rgba(99,102,241,0.6)]" />
+          <div className="absolute left-1/2 -translate-x-1/2 top-[1.5%]" style={{ width: '26px', height: '26px' }}>
+            <div className="w-full h-full rounded-full bg-white"
+              style={{
+                border: `5px solid ${primaryColor}`,
+                boxShadow: `0 0 20px ${primaryColor}99, 0 0 40px ${primaryColor}44`,
+              }}
+            />
           </div>
         </motion.div>
 
@@ -189,22 +214,32 @@ export default function AuraDial({
               initial={{ scale: 0.5, opacity: 0, y: 10 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 1.5, opacity: 0, y: -10 }}
-              className="text-8xl sm:text-9xl font-black text-white text-glow leading-none select-none"
+              className="font-black text-white leading-none select-none"
+              style={{
+                fontSize: 'clamp(4rem, 14vw, 6rem)',
+                textShadow: `0 0 40px ${primaryColor}60`,
+              }}
             >
               {value}
             </motion.div>
           </AnimatePresence>
-          <div className="mt-2 text-[10px] font-black text-white/40 uppercase tracking-[0.4em]">{label}</div>
+          <motion.div className="mt-2 text-[10px] font-black uppercase tracking-[0.4em]"
+            animate={{ color: [`${primaryColor}80`, `${secondaryColor}80`, `${primaryColor}80`] }}
+            transition={{ duration: 3, repeat: Infinity }}
+          >
+            {label}
+          </motion.div>
         </div>
 
         {/* Interaction Hint */}
         {isDragging && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="absolute -bottom-12 text-[9px] font-black text-primary uppercase tracking-widest"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="absolute -bottom-10 text-[9px] font-black uppercase tracking-widest"
+            style={{ color: primaryColor }}
           >
-            Adjusting...
+            ✦ Adjusting...
           </motion.div>
         )}
       </div>
