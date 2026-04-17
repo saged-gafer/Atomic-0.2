@@ -19,6 +19,7 @@ export const translations = {
     weekly_schedule: "Your Weekly Schedule",
     assign_subjects: "Assign subjects to each day",
     daily_study_goal: "How many hours do you want to study daily?",
+    daily_study_goal_subtitle: "Consistency is the key to mastery",
     welcome_start: "Welcome! Let's get started.",
     settings: "Settings",
     clear_data: "Clear All Data",
@@ -98,6 +99,8 @@ export const translations = {
     pause: "Pause",
     reset: "Reset",
     save: "Save",
+    focus_quote: "Efficiency is doing things right; effectiveness is doing the right things.",
+    hours: "Hours",
   },
   ar: {
     welcome: "مرحباً بك",
@@ -119,6 +122,7 @@ export const translations = {
     weekly_schedule: "جدولك الأسبوعي",
     assign_subjects: "خصص المواد لكل يوم",
     daily_study_goal: "كم ساعة تود الدراسة يومياً؟",
+    daily_study_goal_subtitle: "الاستمرارية هي مفتاح الإتقان",
     welcome_start: "أهلاً بك! لنبدأ.",
     settings: "الإعدادات",
     clear_data: "مسح جميع البيانات",
@@ -198,6 +202,8 @@ export const translations = {
     pause: "إيقاف",
     reset: "إعادة ضبط",
     save: "حفظ",
+    focus_quote: "الكفاءة هي فعل الأشياء بشكل صحيح؛ الفعالية هي فعل الأشياء الصحيحة.",
+    hours: "ساعات",
   }
 };
 

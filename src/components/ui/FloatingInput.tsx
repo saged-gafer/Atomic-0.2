@@ -12,11 +12,13 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
   ({ label, value, onChange, onFocus, onBlur, className, type, error, ...props }, ref) => {
     const [isFocused, setIsFocused] = useState(false);
     const hasValue = value !== undefined && value !== null && value !== '';
+    const id = React.useId();
 
     return (
       <div className="relative w-full pt-4 mt-2">
         <input
           {...props}
+          id={id}
           ref={ref}
           type={type}
           value={value}
@@ -38,6 +40,7 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
         />
 
         <motion.label
+          htmlFor={id}
           initial={false}
           animate={{
             y: isFocused || hasValue ? -25 : 8,
