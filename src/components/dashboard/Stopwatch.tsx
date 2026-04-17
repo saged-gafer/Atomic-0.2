@@ -36,7 +36,7 @@ function CircularTimer({
   const radius = 28;
   const circumference = 2 * Math.PI * radius;
   const seconds = Math.floor(ms / 1000);
-  const progress = Math.min(seconds / goal, 1);
+  const progress = Math.min((ms / 1000) / goal, 1);
   const strokeDashoffset = circumference * (1 - progress);
 
   const formatShortTime = (s: number) => {
@@ -107,6 +107,7 @@ export default function Stopwatch({
   const [type, setType] = useState<'study' | 'break'>('study');
   const [showWidget, setShowWidget] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [focusModeSaved, setFocusModeSaved] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const widgetRef = useRef<TimerWidgetRef>(null);
@@ -165,6 +166,12 @@ export default function Stopwatch({
     setBreakTimeMs(0);
     setIsRunning(false);
     setSaved(true);
+
+    if (isFocusMode) {
+      setFocusModeSaved(true);
+      setTimeout(() => setFocusModeSaved(false), 2000);
+    }
+
     setTimeout(() => setSaved(false), 2000);
   };
 
@@ -181,7 +188,6 @@ export default function Stopwatch({
 
   const breakGoal = 15 * 60;
   const activeColor = type === 'study' ? '#6366f1' : '#f59e0b';
-  const currentTime = type === 'study' ? Math.floor(studyTimeMs / 1000) : Math.floor(breakTimeMs / 1000);
   const currentGoal = type === 'study' ? STUDY_GOAL_SECONDS : breakGoal;
 
   return (
@@ -315,7 +321,7 @@ export default function Stopwatch({
             dir={isRTL ? 'rtl' : 'ltr'}
           >
             {/* Background Blobs */}
-            <div className="liquid-bg !absolute opacity-40">
+            <div className="liquid-bg !absolute opacity-40 z-0 !bg-transparent">
               <div className="liquid-blob w-[700px] h-[700px] top-[-15%] left-[-10%]" style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.22) 0%, transparent 70%)', animationDuration: '28s' }} />
               <div className="liquid-blob w-[600px] h-[600px] bottom-[-10%] right-[-8%]" style={{ background: 'radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%)', animationDuration: '22s', animationDelay: '-8s' }} />
               <div className="liquid-blob w-[500px] h-[500px] top-[35%] left-[25%]" style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.14) 0%, transparent 70%)', animationDuration: '35s', animationDelay: '-14s' }} />
@@ -324,13 +330,13 @@ export default function Stopwatch({
 
             <button
               onClick={() => setIsFocusMode(false)}
-              className="absolute top-8 right-8 px-6 py-3 rounded-2xl glass-panel glass-reflection bg-white/5 hover:bg-white/10 text-white hover:glow-primary transition-all flex items-center gap-3 font-black text-xs uppercase tracking-widest z-20 group"
+              className="absolute top-8 right-8 rtl:right-auto rtl:left-8 px-6 py-3 rounded-2xl glass-panel glass-reflection bg-white/5 hover:bg-white/10 text-white hover:glow-primary transition-all flex items-center gap-3 font-black text-xs uppercase tracking-widest z-20 group"
             >
               <X size={18} className="group-hover:rotate-90 transition-transform duration-300" />
               <span>{t.exit_focus}</span>
             </button>
 
-            <div className="flex flex-col items-center select-none relative px-4 text-center">
+            <div className="flex flex-col items-center select-none relative px-4 text-center z-10">
               {/* Large Circular Progress for Focus Mode */}
               <div className="absolute inset-0 -m-24 pointer-events-none flex items-center justify-center overflow-visible">
                 <svg className="w-[160%] h-[160%] max-w-[900px] -rotate-90 opacity-20" viewBox="0 0 100 100">
@@ -342,8 +348,8 @@ export default function Stopwatch({
                     fill="none"
                     strokeDasharray="301.59"
                     initial={{ strokeDashoffset: 301.59 }}
-                    animate={{ strokeDashoffset: 301.59 * (1 - Math.min(currentTime / currentGoal, 1)) }}
-                    transition={{ duration: 1, ease: "linear" }}
+                    animate={{ strokeDashoffset: 301.59 * (1 - Math.min(((type === 'study' ? studyTimeMs : breakTimeMs) / 1000) / currentGoal, 1)) }}
+                    transition={{ duration: 0.1, ease: "linear" }}
                     style={{ filter: `drop-shadow(0 0 15px ${activeColor})` }}
                   />
                 </svg>
@@ -364,7 +370,7 @@ export default function Stopwatch({
                 animate={{ scale: 1, opacity: 1 }}
                 className="font-mono font-black tabular-nums tracking-tighter text-white text-glow z-10"
                 style={{
-                  fontSize: 'min(20vw, 220px)',
+                  fontSize: 'min(18vw, 160px)',
                   lineHeight: 0.9,
                   willChange: 'transform'
                 }}
@@ -383,11 +389,11 @@ export default function Stopwatch({
                         backgroundSize: '200% 100%'
                       }}
                       animate={{
-                        width: `${Math.min((currentTime / currentGoal) * 100, 100)}%`,
+                        width: `${Math.min((((type === 'study' ? studyTimeMs : breakTimeMs) / 1000) / currentGoal) * 100, 100)}%`,
                         backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
                       }}
                       transition={{
-                        width: { duration: 0.3 },
+                        width: { duration: 0.1, ease: "linear" },
                         backgroundPosition: { duration: 4, repeat: Infinity, ease: "linear" }
                       }}
                     />
@@ -439,10 +445,43 @@ export default function Stopwatch({
                   whileHover={{ scale: 1.1, backgroundColor: 'rgba(16,185,129,0.1)' }}
                   whileTap={{ scale: 0.9 }}
                   onClick={handleSave}
-                  className="w-16 h-16 rounded-2xl glass-panel glass-reflection flex items-center justify-center text-white/40 hover:text-emerald-400 transition-all overflow-hidden relative"
+                  className={`w-16 h-16 rounded-2xl glass-panel glass-reflection flex items-center justify-center transition-all overflow-hidden relative ${
+                    focusModeSaved ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20' : 'text-white/40 hover:text-emerald-400'
+                  }`}
                 >
                   <div className="glass-shine" />
-                  <Save size={28} />
+                  <AnimatePresence mode="wait">
+                    {focusModeSaved ? (
+                      <motion.div
+                        key="check"
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0, opacity: 0 }}
+                      >
+                        <motion.svg viewBox="0 0 12 10" fill="none" className="w-7 h-7">
+                          <motion.path
+                            d="M1 5 L4 8 L11 2"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            initial={{ pathLength: 0 }}
+                            animate={{ pathLength: 1 }}
+                            transition={{ duration: 0.3 }}
+                          />
+                        </motion.svg>
+                      </motion.div>
+                    ) : (
+                      <motion.div
+                        key="save"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.8, opacity: 0 }}
+                      >
+                        <Save size={28} />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.button>
               </motion.div>
             </div>

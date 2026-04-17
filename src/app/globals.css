@@ -55,6 +55,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.focus-mode {
+  overflow: hidden !important;
+}
+
 /* ─── Ambient Background ───────────────── */
 .liquid-bg {
   position: fixed;
