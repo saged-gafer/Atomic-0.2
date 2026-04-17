@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { FloatingInput } from '@/components/ui/FloatingInput';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { translations } from '@/lib/i18n';
-import { Plus, Trash2, Clock, Calendar, Sparkles, Check, Loader2 } from 'lucide-react';
+import { Plus, Trash2, Calendar, Sparkles, Check, Loader2 } from 'lucide-react';
 import { fetchPrayerTimes } from '@/services/prayerTimes';
 import AuraDial from './AuraDial';
 
@@ -256,7 +256,7 @@ export default function OnboardingFlow() {
         <AuraDial
           value={formData.dailyStudyHours}
           onChange={(val) => setFormData({...formData, dailyStudyHours: val})}
-          language={formData.language}
+          label={t.hours}
         />
 
         <div className="flex gap-3 pt-6">
