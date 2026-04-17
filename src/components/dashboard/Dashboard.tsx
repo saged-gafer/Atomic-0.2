@@ -13,6 +13,7 @@ import { translations } from '@/lib/i18n';
 import WelcomeModal from './WelcomeModal';
 import TrackingView from '@/components/analytics/TrackingView';
 import ScheduleEditor from './ScheduleEditor';
+import FocusMode from './FocusMode';
 import { Sparkles, Calendar, Menu, Atom, Clock, CheckCircle2, TrendingUp, Zap, PanelLeftOpen } from 'lucide-react';
 import MonthlyTasksWidget from '@/components/monthly/MonthlyTasksWidget';
 
@@ -259,6 +260,9 @@ export default function Dashboard() {
           onClose={() => setShowWelcome(false)}
           userData={userData}
         />
+        
+        {/* Focus Mode Component */}
+        <FocusMode />
       </main>
     </div>
   );
