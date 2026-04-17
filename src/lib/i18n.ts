@@ -108,6 +108,8 @@ export const translations = {
     copied: "Copied!",
     sidebar_open: "Open sidebar",
     sidebar_close: "Close sidebar",
+    focus_mode: "Focus Mode",
+    analytics: "Analytics",
   },
   ar: {
     welcome: "مرحباً",
@@ -218,6 +220,8 @@ export const translations = {
     copied: "تم النسخ!",
     sidebar_open: "فتح الشريط الجانبي",
     sidebar_close: "إغلاق الشريط الجانبي",
+    focus_mode: "وضع التركيز",
+    analytics: "التحليلات",
   }
 };
 
