@@ -10,6 +10,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-motion-value.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-transform.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$spring$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-spring.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/AppContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/FloatingInput.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
@@ -24,9 +27,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rocket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Rocket$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/rocket.js [app-client] (ecmascript) <export default as Rocket>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$atom$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Atom$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/atom.js [app-client] (ecmascript) <export default as Atom>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-client] (ecmascript) <export default as CheckCircle2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/graduation-cap.js [app-client] (ecmascript) <export default as GraduationCap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flask$2d$conical$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FlaskConical$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/flask-conical.js [app-client] (ecmascript) <export default as FlaskConical>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$onboarding$2f$OnboardingFlow$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/onboarding/OnboardingFlow.tsx [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature(), _s4 = __turbopack_context__.k.signature(), _s5 = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -34,7 +42,7 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 ;
 ;
-/* ─── Theme definitions ──────────────────────────────── */ const THEMES = {
+/* ─── Theme definitions ─────────────────────────────── */ const THEMES = {
     login: {
         primary: '#6366f1',
         secondary: '#8b5cf6',
@@ -78,7 +86,7 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
         cta: 'linear-gradient(135deg, #be185d 0%, #7c3aed 50%, #d97706 100%)'
     }
 };
-/* ─── Constellation Canvas ───────────────────────────── */ function ConstellationCanvas({ mode }) {
+/* ─── Constellation + Shooting Stars Canvas ─────────── */ function ConstellationCanvas({ mode }) {
     _s();
     const canvasRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const theme = THEMES[mode];
@@ -96,61 +104,112 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
             }["ConstellationCanvas.useEffect.resize"];
             resize();
             window.addEventListener('resize', resize);
-            const COUNT = window.innerWidth < 768 ? 40 : 70;
+            const COUNT = window.innerWidth < 768 ? 50 : 85;
             const nodes = Array.from({
                 length: COUNT
             }, {
                 "ConstellationCanvas.useEffect.nodes": ()=>({
                         x: Math.random() * canvas.width,
                         y: Math.random() * canvas.height,
-                        vx: (Math.random() - 0.5) * 0.3,
-                        vy: (Math.random() - 0.5) * 0.3,
-                        r: 1 + Math.random() * 2,
-                        opacity: 0.15 + Math.random() * 0.55,
+                        vx: (Math.random() - 0.5) * 0.35,
+                        vy: (Math.random() - 0.5) * 0.35,
+                        r: 1 + Math.random() * 2.5,
+                        opacity: 0.15 + Math.random() * 0.6,
                         color: theme.particleColors[Math.floor(Math.random() * theme.particleColors.length)],
                         pulse: Math.random() * Math.PI * 2
                     })
             }["ConstellationCanvas.useEffect.nodes"]);
+            const stars = [];
+            const spawnStar = {
+                "ConstellationCanvas.useEffect.spawnStar": ()=>{
+                    stars.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height * 0.5,
+                        vx: 6 + Math.random() * 8,
+                        vy: 3 + Math.random() * 5,
+                        len: 80 + Math.random() * 120,
+                        alpha: 1,
+                        life: 0,
+                        maxLife: 45 + Math.random() * 30
+                    });
+                }
+            }["ConstellationCanvas.useEffect.spawnStar"];
+            let starTimer = 0;
             let raf;
-            const LINK_DIST = window.innerWidth < 768 ? 110 : 140;
+            const LINK_DIST = window.innerWidth < 768 ? 120 : 155;
             const draw = {
                 "ConstellationCanvas.useEffect.draw": ()=>{
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    // Move nodes
                     nodes.forEach({
                         "ConstellationCanvas.useEffect.draw": (n)=>{
                             n.x += n.vx;
                             n.y += n.vy;
-                            n.pulse += 0.015;
+                            n.pulse += 0.018;
                             if (n.x < 0) n.x = canvas.width;
                             if (n.x > canvas.width) n.x = 0;
                             if (n.y < 0) n.y = canvas.height;
                             if (n.y > canvas.height) n.y = 0;
                         }
                     }["ConstellationCanvas.useEffect.draw"]);
+                    // Lines
                     for(let i = 0; i < nodes.length; i++){
                         for(let j = i + 1; j < nodes.length; j++){
                             const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
                             const dist = Math.sqrt(dx * dx + dy * dy);
                             if (dist < LINK_DIST) {
-                                const alpha = 0.12 * (1 - dist / LINK_DIST);
+                                const alpha = 0.14 * (1 - dist / LINK_DIST);
                                 ctx.beginPath();
                                 ctx.moveTo(nodes[i].x, nodes[i].y);
                                 ctx.lineTo(nodes[j].x, nodes[j].y);
                                 ctx.strokeStyle = `${nodes[i].color}${Math.round(alpha * 255).toString(16).padStart(2, '0')}`;
-                                ctx.lineWidth = 0.7;
+                                ctx.lineWidth = 0.8;
                                 ctx.stroke();
                             }
                         }
                     }
+                    // Dots
                     nodes.forEach({
                         "ConstellationCanvas.useEffect.draw": (n)=>{
-                            const pulseR = n.r * (1 + 0.2 * Math.sin(n.pulse));
+                            const pr = n.r * (1 + 0.25 * Math.sin(n.pulse));
+                            // glow
+                            const grad = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, pr * 4);
+                            grad.addColorStop(0, n.color + Math.round(n.opacity * 180).toString(16).padStart(2, '0'));
+                            grad.addColorStop(1, n.color + '00');
                             ctx.beginPath();
-                            ctx.arc(n.x, n.y, pulseR, 0, Math.PI * 2);
+                            ctx.arc(n.x, n.y, pr * 4, 0, Math.PI * 2);
+                            ctx.fillStyle = grad;
+                            ctx.fill();
+                            // core
+                            ctx.beginPath();
+                            ctx.arc(n.x, n.y, pr, 0, Math.PI * 2);
                             ctx.fillStyle = n.color + Math.round(n.opacity * 255).toString(16).padStart(2, '0');
                             ctx.fill();
                         }
                     }["ConstellationCanvas.useEffect.draw"]);
+                    // Shooting stars
+                    starTimer++;
+                    if (starTimer > 90) {
+                        spawnStar();
+                        starTimer = 0;
+                    }
+                    for(let i = stars.length - 1; i >= 0; i--){
+                        const s = stars[i];
+                        s.x += s.vx;
+                        s.y += s.vy;
+                        s.life++;
+                        s.alpha = Math.max(0, 1 - s.life / s.maxLife);
+                        const grad = ctx.createLinearGradient(s.x - s.vx * (s.len / s.vx), s.y - s.vy * (s.len / s.vx), s.x, s.y);
+                        grad.addColorStop(0, `rgba(255,255,255,0)`);
+                        grad.addColorStop(1, `rgba(255,255,255,${s.alpha * 0.9})`);
+                        ctx.beginPath();
+                        ctx.moveTo(s.x - s.vx * (s.len / 10), s.y - s.vy * (s.len / 10));
+                        ctx.lineTo(s.x, s.y);
+                        ctx.strokeStyle = grad;
+                        ctx.lineWidth = 1.5;
+                        ctx.stroke();
+                        if (s.life >= s.maxLife) stars.splice(i, 1);
+                    }
                     raf = requestAnimationFrame(draw);
                 }
             }["ConstellationCanvas.useEffect.draw"];
@@ -164,13 +223,13 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
         }
     }["ConstellationCanvas.useEffect"], [
         mode
-    ]); // Re-run when mode changes to update particle colors
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("canvas", {
         ref: canvasRef,
         className: "absolute inset-0 w-full h-full pointer-events-none"
     }, void 0, false, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 117,
+        lineNumber: 158,
         columnNumber: 10
     }, this);
 }
@@ -182,16 +241,16 @@ _c = ConstellationCanvas;
         className: "absolute inset-0 overflow-hidden pointer-events-none",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "absolute rounded-full blur-[160px]",
+                className: "absolute rounded-full blur-[180px]",
                 animate: {
-                    width: mode === 'login' ? '75vw' : '65vw',
-                    height: mode === 'login' ? '75vw' : '65vw',
-                    top: mode === 'login' ? '-25%' : '-15%',
-                    left: mode === 'login' ? '-18%' : '-10%',
-                    background: `radial-gradient(circle, ${theme.aurora1} 0%, transparent 70%)`
+                    width: mode === 'login' ? '80vw' : '70vw',
+                    height: mode === 'login' ? '80vw' : '70vw',
+                    top: mode === 'login' ? '-28%' : '-18%',
+                    left: mode === 'login' ? '-20%' : '-12%',
+                    background: `radial-gradient(circle, ${theme.aurora1} 0%, rgba(0,0,0,0) 70%)`
                 },
                 transition: {
-                    duration: 1.2,
+                    duration: 1.3,
                     ease: [
                         0.22,
                         1,
@@ -204,49 +263,49 @@ _c = ConstellationCanvas;
                     animate: {
                         x: [
                             0,
-                            40,
-                            -20,
+                            50,
+                            -25,
                             0
                         ],
                         y: [
                             0,
-                            25,
-                            -20,
+                            30,
+                            -25,
                             0
                         ],
                         scale: [
                             1,
-                            1.1,
-                            0.95,
+                            1.12,
+                            0.94,
                             1
                         ]
                     },
                     transition: {
-                        duration: 24,
+                        duration: 26,
                         repeat: Infinity,
                         ease: 'easeInOut'
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                    lineNumber: 136,
+                    lineNumber: 178,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 125,
+                lineNumber: 167,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "absolute rounded-full blur-[130px]",
+                className: "absolute rounded-full blur-[140px]",
                 animate: {
-                    background: `radial-gradient(circle, ${theme.aurora2} 0%, transparent 70%)`,
-                    width: mode === 'login' ? '50vw' : '60vw',
-                    height: mode === 'login' ? '50vw' : '60vw',
-                    bottom: mode === 'login' ? '-12%' : '-8%',
-                    right: mode === 'login' ? '-8%' : '-15%'
+                    background: `radial-gradient(circle, ${theme.aurora2} 0%, rgba(0,0,0,0) 70%)`,
+                    width: mode === 'login' ? '55vw' : '65vw',
+                    height: mode === 'login' ? '55vw' : '65vw',
+                    bottom: mode === 'login' ? '-14%' : '-10%',
+                    right: mode === 'login' ? '-10%' : '-18%'
                 },
                 transition: {
-                    duration: 1.2,
+                    duration: 1.3,
                     ease: [
                         0.22,
                         1,
@@ -259,72 +318,181 @@ _c = ConstellationCanvas;
                     animate: {
                         x: [
                             0,
-                            -40,
-                            25,
+                            -45,
+                            28,
                             0
                         ],
                         y: [
                             0,
-                            -25,
-                            35,
+                            -28,
+                            40,
                             0
                         ],
                         scale: [
                             1,
-                            0.9,
-                            1.1,
+                            0.88,
+                            1.12,
                             1
                         ]
                     },
                     transition: {
-                        duration: 30,
+                        duration: 32,
                         repeat: Infinity,
                         ease: 'easeInOut',
-                        delay: 6
+                        delay: 7
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                    lineNumber: 154,
+                    lineNumber: 196,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 143,
+                lineNumber: 185,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "absolute rounded-full blur-[200px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2",
+                animate: {
+                    width: [
+                        '30vw',
+                        '38vw',
+                        '30vw'
+                    ],
+                    height: [
+                        '30vw',
+                        '38vw',
+                        '30vw'
+                    ],
+                    opacity: [
+                        0.25,
+                        0.45,
+                        0.25
+                    ],
+                    background: `radial-gradient(circle, ${theme.glow1} 0%, rgba(0,0,0,0) 70%)`
+                },
+                transition: {
+                    duration: 6,
+                    repeat: Infinity,
+                    ease: 'easeInOut'
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                lineNumber: 203,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                     className: "absolute inset-0",
                     initial: {
-                        opacity: 0.5
+                        opacity: 0.6
                     },
                     animate: {
                         opacity: 0
                     },
                     transition: {
-                        duration: 0.8
+                        duration: 1
                     },
                     style: {
-                        background: mode === 'login' ? 'radial-gradient(ellipse at center, rgba(99,102,241,0.2) 0%, transparent 70%)' : 'radial-gradient(ellipse at center, rgba(236,72,153,0.2) 0%, transparent 70%)'
+                        background: mode === 'login' ? 'radial-gradient(ellipse at center, rgba(99,102,241,0.25) 0%, transparent 70%)' : 'radial-gradient(ellipse at center, rgba(236,72,153,0.25) 0%, transparent 70%)'
                     }
                 }, mode, false, {
                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                    lineNumber: 163,
+                    lineNumber: 216,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 162,
+                lineNumber: 215,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 124,
+        lineNumber: 165,
         columnNumber: 5
     }, this);
 }
 _c1 = Aurora;
+/* ─── Floating Decorative Icons ─────────────────────── */ function FloatingDecorIcon({ Icon, color, x, y, size = 20, delay = 0, rotSpeed = 8 }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        className: "absolute pointer-events-none hidden lg:block z-10",
+        style: {
+            left: x,
+            top: y
+        },
+        initial: {
+            opacity: 0,
+            scale: 0,
+            rotate: -30
+        },
+        animate: {
+            opacity: 1,
+            scale: 1,
+            rotate: 0
+        },
+        transition: {
+            delay,
+            duration: 1,
+            ease: [
+                0.22,
+                1,
+                0.36,
+                1
+            ]
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            animate: {
+                y: [
+                    0,
+                    -12,
+                    0
+                ],
+                rotate: [
+                    0,
+                    360
+                ]
+            },
+            transition: {
+                y: {
+                    duration: 4 + delay,
+                    repeat: Infinity,
+                    ease: 'easeInOut'
+                },
+                rotate: {
+                    duration: rotSpeed,
+                    repeat: Infinity,
+                    ease: 'linear'
+                }
+            },
+            className: "w-10 h-10 rounded-2xl flex items-center justify-center backdrop-blur-sm border",
+            style: {
+                background: `${color}12`,
+                borderColor: `${color}28`,
+                boxShadow: `0 0 20px ${color}18`
+            },
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                size: size,
+                style: {
+                    color
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                lineNumber: 248,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+            lineNumber: 239,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+        lineNumber: 232,
+        columnNumber: 5
+    }, this);
+}
+_c2 = FloatingDecorIcon;
 /* ─── Glitch Logo ────────────────────────────────────── */ function GlitchLogo({ mode }) {
     _s1();
     const [glitch, setGlitch] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -359,10 +527,10 @@ _c1 = Aurora;
                         0
                     ],
                     textShadow: [
-                        '0 0 0px transparent',
+                        '0 0 0px rgba(0,0,0,0)',
                         `-4px 0 0 ${theme.primary}cc, 4px 0 0 ${theme.accent}cc`,
                         `4px 0 0 ${theme.primary}cc, -4px 0 0 ${theme.accent}cc`,
-                        '0 0 0px transparent'
+                        '0 0 0px rgba(0,0,0,0)'
                     ]
                 } : {
                     textShadow: `0 0 60px ${theme.primary}50`
@@ -373,7 +541,7 @@ _c1 = Aurora;
                 children: "ATOMIC"
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 193,
+                lineNumber: 265,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -401,7 +569,7 @@ _c1 = Aurora;
                             children: "ATOMIC"
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 211,
+                            lineNumber: 281,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -426,25 +594,123 @@ _c1 = Aurora;
                             children: "ATOMIC"
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 216,
+                            lineNumber: 285,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 208,
+                lineNumber: 278,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 192,
+        lineNumber: 264,
         columnNumber: 5
     }, this);
 }
 _s1(GlitchLogo, "+wHBddT1u42wMWz+42D8h+uLPMQ=");
-_c2 = GlitchLogo;
+_c3 = GlitchLogo;
+/* ─── Typewriter Text ────────────────────────────────── */ function Typewriter({ texts, color }) {
+    _s2();
+    const [idx, setIdx] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [chars, setChars] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [deleting, setDeleting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Typewriter.useEffect": ()=>{
+            const current = texts[idx];
+            if (!deleting && chars < current.length) {
+                const t = setTimeout({
+                    "Typewriter.useEffect.t": ()=>setChars({
+                            "Typewriter.useEffect.t": (c)=>c + 1
+                        }["Typewriter.useEffect.t"])
+                }["Typewriter.useEffect.t"], 55);
+                return ({
+                    "Typewriter.useEffect": ()=>clearTimeout(t)
+                })["Typewriter.useEffect"];
+            }
+            if (!deleting && chars === current.length) {
+                const t = setTimeout({
+                    "Typewriter.useEffect.t": ()=>setDeleting(true)
+                }["Typewriter.useEffect.t"], 2200);
+                return ({
+                    "Typewriter.useEffect": ()=>clearTimeout(t)
+                })["Typewriter.useEffect"];
+            }
+            if (deleting && chars > 0) {
+                const t = setTimeout({
+                    "Typewriter.useEffect.t": ()=>setChars({
+                            "Typewriter.useEffect.t": (c)=>c - 1
+                        }["Typewriter.useEffect.t"])
+                }["Typewriter.useEffect.t"], 30);
+                return ({
+                    "Typewriter.useEffect": ()=>clearTimeout(t)
+                })["Typewriter.useEffect"];
+            }
+            if (deleting && chars === 0) {
+                setDeleting(false);
+                setIdx({
+                    "Typewriter.useEffect": (i)=>(i + 1) % texts.length
+                }["Typewriter.useEffect"]);
+            }
+        }
+    }["Typewriter.useEffect"], [
+        chars,
+        deleting,
+        idx,
+        texts
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+        className: "inline-flex items-center gap-0.5",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                style: {
+                    color
+                },
+                className: "font-bold",
+                children: texts[idx].slice(0, chars)
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                lineNumber: 324,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                animate: {
+                    opacity: [
+                        1,
+                        0,
+                        1
+                    ]
+                },
+                transition: {
+                    duration: 0.8,
+                    repeat: Infinity
+                },
+                style: {
+                    color,
+                    display: 'inline-block',
+                    width: 2,
+                    height: '1em',
+                    background: color,
+                    borderRadius: 1,
+                    marginLeft: 2
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                lineNumber: 325,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+        lineNumber: 323,
+        columnNumber: 5
+    }, this);
+}
+_s2(Typewriter, "R2JzouITquePm1v7U3QYvY1y8iY=");
+_c4 = Typewriter;
 /* ─── Orbit Ring ─────────────────────────────────────── */ function OrbitRing({ size, dur, cw = true, color, dash = false }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         className: "absolute rounded-full pointer-events-none",
@@ -467,20 +733,32 @@ _c2 = GlitchLogo;
             className: "absolute w-2.5 h-2.5 rounded-full -top-1.5 left-1/2 -translate-x-1/2",
             style: {
                 background: color,
-                boxShadow: `0 0 12px 4px ${color}`
+                boxShadow: `0 0 14px 5px ${color}`
+            },
+            animate: {
+                scale: [
+                    1,
+                    1.4,
+                    1
+                ]
+            },
+            transition: {
+                duration: dur / 3,
+                repeat: Infinity,
+                ease: 'easeInOut'
             }
         }, void 0, false, {
             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-            lineNumber: 239,
+            lineNumber: 345,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 233,
+        lineNumber: 339,
         columnNumber: 5
     }, this);
 }
-_c3 = OrbitRing;
+_c5 = OrbitRing;
 /* ─── Floating Badge ─────────────────────────────────── */ function FloatingBadge({ icon: Icon, label, value, color, delay, x, y }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         className: "absolute z-20 pointer-events-none hidden xl:block",
@@ -512,26 +790,39 @@ _c3 = OrbitRing;
             animate: {
                 y: [
                     0,
-                    -8,
+                    -10,
                     0
                 ]
             },
             transition: {
-                duration: 4.5 + delay,
+                duration: 5 + delay,
                 repeat: Infinity,
                 ease: 'easeInOut'
             },
             className: "flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl backdrop-blur-xl border",
             style: {
-                background: 'rgba(8,10,28,0.9)',
-                borderColor: `${color}35`,
-                boxShadow: `0 8px 32px rgba(0,0,0,0.5), 0 0 24px ${color}18`
+                background: 'rgba(8,10,28,0.92)',
+                borderColor: `${color}38`,
+                boxShadow: `0 8px 32px rgba(0,0,0,0.5), 0 0 28px ${color}22`
             },
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                     className: "w-7 h-7 rounded-xl flex items-center justify-center",
                     style: {
                         background: `${color}20`
+                    },
+                    animate: {
+                        rotate: [
+                            0,
+                            15,
+                            -15,
+                            0
+                        ]
+                    },
+                    transition: {
+                        duration: 4,
+                        repeat: Infinity,
+                        delay
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                         size: 14,
@@ -540,12 +831,12 @@ _c3 = OrbitRing;
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 261,
+                        lineNumber: 372,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                    lineNumber: 260,
+                    lineNumber: 368,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -558,7 +849,7 @@ _c3 = OrbitRing;
                             children: label
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 264,
+                            lineNumber: 375,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -566,30 +857,30 @@ _c3 = OrbitRing;
                             children: value
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 265,
+                            lineNumber: 376,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                    lineNumber: 263,
+                    lineNumber: 374,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-            lineNumber: 256,
+            lineNumber: 364,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 252,
+        lineNumber: 360,
         columnNumber: 5
     }, this);
 }
-_c4 = FloatingBadge;
+_c6 = FloatingBadge;
 /* ─── Animated Counter ───────────────────────────────── */ function Counter({ to, suffix = '' }) {
-    _s2();
+    _s3();
     const [count, setCount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Counter.useEffect": ()=>{
@@ -618,12 +909,12 @@ _c4 = FloatingBadge;
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 284,
+        lineNumber: 395,
         columnNumber: 10
     }, this);
 }
-_s2(Counter, "/xL7qdScToREtqzbt5GZ1kHtYjQ=");
-_c5 = Counter;
+_s3(Counter, "/xL7qdScToREtqzbt5GZ1kHtYjQ=");
+_c7 = Counter;
 /* ─── Beam Sweep ─────────────────────────────────────── */ function BeamSweep({ color }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         className: "absolute left-0 right-0 h-[1px] pointer-events-none z-30",
@@ -644,12 +935,118 @@ _c5 = Counter;
         }
     }, void 0, false, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 290,
+        lineNumber: 401,
         columnNumber: 5
     }, this);
 }
-_c6 = BeamSweep;
-/* ─── Left panel register content ───────────────────── */ const REGISTER_STEPS = [
+_c8 = BeamSweep;
+/* ─── 3D Mouse-Tilt Card Wrapper ─────────────────────── */ function TiltCard({ children, className }) {
+    _s4();
+    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const x = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMotionValue"])(0);
+    const y = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMotionValue"])(0);
+    const rotateX = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$spring$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSpring"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"])(y, [
+        -0.5,
+        0.5
+    ], [
+        8,
+        -8
+    ]), {
+        stiffness: 120,
+        damping: 20
+    });
+    const rotateY = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$spring$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSpring"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"])(x, [
+        -0.5,
+        0.5
+    ], [
+        -8,
+        8
+    ]), {
+        stiffness: 120,
+        damping: 20
+    });
+    const onMouseMove = (e)=>{
+        const rect = ref.current?.getBoundingClientRect();
+        if (!rect) return;
+        x.set((e.clientX - rect.left) / rect.width - 0.5);
+        y.set((e.clientY - rect.top) / rect.height - 0.5);
+    };
+    const onMouseLeave = ()=>{
+        x.set(0);
+        y.set(0);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        ref: ref,
+        onMouseMove: onMouseMove,
+        onMouseLeave: onMouseLeave,
+        style: {
+            rotateX,
+            rotateY,
+            transformStyle: 'preserve-3d',
+            perspective: 1000
+        },
+        className: className,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+        lineNumber: 427,
+        columnNumber: 5
+    }, this);
+}
+_s4(TiltCard, "0iQbSlD/+HFRDAbCMzdw04PdF7I=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMotionValue"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMotionValue"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$spring$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSpring"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$spring$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSpring"]
+    ];
+});
+_c9 = TiltCard;
+/* ─── Particle Burst ─────────────────────────────────── */ function ParticleBurst({ color, active }) {
+    const particles = Array.from({
+        length: 12
+    }, (_, i)=>i);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        children: active && particles.map((i)=>{
+            const angle = i / 12 * Math.PI * 2;
+            const dist = 40 + Math.random() * 30;
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "absolute w-1.5 h-1.5 rounded-full pointer-events-none z-50",
+                style: {
+                    background: color,
+                    left: '50%',
+                    top: '50%'
+                },
+                initial: {
+                    x: 0,
+                    y: 0,
+                    opacity: 1,
+                    scale: 1
+                },
+                animate: {
+                    x: Math.cos(angle) * dist,
+                    y: Math.sin(angle) * dist,
+                    opacity: 0,
+                    scale: 0
+                },
+                transition: {
+                    duration: 0.6,
+                    ease: 'easeOut'
+                }
+            }, i, false, {
+                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                lineNumber: 445,
+                columnNumber: 11
+            }, this);
+        })
+    }, void 0, false, {
+        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+        lineNumber: 440,
+        columnNumber: 5
+    }, this);
+}
+_c10 = ParticleBurst;
+/* ─── Register steps left panel ─────────────────────── */ const REGISTER_STEPS = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rocket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Rocket$3e$__["Rocket"],
         text: 'Create your profile',
@@ -720,14 +1117,14 @@ function RegisterLeftContent({ theme }) {
                         children: "Get started in minutes"
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 317,
+                        lineNumber: 474,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GlitchLogo, {
                         mode: "register"
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 321,
+                        lineNumber: 478,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -739,18 +1136,29 @@ function RegisterLeftContent({ theme }) {
                             opacity: 1
                         },
                         transition: {
-                            delay: 0.4
+                            delay: 0.35
                         },
-                        children: "Your AI-powered study companion"
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Typewriter, {
+                            texts: [
+                                'Your AI-powered study companion.',
+                                'Learn smarter, not harder.',
+                                'Achieve more every day.'
+                            ],
+                            color: theme.primary
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                            lineNumber: 482,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 322,
+                        lineNumber: 479,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 316,
+                lineNumber: 473,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -759,7 +1167,7 @@ function RegisterLeftContent({ theme }) {
                         initial: {
                             opacity: 0,
                             x: -30,
-                            scale: 0.9
+                            scale: 0.88
                         },
                         animate: {
                             opacity: 1,
@@ -767,8 +1175,8 @@ function RegisterLeftContent({ theme }) {
                             scale: 1
                         },
                         transition: {
-                            delay: 0.2 + i * 0.12,
-                            duration: 0.6,
+                            delay: 0.2 + i * 0.13,
+                            duration: 0.65,
                             ease: [
                                 0.22,
                                 1,
@@ -777,22 +1185,33 @@ function RegisterLeftContent({ theme }) {
                             ]
                         },
                         whileHover: {
-                            x: 6
+                            x: 8,
+                            scale: 1.02
                         },
-                        className: "flex items-center gap-4 p-4 rounded-2xl border group cursor-default",
+                        className: "flex items-center gap-4 p-4 rounded-2xl border group cursor-default relative overflow-hidden",
                         style: {
                             background: `${s.color}08`,
                             borderColor: `${s.color}25`
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl",
+                                style: {
+                                    background: `linear-gradient(105deg, rgba(0,0,0,0) 30%, ${s.color}10 50%, rgba(0,0,0,0) 70%)`
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                lineNumber: 497,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 className: "w-10 h-10 rounded-2xl flex items-center justify-center shrink-0",
                                 style: {
                                     background: `${s.color}20`
                                 },
                                 whileHover: {
-                                    scale: 1.1,
-                                    rotate: 8
+                                    scale: 1.15,
+                                    rotate: 12
                                 },
                                 transition: {
                                     type: 'spring',
@@ -806,12 +1225,12 @@ function RegisterLeftContent({ theme }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 344,
+                                    lineNumber: 505,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 339,
+                                lineNumber: 500,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -825,12 +1244,12 @@ function RegisterLeftContent({ theme }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 347,
+                                    lineNumber: 508,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 346,
+                                lineNumber: 507,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -841,12 +1260,12 @@ function RegisterLeftContent({ theme }) {
                                 animate: {
                                     scale: [
                                         1,
-                                        1.6,
+                                        1.8,
                                         1
                                     ],
                                     opacity: [
                                         1,
-                                        0.4,
+                                        0.3,
                                         1
                                     ]
                                 },
@@ -857,18 +1276,18 @@ function RegisterLeftContent({ theme }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 349,
+                                lineNumber: 511,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, s.text, true, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 331,
+                        lineNumber: 488,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 329,
+                lineNumber: 486,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -892,33 +1311,62 @@ function RegisterLeftContent({ theme }) {
                     ]
                 },
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        className: "absolute rounded-full blur-[50px]",
+                        style: {
+                            width: 200,
+                            height: 200,
+                            background: `${THEMES.register.primary}18`
+                        },
+                        animate: {
+                            scale: [
+                                1,
+                                1.2,
+                                1
+                            ],
+                            opacity: [
+                                0.5,
+                                1,
+                                0.5
+                            ]
+                        },
+                        transition: {
+                            duration: 4,
+                            repeat: Infinity,
+                            ease: 'easeInOut'
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                        lineNumber: 525,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         size: 224,
                         dur: 18,
-                        color: `${THEMES.register.primary}40`
+                        color: `${THEMES.register.primary}45`
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 363,
+                        lineNumber: 530,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         size: 170,
                         dur: 12,
                         cw: false,
-                        color: `${THEMES.register.secondary}35`,
+                        color: `${THEMES.register.secondary}38`,
                         dash: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 364,
+                        lineNumber: 531,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         size: 116,
                         dur: 7,
-                        color: `${THEMES.register.accent}40`
+                        color: `${THEMES.register.accent}45`
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 365,
+                        lineNumber: 532,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -931,40 +1379,57 @@ function RegisterLeftContent({ theme }) {
                                 `0 0 30px ${THEMES.register.primary}60, 0 0 60px ${THEMES.register.primary}20`,
                                 `0 0 50px ${THEMES.register.secondary}70, 0 0 80px ${THEMES.register.secondary}25`,
                                 `0 0 30px ${THEMES.register.primary}60, 0 0 60px ${THEMES.register.primary}20`
+                            ],
+                            rotate: [
+                                0,
+                                3,
+                                -3,
+                                0
                             ]
                         },
                         transition: {
                             duration: 4,
                             repeat: Infinity
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
                             className: "text-3xl font-black text-white select-none",
+                            animate: {
+                                scale: [
+                                    1,
+                                    1.08,
+                                    1
+                                ]
+                            },
+                            transition: {
+                                duration: 3,
+                                repeat: Infinity
+                            },
                             children: "A"
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 377,
+                            lineNumber: 545,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 366,
+                        lineNumber: 533,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 359,
+                lineNumber: 520,
                 columnNumber: 7
             }, this)
         ]
     }, "register-left", true, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 308,
+        lineNumber: 467,
         columnNumber: 5
     }, this);
 }
-_c7 = RegisterLeftContent;
-const LOGIN_STATS = [
+_c11 = RegisterLeftContent;
+/* ─── Login left content ─────────────────────────────── */ const LOGIN_STATS = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
         label: 'Students',
@@ -1012,7 +1477,7 @@ const LOGIN_FEATURES = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"],
         label: 'Deep Analytics',
-        sub: 'Track every study session',
+        sub: 'Track every session',
         color: '#f59e0b'
     }
 ];
@@ -1065,14 +1530,14 @@ function LoginLeftContent({ theme }) {
                         children: "Welcome back"
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 407,
+                        lineNumber: 576,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GlitchLogo, {
                         mode: "login"
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 411,
+                        lineNumber: 580,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1084,18 +1549,29 @@ function LoginLeftContent({ theme }) {
                             opacity: 1
                         },
                         transition: {
-                            delay: 0.4
+                            delay: 0.35
                         },
-                        children: "Elevate your learning with AI."
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Typewriter, {
+                            texts: [
+                                'Elevate your learning with AI.',
+                                'Every session counts.',
+                                'Your goals, powered by data.'
+                            ],
+                            color: theme.primary
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                            lineNumber: 584,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 412,
+                        lineNumber: 581,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 406,
+                lineNumber: 575,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1119,44 +1595,73 @@ function LoginLeftContent({ theme }) {
                     ]
                 },
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        className: "absolute rounded-full blur-[60px]",
+                        style: {
+                            width: 220,
+                            height: 220,
+                            background: `${theme.primary}18`
+                        },
+                        animate: {
+                            scale: [
+                                1,
+                                1.25,
+                                1
+                            ],
+                            opacity: [
+                                0.4,
+                                0.85,
+                                0.4
+                            ]
+                        },
+                        transition: {
+                            duration: 5,
+                            repeat: Infinity,
+                            ease: 'easeInOut'
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                        lineNumber: 594,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         size: 256,
                         dur: 22,
-                        color: `${theme.primary}35`
+                        color: `${theme.primary}38`
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 425,
+                        lineNumber: 599,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         size: 196,
                         dur: 15,
                         cw: false,
-                        color: `${theme.secondary}30`,
+                        color: `${theme.secondary}32`,
                         dash: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 426,
+                        lineNumber: 600,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         size: 138,
                         dur: 9,
-                        color: `${theme.accent}35`
+                        color: `${theme.accent}38`
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 427,
+                        lineNumber: 601,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         size: 80,
                         dur: 5,
                         cw: false,
-                        color: `${theme.secondary}40`,
+                        color: `${theme.secondary}42`,
                         dash: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 428,
+                        lineNumber: 602,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1188,7 +1693,7 @@ function LoginLeftContent({ theme }) {
                             animate: {
                                 scale: [
                                     1,
-                                    1.05,
+                                    1.06,
                                     1
                                 ]
                             },
@@ -1199,25 +1704,25 @@ function LoginLeftContent({ theme }) {
                             children: "A"
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 442,
+                            lineNumber: 616,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 429,
+                        lineNumber: 603,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 420,
+                lineNumber: 589,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-wrap gap-2.5",
                 children: LOGIN_FEATURES.map((f, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
-                            y: 20,
+                            y: 24,
                             opacity: 0
                         },
                         animate: {
@@ -1225,7 +1730,7 @@ function LoginLeftContent({ theme }) {
                             opacity: 1
                         },
                         transition: {
-                            delay: 1.0 + i * 0.1,
+                            delay: 1.0 + i * 0.12,
                             duration: 0.7,
                             ease: [
                                 0.22,
@@ -1234,10 +1739,14 @@ function LoginLeftContent({ theme }) {
                                 1
                             ]
                         },
-                        className: "flex items-center gap-2 px-3.5 py-2 rounded-2xl border",
+                        whileHover: {
+                            y: -3,
+                            scale: 1.04
+                        },
+                        className: "flex items-center gap-2 px-3.5 py-2 rounded-2xl border cursor-default",
                         style: {
                             background: 'rgba(255,255,255,0.025)',
-                            borderColor: `${f.color}22`,
+                            borderColor: `${f.color}25`,
                             backdropFilter: 'blur(10px)'
                         },
                         children: [
@@ -1253,12 +1762,12 @@ function LoginLeftContent({ theme }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 458,
+                                    lineNumber: 633,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 457,
+                                lineNumber: 632,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1268,7 +1777,7 @@ function LoginLeftContent({ theme }) {
                                         children: f.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                        lineNumber: 461,
+                                        lineNumber: 636,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1276,13 +1785,13 @@ function LoginLeftContent({ theme }) {
                                         children: f.sub
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                        lineNumber: 462,
+                                        lineNumber: 637,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 460,
+                                lineNumber: 635,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1293,46 +1802,46 @@ function LoginLeftContent({ theme }) {
                                 animate: {
                                     scale: [
                                         1,
-                                        1.5,
+                                        1.6,
                                         1
                                     ],
                                     opacity: [
                                         1,
-                                        0.4,
+                                        0.35,
                                         1
                                     ]
                                 },
                                 transition: {
                                     duration: 2,
                                     repeat: Infinity,
-                                    delay: i * 0.5
+                                    delay: i * 0.55
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 464,
+                                lineNumber: 639,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, f.label, true, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 451,
+                        lineNumber: 625,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 449,
+                lineNumber: 623,
                 columnNumber: 7
             }, this)
         ]
     }, "login-left", true, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 398,
+        lineNumber: 569,
         columnNumber: 5
     }, this);
 }
-_c8 = LoginLeftContent;
+_c12 = LoginLeftContent;
 function AuthScreen() {
-    _s3();
+    _s5();
     const { login } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
     const [hasStoredAccount, setHasStoredAccount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [mode, setMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('login');
@@ -1343,6 +1852,7 @@ function AuthScreen() {
     const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [shake, setShake] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [burst, setBurst] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "AuthScreen.useEffect": ()=>{
             const t = setTimeout({
@@ -1378,6 +1888,10 @@ function AuthScreen() {
                 return;
             }
             setIsSubmitting(true);
+            setBurst(true);
+            setTimeout({
+                "AuthScreen.useCallback[handleLogin]": ()=>setBurst(false)
+            }["AuthScreen.useCallback[handleLogin]"], 700);
             const success = login(username.trim(), password.trim());
             if (!success) {
                 setErrors({
@@ -1393,6 +1907,17 @@ function AuthScreen() {
         login,
         triggerShake
     ]);
+    const handleRegister = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "AuthScreen.useCallback[handleRegister]": ()=>{
+            setBurst(true);
+            setTimeout({
+                "AuthScreen.useCallback[handleRegister]": ()=>setBurst(false)
+            }["AuthScreen.useCallback[handleRegister]"], 700);
+            setTimeout({
+                "AuthScreen.useCallback[handleRegister]": ()=>setShowOnboarding(true)
+            }["AuthScreen.useCallback[handleRegister]"], 200);
+        }
+    }["AuthScreen.useCallback[handleRegister]"], []);
     const switchMode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "AuthScreen.useCallback[switchMode]": (next)=>{
             setErrors({});
@@ -1401,7 +1926,7 @@ function AuthScreen() {
     }["AuthScreen.useCallback[switchMode]"], []);
     if (showOnboarding) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$onboarding$2f$OnboardingFlow$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 513,
+        lineNumber: 695,
         columnNumber: 30
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1423,7 +1948,7 @@ function AuthScreen() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 518,
+                lineNumber: 700,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1433,23 +1958,77 @@ function AuthScreen() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 525,
+                lineNumber: 706,
                 columnNumber: 7
             }, this),
             mounted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ConstellationCanvas, {
                 mode: mode
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 529,
+                lineNumber: 710,
                 columnNumber: 19
             }, this),
             mounted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Aurora, {
                 mode: mode
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 530,
+                lineNumber: 711,
                 columnNumber: 19
             }, this),
+            mounted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingDecorIcon, {
+                        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"],
+                        color: "#6366f1",
+                        x: "3%",
+                        y: "55%",
+                        delay: 1.8,
+                        rotSpeed: 12
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                        lineNumber: 716,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingDecorIcon, {
+                        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flask$2d$conical$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FlaskConical$3e$__["FlaskConical"],
+                        color: "#ec4899",
+                        x: "6%",
+                        y: "82%",
+                        delay: 2.1,
+                        rotSpeed: 9
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                        lineNumber: 717,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingDecorIcon, {
+                        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"],
+                        color: "#06b6d4",
+                        x: "45%",
+                        y: "5%",
+                        delay: 2.4,
+                        rotSpeed: 15,
+                        size: 18
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                        lineNumber: 718,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingDecorIcon, {
+                        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
+                        color: "#f59e0b",
+                        x: "42%",
+                        y: "88%",
+                        delay: 1.5,
+                        rotSpeed: 10,
+                        size: 18
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                        lineNumber: 719,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                 children: mode === 'login' && mounted && LOGIN_STATS.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingBadge, {
                         icon: s.icon,
@@ -1459,7 +2038,7 @@ function AuthScreen() {
                             suffix: s.suffix
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 536,
+                            lineNumber: 727,
                             columnNumber: 20
                         }, this),
                         color: s.color,
@@ -1468,12 +2047,12 @@ function AuthScreen() {
                         y: s.y
                     }, s.label, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 535,
+                        lineNumber: 726,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 533,
+                lineNumber: 724,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1532,12 +2111,12 @@ function AuthScreen() {
                                         className: "text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                        lineNumber: 566,
+                                        lineNumber: 753,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 555,
+                                    lineNumber: 744,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1547,7 +2126,7 @@ function AuthScreen() {
                                             children: "ATOMIC"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                            lineNumber: 569,
+                                            lineNumber: 756,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1561,19 +2140,19 @@ function AuthScreen() {
                                             children: "Study Platform"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                            lineNumber: 570,
+                                            lineNumber: 757,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 568,
+                                    lineNumber: 755,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 551,
+                            lineNumber: 740,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1582,29 +2161,29 @@ function AuthScreen() {
                                 theme: THEMES.login
                             }, "login", false, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 579,
+                                lineNumber: 766,
                                 columnNumber: 17
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RegisterLeftContent, {
                                 theme: THEMES.register
                             }, "register", false, {
                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                lineNumber: 580,
+                                lineNumber: 767,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 577,
+                            lineNumber: 764,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                    lineNumber: 549,
+                    lineNumber: 738,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 543,
+                lineNumber: 734,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1613,27 +2192,27 @@ function AuthScreen() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         className: "absolute inset-0 pointer-events-none",
                         animate: {
-                            background: `radial-gradient(ellipse at 50% 50%, ${theme.glow1} 0%, transparent 65%)`
+                            background: `radial-gradient(ellipse at 50% 50%, ${theme.glow1} 0%, rgba(0,0,0,0) 65%)`
                         },
                         transition: {
                             duration: 0.9
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 590,
+                        lineNumber: 776,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         className: "absolute left-0 top-[15%] bottom-[15%] w-px hidden lg:block",
                         animate: {
-                            background: `linear-gradient(to bottom, transparent, ${theme.primary}30, transparent)`
+                            background: `linear-gradient(to bottom, rgba(0,0,0,0), ${theme.primary}30, rgba(0,0,0,0))`
                         },
                         transition: {
                             duration: 0.9
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 596,
+                        lineNumber: 782,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1656,777 +2235,887 @@ function AuthScreen() {
                             delay: 0.2
                         },
                         className: "relative w-full max-w-sm sm:max-w-md z-10",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            animate: {
-                                boxShadow: theme.cardShadow
-                            },
-                            transition: {
-                                duration: 0.9
-                            },
-                            className: "relative rounded-[2rem] overflow-hidden",
-                            style: {
-                                background: 'rgba(5,7,20,0.96)',
-                                backdropFilter: 'blur(32px)'
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BeamSweep, {
-                                    color: theme.beamColor
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 614,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    className: "absolute top-0 left-0 right-0 h-[2px] z-30",
-                                    animate: {
-                                        background: [
-                                            `linear-gradient(90deg, transparent, ${theme.primary}, ${theme.secondary}, transparent)`,
-                                            `linear-gradient(90deg, transparent, ${theme.secondary}, ${theme.primary}, transparent)`
-                                        ]
-                                    },
-                                    transition: {
-                                        duration: 2.5,
-                                        repeat: Infinity,
-                                        ease: 'linear'
-                                    }
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 617,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    className: "absolute -top-16 -right-16 w-40 h-40 rounded-full blur-[50px] pointer-events-none",
-                                    animate: {
-                                        background: `${theme.primary}30`
-                                    },
-                                    transition: {
-                                        duration: 0.8
-                                    }
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 628,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute -bottom-14 -left-14 w-32 h-32 rounded-full blur-[40px] pointer-events-none",
-                                    style: {
-                                        background: 'rgba(6,182,212,0.08)'
-                                    }
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 631,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative z-10 p-6 sm:p-8 md:p-10",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-3 mb-7",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "w-9 h-9 rounded-2xl flex items-center justify-center shrink-0",
-                                                    animate: {
-                                                        background: `linear-gradient(135deg, ${theme.primary}, ${theme.secondary})`
-                                                    },
-                                                    transition: {
-                                                        duration: 0.8
-                                                    },
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-sm font-black text-white",
-                                                        children: "A"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                        lineNumber: 643,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 639,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-base font-black text-white tracking-wider block leading-none",
-                                                            children: "ATOMIC"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                            lineNumber: 646,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[9px] text-slate-600 font-bold uppercase tracking-[0.2em]",
-                                                            children: "v2.0 — Premium"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                            lineNumber: 647,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 645,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "ml-auto flex items-center gap-1.5 px-2.5 py-1 rounded-full border shrink-0",
-                                                    style: {
-                                                        background: 'rgba(16,185,129,0.08)',
-                                                        borderColor: 'rgba(16,185,129,0.25)'
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                            className: "w-1.5 h-1.5 rounded-full bg-emerald-400",
-                                                            animate: {
-                                                                opacity: [
-                                                                    1,
-                                                                    0.2,
-                                                                    1
-                                                                ],
-                                                                scale: [
-                                                                    1,
-                                                                    1.4,
-                                                                    1
-                                                                ]
-                                                            },
-                                                            transition: {
-                                                                duration: 1.5,
-                                                                repeat: Infinity
-                                                            }
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                            lineNumber: 651,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[10px] font-bold text-emerald-400",
-                                                            children: "Live"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                            lineNumber: 654,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 649,
-                                                    columnNumber: 17
-                                                }, this)
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TiltCard, {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                animate: {
+                                    boxShadow: theme.cardShadow
+                                },
+                                transition: {
+                                    duration: 0.9
+                                },
+                                className: "relative rounded-[2rem] overflow-hidden",
+                                style: {
+                                    background: 'rgba(5,7,20,0.96)',
+                                    backdropFilter: 'blur(32px)'
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BeamSweep, {
+                                        color: theme.beamColor
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                        lineNumber: 799,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        className: "absolute top-0 left-0 right-0 h-[2px] z-30",
+                                        animate: {
+                                            background: [
+                                                `linear-gradient(90deg, rgba(0,0,0,0), ${theme.primary}, ${theme.secondary}, rgba(0,0,0,0))`,
+                                                `linear-gradient(90deg, rgba(0,0,0,0), ${theme.secondary}, ${theme.primary}, rgba(0,0,0,0))`
                                             ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                            lineNumber: 638,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative flex rounded-2xl p-1 mb-7 overflow-hidden",
-                                            style: {
-                                                background: 'rgba(255,255,255,0.03)',
-                                                border: '1px solid rgba(255,255,255,0.06)'
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "absolute top-1 bottom-1 rounded-xl z-0",
-                                                    animate: {
-                                                        left: mode === 'login' ? 4 : '50%',
-                                                        right: mode === 'login' ? '50%' : 4,
-                                                        background: mode === 'login' ? `linear-gradient(135deg, ${THEMES.login.primary}35, ${THEMES.login.primary}15)` : `linear-gradient(135deg, ${THEMES.register.primary}35, ${THEMES.register.primary}15)`,
-                                                        boxShadow: mode === 'login' ? `0 0 20px ${THEMES.login.primary}25, inset 0 1px 0 rgba(255,255,255,0.08)` : `0 0 20px ${THEMES.register.primary}22, inset 0 1px 0 rgba(255,255,255,0.08)`
-                                                    },
-                                                    transition: {
-                                                        duration: 0.45,
-                                                        ease: [
-                                                            0.22,
-                                                            1,
-                                                            0.36,
-                                                            1
-                                                        ]
-                                                    }
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 662,
-                                                    columnNumber: 17
-                                                }, this),
-                                                [
-                                                    'login',
-                                                    'register'
-                                                ].map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                        onClick: ()=>switchMode(m),
-                                                        whileTap: {
-                                                            scale: 0.96
-                                                        },
-                                                        className: `flex-1 py-3 text-xs font-black uppercase tracking-[0.15em] relative z-10 rounded-xl transition-colors duration-300 ${mode === m ? m === 'login' ? 'text-indigo-400' : 'text-pink-400' : 'text-slate-600 hover:text-slate-400'}`,
-                                                        children: m === 'login' ? 'Sign In' : 'Register'
-                                                    }, m, false, {
-                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                        lineNumber: 676,
-                                                        columnNumber: 19
-                                                    }, this))
+                                        },
+                                        transition: {
+                                            duration: 2.5,
+                                            repeat: Infinity,
+                                            ease: 'linear'
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                        lineNumber: 802,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        className: "absolute -top-16 -right-16 w-40 h-40 rounded-full blur-[50px] pointer-events-none",
+                                        animate: {
+                                            background: `${theme.primary}35`
+                                        },
+                                        transition: {
+                                            duration: 0.8
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                        lineNumber: 811,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute -bottom-14 -left-14 w-32 h-32 rounded-full blur-[40px] pointer-events-none",
+                                        style: {
+                                            background: 'rgba(6,182,212,0.08)'
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                        lineNumber: 814,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        className: "absolute inset-0 rounded-[2rem] pointer-events-none",
+                                        animate: {
+                                            opacity: [
+                                                0.3,
+                                                0.7,
+                                                0.3
                                             ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                            lineNumber: 659,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative",
-                                            style: {
-                                                minHeight: 272
-                                            },
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                mode: "wait",
-                                                initial: false,
+                                        },
+                                        transition: {
+                                            duration: 3,
+                                            repeat: Infinity
+                                        },
+                                        style: {
+                                            boxShadow: `inset 0 0 30px ${theme.primary}10`
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                        lineNumber: 818,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative z-10 p-6 sm:p-8 md:p-10",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-3 mb-7",
                                                 children: [
-                                                    mode === 'login' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                        initial: {
-                                                            opacity: 0,
-                                                            x: -24,
-                                                            filter: 'blur(6px)'
-                                                        },
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        className: "w-9 h-9 rounded-2xl flex items-center justify-center shrink-0",
                                                         animate: {
-                                                            opacity: 1,
-                                                            x: 0,
-                                                            filter: 'blur(0px)'
-                                                        },
-                                                        exit: {
-                                                            opacity: 0,
-                                                            x: 24,
-                                                            filter: 'blur(6px)'
+                                                            background: `linear-gradient(135deg, ${theme.primary}, ${theme.secondary})`
                                                         },
                                                         transition: {
-                                                            duration: 0.4,
+                                                            duration: 0.8
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-sm font-black text-white",
+                                                            children: "A"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                            lineNumber: 833,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                        lineNumber: 829,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-base font-black text-white tracking-wider block leading-none",
+                                                                children: "ATOMIC"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                lineNumber: 836,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[9px] text-slate-600 font-bold uppercase tracking-[0.2em]",
+                                                                children: "v2.0 — Premium"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                lineNumber: 837,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                        lineNumber: 835,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "ml-auto flex items-center gap-1.5 px-2.5 py-1 rounded-full border shrink-0",
+                                                        style: {
+                                                            background: 'rgba(16,185,129,0.08)',
+                                                            borderColor: 'rgba(16,185,129,0.25)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                className: "w-1.5 h-1.5 rounded-full bg-emerald-400",
+                                                                animate: {
+                                                                    opacity: [
+                                                                        1,
+                                                                        0.2,
+                                                                        1
+                                                                    ],
+                                                                    scale: [
+                                                                        1,
+                                                                        1.4,
+                                                                        1
+                                                                    ]
+                                                                },
+                                                                transition: {
+                                                                    duration: 1.5,
+                                                                    repeat: Infinity
+                                                                }
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                lineNumber: 841,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[10px] font-bold text-emerald-400",
+                                                                children: "Live"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                lineNumber: 845,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                        lineNumber: 839,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                lineNumber: 828,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative flex rounded-2xl p-1 mb-7 overflow-hidden",
+                                                style: {
+                                                    background: 'rgba(255,255,255,0.03)',
+                                                    border: '1px solid rgba(255,255,255,0.06)'
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        className: "absolute top-1 bottom-1 rounded-xl z-0",
+                                                        animate: {
+                                                            left: mode === 'login' ? 4 : '50%',
+                                                            right: mode === 'login' ? '50%' : 4,
+                                                            background: mode === 'login' ? `linear-gradient(135deg, ${THEMES.login.primary}35, ${THEMES.login.primary}15)` : `linear-gradient(135deg, ${THEMES.register.primary}35, ${THEMES.register.primary}15)`,
+                                                            boxShadow: mode === 'login' ? `0 0 20px ${THEMES.login.primary}28, inset 0 1px 0 rgba(255,255,255,0.08)` : `0 0 20px ${THEMES.register.primary}24, inset 0 1px 0 rgba(255,255,255,0.08)`
+                                                        },
+                                                        transition: {
+                                                            duration: 0.45,
                                                             ease: [
                                                                 0.22,
                                                                 1,
                                                                 0.36,
                                                                 1
                                                             ]
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "mb-6",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                                        className: "text-2xl font-black text-white mb-1",
-                                                                        children: "Welcome back 👋"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 699,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-slate-500 text-sm",
-                                                                        children: "Continue your learning journey"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 700,
-                                                                        columnNumber: 25
-                                                                    }, this)
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                        lineNumber: 853,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    [
+                                                        'login',
+                                                        'register'
+                                                    ].map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                            onClick: ()=>switchMode(m),
+                                                            whileTap: {
+                                                                scale: 0.95
+                                                            },
+                                                            className: `flex-1 py-3 text-xs font-black uppercase tracking-[0.15em] relative z-10 rounded-xl transition-colors duration-300 ${mode === m ? m === 'login' ? 'text-indigo-400' : 'text-pink-400' : 'text-slate-600 hover:text-slate-400'}`,
+                                                            children: m === 'login' ? 'Sign In' : 'Register'
+                                                        }, m, false, {
+                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                            lineNumber: 867,
+                                                            columnNumber: 21
+                                                        }, this))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                lineNumber: 850,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative",
+                                                style: {
+                                                    minHeight: 272
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                    mode: "wait",
+                                                    initial: false,
+                                                    children: [
+                                                        mode === 'login' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                            initial: {
+                                                                opacity: 0,
+                                                                x: -28,
+                                                                filter: 'blur(8px)'
+                                                            },
+                                                            animate: {
+                                                                opacity: 1,
+                                                                x: 0,
+                                                                filter: 'blur(0px)'
+                                                            },
+                                                            exit: {
+                                                                opacity: 0,
+                                                                x: 28,
+                                                                filter: 'blur(8px)'
+                                                            },
+                                                            transition: {
+                                                                duration: 0.4,
+                                                                ease: [
+                                                                    0.22,
+                                                                    1,
+                                                                    0.36,
+                                                                    1
                                                                 ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 698,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].form, {
-                                                                animate: shake ? {
-                                                                    x: [
-                                                                        -8,
-                                                                        8,
-                                                                        -5,
-                                                                        5,
-                                                                        -2,
-                                                                        2,
-                                                                        0
+                                                            },
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "mb-6",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
+                                                                            className: "text-2xl font-black text-white mb-1",
+                                                                            initial: {
+                                                                                opacity: 0,
+                                                                                y: 8
+                                                                            },
+                                                                            animate: {
+                                                                                opacity: 1,
+                                                                                y: 0
+                                                                            },
+                                                                            transition: {
+                                                                                delay: 0.1
+                                                                            },
+                                                                            children: "Welcome back 👋"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 888,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                                                                            className: "text-slate-500 text-sm",
+                                                                            initial: {
+                                                                                opacity: 0
+                                                                            },
+                                                                            animate: {
+                                                                                opacity: 1
+                                                                            },
+                                                                            transition: {
+                                                                                delay: 0.2
+                                                                            },
+                                                                            children: "Continue your learning journey"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 891,
+                                                                            columnNumber: 27
+                                                                        }, this)
                                                                     ]
-                                                                } : {
-                                                                    x: 0
-                                                                },
-                                                                transition: {
-                                                                    duration: 0.45
-                                                                },
-                                                                onSubmit: (e)=>{
-                                                                    e.preventDefault();
-                                                                    handleLogin();
-                                                                },
-                                                                className: "space-y-4",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
-                                                                        label: "Username",
-                                                                        value: username,
-                                                                        onChange: (e)=>{
-                                                                            setUsername(e.target.value);
-                                                                            setErrors({});
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                    lineNumber: 887,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].form, {
+                                                                    animate: shake ? {
+                                                                        x: [
+                                                                            -8,
+                                                                            8,
+                                                                            -5,
+                                                                            5,
+                                                                            -2,
+                                                                            2,
+                                                                            0
+                                                                        ]
+                                                                    } : {
+                                                                        x: 0
+                                                                    },
+                                                                    transition: {
+                                                                        duration: 0.45
+                                                                    },
+                                                                    onSubmit: (e)=>{
+                                                                        e.preventDefault();
+                                                                        handleLogin();
+                                                                    },
+                                                                    className: "space-y-4",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
+                                                                            label: "Username",
+                                                                            value: username,
+                                                                            onChange: (e)=>{
+                                                                                setUsername(e.target.value);
+                                                                                setErrors({});
+                                                                            },
+                                                                            error: errors.username,
+                                                                            autoComplete: "username"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 902,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
+                                                                            label: "Password",
+                                                                            type: "password",
+                                                                            value: password,
+                                                                            onChange: (e)=>{
+                                                                                setPassword(e.target.value);
+                                                                                setErrors({});
+                                                                            },
+                                                                            error: errors.password,
+                                                                            autoComplete: "current-password"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 906,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                            type: "submit",
+                                                                            className: "hidden"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 910,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                    lineNumber: 896,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                                    children: errors.credentials && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                        initial: {
+                                                                            opacity: 0,
+                                                                            y: -8,
+                                                                            scale: 0.95
                                                                         },
-                                                                        error: errors.username,
-                                                                        autoComplete: "username"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 709,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
-                                                                        label: "Password",
-                                                                        type: "password",
-                                                                        value: password,
-                                                                        onChange: (e)=>{
-                                                                            setPassword(e.target.value);
-                                                                            setErrors({});
+                                                                        animate: {
+                                                                            opacity: 1,
+                                                                            y: 0,
+                                                                            scale: 1
                                                                         },
-                                                                        error: errors.password,
-                                                                        autoComplete: "current-password"
-                                                                    }, void 0, false, {
+                                                                        exit: {
+                                                                            opacity: 0,
+                                                                            scale: 0.95
+                                                                        },
+                                                                        className: "mt-4 flex items-center gap-2.5 px-4 py-3 rounded-2xl",
+                                                                        style: {
+                                                                            background: 'rgba(239,68,68,0.08)',
+                                                                            border: '1px solid rgba(239,68,68,0.2)'
+                                                                        },
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                                                                size: 12,
+                                                                                className: "text-red-400 shrink-0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                                lineNumber: 922,
+                                                                                columnNumber: 31
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                                className: "text-xs font-bold text-red-400",
+                                                                                children: errors.credentials
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                                lineNumber: 923,
+                                                                                columnNumber: 31
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 713,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                                        type: "submit",
-                                                                        className: "hidden"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 717,
-                                                                        columnNumber: 25
+                                                                        lineNumber: 915,
+                                                                        columnNumber: 29
                                                                     }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 703,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                                children: errors.credentials && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                    lineNumber: 913,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                !hasStoredAccount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                                                                    className: "mt-5 text-center text-xs text-slate-600",
                                                                     initial: {
-                                                                        opacity: 0,
-                                                                        y: -8,
-                                                                        scale: 0.95
+                                                                        opacity: 0
                                                                     },
                                                                     animate: {
-                                                                        opacity: 1,
-                                                                        y: 0,
-                                                                        scale: 1
+                                                                        opacity: 1
                                                                     },
-                                                                    exit: {
-                                                                        opacity: 0,
-                                                                        scale: 0.95
-                                                                    },
-                                                                    className: "mt-4 flex items-center gap-2.5 px-4 py-3 rounded-2xl",
-                                                                    style: {
-                                                                        background: 'rgba(239,68,68,0.08)',
-                                                                        border: '1px solid rgba(239,68,68,0.2)'
+                                                                    transition: {
+                                                                        delay: 0.5
                                                                     },
                                                                     children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
-                                                                            size: 12,
-                                                                            className: "text-red-400 shrink-0"
+                                                                        "No account?",
+                                                                        ' ',
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            onClick: ()=>switchMode('register'),
+                                                                            className: "text-pink-400 font-bold hover:underline underline-offset-2",
+                                                                            children: "Create one free"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                            lineNumber: 729,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                            className: "text-xs font-bold text-red-400",
-                                                                            children: errors.credentials
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                            lineNumber: 730,
+                                                                            lineNumber: 933,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                    lineNumber: 722,
+                                                                    lineNumber: 929,
                                                                     columnNumber: 27
                                                                 }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 720,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            !hasStoredAccount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "mt-5 text-center text-xs text-slate-600",
-                                                                children: [
-                                                                    "No account?",
-                                                                    ' ',
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        onClick: ()=>switchMode('register'),
-                                                                        className: "text-pink-400 font-bold hover:underline underline-offset-2",
-                                                                        children: "Create one free"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 738,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 736,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        ]
-                                                    }, "login-form", true, {
-                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                        lineNumber: 692,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    mode === 'register' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                        initial: {
-                                                            opacity: 0,
-                                                            x: 24,
-                                                            filter: 'blur(6px)'
-                                                        },
-                                                        animate: {
-                                                            opacity: 1,
-                                                            x: 0,
-                                                            filter: 'blur(0px)'
-                                                        },
-                                                        exit: {
-                                                            opacity: 0,
-                                                            x: -24,
-                                                            filter: 'blur(6px)'
-                                                        },
-                                                        transition: {
-                                                            duration: 0.4,
-                                                            ease: [
-                                                                0.22,
-                                                                1,
-                                                                0.36,
-                                                                1
                                                             ]
-                                                        },
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "mb-6",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                                        className: "text-2xl font-black text-white mb-1",
-                                                                        children: "Join ATOMIC 🚀"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 754,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-slate-500 text-sm",
-                                                                        children: "Start your premium study experience"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 755,
-                                                                        columnNumber: 25
-                                                                    }, this)
+                                                        }, "login-form", true, {
+                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                            lineNumber: 881,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        mode === 'register' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                            initial: {
+                                                                opacity: 0,
+                                                                x: 28,
+                                                                filter: 'blur(8px)'
+                                                            },
+                                                            animate: {
+                                                                opacity: 1,
+                                                                x: 0,
+                                                                filter: 'blur(0px)'
+                                                            },
+                                                            exit: {
+                                                                opacity: 0,
+                                                                x: -28,
+                                                                filter: 'blur(8px)'
+                                                            },
+                                                            transition: {
+                                                                duration: 0.4,
+                                                                ease: [
+                                                                    0.22,
+                                                                    1,
+                                                                    0.36,
+                                                                    1
                                                                 ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 753,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "space-y-2 mb-5",
-                                                                children: REGISTER_STEPS.map((s, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                        initial: {
-                                                                            opacity: 0,
-                                                                            x: 16
-                                                                        },
-                                                                        animate: {
-                                                                            opacity: 1,
-                                                                            x: 0
-                                                                        },
-                                                                        transition: {
-                                                                            delay: i * 0.08,
-                                                                            ease: [
-                                                                                0.22,
-                                                                                1,
-                                                                                0.36,
-                                                                                1
-                                                                            ]
-                                                                        },
-                                                                        className: "flex items-center gap-3 p-3 rounded-2xl",
-                                                                        style: {
-                                                                            background: `${s.color}08`,
-                                                                            border: `1px solid ${s.color}18`
-                                                                        },
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "w-8 h-8 rounded-xl flex items-center justify-center shrink-0",
-                                                                                style: {
-                                                                                    background: `${s.color}20`
-                                                                                },
-                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(s.icon, {
-                                                                                    size: 14,
+                                                            },
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "mb-6",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
+                                                                            className: "text-2xl font-black text-white mb-1",
+                                                                            initial: {
+                                                                                opacity: 0,
+                                                                                y: 8
+                                                                            },
+                                                                            animate: {
+                                                                                opacity: 1,
+                                                                                y: 0
+                                                                            },
+                                                                            transition: {
+                                                                                delay: 0.1
+                                                                            },
+                                                                            children: "Join ATOMIC 🚀"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 949,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                                                                            className: "text-slate-500 text-sm",
+                                                                            initial: {
+                                                                                opacity: 0
+                                                                            },
+                                                                            animate: {
+                                                                                opacity: 1
+                                                                            },
+                                                                            transition: {
+                                                                                delay: 0.2
+                                                                            },
+                                                                            children: "Start your premium study experience"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 952,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                    lineNumber: 948,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "space-y-2 mb-5",
+                                                                    children: REGISTER_STEPS.map((s, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                            initial: {
+                                                                                opacity: 0,
+                                                                                x: 18,
+                                                                                scale: 0.92
+                                                                            },
+                                                                            animate: {
+                                                                                opacity: 1,
+                                                                                x: 0,
+                                                                                scale: 1
+                                                                            },
+                                                                            transition: {
+                                                                                delay: i * 0.09,
+                                                                                ease: [
+                                                                                    0.22,
+                                                                                    1,
+                                                                                    0.36,
+                                                                                    1
+                                                                                ],
+                                                                                duration: 0.5
+                                                                            },
+                                                                            whileHover: {
+                                                                                x: 4
+                                                                            },
+                                                                            className: "flex items-center gap-3 p-3 rounded-2xl cursor-default",
+                                                                            style: {
+                                                                                background: `${s.color}08`,
+                                                                                border: `1px solid ${s.color}18`
+                                                                            },
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                                    className: "w-8 h-8 rounded-xl flex items-center justify-center shrink-0",
                                                                                     style: {
-                                                                                        color: s.color
-                                                                                    }
+                                                                                        background: `${s.color}20`
+                                                                                    },
+                                                                                    whileHover: {
+                                                                                        scale: 1.15,
+                                                                                        rotate: 10
+                                                                                    },
+                                                                                    transition: {
+                                                                                        type: 'spring',
+                                                                                        stiffness: 400,
+                                                                                        damping: 15
+                                                                                    },
+                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(s.icon, {
+                                                                                        size: 14,
+                                                                                        style: {
+                                                                                            color: s.color
+                                                                                        }
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                                        lineNumber: 972,
+                                                                                        columnNumber: 33
+                                                                                    }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                                    lineNumber: 769,
+                                                                                    lineNumber: 967,
+                                                                                    columnNumber: 31
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "text-xs font-bold text-white flex-1",
+                                                                                    children: [
+                                                                                        i + 1,
+                                                                                        ". ",
+                                                                                        s.text
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                                    lineNumber: 974,
+                                                                                    columnNumber: 31
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                                    className: "shrink-0",
+                                                                                    style: {
+                                                                                        color: s.color
+                                                                                    },
+                                                                                    initial: {
+                                                                                        scale: 0
+                                                                                    },
+                                                                                    animate: {
+                                                                                        scale: 1
+                                                                                    },
+                                                                                    transition: {
+                                                                                        delay: 0.3 + i * 0.1,
+                                                                                        type: 'spring'
+                                                                                    },
+                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                                                        size: 14
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                                        lineNumber: 978,
+                                                                                        columnNumber: 33
+                                                                                    }, this)
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                                    lineNumber: 975,
                                                                                     columnNumber: 31
                                                                                 }, this)
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                                lineNumber: 767,
-                                                                                columnNumber: 29
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "text-xs font-bold text-white flex-1",
-                                                                                children: [
-                                                                                    i + 1,
-                                                                                    ". ",
-                                                                                    s.text
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                                lineNumber: 771,
-                                                                                columnNumber: 29
-                                                                            }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                                className: "w-1.5 h-1.5 rounded-full shrink-0",
-                                                                                style: {
-                                                                                    background: s.color
-                                                                                },
-                                                                                animate: {
-                                                                                    opacity: [
-                                                                                        1,
-                                                                                        0.3,
-                                                                                        1
-                                                                                    ]
-                                                                                },
-                                                                                transition: {
-                                                                                    duration: 2,
-                                                                                    repeat: Infinity,
-                                                                                    delay: i * 0.6
-                                                                                }
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                                lineNumber: 772,
-                                                                                columnNumber: 29
-                                                                            }, this)
-                                                                        ]
-                                                                    }, s.text, true, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 760,
-                                                                        columnNumber: 27
-                                                                    }, this))
+                                                                            ]
+                                                                        }, s.text, true, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 959,
+                                                                            columnNumber: 29
+                                                                        }, this))
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                    lineNumber: 957,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                hasStoredAccount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                                                                    className: "text-center text-xs text-slate-600",
+                                                                    initial: {
+                                                                        opacity: 0
+                                                                    },
+                                                                    animate: {
+                                                                        opacity: 1
+                                                                    },
+                                                                    transition: {
+                                                                        delay: 0.5
+                                                                    },
+                                                                    children: [
+                                                                        "Already registered?",
+                                                                        ' ',
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                            onClick: ()=>switchMode('login'),
+                                                                            className: "text-indigo-400 font-bold hover:underline underline-offset-2",
+                                                                            children: "Sign in"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 989,
+                                                                            columnNumber: 29
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                    lineNumber: 985,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            ]
+                                                        }, "register-form", true, {
+                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                            lineNumber: 942,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                    lineNumber: 879,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                lineNumber: 878,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative mt-5",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ParticleBurst, {
+                                                        color: theme.primary,
+                                                        active: burst
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                        lineNumber: 1001,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                        onClick: mode === 'login' ? handleLogin : handleRegister,
+                                                        disabled: isSubmitting,
+                                                        whileHover: {
+                                                            scale: 1.03,
+                                                            y: -3
+                                                        },
+                                                        whileTap: {
+                                                            scale: 0.96
+                                                        },
+                                                        className: "relative w-full overflow-hidden rounded-2xl font-black text-white group",
+                                                        style: {
+                                                            height: 54
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                className: "absolute inset-0",
+                                                                animate: {
+                                                                    background: theme.cta
+                                                                },
+                                                                transition: {
+                                                                    duration: 0.8
+                                                                }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 758,
-                                                                columnNumber: 23
+                                                                lineNumber: 1011,
+                                                                columnNumber: 21
                                                             }, this),
-                                                            hasStoredAccount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-center text-xs text-slate-600",
-                                                                children: [
-                                                                    "Already registered?",
-                                                                    ' ',
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                        onClick: ()=>switchMode('login'),
-                                                                        className: "text-indigo-400 font-bold hover:underline underline-offset-2",
-                                                                        children: "Sign in"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                        lineNumber: 782,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                className: "absolute inset-0",
+                                                                style: {
+                                                                    background: 'linear-gradient(105deg, rgba(0,0,0,0) 30%, rgba(255,255,255,0.2) 50%, rgba(0,0,0,0) 70%)'
+                                                                },
+                                                                animate: {
+                                                                    x: [
+                                                                        '-100%',
+                                                                        '200%'
+                                                                    ]
+                                                                },
+                                                                transition: {
+                                                                    duration: 2.2,
+                                                                    repeat: Infinity,
+                                                                    repeatDelay: 1
+                                                                }
+                                                            }, void 0, false, {
                                                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 780,
-                                                                columnNumber: 25
+                                                                lineNumber: 1015,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                className: "absolute inset-0 rounded-2xl",
+                                                                animate: {
+                                                                    boxShadow: [
+                                                                        `0 0 0px ${theme.primary}00`,
+                                                                        `0 0 30px ${theme.primary}60`,
+                                                                        `0 0 0px ${theme.primary}00`
+                                                                    ]
+                                                                },
+                                                                transition: {
+                                                                    duration: 2.5,
+                                                                    repeat: Infinity
+                                                                }
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                lineNumber: 1021,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "relative z-10 flex items-center justify-center gap-2.5 text-[13px] tracking-widest uppercase",
+                                                                children: isSubmitting ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                                                                    size: 18,
+                                                                    className: "animate-spin"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                    lineNumber: 1028,
+                                                                    columnNumber: 25
+                                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                                    children: [
+                                                                        mode === 'login' ? 'Sign In' : 'Get Started Free',
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                            animate: {
+                                                                                x: [
+                                                                                    0,
+                                                                                    4,
+                                                                                    0
+                                                                                ]
+                                                                            },
+                                                                            transition: {
+                                                                                duration: 1.5,
+                                                                                repeat: Infinity
+                                                                            },
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                                                size: 16
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                                lineNumber: 1033,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                            lineNumber: 1032,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                                                lineNumber: 1026,
+                                                                columnNumber: 21
                                                             }, this)
                                                         ]
-                                                    }, "register-form", true, {
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                        lineNumber: 747,
-                                                        columnNumber: 21
+                                                        lineNumber: 1002,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                lineNumber: 690,
+                                                lineNumber: 1000,
                                                 columnNumber: 17
                                             }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                            lineNumber: 689,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            onClick: mode === 'login' ? handleLogin : ()=>setShowOnboarding(true),
-                                            disabled: isSubmitting,
-                                            whileHover: {
-                                                scale: 1.02,
-                                                y: -2
-                                            },
-                                            whileTap: {
-                                                scale: 0.97
-                                            },
-                                            className: "relative mt-5 w-full overflow-hidden rounded-2xl font-black text-white group",
-                                            style: {
-                                                height: 54
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "absolute inset-0",
-                                                    animate: {
-                                                        background: theme.cta
-                                                    },
-                                                    transition: {
-                                                        duration: 0.8
-                                                    }
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 801,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "absolute inset-0",
-                                                    style: {
-                                                        background: 'linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%)'
-                                                    },
-                                                    animate: {
-                                                        x: [
-                                                            '-100%',
-                                                            '200%'
-                                                        ]
-                                                    },
-                                                    transition: {
-                                                        duration: 2.2,
-                                                        repeat: Infinity,
-                                                        repeatDelay: 1
-                                                    }
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 806,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300",
-                                                    style: {
-                                                        boxShadow: `inset 0 0 30px ${theme.primary}40`
-                                                    }
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 812,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "relative z-10 flex items-center justify-center gap-2 text-sm tracking-widest uppercase",
-                                                    children: isSubmitting ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
-                                                        size: 18,
-                                                        className: "animate-spin"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                        lineNumber: 817,
-                                                        columnNumber: 23
-                                                    }, this) : mode === 'login' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                                size: 16
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 819,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            " Sign In"
-                                                        ]
-                                                    }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rocket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Rocket$3e$__["Rocket"], {
-                                                                size: 16
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                                lineNumber: 820,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            " Get Started Free"
-                                                        ]
-                                                    }, void 0, true)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 815,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                            lineNumber: 793,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "mt-5 text-center text-[11px] text-slate-700 font-medium",
-                                            children: [
-                                                "By continuing you agree to our",
-                                                ' ',
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-slate-500 hover:text-white cursor-pointer transition-colors",
-                                                    children: "Terms"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 828,
-                                                    columnNumber: 17
-                                                }, this),
-                                                ' ',
-                                                "&",
-                                                ' ',
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-slate-500 hover:text-white cursor-pointer transition-colors",
-                                                    children: "Privacy"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                                    lineNumber: 830,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                            lineNumber: 826,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                                    lineNumber: 635,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                        lineNumber: 825,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/auth/AuthScreen.tsx",
+                                lineNumber: 794,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                            lineNumber: 608,
+                            lineNumber: 792,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                        lineNumber: 601,
+                        lineNumber: 787,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthScreen.tsx",
-                lineNumber: 587,
+                lineNumber: 773,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthScreen.tsx",
-        lineNumber: 516,
+        lineNumber: 698,
         columnNumber: 5
     }, this);
 }
-_s3(AuthScreen, "aH4f9MZZsqf0S1UPyGzikz2C72Y=", false, function() {
+_s5(AuthScreen, "UTFCHFAdDs56widL2gnRmb1Hda8=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"]
     ];
 });
-_c9 = AuthScreen;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
+_c13 = AuthScreen;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13;
 __turbopack_context__.k.register(_c, "ConstellationCanvas");
 __turbopack_context__.k.register(_c1, "Aurora");
-__turbopack_context__.k.register(_c2, "GlitchLogo");
-__turbopack_context__.k.register(_c3, "OrbitRing");
-__turbopack_context__.k.register(_c4, "FloatingBadge");
-__turbopack_context__.k.register(_c5, "Counter");
-__turbopack_context__.k.register(_c6, "BeamSweep");
-__turbopack_context__.k.register(_c7, "RegisterLeftContent");
-__turbopack_context__.k.register(_c8, "LoginLeftContent");
-__turbopack_context__.k.register(_c9, "AuthScreen");
+__turbopack_context__.k.register(_c2, "FloatingDecorIcon");
+__turbopack_context__.k.register(_c3, "GlitchLogo");
+__turbopack_context__.k.register(_c4, "Typewriter");
+__turbopack_context__.k.register(_c5, "OrbitRing");
+__turbopack_context__.k.register(_c6, "FloatingBadge");
+__turbopack_context__.k.register(_c7, "Counter");
+__turbopack_context__.k.register(_c8, "BeamSweep");
+__turbopack_context__.k.register(_c9, "TiltCard");
+__turbopack_context__.k.register(_c10, "ParticleBurst");
+__turbopack_context__.k.register(_c11, "RegisterLeftContent");
+__turbopack_context__.k.register(_c12, "LoginLeftContent");
+__turbopack_context__.k.register(_c13, "AuthScreen");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
