@@ -1,16 +1,25 @@
 "use client";
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppContext } from '@/context/AppContext';
 import { useTheme } from '@/context/ThemeContext';
 import { FloatingInput } from '@/components/ui/FloatingInput';
 import AnimeMascot, { StarBurst } from '@/components/anime/AnimeMascot';
 import OnboardingFlow from '@/components/onboarding/OnboardingFlow';
-import { Wand2, ArrowRight, Loader2, Sparkles, Star, Zap, Shield, BookOpen } from 'lucide-react';
+import ConfettiEffect from '@/components/ui/ConfettiEffect';
+import ThemePickerModal from '@/components/ui/ThemePickerModal';
+import { Wand2, ArrowRight, Loader2, Sparkles, Star, Zap, Shield, BookOpen, Palette } from 'lucide-react';
 
 type Mode = 'login' | 'register';
 
-/* ══ Floating sparkle ══════════════════════════════════ */
+function getTimeGreeting(): string {
+  const h = new Date().getHours();
+  if (h >= 5 && h < 12) return "Good morning! Ready for a deep-work session? ☀️";
+  if (h >= 12 && h < 17) return "Good afternoon! Let's power through! ⚡";
+  if (h >= 17 && h < 21) return "Evening focus? Atomic is ready! 🌆";
+  return "Late night session? Atomic is here with you! 🌙";
+}
+
 function FloatingStar({ x, y, size, delay, color }: { x: string; y: string; size: number; delay: number; color: string }) {
   return (
     <motion.div
@@ -24,19 +33,18 @@ function FloatingStar({ x, y, size, delay, color }: { x: string; y: string; size
   );
 }
 
-/* ══ Speech bubble ═════════════════════════════════════ */
 function SpeechBubble({ text, className = '' }: { text: string; className?: string }) {
   const { theme } = useTheme();
   return (
     <motion.div
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
-      transition={{ type: 'spring', stiffness: 300, damping: 20, delay: 0.8 }}
+      exit={{ scale: 0, opacity: 0 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       className={`absolute bg-white rounded-2xl px-4 py-2.5 shadow-xl ${className}`}
-      style={{ border: `2.5px solid ${theme.primary}`, minWidth: 120 }}
+      style={{ border: `2.5px solid ${theme.primary}`, minWidth: 120, zIndex: 20 }}
     >
       <p className="text-xs font-black text-slate-800 whitespace-nowrap">{text}</p>
-      {/* Tail */}
       <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0"
         style={{ borderLeft: '8px solid transparent', borderRight: '8px solid transparent', borderTop: `12px solid ${theme.primary}` }}
       />
@@ -47,17 +55,11 @@ function SpeechBubble({ text, className = '' }: { text: string; className?: stri
   );
 }
 
-/* ══ Theme Toggle ══════════════════════════════════════ */
-function ThemeToggleBtn() {
-  const { theme, toggleTheme, themeName } = useTheme();
-  const [spin, setSpin] = useState(false);
-
-  const handle = () => { setSpin(true); toggleTheme(); setTimeout(() => setSpin(false), 700); };
-  const nextTheme = themeName === 'nebula' ? '🌿 Jade' : '🌌 Nebula';
-
+function ThemeToggleBtn({ onOpenPicker }: { onOpenPicker: () => void }) {
+  const { theme, themeName } = useTheme();
   return (
     <motion.button
-      onClick={handle}
+      onClick={onOpenPicker}
       whileHover={{ scale: 1.08, y: -2 }}
       whileTap={{ scale: 0.93 }}
       className="flex items-center gap-2 px-4 py-2 rounded-2xl font-black text-[11px] uppercase tracking-widest"
@@ -68,15 +70,12 @@ function ThemeToggleBtn() {
         boxShadow: `0 0 15px ${theme.primary}25`,
       }}
     >
-      <motion.div animate={{ rotate: spin ? 360 : 0 }} transition={{ duration: 0.6 }}>
-        <Wand2 size={13} />
-      </motion.div>
-      {nextTheme}
+      <Palette size={13} />
+      <span className="capitalize">{themeName}</span>
     </motion.button>
   );
 }
 
-/* ══ Anime CTA Button ══════════════════════════════════ */
 function AnimeButton({ label, gradient, color, loading, onClick }: {
   label: string; gradient: string; color: string; loading: boolean; onClick: () => void;
 }) {
@@ -93,7 +92,6 @@ function AnimeButton({ label, gradient, color, loading, onClick }: {
         boxShadow: `0 4px 0 0 ${color}80, 0 0 30px ${color}30`,
       }}
     >
-      {/* Shine sweep */}
       <motion.div
         className="absolute inset-0"
         style={{ background: 'linear-gradient(105deg,rgba(0,0,0,0) 30%,rgba(255,255,255,0.25) 50%,rgba(0,0,0,0) 70%)' }}
@@ -106,17 +104,16 @@ function AnimeButton({ label, gradient, color, loading, onClick }: {
           : <><span>{label}</span><motion.div animate={{ x: [0, 5, 0] }} transition={{ duration: 1, repeat: Infinity }}><ArrowRight size={16}/></motion.div></>
         }
       </span>
-      {/* Bottom shadow bar */}
       <div className="absolute -bottom-1 left-2 right-2 h-1.5 rounded-full opacity-60" style={{ background: `${color}80` }}/>
     </motion.button>
   );
 }
 
-/* ══ Manga Action FX ═══════════════════════════════════ */
-function ActionFX({ children, className = '' }: { children: React.ReactNode; className?: string }) {
+function ActionFX({ children, className = '', style }: { children: React.ReactNode; className?: string; style?: React.CSSProperties }) {
   return (
     <motion.div
       className={`absolute pointer-events-none font-black italic text-lg ${className}`}
+      style={style}
       animate={{ scale: [1, 1.15, 1], opacity: [0.7, 1, 0.7] }}
       transition={{ duration: 2, repeat: Infinity }}
     >
@@ -125,19 +122,73 @@ function ActionFX({ children, className = '' }: { children: React.ReactNode; cla
   );
 }
 
-/* ══ MAIN AUTH SCREEN ══════════════════════════════════ */
+/* Power-Up overlay on successful login */
+function PowerUpOverlay({ active }: { active: boolean }) {
+  const { theme } = useTheme();
+  return (
+    <AnimatePresence>
+      {active && (
+        <motion.div
+          className="fixed inset-0 z-[9999] flex items-center justify-center pointer-events-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <motion.div
+            className="absolute inset-0"
+            style={{ background: `radial-gradient(circle at 50% 50%, ${theme.primary}60 0%, transparent 70%)` }}
+            animate={{ scale: [0.5, 2.5], opacity: [0.8, 0] }}
+            transition={{ duration: 0.8 }}
+          />
+          <motion.div
+            className="absolute inset-0 border-4 pointer-events-none"
+            style={{ borderColor: theme.primary }}
+            animate={{ opacity: [1, 0], scale: [1, 1.04] }}
+            transition={{ duration: 0.6 }}
+          />
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: [0, 1.4, 1], opacity: [0, 1, 0] }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="relative z-10 flex flex-col items-center gap-3"
+          >
+            <div className="text-6xl">⚡</div>
+            <p className="text-3xl font-black text-white tracking-tight" style={{ textShadow: `0 0 30px ${theme.primary}` }}>
+              POWER UP!
+            </p>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
 export default function AuthScreen() {
-  const { login } = useAppContext();
+  const { login, gender } = useAppContext();
   const { theme } = useTheme();
   const [hasStored, setHasStored] = useState(false);
   const [mode, setMode] = useState<Mode>('register');
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState<Record<string, string | undefined>>({});
   const [submitting, setSubmitting] = useState(false);
   const [shake, setShake] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [showThemePicker, setShowThemePicker] = useState(false);
+  const [powerUp, setPowerUp] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+
+  /* Cursor tracking state (register page only) */
+  const [activeField, setActiveField] = useState<string | null>(null);
+  const [mascotPose, setMascotPose] = useState<'wave' | 'success' | 'point' | 'idle'>('wave');
+  const [mascotExpr, setMascotExpr] = useState<'happy' | 'focused' | 'excited' | 'peek'>('happy');
+  const [bubbleText, setBubbleText] = useState<string | null>(null);
+  const bubbleTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const timeGreeting = mounted ? getTimeGreeting() : "Welcome back!";
 
   useEffect(() => {
     setTimeout(() => {
@@ -148,6 +199,36 @@ export default function AuthScreen() {
     }, 0);
   }, []);
 
+  /* Show speech bubble briefly */
+  const showBubble = useCallback((text: string, duration = 3000) => {
+    setBubbleText(text);
+    if (bubbleTimer.current) clearTimeout(bubbleTimer.current);
+    bubbleTimer.current = setTimeout(() => setBubbleText(null), duration);
+  }, []);
+
+  /* Field focus handlers */
+  const handleFieldFocus = useCallback((field: string) => {
+    setActiveField(field);
+    if (field === 'username') {
+      setMascotPose('point'); setMascotExpr('happy');
+      showBubble("Don't be shy, let's get started! 😊");
+    } else if (field === 'password') {
+      setMascotPose('idle'); setMascotExpr('focused');
+      showBubble("Create a strong password! 🔒");
+    }
+  }, [showBubble]);
+
+  const handlePasswordPeek = useCallback((visible: boolean) => {
+    setShowPassword(visible);
+    if (visible) {
+      setMascotExpr('peek');
+      showBubble("Oh? Let me see... 👓", 2000);
+    } else {
+      setMascotExpr('focused');
+      setBubbleText(null);
+    }
+  }, [showBubble]);
+
   const triggerShake = useCallback(() => { setShake(true); setTimeout(() => setShake(false), 600); }, []);
 
   const handleLogin = useCallback(() => {
@@ -157,7 +238,15 @@ export default function AuthScreen() {
     if (Object.keys(e).length) { setErrors(e); triggerShake(); return; }
     setSubmitting(true);
     const ok = login(username.trim(), password.trim());
-    if (!ok) { setErrors({ creds: 'Wrong username or password!' }); setSubmitting(false); triggerShake(); }
+    if (!ok) {
+      setErrors({ creds: 'Wrong username or password!' });
+      setSubmitting(false);
+      triggerShake();
+    } else {
+      setPowerUp(true);
+      setShowConfetti(true);
+      setTimeout(() => setPowerUp(false), 1200);
+    }
   }, [username, password, login, triggerShake]);
 
   if (showOnboarding) return <OnboardingFlow />;
@@ -173,30 +262,27 @@ export default function AuthScreen() {
     { x: '80%', y: '48%', size: 8,  delay: 1.8, color: '#facc15' },
   ];
 
-  /* ── LOGIN ── */
+  /* ─── LOGIN ─── */
   if (mode === 'login') return (
     <div className="min-h-screen w-full flex items-center justify-center relative overflow-hidden"
       style={{ background: `radial-gradient(ellipse at 30% 50%, ${theme.bgDeep} 0%, ${theme.bg} 65%)` }}
     >
-      {/* Dot grid */}
+      <PowerUpOverlay active={powerUp}/>
+      <ConfettiEffect active={showConfetti} primaryColor={theme.primary} duration={2500}/>
+      <ThemePickerModal open={showThemePicker} onClose={() => setShowThemePicker(false)}/>
+
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: `radial-gradient(circle, ${theme.primary}08 1px, transparent 1px)`, backgroundSize: '28px 28px' }}
       />
-
-      {/* Floating stars */}
       {mounted && STARS.map((s,i) => <FloatingStar key={i} {...s}/>)}
-
-      {/* Diagonal speed lines (manga effect) */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.035]"
         style={{ backgroundImage: 'repeating-linear-gradient(-45deg, white 0px, white 1px, transparent 1px, transparent 18px)' }}
       />
 
-      {/* Theme toggle */}
       <div className="absolute top-5 right-5 z-50">
-        {mounted && <ThemeToggleBtn />}
+        {mounted && <ThemeToggleBtn onOpenPicker={() => setShowThemePicker(true)}/>}
       </div>
 
-      {/* Manga FX texts */}
       <ActionFX className="top-[20%] left-[6%] opacity-20" style={{ color: theme.primary, fontSize: 28 }}>STUDY!</ActionFX>
       <ActionFX className="bottom-[22%] right-[5%] opacity-15" style={{ color: theme.secondary, fontSize: 22 }}>FOCUS!</ActionFX>
 
@@ -207,7 +293,6 @@ export default function AuthScreen() {
           initial={{ x: -60, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.22,1,0.36,1] }}
         >
-          {/* Logo */}
           <div className="flex items-center gap-3">
             <motion.div
               className="w-14 h-14 rounded-3xl flex items-center justify-center font-black text-2xl text-white"
@@ -220,13 +305,19 @@ export default function AuthScreen() {
             </div>
           </div>
 
-          {/* Mascot + speech bubble */}
           <div className="relative flex justify-center mt-4">
-            <SpeechBubble text="Welcome back! 👋" className="-top-14 left-1/2 -translate-x-1/2"/>
-            {mounted && <AnimeMascot pose="wave" expression="happy" size={220} primaryColor={theme.primary} />}
+            <SpeechBubble text={timeGreeting} className="-top-16 left-1/2 -translate-x-1/2" />
+            {mounted && (
+              <AnimeMascot
+                pose="wave"
+                expression="happy"
+                size={220}
+                primaryColor={theme.primary}
+                gender={gender || 'male'}
+              />
+            )}
           </div>
 
-          {/* Anime-style stats */}
           <div className="grid grid-cols-3 gap-3 w-full max-w-xs mt-2">
             {[
               { icon: '📚', label: 'Students', val: '12k+' },
@@ -246,7 +337,6 @@ export default function AuthScreen() {
             ))}
           </div>
 
-          {/* Feature tags */}
           <div className="flex flex-wrap gap-2 justify-center">
             {[
               { icon: Zap, label: 'AI Powered', color: theme.primary },
@@ -279,7 +369,6 @@ export default function AuthScreen() {
                 boxShadow: `0 0 0 1px ${theme.primary}20, 0 4px 0 0 ${theme.primary}40, 0 30px 80px -10px rgba(0,0,0,0.95), 0 0 60px -10px ${theme.primary}25`,
               }}
             >
-              {/* Top beam */}
               <motion.div className="absolute top-0 left-0 right-0 h-[3px] z-20"
                 animate={{ background: [
                   `linear-gradient(90deg,transparent,${theme.primary},${theme.secondary},transparent)`,
@@ -287,16 +376,13 @@ export default function AuthScreen() {
                 ]}}
                 transition={{ duration:2.5, repeat:Infinity }}
               />
-              {/* Screen tone overlay */}
               <div className="absolute inset-0 opacity-30 pointer-events-none"
                 style={{ backgroundImage:`radial-gradient(circle, ${theme.primary}07 1px, transparent 1px)`, backgroundSize:'12px 12px' }}
               />
-              {/* Corner glow */}
               <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full blur-[60px] pointer-events-none"
                 style={{ background:`${theme.primary}25` }}/>
 
               <div className="relative z-10 p-8 sm:p-10">
-                {/* Brand */}
                 <div className="flex items-center gap-3 mb-7">
                   <motion.div className="w-10 h-10 rounded-2xl flex items-center justify-center font-black text-white text-base"
                     style={{ background:`linear-gradient(135deg,${theme.primary},${theme.secondary})`, boxShadow:`0 0 20px ${theme.primary}50` }}
@@ -312,7 +398,6 @@ export default function AuthScreen() {
                   </div>
                 </div>
 
-                {/* Title */}
                 <div className="mb-6">
                   <motion.h2 className="text-3xl font-black text-white mb-1 tracking-tight"
                     animate={{ x:[0,2,-2,0] }} transition={{ duration:5, repeat:Infinity }}
@@ -322,20 +407,23 @@ export default function AuthScreen() {
                   <p className="text-sm font-medium" style={{ color:`${theme.primary}80` }}>Your study adventure continues!</p>
                 </div>
 
-                {/* Fields */}
                 <div className="space-y-4">
                   <FloatingInput label="Username" value={username}
                     onChange={e => { setUsername(e.target.value); setErrors({}); }}
                     error={errors.username} autoComplete="username"
                   />
-                  <FloatingInput label="Password" type="password" value={password}
+                  <FloatingInput
+                    label="Password"
+                    type={showPassword ? 'text' : 'password'}
+                    value={password}
                     onChange={e => { setPassword(e.target.value); setErrors({}); }}
-                    error={errors.password} autoComplete="current-password"
+                    error={errors.password}
+                    autoComplete="current-password"
+                    onRevealToggle={handlePasswordPeek}
                   />
                 </div>
                 <input type="submit" className="hidden"/>
 
-                {/* Creds error */}
                 <AnimatePresence>
                   {errors.creds && (
                     <motion.div initial={{ opacity:0, scale:0.9 }} animate={{ opacity:1, scale:1 }} exit={{ opacity:0 }}
@@ -361,7 +449,7 @@ export default function AuthScreen() {
                 )}
 
                 <div className="mt-6 flex justify-center">
-                  {mounted && <ThemeToggleBtn />}
+                  {mounted && <ThemeToggleBtn onOpenPicker={() => setShowThemePicker(true)}/>}
                 </div>
               </div>
             </div>
@@ -376,24 +464,20 @@ export default function AuthScreen() {
     <div className="min-h-screen w-full flex items-center justify-center relative overflow-hidden"
       style={{ background: `radial-gradient(ellipse at 65% 40%, ${theme.bgDeep} 0%, ${theme.bg} 65%)` }}
     >
-      {/* Dot grid */}
+      <ThemePickerModal open={showThemePicker} onClose={() => setShowThemePicker(false)}/>
+
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage:`radial-gradient(circle, ${theme.primary}07 1px, transparent 1px)`, backgroundSize:'28px 28px' }}
       />
-      {/* Speed lines */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.035]"
         style={{ backgroundImage:'repeating-linear-gradient(-45deg, white 0px, white 1px, transparent 1px, transparent 18px)' }}
       />
-
-      {/* Floating stars */}
       {mounted && STARS.map((s,i) => <FloatingStar key={i} {...s}/>)}
 
-      {/* Theme toggle */}
       <div className="absolute top-5 right-5 z-50">
-        {mounted && <ThemeToggleBtn />}
+        {mounted && <ThemeToggleBtn onOpenPicker={() => setShowThemePicker(true)}/>}
       </div>
 
-      {/* Manga FX */}
       <ActionFX className="top-[15%] left-[5%] opacity-20" style={{ color:theme.primary, fontSize:26 }}>NEW STUDENT!</ActionFX>
       <ActionFX className="bottom-[18%] right-[4%] opacity-15" style={{ color:theme.secondary, fontSize:20 }}>LEVEL UP!</ActionFX>
 
@@ -404,7 +488,6 @@ export default function AuthScreen() {
           initial={{ x:-50, opacity:0 }} animate={{ x:0, opacity:1 }}
           transition={{ duration:0.8, ease:[0.22,1,0.36,1] }}
         >
-          {/* Logo */}
           <div className="flex items-center gap-3 self-start">
             <motion.div
               className="w-12 h-12 rounded-2xl flex items-center justify-center font-black text-xl text-white"
@@ -427,13 +510,25 @@ export default function AuthScreen() {
             </p>
           </div>
 
-          {/* Mascot with speech bubble */}
+          {/* Mascot with dynamic speech bubble */}
           <div className="relative">
-            <SpeechBubble text="Let's go! ⚡" className="-top-12 right-4"/>
-            {mounted && <AnimeMascot pose="success" expression="excited" size={210} primaryColor={theme.primary} />}
+            <AnimatePresence>
+              {bubbleText
+                ? <SpeechBubble text={bubbleText} className="-top-16 left-1/2 -translate-x-1/2"/>
+                : <SpeechBubble text="Let's go! ⚡" className="-top-14 right-4"/>
+              }
+            </AnimatePresence>
+            {mounted && (
+              <AnimeMascot
+                pose={mascotPose}
+                expression={mascotExpr}
+                size={210}
+                primaryColor={theme.primary}
+                gender={gender || 'male'}
+              />
+            )}
           </div>
 
-          {/* Star bursts decoration */}
           <div className="flex gap-3">
             {[theme.primary, theme.secondary, theme.accent].map((c,i) => (
               <motion.div key={i} animate={{ rotate:[0,360] }} transition={{ duration:8+i*2, repeat:Infinity, ease:'linear' }}>
@@ -455,7 +550,6 @@ export default function AuthScreen() {
               boxShadow:`0 0 0 1px ${theme.primary}20, 0 4px 0 0 ${theme.primary}40, 0 30px 80px -10px rgba(0,0,0,0.95), 0 0 60px -10px ${theme.primary}25`,
             }}
           >
-            {/* Top beam */}
             <motion.div className="absolute top-0 left-0 right-0 h-[3px] z-20"
               animate={{ background:[
                 `linear-gradient(90deg,transparent,${theme.primary},${theme.secondary},transparent)`,
@@ -463,7 +557,6 @@ export default function AuthScreen() {
               ]}}
               transition={{ duration:2.5, repeat:Infinity }}
             />
-            {/* Screen tone */}
             <div className="absolute inset-0 opacity-30 pointer-events-none"
               style={{ backgroundImage:`radial-gradient(circle, ${theme.primary}07 1px, transparent 1px)`, backgroundSize:'12px 12px' }}
             />
@@ -471,14 +564,12 @@ export default function AuthScreen() {
               style={{ background:`${theme.primary}25` }}/>
 
             <div className="relative z-10 p-8 sm:p-10">
-              {/* Mobile brand */}
               <div className="lg:hidden flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 rounded-2xl flex items-center justify-center font-black text-white"
                   style={{ background:`linear-gradient(135deg,${theme.primary},${theme.secondary})` }}>A</div>
                 <span className="font-black text-white tracking-widest">ATOMIC</span>
               </div>
 
-              {/* Header */}
               <div className="flex items-center gap-2 mb-2">
                 <motion.div className="text-2xl" animate={{ scale:[1,1.3,1] }} transition={{ duration:2, repeat:Infinity }}>🚀</motion.div>
                 <h2 className="text-3xl font-black text-white tracking-tight">Create Account</h2>
@@ -513,6 +604,26 @@ export default function AuthScreen() {
                 ))}
               </div>
 
+              {/* Register fields with focus tracking */}
+              <div className="space-y-4 mb-6">
+                <FloatingInput
+                  label="Choose a Username"
+                  value=""
+                  onChange={() => {}}
+                  onFocus={() => handleFieldFocus('username')}
+                  onBlur={() => { setActiveField(null); setMascotPose('wave'); setMascotExpr('happy'); }}
+                />
+                <FloatingInput
+                  label="Create Password"
+                  type={showPassword ? 'text' : 'password'}
+                  value=""
+                  onChange={() => {}}
+                  onFocus={() => handleFieldFocus('password')}
+                  onBlur={() => { setActiveField(null); setMascotPose('success'); setMascotExpr('excited'); }}
+                  onRevealToggle={handlePasswordPeek}
+                />
+              </div>
+
               <AnimeButton label="Start My Journey!" gradient={theme.ctaGradient} color={theme.primary} loading={false} onClick={() => setShowOnboarding(true)}/>
 
               {hasStored && (
@@ -525,7 +636,7 @@ export default function AuthScreen() {
               )}
 
               <div className="mt-6 flex justify-center">
-                {mounted && <ThemeToggleBtn />}
+                {mounted && <ThemeToggleBtn onOpenPicker={() => setShowThemePicker(true)}/>}
               </div>
             </div>
           </div>

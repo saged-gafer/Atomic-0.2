@@ -5,6 +5,7 @@ import { AppProvider } from "@/context/AppContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import AdhkarService from "@/components/AdhkarService";
 import { CursorGlow } from "@/components/ui/CursorGlow";
+import TabVisibilityTracker from "@/components/ui/TabVisibilityTracker";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
         <ThemeProvider>
           <AppProvider>
+            <TabVisibilityTracker />
             <div className="relative z-10 min-h-screen flex flex-col page-transition-wrapper">
               {children}
             </div>

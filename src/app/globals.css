@@ -80,6 +80,138 @@
   --shine: rgba(255,255,255,0.06);
 }
 
+/* ── CYBERPUNK Theme ─────────────────────────────────── */
+[data-theme="cyberpunk"] {
+  --background: #000a0e;
+  --foreground: #e0fff8;
+
+  --glass-bg: rgba(0,255,231,0.03);
+  --glass-border: rgba(0,255,231,0.15);
+  --glass-reflection: linear-gradient(135deg,rgba(0,255,231,0.06) 0%,rgba(0,0,0,0) 50%,rgba(0,255,231,0.03) 100%);
+
+  --primary: #00ffe7;
+  --primary-glow: rgba(0,255,231,0.5);
+  --secondary: #ff003c;
+  --secondary-glow: rgba(255,0,60,0.45);
+  --accent: #ffe600;
+  --accent-glow: rgba(255,230,0,0.4);
+  --yellow: #ffe600;
+  --green: #00ffe7;
+
+  --card: rgba(0,12,18,0.97);
+  --card-foreground: #e0fff8;
+  --muted: rgba(0,15,22,0.8);
+  --muted-foreground: #7fffee;
+
+  --blob1: radial-gradient(circle, rgba(0,255,231,0.2) 0%, transparent 70%);
+  --blob2: radial-gradient(circle, rgba(255,0,60,0.15) 0%, transparent 70%);
+  --blob3: radial-gradient(circle, rgba(255,230,0,0.12) 0%, transparent 70%);
+  --blob4: radial-gradient(circle, rgba(0,255,231,0.07) 0%, transparent 70%);
+
+  --scrollbar-thumb: rgba(0,255,231,0.4);
+  --selection-bg: rgba(0,255,231,0.3);
+
+  --anime-border: #00ffe7;
+  --anime-outline: rgba(0,255,231,0.7);
+  --anime-shadow: rgba(0,255,231,0.25);
+  --dot-color: rgba(0,255,231,0.06);
+  --shine: rgba(0,255,231,0.06);
+}
+
+/* ── MIDNIGHT Theme ──────────────────────────────────── */
+[data-theme="midnight"] {
+  --background: #05071a;
+  --foreground: #e8eeff;
+
+  --glass-bg: rgba(96,165,250,0.03);
+  --glass-border: rgba(96,165,250,0.15);
+  --glass-reflection: linear-gradient(135deg,rgba(255,255,255,0.05) 0%,rgba(0,0,0,0) 50%,rgba(96,165,250,0.03) 100%);
+
+  --primary: #60a5fa;
+  --primary-glow: rgba(96,165,250,0.5);
+  --secondary: #a78bfa;
+  --secondary-glow: rgba(167,139,250,0.45);
+  --accent: #f0abfc;
+  --accent-glow: rgba(240,171,252,0.4);
+  --yellow: #fde68a;
+  --green: #86efac;
+
+  --card: rgba(6,8,28,0.97);
+  --card-foreground: #e8eeff;
+  --muted: rgba(8,10,35,0.8);
+  --muted-foreground: #93c5fd;
+
+  --blob1: radial-gradient(circle, rgba(96,165,250,0.2) 0%, transparent 70%);
+  --blob2: radial-gradient(circle, rgba(167,139,250,0.18) 0%, transparent 70%);
+  --blob3: radial-gradient(circle, rgba(240,171,252,0.13) 0%, transparent 70%);
+  --blob4: radial-gradient(circle, rgba(96,165,250,0.08) 0%, transparent 70%);
+
+  --scrollbar-thumb: rgba(96,165,250,0.4);
+  --selection-bg: rgba(96,165,250,0.3);
+
+  --anime-border: #60a5fa;
+  --anime-outline: rgba(96,165,250,0.7);
+  --anime-shadow: rgba(96,165,250,0.25);
+  --dot-color: rgba(96,165,250,0.06);
+  --shine: rgba(255,255,255,0.06);
+}
+
+/* ── PASTEL Theme ────────────────────────────────────── */
+[data-theme="pastel"] {
+  --background: #0f0a14;
+  --foreground: #fce7f3;
+
+  --glass-bg: rgba(249,168,212,0.03);
+  --glass-border: rgba(249,168,212,0.15);
+  --glass-reflection: linear-gradient(135deg,rgba(249,168,212,0.06) 0%,rgba(0,0,0,0) 50%,rgba(196,181,253,0.03) 100%);
+
+  --primary: #f9a8d4;
+  --primary-glow: rgba(249,168,212,0.5);
+  --secondary: #c4b5fd;
+  --secondary-glow: rgba(196,181,253,0.45);
+  --accent: #86efac;
+  --accent-glow: rgba(134,239,172,0.4);
+  --yellow: #fde68a;
+  --green: #86efac;
+
+  --card: rgba(18,10,22,0.97);
+  --card-foreground: #fce7f3;
+  --muted: rgba(22,12,28,0.8);
+  --muted-foreground: #f0abfc;
+
+  --blob1: radial-gradient(circle, rgba(249,168,212,0.2) 0%, transparent 70%);
+  --blob2: radial-gradient(circle, rgba(196,181,253,0.18) 0%, transparent 70%);
+  --blob3: radial-gradient(circle, rgba(134,239,172,0.12) 0%, transparent 70%);
+  --blob4: radial-gradient(circle, rgba(249,168,212,0.07) 0%, transparent 70%);
+
+  --scrollbar-thumb: rgba(249,168,212,0.4);
+  --selection-bg: rgba(249,168,212,0.3);
+
+  --anime-border: #f9a8d4;
+  --anime-outline: rgba(249,168,212,0.7);
+  --anime-shadow: rgba(249,168,212,0.25);
+  --dot-color: rgba(249,168,212,0.06);
+  --shine: rgba(255,255,255,0.06);
+}
+
+/* ── DEEP WORK / FOCUS MODE edge glow ────────────────── */
+.deep-work-active::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  border: 3px solid var(--primary);
+  box-shadow: inset 0 0 60px var(--primary-glow), 0 0 60px var(--primary-glow);
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 0;
+  animation: deepWorkPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes deepWorkPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

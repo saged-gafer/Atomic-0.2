@@ -1043,6 +1043,18 @@
     z-index: 2000;
   }
 
+  .z-\[9997\] {
+    z-index: 9997;
+  }
+
+  .z-\[9998\] {
+    z-index: 9998;
+  }
+
+  .z-\[9999\] {
+    z-index: 9999;
+  }
+
   .order-first {
     order: -9999;
   }
@@ -2014,6 +2026,11 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
+  .translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * 1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
   .translate-y-\[-50\%\] {
     --tw-translate-y: -50%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -2418,6 +2435,11 @@
     border-top-right-radius: 10px;
   }
 
+  .rounded-t-\[28px\] {
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+  }
+
   .rounded-l-md {
     border-top-left-radius: var(--radius-md);
     border-bottom-left-radius: var(--radius-md);
@@ -2450,6 +2472,11 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
   }
 
   .border-\[1\.5px\] {
@@ -2849,6 +2876,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-black\/50 {
       background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
+  }
+
+  .bg-black\/60 {
+    background-color: #0009;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-black\/60 {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
   }
 
@@ -3705,6 +3742,10 @@
     padding-right: calc(var(--spacing) * 9);
   }
 
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
   }
@@ -4281,6 +4322,10 @@
     color: var(--color-yellow-400);
   }
 
+  .capitalize {
+    text-transform: capitalize;
+  }
+
   .lowercase {
     text-transform: lowercase;
   }
@@ -4300,10 +4345,6 @@
 
   .line-through {
     text-decoration-line: line-through;
-  }
-
-  .underline {
-    text-decoration-line: underline;
   }
 
   .underline-offset-4 {
@@ -6316,6 +6357,12 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+
+  @media (min-width: 40rem) {
     :where(.sm\:space-x-2 > :not(:last-child)) {
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
@@ -6369,6 +6416,13 @@
     .sm\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
 
@@ -7301,6 +7355,121 @@
   --anime-shadow: #10b98140;
   --dot-color: #10b9810f;
   --shine: #ffffff0f;
+}
+
+[data-theme="cyberpunk"] {
+  --background: #000a0e;
+  --foreground: #e0fff8;
+  --glass-bg: #00ffe708;
+  --glass-border: #00ffe726;
+  --glass-reflection: linear-gradient(135deg,#00ffe70f 0%,#0000 50%,#00ffe708 100%);
+  --primary: #00ffe7;
+  --primary-glow: #00ffe780;
+  --secondary: #ff003c;
+  --secondary-glow: #ff003c73;
+  --accent: #ffe600;
+  --accent-glow: #ffe60066;
+  --yellow: #ffe600;
+  --green: #00ffe7;
+  --card: #000c12f7;
+  --card-foreground: #e0fff8;
+  --muted: #000f16cc;
+  --muted-foreground: #7fffee;
+  --blob1: radial-gradient(circle, #00ffe733 0%, transparent 70%);
+  --blob2: radial-gradient(circle, #ff003c26 0%, transparent 70%);
+  --blob3: radial-gradient(circle, #ffe6001f 0%, transparent 70%);
+  --blob4: radial-gradient(circle, #00ffe712 0%, transparent 70%);
+  --scrollbar-thumb: #00ffe766;
+  --selection-bg: #00ffe74d;
+  --anime-border: #00ffe7;
+  --anime-outline: #00ffe7b3;
+  --anime-shadow: #00ffe740;
+  --dot-color: #00ffe70f;
+  --shine: #00ffe70f;
+}
+
+[data-theme="midnight"] {
+  --background: #05071a;
+  --foreground: #e8eeff;
+  --glass-bg: #60a5fa08;
+  --glass-border: #60a5fa26;
+  --glass-reflection: linear-gradient(135deg,#ffffff0d 0%,#0000 50%,#60a5fa08 100%);
+  --primary: #60a5fa;
+  --primary-glow: #60a5fa80;
+  --secondary: #a78bfa;
+  --secondary-glow: #a78bfa73;
+  --accent: #f0abfc;
+  --accent-glow: #f0abfc66;
+  --yellow: #fde68a;
+  --green: #86efac;
+  --card: #06081cf7;
+  --card-foreground: #e8eeff;
+  --muted: #080a23cc;
+  --muted-foreground: #93c5fd;
+  --blob1: radial-gradient(circle, #60a5fa33 0%, transparent 70%);
+  --blob2: radial-gradient(circle, #a78bfa2e 0%, transparent 70%);
+  --blob3: radial-gradient(circle, #f0abfc21 0%, transparent 70%);
+  --blob4: radial-gradient(circle, #60a5fa14 0%, transparent 70%);
+  --scrollbar-thumb: #60a5fa66;
+  --selection-bg: #60a5fa4d;
+  --anime-border: #60a5fa;
+  --anime-outline: #60a5fab3;
+  --anime-shadow: #60a5fa40;
+  --dot-color: #60a5fa0f;
+  --shine: #ffffff0f;
+}
+
+[data-theme="pastel"] {
+  --background: #0f0a14;
+  --foreground: #fce7f3;
+  --glass-bg: #f9a8d408;
+  --glass-border: #f9a8d426;
+  --glass-reflection: linear-gradient(135deg,#f9a8d40f 0%,#0000 50%,#c4b5fd08 100%);
+  --primary: #f9a8d4;
+  --primary-glow: #f9a8d480;
+  --secondary: #c4b5fd;
+  --secondary-glow: #c4b5fd73;
+  --accent: #86efac;
+  --accent-glow: #86efac66;
+  --yellow: #fde68a;
+  --green: #86efac;
+  --card: #120a16f7;
+  --card-foreground: #fce7f3;
+  --muted: #160c1ccc;
+  --muted-foreground: #f0abfc;
+  --blob1: radial-gradient(circle, #f9a8d433 0%, transparent 70%);
+  --blob2: radial-gradient(circle, #c4b5fd2e 0%, transparent 70%);
+  --blob3: radial-gradient(circle, #86efac1f 0%, transparent 70%);
+  --blob4: radial-gradient(circle, #f9a8d412 0%, transparent 70%);
+  --scrollbar-thumb: #f9a8d466;
+  --selection-bg: #f9a8d44d;
+  --anime-border: #f9a8d4;
+  --anime-outline: #f9a8d4b3;
+  --anime-shadow: #f9a8d440;
+  --dot-color: #f9a8d40f;
+  --shine: #ffffff0f;
+}
+
+.deep-work-active:before {
+  content: "";
+  border: 3px solid var(--primary);
+  box-shadow: inset 0 0 60px var(--primary-glow), 0 0 60px var(--primary-glow);
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 0;
+  animation: 2.5s ease-in-out infinite deepWorkPulse;
+  position: fixed;
+  inset: 0;
+}
+
+@keyframes deepWorkPulse {
+  0%, 100% {
+    opacity: .6;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 *, :before, :after {

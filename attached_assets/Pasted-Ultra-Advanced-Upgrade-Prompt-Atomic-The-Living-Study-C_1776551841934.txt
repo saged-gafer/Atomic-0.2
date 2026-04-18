@@ -1,0 +1,59 @@
+Ultra-Advanced Upgrade Prompt: "Atomic" The Living Study Companion (No-Music Edition)
+
+Role: Expert Full-Stack Developer, UI/UX Designer, and Game Mechanics Specialist.
+
+Core Task: Overhaul the application into a gamified, quiet study ecosystem featuring "Atomic". The app must focus on deep focus, emotional connection, and high-end aesthetics without any musical distractions.
+
+1. Initial Onboarding & Gender-Adaptive UI
+
+First Interaction: A sleek "Identity Selection" screen (Male/Female Atomic).
+
+Theme Engine: Implementation of a global CSS Variable system for "Style Presets" (Default, Cyberpunk, Midnight, Nature, and Pastel).
+
+Dynamic Assets: Atomic’s hair, accessories, and outfit accents must change color to match the selected theme.
+
+2. Emotional Intelligence & Evolution System (Quiet Focus)
+
+Daily Mood Sync: Atomic should greet the user differently based on the time of day (e.g., "Good morning! Ready for a silent deep-work session?" vs. "Late night focus? Atomic is here with you!").
+
+Trust Level (XP): Introduce a "Study Bond" meter. As the user completes tasks or stays focused (without switching tabs), Atomic "levels up," unlocking new visual animations (e.g., sitting closer, writing faster, or a supportive thumbs-up).
+
+Failure Reaction: If the user is inactive, Atomic looks "waiting" or "thoughtful," holding a sign or a bubble saying: "I'm ready when you are."
+
+3. Visual Feedback & Subtle Notifications (No Audio)
+
+Silent Encouragement: Instead of sounds, use high-quality visual cues. Small "Heart" particles or "Sparkles" appear when the user completes a field.
+
+Visual Cues for Focus: When the user enters a "Deep Work" mode, the UI edges subtly glow, and Atomic puts on a "Focus Headband" (instead of headphones).
+
+4. Scene-Specific Interactions (Advanced)
+
+A. The Sign-Up Page (The "Messy Room" Phase)
+
+Scene: Daytime, cluttered room, Atomic looks stressed.
+
+Logic: Atomic tracks the cursor. If the user hesitates, Atomic points at the input field with a speech bubble: "Don't be shy, let's get started!".
+
+B. The Login Page (The "Cozy Study" Phase)
+
+Scene: Nighttime, warm lighting, organized desk.
+
+Logic: When the user logs in successfully, implement a "Power-Up" animation where the screen glows and Atomic gives a bright, silent cheer with confetti.
+
+5. Advanced Micro-Interactions
+
+Password Peek: When the user toggles "show password," Atomic puts on glasses to "inspect" it playfully.
+
+Anti-Procrastination: If the user switches tabs, Atomic sends a subtle browser notification: "Hey! Atomic is still here waiting...".
+
+Progress Rewards: Every time a user finishes a study block, Atomic throws digital confetti or gives a "Virtual High-Five" via animation.
+
+6. Technical & Performance Requirements
+
+Zero-Lag Animations: Use GSAP ScrollTrigger and Framer Motion for buttery-smooth transitions.
+
+Responsive Canvas: Atomic must stay proportional across all viewports.
+
+Clean Code Architecture: Use a State Management system (Redux or Context API) to handle userGender, themeStyle, studyXP, and authStatus.
+
+Final Instruction for AI: Deliver production-ready code. Ensure the UI feels "premium" and "calm" using glassmorphism and blur effects. Focus on visual storytelling to keep the user motivated without the need for audio.

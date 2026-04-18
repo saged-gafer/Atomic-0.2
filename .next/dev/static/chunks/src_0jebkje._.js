@@ -54,16 +54,19 @@ const defaultSubjects = [
     }
 ];
 const AppContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createContext"])(undefined);
+function xpToLevel(xp) {
+    return Math.floor(Math.sqrt(xp / 100)) + 1;
+}
 function AppProvider({ children }) {
     _s();
     const [userData, setUserDataState] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isAuthenticated, setIsAuthenticated] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [standaloneGender, setStandaloneGender] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const hydrated = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "AppProvider.useEffect": ()=>{
             if (("TURBOPACK compile-time value", "object") !== 'undefined' && !hydrated.current) {
-                // Defer state updates to avoid cascading renders during hydration
                 setTimeout({
                     "AppProvider.useEffect": ()=>{
                         const saved = localStorage.getItem('study_planner_user_data');
@@ -76,6 +79,8 @@ function AppProvider({ children }) {
                                 console.error('Failed to parse saved user data:', e);
                             }
                         }
+                        const savedGender = localStorage.getItem('atomic_gender');
+                        if (savedGender) setStandaloneGender(savedGender);
                         setIsLoading(false);
                     }
                 }["AppProvider.useEffect"], 0);
@@ -477,6 +482,38 @@ function AppProvider({ children }) {
             }["AppProvider.useCallback[deleteMonthlyTask]"]);
         }
     }["AppProvider.useCallback[deleteMonthlyTask]"], []);
+    const addStudyXP = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "AppProvider.useCallback[addStudyXP]": (amount)=>{
+            setUserDataState({
+                "AppProvider.useCallback[addStudyXP]": (prev)=>{
+                    if (!prev) return prev;
+                    const newXP = (prev.studyXP || 0) + amount;
+                    return {
+                        ...prev,
+                        studyXP: newXP,
+                        studyBondLevel: xpToLevel(newXP)
+                    };
+                }
+            }["AppProvider.useCallback[addStudyXP]"]);
+        }
+    }["AppProvider.useCallback[addStudyXP]"], []);
+    const setGender = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "AppProvider.useCallback[setGender]": (gender)=>{
+            setStandaloneGender(gender);
+            if ("TURBOPACK compile-time truthy", 1) {
+                localStorage.setItem('atomic_gender', gender);
+            }
+            setUserDataState({
+                "AppProvider.useCallback[setGender]": (prev)=>prev ? {
+                        ...prev,
+                        gender
+                    } : prev
+            }["AppProvider.useCallback[setGender]"]);
+        }
+    }["AppProvider.useCallback[setGender]"], []);
+    const gender = userData?.gender || standaloneGender;
+    const studyXP = userData?.studyXP || 0;
+    const studyBondLevel = userData?.studyBondLevel || xpToLevel(studyXP);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AppContext.Provider, {
         value: {
             userData,
@@ -500,16 +537,21 @@ function AppProvider({ children }) {
             addMonthlyTask,
             toggleMonthlyTask,
             deleteMonthlyTask,
-            isLoading
+            isLoading,
+            addStudyXP,
+            setGender,
+            gender,
+            studyXP,
+            studyBondLevel
         },
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AppContext.tsx",
-        lineNumber: 275,
+        lineNumber: 310,
         columnNumber: 10
     }, this);
 }
-_s(AppProvider, "Hbxis6/kSvihrkezBfRr7IZciZ8=");
+_s(AppProvider, "LUk++rooZTfOdo3p2Ir2B8h+djI=");
 _c = AppProvider;
 const useAppContext = ()=>{
     _s1();
@@ -530,6 +572,8 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 __turbopack_context__.s([
     "THEMES",
     ()=>THEMES,
+    "THEME_ORDER",
+    ()=>THEME_ORDER,
     "ThemeProvider",
     ()=>ThemeProvider,
     "useTheme",
@@ -560,12 +604,13 @@ const THEMES = {
         cardBg: 'rgba(5,8,26,0.96)',
         cardBorder: 'rgba(99,102,241,0.25)',
         ctaGradient: 'linear-gradient(135deg,#4338ca,#6d28d9,#1d4ed8)',
-        glowClass: 'nebula-glow'
+        glowClass: 'nebula-glow',
+        emoji: '🌌'
     },
     jade: {
         id: 'jade',
-        name: 'Jade Dusk',
-        nameAr: 'الزمرد',
+        name: 'Nature',
+        nameAr: 'الطبيعة',
         bg: '#040d08',
         bgDeep: '#030a05',
         primary: '#10b981',
@@ -580,12 +625,84 @@ const THEMES = {
         cardBg: 'rgba(4,14,8,0.96)',
         cardBorder: 'rgba(16,185,129,0.25)',
         ctaGradient: 'linear-gradient(135deg,#065f46,#b45309,#047857)',
-        glowClass: 'jade-glow'
+        glowClass: 'jade-glow',
+        emoji: '🌿'
+    },
+    cyberpunk: {
+        id: 'cyberpunk',
+        name: 'Cyberpunk',
+        nameAr: 'سايبربانك',
+        bg: '#000a0e',
+        bgDeep: '#00060a',
+        primary: '#00ffe7',
+        secondary: '#ff003c',
+        accent: '#ffe600',
+        primaryGlow: 'rgba(0,255,231,0.5)',
+        secondaryGlow: 'rgba(255,0,60,0.4)',
+        blob1: 'radial-gradient(circle, rgba(0,255,231,0.2) 0%, transparent 70%)',
+        blob2: 'radial-gradient(circle, rgba(255,0,60,0.15) 0%, transparent 70%)',
+        blob3: 'radial-gradient(circle, rgba(255,230,0,0.12) 0%, transparent 70%)',
+        blob4: 'radial-gradient(circle, rgba(0,255,231,0.07) 0%, transparent 70%)',
+        cardBg: 'rgba(0,12,18,0.97)',
+        cardBorder: 'rgba(0,255,231,0.3)',
+        ctaGradient: 'linear-gradient(135deg,#00665c,#660018,#006655)',
+        glowClass: 'cyberpunk-glow',
+        emoji: '⚡'
+    },
+    midnight: {
+        id: 'midnight',
+        name: 'Midnight',
+        nameAr: 'منتصف الليل',
+        bg: '#05071a',
+        bgDeep: '#030514',
+        primary: '#60a5fa',
+        secondary: '#a78bfa',
+        accent: '#f0abfc',
+        primaryGlow: 'rgba(96,165,250,0.5)',
+        secondaryGlow: 'rgba(167,139,250,0.4)',
+        blob1: 'radial-gradient(circle, rgba(96,165,250,0.2) 0%, transparent 70%)',
+        blob2: 'radial-gradient(circle, rgba(167,139,250,0.18) 0%, transparent 70%)',
+        blob3: 'radial-gradient(circle, rgba(240,171,252,0.13) 0%, transparent 70%)',
+        blob4: 'radial-gradient(circle, rgba(96,165,250,0.08) 0%, transparent 70%)',
+        cardBg: 'rgba(6,8,28,0.97)',
+        cardBorder: 'rgba(96,165,250,0.25)',
+        ctaGradient: 'linear-gradient(135deg,#1e3a5f,#4c1d95,#1e3a5f)',
+        glowClass: 'midnight-glow',
+        emoji: '🌙'
+    },
+    pastel: {
+        id: 'pastel',
+        name: 'Pastel',
+        nameAr: 'باستيل',
+        bg: '#0f0a14',
+        bgDeep: '#0a0710',
+        primary: '#f9a8d4',
+        secondary: '#c4b5fd',
+        accent: '#86efac',
+        primaryGlow: 'rgba(249,168,212,0.5)',
+        secondaryGlow: 'rgba(196,181,253,0.4)',
+        blob1: 'radial-gradient(circle, rgba(249,168,212,0.2) 0%, transparent 70%)',
+        blob2: 'radial-gradient(circle, rgba(196,181,253,0.18) 0%, transparent 70%)',
+        blob3: 'radial-gradient(circle, rgba(134,239,172,0.12) 0%, transparent 70%)',
+        blob4: 'radial-gradient(circle, rgba(249,168,212,0.07) 0%, transparent 70%)',
+        cardBg: 'rgba(18,10,22,0.97)',
+        cardBorder: 'rgba(249,168,212,0.25)',
+        ctaGradient: 'linear-gradient(135deg,#7c2d5a,#5b21b6,#1f5e3a)',
+        glowClass: 'pastel-glow',
+        emoji: '🌸'
     }
 };
+const THEME_ORDER = [
+    'nebula',
+    'jade',
+    'cyberpunk',
+    'midnight',
+    'pastel'
+];
 const ThemeContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createContext"])({
     theme: THEMES.nebula,
     themeName: 'nebula',
+    setTheme: ()=>{},
     toggleTheme: ()=>{}
 });
 function ThemeProvider({ children }) {
@@ -596,19 +713,40 @@ function ThemeProvider({ children }) {
             const saved = localStorage.getItem('atomic_theme');
             if (saved && THEMES[saved]) {
                 setThemeName(saved);
-                document.documentElement.setAttribute('data-theme', saved);
+                applyThemeVars(saved);
             } else {
-                document.documentElement.setAttribute('data-theme', 'nebula');
+                applyThemeVars('nebula');
             }
         }
     }["ThemeProvider.useEffect"], []);
+    const applyThemeVars = (t)=>{
+        const cfg = THEMES[t];
+        const root = document.documentElement;
+        root.setAttribute('data-theme', t);
+        root.style.setProperty('--theme-primary', cfg.primary);
+        root.style.setProperty('--theme-secondary', cfg.secondary);
+        root.style.setProperty('--theme-accent', cfg.accent);
+        root.style.setProperty('--theme-bg', cfg.bg);
+        root.style.setProperty('--blob1', cfg.blob1);
+        root.style.setProperty('--blob2', cfg.blob2);
+        root.style.setProperty('--blob3', cfg.blob3);
+        root.style.setProperty('--blob4', cfg.blob4);
+    };
+    const setTheme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "ThemeProvider.useCallback[setTheme]": (t)=>{
+            setThemeName(t);
+            localStorage.setItem('atomic_theme', t);
+            applyThemeVars(t);
+        }
+    }["ThemeProvider.useCallback[setTheme]"], []);
     const toggleTheme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "ThemeProvider.useCallback[toggleTheme]": ()=>{
             setThemeName({
                 "ThemeProvider.useCallback[toggleTheme]": (prev)=>{
-                    const next = prev === 'nebula' ? 'jade' : 'nebula';
+                    const idx = THEME_ORDER.indexOf(prev);
+                    const next = THEME_ORDER[(idx + 1) % THEME_ORDER.length];
                     localStorage.setItem('atomic_theme', next);
-                    document.documentElement.setAttribute('data-theme', next);
+                    applyThemeVars(next);
                     return next;
                 }
             }["ThemeProvider.useCallback[toggleTheme]"]);
@@ -618,16 +756,17 @@ function ThemeProvider({ children }) {
         value: {
             theme: THEMES[themeName],
             themeName,
+            setTheme,
             toggleTheme
         },
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/ThemeContext.tsx",
-        lineNumber: 105,
+        lineNumber: 196,
         columnNumber: 5
     }, this);
 }
-_s(ThemeProvider, "dlpSPzH0RiqyXCxv3zK5VHt316s=");
+_s(ThemeProvider, "vbQVzy2c8g/j+dkAdMh5IChwH+w=");
 _c = ThemeProvider;
 const useTheme = ()=>{
     _s1();

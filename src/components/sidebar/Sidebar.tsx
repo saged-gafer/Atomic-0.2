@@ -16,6 +16,8 @@ import { parseFile, generateExam, generateSummary, generateNotes, generateAllCon
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/context/ThemeContext';
+import StudyBondMeter from '@/components/ui/StudyBondMeter';
+import { MiniMascot } from '@/components/anime/AnimeMascot';
 
 const iconMap: Record<string, React.ElementType> = { Book, Atom, Pi, Quill: PenTool, FlaskConical };
 
@@ -63,7 +65,9 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
     addSideTask,
     toggleSideTask,
     deleteSideTask,
-    togglePrayer
+    togglePrayer,
+    gender,
+    addStudyXP,
   } = useAppContext();
   const { theme } = useTheme();
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
@@ -222,6 +226,27 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
         )}
       </div>
 
+      {/* Study Bond Meter + Mascot (non-collapsed) */}
+      <AnimatePresence>
+        {(!isCollapsed || isMobile) && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="px-4 py-3 border-b overflow-hidden"
+            style={{ borderColor: `${theme.primary}15` }}
+          >
+            <div className="flex items-center gap-3">
+              <MiniMascot color={theme.primary} size={36} gender={gender || 'male'}/>
+              <div className="flex-1 min-w-0">
+                <p className="text-[11px] font-black text-white truncate">{userData?.name || 'Student'}</p>
+                <StudyBondMeter compact showLabel={false}/>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Navigation Tabs */}
       <nav className="flex border-b shrink-0" style={{ borderColor:`${theme.primary}15`, background:`${theme.primary}04` }} role="tablist">
         {(['subjects', 'tasks', 'calendar', 'azkar', 'salat'] as const).map((tab) => {
@@ -331,7 +356,7 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
                   className="flex items-center gap-3 p-3 bg-white/[0.03] border border-white/5 rounded-2xl group hover:border-primary/20 transition-all"
                 >
                   <button
-                    onClick={() => toggleSideTask(task.id)}
+                    onClick={() => { if (!task.completed) addStudyXP(20); toggleSideTask(task.id); }}
                     className={`shrink-0 w-5 h-5 rounded-lg border flex items-center justify-center transition-all ${
                       task.completed ? 'bg-primary border-primary text-white' : 'border-slate-700 hover:border-primary'
                     }`}

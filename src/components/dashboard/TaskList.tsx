@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Trash2 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { translations, Language } from '@/lib/i18n';
+import ConfettiEffect from '@/components/ui/ConfettiEffect';
 
 function AnimatedCheckbox({ checked, onChange }: { checked: boolean; onChange: () => void }) {
   return (
@@ -46,15 +47,25 @@ function AnimatedCheckbox({ checked, onChange }: { checked: boolean; onChange: (
 }
 
 export default function TaskList({ subjectId, tasks, language }: { subjectId: string; tasks: Task[]; language: Language }) {
-  const { addTask: addTaskCtx, toggleTask, deleteTask } = useAppContext();
+  const { addTask: addTaskCtx, toggleTask, deleteTask, addStudyXP } = useAppContext();
   const [newTask, setNewTask] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
   const t = translations[language || 'en'];
 
   const handleAdd = () => {
     if (newTask.trim()) {
       addTaskCtx(subjectId, newTask.trim());
       setNewTask('');
+    }
+  };
+
+  const handleToggle = (taskId: string, currentCompleted: boolean) => {
+    toggleTask(subjectId, taskId);
+    if (!currentCompleted) {
+      addStudyXP(20);
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 2200);
     }
   };
 
@@ -95,7 +106,7 @@ export default function TaskList({ subjectId, tasks, language }: { subjectId: st
               className="flex items-center justify-between group px-3 py-2.5 rounded-xl hover:bg-white/[0.03] transition-colors duration-200"
             >
               <div className="flex items-center gap-3 flex-1 min-w-0">
-                <AnimatedCheckbox checked={task.completed} onChange={() => toggleTask(subjectId, task.id)} />
+                <AnimatedCheckbox checked={task.completed} onChange={() => handleToggle(task.id, task.completed)} />
                 <span
                   className={`text-sm font-medium truncate transition-all duration-300 ${
                     task.completed ? 'line-through text-slate-600' : 'text-slate-300'
@@ -143,6 +154,7 @@ export default function TaskList({ subjectId, tasks, language }: { subjectId: st
           <Plus size={16} />
         </motion.button>
       </motion.div>
+      {showConfetti && <ConfettiEffect active={showConfetti} />}
     </div>
   );
 }

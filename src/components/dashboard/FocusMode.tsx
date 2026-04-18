@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { useAppContext, Subject } from '@/context/AppContext';
 import { translations, Language } from '@/lib/i18n';
+import { MiniMascot } from '@/components/anime/AnimeMascot';
 
 interface FocusSession {
   id: string;
@@ -122,7 +123,7 @@ const SubjectIcon: React.FC<{ icon: string; size?: number; className?: string }>
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function FocusMode() {
-  const { userData, addLog } = useAppContext();
+  const { userData, addLog, addStudyXP, gender } = useAppContext();
 
   const [isOpen,           setIsOpen          ] = useState(false);
   const [isFullscreen,     setIsFullscreen     ] = useState(false);
@@ -143,6 +144,15 @@ export default function FocusMode() {
   const accumulatedRef = useRef<number>(0);
 
   const isActive = isRunning && !isPaused;
+
+  useEffect(() => {
+    if (isActive && isFullscreen) {
+      document.body.classList.add('deep-work-active');
+    } else {
+      document.body.classList.remove('deep-work-active');
+    }
+    return () => document.body.classList.remove('deep-work-active');
+  }, [isActive, isFullscreen]);
 
   const motivationalMessages = {
     en: [
@@ -254,9 +264,11 @@ export default function FocusMode() {
     if (selectedSubject?.id) {
       addLog({ date: new Date().toISOString(), duration: totalSeconds, type: 'study', subjectId: selectedSubject.id });
     }
+    const xpEarned = Math.max(10, Math.floor(totalSeconds / 60) * 5);
+    addStudyXP(xpEarned);
     resetSession();
     setShowAnalytics(true);
-  }, [totalSeconds, sessions, selectedSubject, addLog]);
+  }, [totalSeconds, sessions, selectedSubject, addLog, addStudyXP]);
 
   useEffect(() => {
     if (isRunning && !isPaused && remainingSeconds > 0) {
@@ -618,6 +630,21 @@ export default function FocusMode() {
               {motivationalMessages[language][motivIdx]}
             </motion.p>
           </AnimatePresence>
+
+          {/* Mascot with focus headband */}
+          <motion.div
+            className="mt-6 flex justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, type: 'spring', stiffness: 200 }}
+          >
+            <MiniMascot
+              color={isActive ? '#6366f1' : '#f59e0b'}
+              size={54}
+              gender={(gender as 'male' | 'female') || 'male'}
+              focusMode={isActive}
+            />
+          </motion.div>
         </div>
 
         {/* Bottom progress area */}

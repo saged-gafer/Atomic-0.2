@@ -26,6 +26,10 @@ export type UserData = {
   monthlyTasks?: Record<string, MonthlyTask[]>;
   sessionStartTime?: string;
   loginCount?: number;
+  gender?: 'male' | 'female';
+  studyXP?: number;
+  studyBondLevel?: number;
+  themeStyle?: string;
 };
 
 export const defaultSubjects: Subject[] = [
@@ -59,19 +63,28 @@ type AppContextType = {
   toggleMonthlyTask: (date: string, taskId: string) => void;
   deleteMonthlyTask: (date: string, taskId: string) => void;
   isLoading: boolean;
+  addStudyXP: (amount: number) => void;
+  setGender: (gender: 'male' | 'female') => void;
+  gender: 'male' | 'female' | null;
+  studyXP: number;
+  studyBondLevel: number;
 };
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
+
+function xpToLevel(xp: number): number {
+  return Math.floor(Math.sqrt(xp / 100)) + 1;
+}
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [userData, setUserDataState] = useState<UserData | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [standaloneGender, setStandaloneGender] = useState<'male' | 'female' | null>(null);
   const hydrated = useRef(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && !hydrated.current) {
-      // Defer state updates to avoid cascading renders during hydration
       setTimeout(() => {
         const saved = localStorage.getItem('study_planner_user_data');
         if (saved) {
@@ -83,6 +96,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
             console.error('Failed to parse saved user data:', e);
           }
         }
+        const savedGender = localStorage.getItem('atomic_gender') as 'male' | 'female' | null;
+        if (savedGender) setStandaloneGender(savedGender);
         setIsLoading(false);
       }, 0);
       hydrated.current = true;
@@ -272,6 +287,26 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
+  const addStudyXP = useCallback((amount: number) => {
+    setUserDataState(prev => {
+      if (!prev) return prev;
+      const newXP = (prev.studyXP || 0) + amount;
+      return { ...prev, studyXP: newXP, studyBondLevel: xpToLevel(newXP) };
+    });
+  }, []);
+
+  const setGender = useCallback((gender: 'male' | 'female') => {
+    setStandaloneGender(gender);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('atomic_gender', gender);
+    }
+    setUserDataState(prev => prev ? { ...prev, gender } : prev);
+  }, []);
+
+  const gender = userData?.gender || standaloneGender;
+  const studyXP = userData?.studyXP || 0;
+  const studyBondLevel = userData?.studyBondLevel || xpToLevel(studyXP);
+
   return <AppContext.Provider value={{
     userData,
     isAuthenticated,
@@ -294,7 +329,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     addMonthlyTask,
     toggleMonthlyTask,
     deleteMonthlyTask,
-    isLoading
+    isLoading,
+    addStudyXP,
+    setGender,
+    gender,
+    studyXP,
+    studyBondLevel,
   }}>{children}</AppContext.Provider>;
 }
 

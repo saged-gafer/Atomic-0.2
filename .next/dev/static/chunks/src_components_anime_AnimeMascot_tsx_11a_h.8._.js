@@ -15,14 +15,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 "use client";
 ;
 ;
-function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, className = '', primaryColor = '#a855f7', animate: shouldAnimate = true }) {
+function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, className = '', primaryColor = '#a855f7', animate: shouldAnimate = true, gender = 'male', focusMode = false }) {
     const hairColor = primaryColor;
     const skinColor = '#fde8d0';
-    const eyeColor = '#6366f1';
-    const blazerColor = '#1e1b4b';
+    const eyeColor = gender === 'female' ? primaryColor : '#6366f1';
+    const blazerColor = gender === 'female' ? `${primaryColor}30` : '#1e1b4b';
     const shirtColor = '#f0f4ff';
     const blushColor = '#fda4af';
-    const tieColor = '#ec4899';
+    const tieColor = gender === 'female' ? primaryColor : '#ec4899';
+    const isFemale = gender === 'female';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         className: `inline-block select-none ${className}`,
         style: {
@@ -60,7 +61,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     stopColor: "#fef3e8"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -68,13 +69,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     stopColor: skinColor
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 43,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("radialGradient", {
@@ -89,7 +90,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     stopOpacity: "0.9"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 52,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -98,13 +99,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     stopOpacity: "1"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 53,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 48,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("radialGradient", {
@@ -115,10 +116,10 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
                                     offset: "0%",
-                                    stopColor: "#818cf8"
+                                    stopColor: isFemale ? `${primaryColor}cc` : '#818cf8'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -126,13 +127,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     stopColor: eyeColor
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 53,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -144,24 +145,24 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
                                     offset: "0%",
-                                    stopColor: "#2d2870"
+                                    stopColor: isFemale ? `${primaryColor}50` : '#2d2870'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
                                     offset: "100%",
-                                    stopColor: blazerColor
+                                    stopColor: isFemale ? `${primaryColor}25` : blazerColor
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 58,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("filter", {
@@ -210,7 +211,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 41,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -221,140 +222,233 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     fill: "rgba(0,0,0,0.2)"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 71,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
-                    x: "76",
-                    y: "208",
-                    width: "20",
-                    height: "44",
-                    rx: "10",
-                    fill: "#0f0d2a"
+                isFemale ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            x: "78",
+                            y: "208",
+                            width: "18",
+                            height: "44",
+                            rx: "9",
+                            fill: "#1a1045"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 75,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            x: "104",
+                            y: "208",
+                            width: "18",
+                            height: "44",
+                            rx: "9",
+                            fill: "#1a1045"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 76,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "87",
+                            cy: "252",
+                            rx: "13",
+                            ry: "7",
+                            fill: "#0f0a2e"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 77,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "113",
+                            cy: "252",
+                            rx: "13",
+                            ry: "7",
+                            fill: "#0f0a2e"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 78,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            x: "76",
+                            y: "208",
+                            width: "20",
+                            height: "44",
+                            rx: "10",
+                            fill: "#0f0d2a"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 82,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            x: "104",
+                            y: "208",
+                            width: "20",
+                            height: "44",
+                            rx: "10",
+                            fill: "#0f0d2a"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 83,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "86",
+                            cy: "252",
+                            rx: "14",
+                            ry: "8",
+                            fill: "#1a1a2e"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 84,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "114",
+                            cy: "252",
+                            rx: "14",
+                            ry: "8",
+                            fill: "#1a1a2e"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 85,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true),
+                isFemale ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M 56 145 Q 52 170 50 210 L 150 210 Q 148 170 144 145 Q 130 136 100 136 Q 70 136 56 145 Z",
+                    fill: "url(#blazerGrad)",
+                    stroke: `${hairColor}40`,
+                    strokeWidth: "1.5"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 74,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
-                    x: "104",
-                    y: "208",
-                    width: "20",
-                    height: "44",
-                    rx: "10",
-                    fill: "#0f0d2a"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 75,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                    cx: "86",
-                    cy: "252",
-                    rx: "14",
-                    ry: "8",
-                    fill: "#1a1a2e"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 77,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                    cx: "114",
-                    cy: "252",
-                    rx: "14",
-                    ry: "8",
-                    fill: "#1a1a2e"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 78,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    lineNumber: 91,
+                    columnNumber: 11
+                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M 58 145 Q 55 170 54 210 L 146 210 Q 145 170 142 145 Q 130 138 100 138 Q 70 138 58 145 Z",
                     fill: "url(#blazerGrad)",
                     stroke: `${hairColor}30`,
                     strokeWidth: "1"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 81,
-                    columnNumber: 9
+                    lineNumber: 94,
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M 84 138 Q 100 148 116 138 L 116 160 Q 100 165 84 160 Z",
                     fill: shirtColor
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 85,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 96 148 L 104 148 L 107 172 L 100 176 L 93 172 Z",
-                    fill: tieColor
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 87,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 96 148 L 100 144 L 104 148",
+                isFemale ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M 94 148 L 106 148 L 108 162 L 100 158 L 92 162 Z",
                     fill: tieColor,
-                    opacity: "0.7"
+                    opacity: "0.9"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 88,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 58 145 Q 70 142 84 138 L 76 162 Q 62 155 58 145 Z",
-                    fill: "#252070",
-                    opacity: "0.8"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 91,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 142 145 Q 130 142 116 138 L 124 162 Q 138 155 142 145 Z",
-                    fill: "#252070",
-                    opacity: "0.8"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 92,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    lineNumber: 102,
+                    columnNumber: 11
+                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 96 148 L 104 148 L 107 172 L 100 176 L 93 172 Z",
+                            fill: tieColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 105,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 96 148 L 100 144 L 104 148",
+                            fill: tieColor,
+                            opacity: "0.7"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 106,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true),
+                !isFemale && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 58 145 Q 70 142 84 138 L 76 162 Q 62 155 58 145 Z",
+                            fill: "#252070",
+                            opacity: "0.8"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 113,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 142 145 Q 130 142 116 138 L 124 162 Q 138 155 142 145 Z",
+                            fill: "#252070",
+                            opacity: "0.8"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 114,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true),
+                !isFemale && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                            cx: "100",
+                            cy: "175",
+                            r: "2.5",
+                            fill: shirtColor,
+                            opacity: "0.6"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 121,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                            cx: "100",
+                            cy: "188",
+                            r: "2.5",
+                            fill: shirtColor,
+                            opacity: "0.6"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 122,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                            cx: "100",
+                            cy: "201",
+                            r: "2.5",
+                            fill: shirtColor,
+                            opacity: "0.6"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 123,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true),
+                isFemale && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
                     cx: "100",
                     cy: "175",
                     r: "2.5",
-                    fill: shirtColor,
-                    opacity: "0.6"
+                    fill: tieColor,
+                    opacity: "0.5"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 95,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                    cx: "100",
-                    cy: "188",
-                    r: "2.5",
-                    fill: shirtColor,
-                    opacity: "0.6"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 96,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                    cx: "100",
-                    cy: "201",
-                    r: "2.5",
-                    fill: shirtColor,
-                    opacity: "0.6"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 97,
-                    columnNumber: 9
+                    lineNumber: 127,
+                    columnNumber: 11
                 }, this),
                 pose === 'wave' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
@@ -383,7 +477,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#blazerGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 138,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -394,13 +488,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#skinGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 139,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 103,
+                            lineNumber: 133,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
@@ -429,7 +523,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#blazerGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 117,
+                                    lineNumber: 146,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -440,7 +534,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#skinGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 147,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -451,7 +545,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     strokeLinecap: "round"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 148,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -462,7 +556,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     strokeLinecap: "round"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 121,
+                                    lineNumber: 149,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -473,13 +567,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     strokeLinecap: "round"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 150,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 112,
+                            lineNumber: 141,
                             columnNumber: 13
                         }, this)
                     ]
@@ -494,7 +588,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             fill: "url(#blazerGrad)"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 128,
+                            lineNumber: 155,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -506,7 +600,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             fill: "url(#blazerGrad)"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 129,
+                            lineNumber: 156,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -518,7 +612,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             fill: "#7c3aed"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 131,
+                            lineNumber: 157,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -530,7 +624,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             fill: "#a855f7"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 132,
+                            lineNumber: 158,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -542,7 +636,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeWidth: "1.5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 133,
+                            lineNumber: 159,
                             columnNumber: 13
                         }, this),
                         [
@@ -560,7 +654,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                 strokeWidth: "1"
                             }, y, false, {
                                 fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                lineNumber: 135,
+                                lineNumber: 160,
                                 columnNumber: 45
                             }, this)),
                         [
@@ -578,7 +672,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                 strokeWidth: "1"
                             }, y + 1000, false, {
                                 fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                lineNumber: 136,
+                                lineNumber: 161,
                                 columnNumber: 45
                             }, this))
                     ]
@@ -611,7 +705,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     transform: "rotate(-35 53 127)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 146,
+                                    lineNumber: 170,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -622,13 +716,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#skinGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 171,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 141,
+                            lineNumber: 165,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
@@ -658,7 +752,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     transform: "rotate(35 147 127)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 178,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -669,13 +763,253 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#skinGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 179,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 149,
+                            lineNumber: 173,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true) : pose === 'waiting' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
+                            animate: shouldAnimate ? {
+                                rotate: [
+                                    2,
+                                    -2,
+                                    2
+                                ]
+                            } : undefined,
+                            transition: {
+                                duration: 4,
+                                repeat: Infinity
+                            },
+                            style: {
+                                transformOrigin: '65px 150px'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    x: "50",
+                                    y: "148",
+                                    width: "18",
+                                    height: "55",
+                                    rx: "9",
+                                    fill: "url(#blazerGrad)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 190,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                    cx: "59",
+                                    cy: "206",
+                                    rx: "10",
+                                    ry: "9",
+                                    fill: "url(#skinGrad)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 191,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 185,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
+                            animate: shouldAnimate ? {
+                                y: [
+                                    0,
+                                    -3,
+                                    0
+                                ]
+                            } : undefined,
+                            transition: {
+                                duration: 2.5,
+                                repeat: Infinity
+                            },
+                            style: {
+                                transformOrigin: '135px 150px'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    x: "132",
+                                    y: "148",
+                                    width: "18",
+                                    height: "55",
+                                    rx: "9",
+                                    fill: "url(#blazerGrad)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 199,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                    cx: "141",
+                                    cy: "206",
+                                    rx: "10",
+                                    ry: "9",
+                                    fill: "url(#skinGrad)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 200,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    x: "148",
+                                    y: "150",
+                                    width: "46",
+                                    height: "28",
+                                    rx: "5",
+                                    fill: "white",
+                                    stroke: primaryColor,
+                                    strokeWidth: "2"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 202,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                                    x: "171",
+                                    y: "167",
+                                    fontSize: "8",
+                                    fontWeight: "900",
+                                    fill: primaryColor,
+                                    textAnchor: "middle",
+                                    children: "Ready!"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 203,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                    x1: "171",
+                                    y1: "178",
+                                    x2: "171",
+                                    y2: "195",
+                                    stroke: primaryColor,
+                                    strokeWidth: "2"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 204,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 194,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true) : pose === 'point' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
+                            animate: shouldAnimate ? {
+                                rotate: [
+                                    2,
+                                    -2,
+                                    2
+                                ]
+                            } : undefined,
+                            transition: {
+                                duration: 3,
+                                repeat: Infinity
+                            },
+                            style: {
+                                transformOrigin: '65px 150px'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    x: "50",
+                                    y: "148",
+                                    width: "18",
+                                    height: "55",
+                                    rx: "9",
+                                    fill: "url(#blazerGrad)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 214,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                    cx: "59",
+                                    cy: "206",
+                                    rx: "10",
+                                    ry: "9",
+                                    fill: "url(#skinGrad)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 215,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 209,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
+                            animate: shouldAnimate ? {
+                                rotate: [
+                                    -20,
+                                    -15,
+                                    -20
+                                ]
+                            } : undefined,
+                            transition: {
+                                duration: 1.5,
+                                repeat: Infinity,
+                                ease: 'easeInOut'
+                            },
+                            style: {
+                                transformOrigin: '135px 155px'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    x: "132",
+                                    y: "140",
+                                    width: "18",
+                                    height: "52",
+                                    rx: "9",
+                                    fill: "url(#blazerGrad)",
+                                    transform: "rotate(-30 141 160)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 223,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                    cx: "155",
+                                    cy: "126",
+                                    rx: "10",
+                                    ry: "9",
+                                    fill: "url(#skinGrad)"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 224,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                                    x1: "155",
+                                    y1: "117",
+                                    x2: "155",
+                                    y2: "108",
+                                    stroke: skinColor,
+                                    strokeWidth: "5",
+                                    strokeLinecap: "round"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                    lineNumber: 226,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 218,
                             columnNumber: 13
                         }, this)
                     ]
@@ -706,7 +1040,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#blazerGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 236,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -717,13 +1051,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#skinGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 237,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 161,
+                            lineNumber: 231,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
@@ -751,7 +1085,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#blazerGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 174,
+                                    lineNumber: 244,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -762,13 +1096,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#skinGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 175,
+                                    lineNumber: 245,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 169,
+                            lineNumber: 239,
                             columnNumber: 13
                         }, this)
                     ]
@@ -782,7 +1116,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     fill: "url(#skinGrad)"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 182,
+                    lineNumber: 251,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -795,44 +1129,143 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     strokeWidth: "0.5"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 185,
+                    lineNumber: 252,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                    cx: "100",
-                    cy: "75",
-                    rx: "55",
-                    ry: "48",
-                    fill: hairColor
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 189,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 52 80 Q 44 110 48 135 Q 52 132 55 140 Q 60 118 55 90 Z",
-                    fill: hairColor
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 191,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 148 80 Q 156 110 152 135 Q 148 132 145 140 Q 140 118 145 90 Z",
-                    fill: hairColor
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 192,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 52 72 Q 55 50 70 44 Q 80 55 88 58 Q 100 52 112 58 Q 120 55 130 44 Q 145 50 148 72 Q 140 60 128 68 Q 118 62 110 68 Q 105 60 100 62 Q 95 60 90 68 Q 82 62 72 68 Q 60 60 52 72 Z",
-                    fill: hairColor
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 194,
-                    columnNumber: 9
-                }, this),
+                isFemale ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "100",
+                            cy: "70",
+                            rx: "58",
+                            ry: "50",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 258,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 46 78 Q 34 115 38 148 Q 44 144 46 152 Q 54 128 48 92 Z",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 259,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 154 78 Q 166 115 162 148 Q 156 144 154 152 Q 146 128 152 92 Z",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 260,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 46 68 Q 50 44 65 36 Q 76 50 86 54 Q 100 46 114 54 Q 124 50 135 36 Q 150 44 154 68 Q 144 56 130 64 Q 120 58 112 64 Q 106 56 100 58 Q 94 56 88 64 Q 80 58 70 64 Q 56 56 46 68 Z",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 261,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 46 78 Q 32 100 34 130 Q 42 126 44 110 Z",
+                            fill: hairColor,
+                            opacity: "0.8"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 263,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 154 78 Q 168 100 166 130 Q 158 126 156 110 Z",
+                            fill: hairColor,
+                            opacity: "0.8"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 264,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                            cx: "66",
+                            cy: "54",
+                            r: "5",
+                            fill: `${primaryColor}60`,
+                            stroke: `${primaryColor}`,
+                            strokeWidth: "1.5"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 266,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                            cx: "66",
+                            cy: "54",
+                            r: "2.5",
+                            fill: "white",
+                            opacity: "0.8"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 267,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "100",
+                            cy: "75",
+                            rx: "55",
+                            ry: "48",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 271,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 52 80 Q 44 110 48 135 Q 52 132 55 140 Q 60 118 55 90 Z",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 272,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 148 80 Q 156 110 152 135 Q 148 132 145 140 Q 140 118 145 90 Z",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 273,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 52 72 Q 55 50 70 44 Q 80 55 88 58 Q 100 52 112 58 Q 120 55 130 44 Q 145 50 148 72 Q 140 60 128 68 Q 118 62 110 68 Q 105 60 100 62 Q 95 60 90 68 Q 82 62 72 68 Q 60 60 52 72 Z",
+                            fill: hairColor
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 274,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 52 72 Q 47 82 48 95 Q 51 90 53 80 Z",
+                            fill: `${hairColor}dd`
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 276,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 148 72 Q 153 82 152 95 Q 149 90 147 80 Z",
+                            fill: `${hairColor}dd`
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 277,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].path, {
                     d: "M 100 38 Q 106 25 102 14 Q 98 10 96 18 Q 94 26 100 38 Z",
                     fill: hairColor,
@@ -858,23 +1291,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 197,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 52 72 Q 47 82 48 95 Q 51 90 53 80 Z",
-                    fill: `${hairColor}dd`
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 204,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 148 72 Q 153 82 152 95 Q 149 90 147 80 Z",
-                    fill: `${hairColor}dd`
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 205,
+                    lineNumber: 282,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -886,7 +1303,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     transform: "rotate(-25 80 52)"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 207,
+                    lineNumber: 290,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -897,7 +1314,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     fill: "url(#skinGrad)"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 211,
+                    lineNumber: 293,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -908,7 +1325,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     fill: "url(#skinGrad)"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 212,
+                    lineNumber: 294,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -920,7 +1337,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     opacity: "0.2"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 213,
+                    lineNumber: 295,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -932,10 +1349,10 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     opacity: "0.2"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 214,
+                    lineNumber: 296,
                     columnNumber: 9
                 }, this),
-                expression === 'wink' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                expression === 'wink' || expression === 'peek' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
                             children: [
@@ -947,7 +1364,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "white"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 221,
+                                    lineNumber: 302,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -958,7 +1375,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "url(#eyeGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 222,
+                                    lineNumber: 303,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -969,7 +1386,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     fill: "#1e1b4b"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 223,
+                                    lineNumber: 304,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -981,19 +1398,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     opacity: "0.95"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 224,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "83",
-                                    cy: "95",
-                                    rx: "2",
-                                    ry: "2.5",
-                                    fill: "white",
-                                    opacity: "0.7"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 225,
+                                    lineNumber: 305,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1003,13 +1408,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     strokeWidth: "1"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 227,
+                                    lineNumber: 306,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 220,
+                            lineNumber: 301,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1020,24 +1425,22 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 230,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                            d: "M 110 90 Q 121 86 132 91",
-                            fill: "rgba(255,150,150,0.1)"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 231,
+                            lineNumber: 308,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true) : expression === 'surprised' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                        {
+                            cx: 79
+                        },
+                        {
+                            cx: 121
+                        }
+                    ].map(({ cx }, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
+                                    cx: cx,
                                     cy: "88",
                                     rx: "16",
                                     ry: "18",
@@ -1046,33 +1449,33 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     strokeWidth: "2"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 236,
-                                    columnNumber: 15
+                                    lineNumber: 314,
+                                    columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
+                                    cx: cx,
                                     cy: "90",
                                     rx: "11",
                                     ry: "13",
                                     fill: "url(#eyeGrad)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 237,
-                                    columnNumber: 15
+                                    lineNumber: 315,
+                                    columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
+                                    cx: cx,
                                     cy: "90",
                                     rx: "5.5",
                                     ry: "6.5",
                                     fill: "#1e1b4b"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 238,
-                                    columnNumber: 15
+                                    lineNumber: 316,
+                                    columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "73",
+                                    cx: cx - 6,
                                     cy: "83",
                                     rx: "4.5",
                                     ry: "5",
@@ -1080,195 +1483,173 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                     opacity: "0.95"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 239,
-                                    columnNumber: 15
+                                    lineNumber: 317,
+                                    columnNumber: 17
                                 }, this)
                             ]
-                        }, void 0, true, {
+                        }, i, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 235,
+                            lineNumber: 313,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false) : expression === 'sleepy' || pose === 'waiting' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 65 89 Q 79 96 93 89",
+                            fill: "none",
+                            stroke: hairColor,
+                            strokeWidth: "4",
+                            strokeLinecap: "round"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 323,
                             columnNumber: 13
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 107 89 Q 121 96 135 89",
+                            fill: "none",
+                            stroke: hairColor,
+                            strokeWidth: "4",
+                            strokeLinecap: "round"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 324,
+                            columnNumber: 13
+                        }, this),
+                        shouldAnimate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
+                            animate: {
+                                y: [
+                                    0,
+                                    -8,
+                                    0
+                                ],
+                                opacity: [
+                                    0,
+                                    1,
+                                    0
+                                ]
+                            },
+                            transition: {
+                                duration: 2.5,
+                                repeat: Infinity
+                            },
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "88",
-                                    rx: "16",
-                                    ry: "18",
-                                    fill: "white",
-                                    stroke: hairColor,
-                                    strokeWidth: "2"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                                    x: "154",
+                                    y: "62",
+                                    fontSize: "10",
+                                    fontWeight: "900",
+                                    fill: primaryColor,
+                                    opacity: "0.7",
+                                    children: "z"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 242,
-                                    columnNumber: 15
+                                    lineNumber: 331,
+                                    columnNumber: 17
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "90",
-                                    rx: "11",
-                                    ry: "13",
-                                    fill: "url(#eyeGrad)"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                                    x: "160",
+                                    y: "53",
+                                    fontSize: "13",
+                                    fontWeight: "900",
+                                    fill: primaryColor,
+                                    opacity: "0.8",
+                                    children: "z"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 243,
-                                    columnNumber: 15
+                                    lineNumber: 332,
+                                    columnNumber: 17
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "90",
-                                    rx: "5.5",
-                                    ry: "6.5",
-                                    fill: "#1e1b4b"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                                    x: "168",
+                                    y: "42",
+                                    fontSize: "16",
+                                    fontWeight: "900",
+                                    fill: primaryColor,
+                                    opacity: "0.9",
+                                    children: "Z"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 244,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "115",
-                                    cy: "83",
-                                    rx: "4.5",
-                                    ry: "5",
-                                    fill: "white",
-                                    opacity: "0.95"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 245,
-                                    columnNumber: 15
+                                    lineNumber: 333,
+                                    columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 241,
-                            columnNumber: 13
+                            lineNumber: 327,
+                            columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true) : expression === 'focused' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
-                                    cy: "91",
-                                    rx: "14",
-                                    ry: "12",
-                                    fill: "white"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 252,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
-                                    cy: "93",
-                                    rx: "10",
-                                    ry: "9",
-                                    fill: "url(#eyeGrad)"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 253,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
-                                    cy: "93",
-                                    rx: "5",
-                                    ry: "4.5",
-                                    fill: "#1e1b4b"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 254,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "73",
-                                    cy: "88",
-                                    rx: "3.5",
-                                    ry: "3.5",
-                                    fill: "white",
-                                    opacity: "0.95"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 255,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    d: "M 65 87 Q 79 82 93 87",
-                                    fill: `${hairColor}cc`
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 257,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 251,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "91",
-                                    rx: "14",
-                                    ry: "12",
-                                    fill: "white"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 260,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "93",
-                                    rx: "10",
-                                    ry: "9",
-                                    fill: "url(#eyeGrad)"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 261,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "93",
-                                    rx: "5",
-                                    ry: "4.5",
-                                    fill: "#1e1b4b"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 262,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "115",
-                                    cy: "88",
-                                    rx: "3.5",
-                                    ry: "3.5",
-                                    fill: "white",
-                                    opacity: "0.95"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 263,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    d: "M 107 87 Q 121 82 135 87",
-                                    fill: `${hairColor}cc`
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 264,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 259,
-                            columnNumber: 13
-                        }, this),
+                        [
+                            {
+                                cx: 79
+                            },
+                            {
+                                cx: 121
+                            }
+                        ].map(({ cx }, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx,
+                                        cy: "91",
+                                        rx: "14",
+                                        ry: "12",
+                                        fill: "white"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 341,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx,
+                                        cy: "93",
+                                        rx: "10",
+                                        ry: "9",
+                                        fill: "url(#eyeGrad)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 342,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx,
+                                        cy: "93",
+                                        rx: "5",
+                                        ry: "4.5",
+                                        fill: "#1e1b4b"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 343,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx - 6,
+                                        cy: "88",
+                                        rx: "3.5",
+                                        ry: "3.5",
+                                        fill: "white",
+                                        opacity: "0.95"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 344,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: `M ${cx - 14} 87 Q ${cx} 82 ${cx + 14} 87`,
+                                        fill: `${hairColor}cc`
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 345,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, i, true, {
+                                fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                lineNumber: 340,
+                                columnNumber: 15
+                            }, this)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                             d: "M 66 80 Q 79 75 92 80",
                             fill: "none",
@@ -1277,7 +1658,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 267,
+                            lineNumber: 348,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1288,180 +1669,103 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 268,
+                            lineNumber: 349,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
-                                    cy: "89",
-                                    rx: "15",
-                                    ry: "17",
-                                    fill: "white"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 274,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
-                                    cy: "91",
-                                    rx: "11",
-                                    ry: "13",
-                                    fill: "url(#eyeGrad)"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 275,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "79",
-                                    cy: "91",
-                                    rx: "5.5",
-                                    ry: "6.5",
-                                    fill: "#1e1b4b"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 276,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "73",
-                                    cy: "84",
-                                    rx: "4.5",
-                                    ry: "5",
-                                    fill: "white",
-                                    opacity: "0.95"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 277,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "84",
-                                    cy: "97",
-                                    rx: "2",
-                                    ry: "2.5",
-                                    fill: "white",
-                                    opacity: "0.7"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 278,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                    cx: "87",
-                                    cy: "84",
-                                    rx: "1.5",
-                                    fill: "white",
-                                    opacity: "0.5"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 279,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    d: "M 65 79 Q 79 72 93 79",
-                                    fill: hairColor
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 281,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 273,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "89",
-                                    rx: "15",
-                                    ry: "17",
-                                    fill: "white"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 284,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "91",
-                                    rx: "11",
-                                    ry: "13",
-                                    fill: "url(#eyeGrad)"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 285,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "121",
-                                    cy: "91",
-                                    rx: "5.5",
-                                    ry: "6.5",
-                                    fill: "#1e1b4b"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 286,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "115",
-                                    cy: "84",
-                                    rx: "4.5",
-                                    ry: "5",
-                                    fill: "white",
-                                    opacity: "0.95"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 287,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                                    cx: "126",
-                                    cy: "97",
-                                    rx: "2",
-                                    ry: "2.5",
-                                    fill: "white",
-                                    opacity: "0.7"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 288,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                    cx: "129",
-                                    cy: "84",
-                                    r: "1.5",
-                                    fill: "white",
-                                    opacity: "0.5"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 289,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    d: "M 107 79 Q 121 72 135 79",
-                                    fill: hairColor
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                    lineNumber: 290,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 283,
-                            columnNumber: 13
-                        }, this),
+                        [
+                            {
+                                cx: 79
+                            },
+                            {
+                                cx: 121
+                            }
+                        ].map(({ cx }, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx,
+                                        cy: "89",
+                                        rx: "15",
+                                        ry: "17",
+                                        fill: "white"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 355,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx,
+                                        cy: "91",
+                                        rx: "11",
+                                        ry: "13",
+                                        fill: "url(#eyeGrad)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 356,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx,
+                                        cy: "91",
+                                        rx: "5.5",
+                                        ry: "6.5",
+                                        fill: "#1e1b4b"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 357,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx - 6,
+                                        cy: "84",
+                                        rx: "4.5",
+                                        ry: "5",
+                                        fill: "white",
+                                        opacity: "0.95"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 358,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                                        cx: cx + 5,
+                                        cy: "97",
+                                        rx: "2",
+                                        ry: "2.5",
+                                        fill: "white",
+                                        opacity: "0.7"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 359,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                        cx: cx + 8,
+                                        cy: "84",
+                                        r: "1.5",
+                                        fill: "white",
+                                        opacity: "0.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 360,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: `M ${cx - 14} 79 Q ${cx} 72 ${cx + 14} 79`,
+                                        fill: hairColor
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                        lineNumber: 361,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, i, true, {
+                                fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                                lineNumber: 354,
+                                columnNumber: 15
+                            }, this)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                             d: "M 66 78 Q 79 73 92 78",
                             fill: "none",
@@ -1470,7 +1774,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 293,
+                            lineNumber: 364,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1481,7 +1785,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 294,
+                            lineNumber: 365,
                             columnNumber: 13
                         }, this)
                     ]
@@ -1495,7 +1799,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     opacity: "0.5"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 300,
+                    lineNumber: 370,
                     columnNumber: 9
                 }, this),
                 expression === 'happy' || pose === 'success' || pose === 'wave' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1506,7 +1810,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             opacity: "0.8"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 305,
+                            lineNumber: 374,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1517,7 +1821,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeLinecap: "round"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 306,
+                            lineNumber: 375,
                             columnNumber: 13
                         }, this)
                     ]
@@ -1529,7 +1833,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     strokeLinecap: "round"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 309,
+                    lineNumber: 378,
                     columnNumber: 11
                 }, this) : expression === 'surprised' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
                     cx: "100",
@@ -1540,7 +1844,17 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     opacity: "0.7"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 311,
+                    lineNumber: 380,
+                    columnNumber: 11
+                }, this) : expression === 'sleepy' || pose === 'waiting' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M 93 114 Q 100 112 107 114",
+                    fill: "none",
+                    stroke: `${hairColor}60`,
+                    strokeWidth: "2",
+                    strokeLinecap: "round"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                    lineNumber: 382,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                     d: "M 90 113 Q 100 120 110 113",
@@ -1550,7 +1864,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                     strokeLinecap: "round"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 313,
+                    lineNumber: 384,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].g, {
@@ -1575,7 +1889,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             opacity: "0.55"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 321,
+                            lineNumber: 392,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -1587,13 +1901,13 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             opacity: "0.55"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 322,
+                            lineNumber: 393,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 317,
+                    lineNumber: 388,
                     columnNumber: 9
                 }, this),
                 (pose === 'success' || pose === 'wave') && shouldAnimate && [
@@ -1650,7 +1964,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                 strokeLinecap: "round"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                lineNumber: 337,
+                                lineNumber: 408,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1663,7 +1977,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                 strokeLinecap: "round"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                lineNumber: 338,
+                                lineNumber: 409,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1676,7 +1990,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                 strokeLinecap: "round"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                lineNumber: 339,
+                                lineNumber: 410,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1689,7 +2003,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                 strokeLinecap: "round"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                lineNumber: 340,
+                                lineNumber: 411,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1699,16 +2013,16 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                                 fill: "#facc15"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                                lineNumber: 341,
+                                lineNumber: 412,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, i, true, {
                         fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                        lineNumber: 332,
+                        lineNumber: 403,
                         columnNumber: 11
                     }, this)),
-                pose === 'study' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                (pose === 'study' || expression === 'peek') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
                     opacity: "0.9",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -1722,7 +2036,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeWidth: "2.5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 348,
+                            lineNumber: 419,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -1736,7 +2050,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeWidth: "2.5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 349,
+                            lineNumber: 420,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1748,7 +2062,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeWidth: "2"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 350,
+                            lineNumber: 421,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1760,7 +2074,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeWidth: "2"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 351,
+                            lineNumber: 422,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1772,7 +2086,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             strokeWidth: "2"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 352,
+                            lineNumber: 423,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -1784,7 +2098,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             fill: `${primaryColor}15`
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 353,
+                            lineNumber: 424,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -1796,13 +2110,104 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             fill: `${primaryColor}15`
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 354,
+                            lineNumber: 425,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 347,
+                    lineNumber: 418,
+                    columnNumber: 11
+                }, this),
+                focusMode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            x: "46",
+                            y: "56",
+                            width: "108",
+                            height: "10",
+                            rx: "5",
+                            fill: `${primaryColor}30`,
+                            stroke: primaryColor,
+                            strokeWidth: "2"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 432,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            x: "48",
+                            y: "58",
+                            width: "104",
+                            height: "6",
+                            rx: "3",
+                            fill: `${primaryColor}20`
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 434,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                            x: "100",
+                            y: "65",
+                            fontSize: "5",
+                            fontWeight: "900",
+                            fill: primaryColor,
+                            textAnchor: "middle",
+                            opacity: "0.9",
+                            children: "FOCUS"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 437,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].circle, {
+                            cx: "58",
+                            cy: "61",
+                            r: "3",
+                            fill: primaryColor,
+                            animate: shouldAnimate ? {
+                                scale: [
+                                    1,
+                                    1.5,
+                                    1
+                                ]
+                            } : undefined,
+                            transition: {
+                                duration: 1.5,
+                                repeat: Infinity
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 439,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].circle, {
+                            cx: "142",
+                            cy: "61",
+                            r: "3",
+                            fill: primaryColor,
+                            animate: shouldAnimate ? {
+                                scale: [
+                                    1,
+                                    1.5,
+                                    1
+                                ]
+                            } : undefined,
+                            transition: {
+                                duration: 1.5,
+                                repeat: Infinity,
+                                delay: 0.75
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 442,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                    lineNumber: 431,
                     columnNumber: 11
                 }, this),
                 pose === 'think' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
@@ -1815,7 +2220,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             opacity: "0.6"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 361,
+                            lineNumber: 451,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1826,7 +2231,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             opacity: "0.7"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 362,
+                            lineNumber: 452,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1837,7 +2242,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             opacity: "0.8"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 363,
+                            lineNumber: 453,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -1850,7 +2255,7 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             opacity: "0.85"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 364,
+                            lineNumber: 454,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -1863,29 +2268,30 @@ function AnimeMascot({ pose = 'idle', expression = 'happy', size = 200, classNam
                             children: "?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                            lineNumber: 366,
+                            lineNumber: 455,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 360,
+                    lineNumber: 450,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-            lineNumber: 40,
+            lineNumber: 45,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-        lineNumber: 34,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
 _c = AnimeMascot;
-function MiniMascot({ color = '#a855f7', size = 40 }) {
+function MiniMascot({ color = '#a855f7', size = 40, gender = 'male' }) {
+    const isFemale = gender === 'female';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         style: {
             width: size,
@@ -1916,7 +2322,7 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     fill: `${color}20`
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 381,
+                    lineNumber: 471,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -1927,36 +2333,82 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     fill: "#fde8d0"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 383,
+                    lineNumber: 472,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
-                    cx: "40",
-                    cy: "26",
-                    rx: "24",
-                    ry: "16",
-                    fill: color
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 385,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 20 32 Q 17 42 19 50 Q 21 48 22 40 Z",
-                    fill: color
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 386,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                    d: "M 60 32 Q 63 42 61 50 Q 59 48 58 40 Z",
-                    fill: color
-                }, void 0, false, {
-                    fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 387,
-                    columnNumber: 9
-                }, this),
+                isFemale ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "40",
+                            cy: "22",
+                            rx: "26",
+                            ry: "18",
+                            fill: color
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 475,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 16 30 Q 10 46 14 58 Q 18 55 19 46 Z",
+                            fill: color
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 476,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 64 30 Q 70 46 66 58 Q 62 55 61 46 Z",
+                            fill: color
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 477,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                            cx: "26",
+                            cy: "20",
+                            r: "3.5",
+                            fill: `${color}60`,
+                            stroke: color,
+                            strokeWidth: "1"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 478,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
+                            cx: "40",
+                            cy: "26",
+                            rx: "24",
+                            ry: "16",
+                            fill: color
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 482,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 20 32 Q 17 42 19 50 Q 21 48 22 40 Z",
+                            fill: color
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 483,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 60 32 Q 63 42 61 50 Q 59 48 58 40 Z",
+                            fill: color
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/anime/AnimeMascot.tsx",
+                            lineNumber: 484,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
                     cx: "33",
                     cy: "38",
@@ -1965,7 +2417,7 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     fill: "white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 389,
+                    lineNumber: 487,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -1973,10 +2425,10 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     cy: "39",
                     rx: "3.5",
                     ry: "4.5",
-                    fill: "#6366f1"
+                    fill: isFemale ? color : '#6366f1'
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 390,
+                    lineNumber: 488,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -1987,7 +2439,7 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     fill: "white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 391,
+                    lineNumber: 489,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -1998,7 +2450,7 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     fill: "white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 392,
+                    lineNumber: 490,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -2006,10 +2458,10 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     cy: "39",
                     rx: "3.5",
                     ry: "4.5",
-                    fill: "#6366f1"
+                    fill: isFemale ? color : '#6366f1'
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 393,
+                    lineNumber: 491,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -2020,7 +2472,7 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     fill: "white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 394,
+                    lineNumber: 492,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2031,7 +2483,7 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     strokeLinecap: "round"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 396,
+                    lineNumber: 493,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -2043,7 +2495,7 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     opacity: "0.5"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 398,
+                    lineNumber: 494,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ellipse", {
@@ -2055,18 +2507,18 @@ function MiniMascot({ color = '#a855f7', size = 40 }) {
                     opacity: "0.5"
                 }, void 0, false, {
                     fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-                    lineNumber: 399,
+                    lineNumber: 495,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-            lineNumber: 380,
+            lineNumber: 470,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-        lineNumber: 377,
+        lineNumber: 467,
         columnNumber: 5
     }, this);
 }
@@ -2106,12 +2558,12 @@ function StarBurst({ color = '#facc15', size = 24, className = '' }) {
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-            lineNumber: 412,
+            lineNumber: 508,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/anime/AnimeMascot.tsx",
-        lineNumber: 408,
+        lineNumber: 504,
         columnNumber: 5
     }, this);
 }

@@ -2,17 +2,29 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { Eye, EyeOff } from 'lucide-react';
 
-interface FloatingInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface FloatingInputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
   label: string;
   error?: string;
+  type?: string;
+  onRevealToggle?: (visible: boolean) => void;
 }
 
 export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputProps>(
-  ({ label, value, onChange, onFocus, onBlur, className, type, error, ...props }, ref) => {
+  ({ label, value, onChange, onFocus, onBlur, className, type, error, onRevealToggle, ...props }, ref) => {
     const [isFocused, setIsFocused] = useState(false);
+    const [showPassword, setShowPassword] = useState(false);
     const hasValue = value !== undefined && value !== null && value !== '';
     const id = React.useId();
+    const isPassword = type === 'password';
+    const inputType = isPassword ? (showPassword ? 'text' : 'password') : (type || 'text');
+
+    const handleReveal = () => {
+      const next = !showPassword;
+      setShowPassword(next);
+      onRevealToggle?.(next);
+    };
 
     return (
       <div className="relative w-full pt-4 mt-2">
@@ -20,7 +32,7 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
           {...props}
           id={id}
           ref={ref}
-          type={type}
+          type={inputType}
           value={value}
           onChange={onChange}
           onFocus={(e) => {
@@ -31,13 +43,27 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
             setIsFocused(false);
             onBlur?.(e);
           }}
-          placeholder=" " // Required for peer-placeholder-shown if we used CSS, but we use Framer
+          placeholder=" "
           className={cn(
             "w-full h-12 bg-transparent border-none outline-none text-base text-white font-semibold border-b-2 border-white/20 transition-all duration-500 focus:border-transparent px-1 relative z-10",
+            isPassword && "pr-10",
             error && "border-red-500/50",
             className
           )}
         />
+
+        {/* Password reveal toggle */}
+        {isPassword && (
+          <button
+            type="button"
+            onClick={handleReveal}
+            className="absolute right-1 top-1/2 translate-y-1 z-20 p-1 rounded-lg transition-colors"
+            style={{ color: 'rgba(255,255,255,0.4)' }}
+            tabIndex={-1}
+          >
+            {showPassword ? <EyeOff size={16}/> : <Eye size={16}/>}
+          </button>
+        )}
 
         <motion.label
           htmlFor={id}
@@ -53,7 +79,6 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
           {label}
         </motion.label>
 
-        {/* Background glow when focused */}
         <AnimatePresence>
           {isFocused && (
             <motion.div
@@ -65,7 +90,6 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
           )}
         </AnimatePresence>
 
-        {/* Animated focus underline */}
         <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white/20 z-0" />
         <motion.div
           className="absolute bottom-0 left-0 h-[2px] bg-primary z-20 shadow-[0_0_8px_var(--primary)]"

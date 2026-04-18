@@ -1,7 +1,7 @@
 # ATOMIC — Anime Study Platform
 
 ## Overview
-A full-featured study management app with a complete anime/manga visual redesign. Features a chibi mascot character, manga aesthetics, and two swappable themes.
+A full-featured study management app with an anime/liquid-glass visual design. Features a gender-adaptive chibi Atomic mascot, 5 theme presets, emotional intelligence (Study Bond XP system, time-of-day greetings), and scene-specific micro-interactions.
 
 ## Architecture
 - **Framework:** Next.js 16 (App Router) with Turbopack
@@ -13,36 +13,57 @@ A full-featured study management app with a complete anime/manga visual redesign
 
 ## Key Components
 
-### Anime-Specific
-- `src/components/anime/AnimeMascot.tsx` — Chibi SVG student character (5 poses, 5 expressions), MiniMascot, StarBurst
-- `src/app/globals.css` — Full anime design system: Nebula + Jade themes, manga dots, speed lines, anime-card/btn CSS
+### Anime / Identity
+- `src/components/anime/AnimeMascot.tsx` — Gender-aware chibi SVG mascot (male/female variants), 5 poses, 5 expressions, focus headband, MiniMascot (supports `focusMode` + headband), StarBurst
+- `src/components/anime/GenderSelectScreen.tsx` — First-launch companion selection screen (Male/Female Atomic)
+- `src/app/globals.css` — Full anime design system: 5 themes (Nebula/Cyberpunk/Midnight/Jade/Pastel), `.deep-work-active` edge-glow keyframe
+
+### UI Effects
+- `src/components/ui/StudyBondMeter.tsx` — XP progress bar, level names, compact + full variants
+- `src/components/ui/ParticleEffect.tsx` + `useParticles` — Heart/sparkle particle bursts
+- `src/components/ui/ConfettiEffect.tsx` — Confetti burst on task/milestone completion
+- `src/components/ui/TabVisibilityTracker.tsx` — 30s inactivity tab-visibility notification
+- `src/components/ui/ThemePickerModal.tsx` — 5-theme picker modal
+- `src/components/ui/FloatingInput.tsx` — Floating-label input with built-in password reveal + `onRevealToggle` callback
 
 ### Auth Flow
-- `src/components/auth/AuthScreen.tsx` — Anime login/register with mascot, floating stars, manga FX text
-- `src/components/onboarding/OnboardingFlow.tsx` — 4-step registration (Profile/Subjects/Schedule/Goals) with per-step mascot
+- `src/components/auth/AuthScreen.tsx` — Time-of-day greeting, power-up overlay + confetti on login, password peek → mascot reaction, ThemePickerModal integration
+- `src/components/onboarding/OnboardingFlow.tsx` — 4-step registration with per-step mascot
 
 ### Dashboard
-- `src/components/dashboard/Dashboard.tsx` — Anime hero header, mascot speech bubbles, AnimeStatCard grid
-- `src/components/dashboard/SubjectCard.tsx` — Manga-panel subject cards with screen-tone overlay
-- `src/components/sidebar/Sidebar.tsx` — Theme-aware sidebar with anime-styled tabs and navigation
+- `src/components/dashboard/Dashboard.tsx` — Main dashboard with anime hero header
+- `src/components/dashboard/FocusMode.tsx` — Focus timer with XP reward on session complete, deep-work body glow (`deep-work-active`), MiniMascot with focus headband during active sessions
+- `src/components/dashboard/TaskList.tsx` — Task list with XP reward (+20 XP) and confetti burst on task completion
+- `src/components/sidebar/Sidebar.tsx` — StudyBondMeter + MiniMascot in header, XP reward on side-task completion
 
-## Themes
-Two themes togglable via "Change Design" button:
-- **Nebula** (default): Deep purple-black (#030712), primary indigo (#6366f1), secondary purple (#8b5cf6)
-- **Jade**: Deep forest (#040d08), primary emerald (#10b981), secondary amber (#f59e0b)
+### Context
+- `src/context/AppContext.tsx` — `gender`, `studyXP`, `studyBondLevel`, `addStudyXP`, `setGender` alongside core user data
+- `src/context/ThemeContext.tsx` — 5 themes: nebula | jade | cyberpunk | midnight | pastel
+
+## XP System
+- +20 XP per completed task (subject tasks + side tasks)
+- +5 XP per minute on completed focus sessions (min 10 XP)
+- Level formula: `floor(sqrt(xp/100)) + 1`
+- Persisted in `study_planner_user_data` localStorage
+
+## Themes (5 presets)
+- **Nebula** (default): Deep purple-black, indigo primary
+- **Jade**: Forest green, emerald primary
+- **Cyberpunk**: Dark navy, neon cyan primary
+- **Midnight**: Near-black, violet primary
+- **Pastel**: Dark with soft pink/lavender primary
 
 ## Data
-- `localStorage` key `study_planner_user_data` — full UserData JSON
-- `localStorage` key `atomic_theme` — 'nebula' | 'jade'
+- `localStorage` key `study_planner_user_data` — full UserData JSON (includes `studyXP`)
+- `localStorage` key `atomic_gender` — 'male' | 'female' (persists independently of auth)
+- `localStorage` key `atomic_theme` — theme name
+- `localStorage` key `focus_sessions` — array of FocusSession records
 
-## Anime Design Conventions
-- Chunky 2–2.5px colored borders on cards
-- 3px bottom shadow bar on buttons (`0 4px 0 0 color`)
-- Rounded corners: 20–28px
-- Manga halftone dot overlay (radial 1px @ 12–28px)
-- Diagonal speed lines (-45deg repeating linear-gradient)
-- Speech bubbles with double-triangle tail
-- Framer Motion: only transform/opacity (never animate SVG `d` attribute)
+## App Flow
+1. First launch → GenderSelectScreen (gender stored in `atomic_gender`)
+2. AuthScreen (time-of-day greeting, theme picker, power-up on login)
+3. OnboardingFlow (new users only)
+4. Dashboard (Sidebar with StudyBondMeter, FocusMode with deep-work glow + headband)
 
 ## AI Services
 - `src/services/aiFileParser.ts` — Generate exam/summary/notes/mindmap from uploaded files
