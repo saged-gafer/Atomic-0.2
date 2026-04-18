@@ -15,6 +15,7 @@ import MonthlyCalendar from '@/components/monthly/MonthlyCalendar';
 import { parseFile, generateExam, generateSummary, generateNotes, generateAllContent, generateMindMap } from '@/services/aiFileParser';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { useTheme } from '@/context/ThemeContext';
 
 const iconMap: Record<string, React.ElementType> = { Book, Atom, Pi, Quill: PenTool, FlaskConical };
 
@@ -64,6 +65,7 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
     deleteSideTask,
     togglePrayer
   } = useAppContext();
+  const { theme } = useTheme();
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'subjects' | 'tasks' | 'calendar' | 'azkar' | 'salat'>('subjects');
   const [isGenerating, setIsGenerating] = useState(false);
@@ -177,10 +179,11 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
   const sidebarContent = (
     <>
       {/* Header */}
-      <div className="p-4 border-b border-white/5 flex items-center justify-between min-h-[64px] shrink-0">
+      <div className="p-4 border-b flex items-center justify-between min-h-[64px] shrink-0" style={{ borderColor:`${theme.primary}20` }}>
         <div className="flex items-center gap-3 min-w-0">
-          <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-[0_0_20px_rgba(99,102,241,0.4)] shrink-0">
-            <Atom size={20} className="text-white" />
+          <div className="w-9 h-9 rounded-2xl flex items-center justify-center shrink-0 font-black text-white text-sm"
+            style={{ background:`linear-gradient(135deg,${theme.primary},${theme.secondary})`, boxShadow:`0 0 15px ${theme.primary}40` }}>
+            A
           </div>
           <AnimatePresence>
             {(!isCollapsed || isMobile) && (
@@ -220,31 +223,34 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
       </div>
 
       {/* Navigation Tabs */}
-      <nav className="flex border-b border-white/5 bg-white/[0.02] shrink-0" role="tablist">
-        {(['subjects', 'tasks', 'calendar', 'azkar', 'salat'] as const).map((tab) => (
-          <button
-            key={tab}
-            role="tab"
-            aria-selected={activeTab === tab}
-            onClick={() => setActiveTab(tab)}
-            className={`flex-1 py-2.5 px-1 flex justify-center transition-all relative ${
-              activeTab === tab ? 'text-primary' : 'text-slate-500 hover:text-slate-300'
-            }`}
-          >
-            {tab === 'subjects' && <Book size={17} />}
-            {tab === 'tasks' && <ListTodo size={17} />}
-            {tab === 'calendar' && <CalendarDays size={17} />}
-            {tab === 'azkar' && <Heart size={17} />}
-            {tab === 'salat' && <CheckCircle2 size={17} />}
-            {activeTab === tab && (
-              <motion.div
-                layoutId="activeTab"
-                className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary shadow-[0_0_10px_rgba(99,102,241,0.5)]"
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              />
-            )}
-          </button>
-        ))}
+      <nav className="flex border-b shrink-0" style={{ borderColor:`${theme.primary}15`, background:`${theme.primary}04` }} role="tablist">
+        {(['subjects', 'tasks', 'calendar', 'azkar', 'salat'] as const).map((tab) => {
+          const isActive = activeTab === tab;
+          return (
+            <button
+              key={tab}
+              role="tab"
+              aria-selected={isActive}
+              onClick={() => setActiveTab(tab)}
+              className="flex-1 py-2.5 px-1 flex justify-center transition-all relative"
+              style={{ color: isActive ? theme.primary : 'rgba(180,180,200,0.4)' }}
+            >
+              {tab === 'subjects'  && <Book size={17} />}
+              {tab === 'tasks'     && <ListTodo size={17} />}
+              {tab === 'calendar'  && <CalendarDays size={17} />}
+              {tab === 'azkar'     && <Heart size={17} />}
+              {tab === 'salat'     && <CheckCircle2 size={17} />}
+              {isActive && (
+                <motion.div
+                  layoutId="animeActiveTab"
+                  className="absolute bottom-0 left-0 right-0 h-[3px] rounded-full"
+                  style={{ background:`linear-gradient(90deg,${theme.primary},${theme.secondary})`, boxShadow:`0 0 8px ${theme.primary}60` }}
+                  transition={{ type:"spring", stiffness:300, damping:30 }}
+                />
+              )}
+            </button>
+          );
+        })}
       </nav>
 
       {/* Content Area */}
@@ -259,13 +265,17 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
                 <motion.button
                   key={subject.id}
                   onClick={() => setSelectedSubject(isSelected ? null : subject.id)}
-                  className={`w-full flex items-center gap-3 px-3 py-3 rounded-2xl transition-all border ${
-                    isSelected ? 'bg-primary/10 text-primary border-primary/20' : 'bg-transparent text-slate-400 border-transparent hover:bg-white/5'
-                  }`}
-                  whileHover={{ x: isRTL ? -4 : 4 }}
+                  className="w-full flex items-center gap-3 px-3 py-3 rounded-2xl transition-all border"
+                  style={{
+                    background: isSelected ? `${theme.primary}12` : 'transparent',
+                    borderColor: isSelected ? `${theme.primary}30` : 'transparent',
+                    color: isSelected ? theme.primary : 'rgba(180,180,200,0.7)',
+                    boxShadow: isSelected ? `0 2px 0 0 ${theme.primary}20` : 'none',
+                  }}
+                  whileHover={{ x: isRTL ? -4 : 4, backgroundColor: `${theme.primary}08` }}
                 >
-                  <div className="p-2 rounded-xl shrink-0" style={{ backgroundColor: isSelected ? 'transparent' : `${subject.color}15` }}>
-                    <Icon size={16} style={{ color: isSelected ? 'currentColor' : subject.color }} />
+                  <div className="p-2 rounded-xl shrink-0" style={{ background: isSelected ? `${theme.primary}18` : `${subject.color}15` }}>
+                    <Icon size={16} style={{ color: isSelected ? theme.primary : subject.color }} />
                   </div>
                   <AnimatePresence>
                     {(!isCollapsed || isMobile) && (
@@ -494,7 +504,12 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
             : { x: isCollapsed ? (isRTL ? 300 : -300) : 0, width: 280 }
         }
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-0 ${isRTL ? 'right-0' : 'left-0'} h-full bg-[#020617]/95 backdrop-blur-2xl border-${isRTL ? 'l' : 'r'} border-white/5 z-40 flex flex-col overflow-hidden shadow-2xl`}
+        className={`fixed top-0 ${isRTL ? 'right-0' : 'left-0'} h-full backdrop-blur-2xl z-40 flex flex-col overflow-hidden shadow-2xl`}
+        style={{
+          background: theme.cardBg,
+          borderRight: !isRTL ? `2px solid ${theme.primary}20` : undefined,
+          borderLeft:  isRTL  ? `2px solid ${theme.primary}20` : undefined,
+        }}
         aria-label="Main Navigation"
         aria-hidden={!isMobile && isCollapsed}
       >

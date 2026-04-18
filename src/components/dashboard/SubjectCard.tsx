@@ -9,6 +9,7 @@ import { translations, Language } from '@/lib/i18n';
 import { analyzeVideoLink, VideoAnalysisResult, createTasksFromVideo } from '@/services/aiVideoAnalyzer';
 import { Button } from '@/components/ui/button';
 import { GlassCard } from '@/components/ui/GlassCard';
+import { useTheme } from '@/context/ThemeContext';
 
 const iconMap: Record<string, React.ElementType> = { Book, Atom, Pi, Quill: PenTool, FlaskConical };
 
@@ -51,6 +52,7 @@ const SubjectCard = React.memo(({
   language: Language;
 }) => {
   const { setUserData, userData } = useAppContext();
+  const { theme } = useTheme();
   const [showAnalysis, setShowAnalysis] = useState(false);
   const [analysis, setAnalysis] = useState<VideoAnalysisResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -89,14 +91,22 @@ const SubjectCard = React.memo(({
       transition={{ delay: index * 0.08, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="group shadow-2xl card-hover"
       style={{
-        borderLeft: isRTL ? undefined : `3px solid ${subject.color}`,
-        borderRight: isRTL ? `3px solid ${subject.color}` : undefined,
+        border: `2px solid ${subject.color}35`,
+        boxShadow: `0 3px 0 0 ${subject.color}25, 0 8px 30px rgba(0,0,0,0.5)`,
       }}
     >
+      {/* Manga-style top beam */}
+      <div className="absolute top-0 left-0 right-0 h-[3px] rounded-full pointer-events-none z-10"
+        style={{ background: `linear-gradient(90deg, transparent, ${subject.color}, transparent)` }}
+      />
+      {/* Screen tone background */}
+      <div className="absolute inset-0 opacity-15 pointer-events-none rounded-[2rem]"
+        style={{ backgroundImage:`radial-gradient(circle, ${subject.color}20 1px, transparent 1px)`, backgroundSize:'12px 12px' }}
+      />
       {/* Color top glow */}
       <div
-        className="absolute top-0 left-0 right-0 h-24 pointer-events-none z-0 rounded-t-[2rem] opacity-30"
-        style={{ background: `radial-gradient(ellipse at 50% 0%, ${subject.color}40, transparent 70%)` }}
+        className="absolute top-0 left-0 right-0 h-24 pointer-events-none z-0 rounded-t-[2rem] opacity-20"
+        style={{ background: `radial-gradient(ellipse at 50% 0%, ${subject.color}50, transparent 70%)` }}
       />
 
       <div className="relative z-10 space-y-5">
