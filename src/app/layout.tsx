@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { ToastProvider } from "@/components/ui/Toast";
 import AdhkarService from "@/components/AdhkarService";
 import { CursorGlow } from "@/components/ui/CursorGlow";
 import TabVisibilityTracker from "@/components/ui/TabVisibilityTracker";
@@ -54,11 +55,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
         <ThemeProvider>
           <AppProvider>
-            <TabVisibilityTracker />
-            <div className="relative z-10 min-h-screen flex flex-col page-transition-wrapper">
-              {children}
-            </div>
-            <AdhkarService />
+            <ToastProvider>
+              <TabVisibilityTracker />
+              <div className="relative z-10 min-h-screen flex flex-col page-transition-wrapper">
+                {children}
+              </div>
+              <AdhkarService />
+            </ToastProvider>
           </AppProvider>
         </ThemeProvider>
       </body>

@@ -26,8 +26,12 @@ A full-featured study management app with an anime/liquid-glass visual design. F
 - `src/components/ui/ThemePickerModal.tsx` — 5-theme picker modal
 - `src/components/ui/FloatingInput.tsx` — Floating-label input with built-in password reveal + `onRevealToggle` callback
 
-### Auth Flow
-- `src/components/auth/AuthScreen.tsx` — Time-of-day greeting, power-up overlay + confetti on login, password peek → mascot reaction, ThemePickerModal integration
+### Auth Flow (Fully Rebuilt)
+- `src/components/auth/AuthScreen.tsx` — 3-scene hero entry experience:
+  - **Scene 1 (Study Room):** Full-screen anime study room with CSS character, desk lamp, window+curtains (ambient sway), bookshelf, moon, twinkling stars, dust particles, floating icons (Timer/Book/CheckSquare/Sparkles)
+  - **Scene 2 (Auth Landing):** Neon ATOMICS logo with glow pulse, orbiting rings, particle field, glassmorphism "Create Account" + "Sign In" buttons
+  - **Scene 3 (Auth Form):** Dark purple morphing form with FloatingInput fields, shimmer submit button, toast notifications (no traditional error messages), power-up overlay on login
+- `src/components/ui/Toast.tsx` — Global toast notification system (success/error/info), spring animations, auto-dismiss after 3.5s
 - `src/components/onboarding/OnboardingFlow.tsx` — 4-step registration with per-step mascot
 
 ### Dashboard

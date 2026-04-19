@@ -10,9 +10,9 @@ export default function Home() {
 
   if (isLoading) return null;
 
-  if (!gender) return <GenderSelectScreen />;
-
   if (!isAuthenticated) return <AuthScreen />;
+
+  if (!gender) return <GenderSelectScreen />;
 
   return <Dashboard />;
 }
