@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppContext } from '@/context/AppContext';
 import { translations } from '@/lib/i18n';
@@ -42,17 +43,18 @@ export default function SettingsPanel() {
         <Settings size={18} />
       </button>
 
-      <AnimatePresence>
-        {isOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={close}
-              className="fixed inset-0 bg-black/65 z-[700] backdrop-blur-sm"
-            />
+      {typeof document !== 'undefined' && ReactDOM.createPortal(
+        <AnimatePresence>
+          {isOpen && (
+            <>
+              {/* Backdrop */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={close}
+                className="fixed inset-0 bg-black/65 z-[700] backdrop-blur-sm"
+              />
 
             {/* Modal — centered on all screen sizes */}
             <motion.div
@@ -202,9 +204,11 @@ export default function SettingsPanel() {
               {/* Bottom accent */}
               <div className="h-[1px] w-full" style={{ background: 'linear-gradient(90deg, transparent, rgba(99,102,241,0.2), transparent)' }} />
             </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+            </>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </>
   );
 }

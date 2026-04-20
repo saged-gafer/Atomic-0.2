@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import { useAppContext } from '@/context/AppContext';
 import { translations } from '@/lib/i18n';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -165,21 +166,22 @@ export default function ScheduleEditor() {
         <span className="hidden sm:inline">{t.edit_schedule}</span>
       </motion.button>
 
-      <AnimatePresence>
-        {isOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsOpen(false)}
-              className="fixed inset-0 z-[700] bg-black/80 backdrop-blur-sm"
-            />
+      {typeof document !== 'undefined' && ReactDOM.createPortal(
+        <AnimatePresence>
+          {isOpen && (
+            <>
+              {/* Backdrop */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setIsOpen(false)}
+                className="fixed inset-0 z-[700] bg-black/80 backdrop-blur-sm"
+              />
 
-            {/* Modal wrapper — centers on desktop, full screen on mobile */}
-            <div
-              className="fixed inset-0 z-[710] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none"
+              {/* Modal wrapper — centers on desktop, full screen on mobile */}
+              <div
+                className="fixed inset-0 z-[710] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none"
             >
             <motion.div
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
@@ -546,10 +548,12 @@ export default function ScheduleEditor() {
                 </motion.button>
               </div>
             </motion.div>
-            </div>
-          </>
-        )}
-      </AnimatePresence>
+              </div>
+            </>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </div>
   );
 }
