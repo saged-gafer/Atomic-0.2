@@ -869,10 +869,6 @@
     bottom: calc(var(--spacing) * 8);
   }
 
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
-  }
-
   .bottom-24 {
     bottom: calc(var(--spacing) * 24);
   }
