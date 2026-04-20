@@ -13,6 +13,7 @@ export const generateMotivationalMessage = (name: string) => {
 };
 
 export const generateSuggestedSchedule = (userData: UserData): Record<string, string[]> => {
+  if (!userData.subjects || userData.subjects.length === 0) return {};
   const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   const subjects = userData.subjects;
   const suggested: Record<string, string[]> = {};

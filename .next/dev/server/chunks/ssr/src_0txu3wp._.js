@@ -87,7 +87,7 @@ const translations = {
         add_extracted_tasks: "Add Extracted Tasks",
         tasks_added: "tasks added successfully!",
         no_video_link: "No video link available for this subject.",
-        welcome_title: "ATOMICS",
+        welcome_title: "ATOMIC",
         username: "Username",
         password: "Password",
         password_required: "Password is required",
@@ -198,8 +198,8 @@ const translations = {
         relevance_score: "المدى",
         add_extracted_tasks: "إضافة المهام المستخرجة",
         tasks_added: "تمت إضافة المهام بنجاح!",
-        no_video_link: "No video link available for this subject.",
-        welcome_title: "ATOMICS",
+        no_video_link: "لا يوجد رابط فيديو متاح لهذه المادة.",
+        welcome_title: "ATOMIC",
         username: "اسم المستخدم",
         password: "كلمة المرور",
         password_required: "كلمة المرور مطلوبة",
@@ -893,6 +893,7 @@ const generateMotivationalMessage = (name)=>{
     return messages[Math.floor(Math.random() * messages.length)];
 };
 const generateSuggestedSchedule = (userData)=>{
+    if (!userData.subjects || userData.subjects.length === 0) return {};
     const DAYS = [
         'Monday',
         'Tuesday',

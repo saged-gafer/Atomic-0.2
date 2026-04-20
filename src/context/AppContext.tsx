@@ -26,7 +26,6 @@ export type UserData = {
   monthlyTasks?: Record<string, MonthlyTask[]>;
   sessionStartTime?: string;
   loginCount?: number;
-  gender?: 'male' | 'female';
   studyXP?: number;
   studyBondLevel?: number;
   themeStyle?: string;
@@ -64,8 +63,6 @@ type AppContextType = {
   deleteMonthlyTask: (date: string, taskId: string) => void;
   isLoading: boolean;
   addStudyXP: (amount: number) => void;
-  setGender: (gender: 'male' | 'female') => void;
-  gender: 'male' | 'female' | null;
   studyXP: number;
   studyBondLevel: number;
 };
@@ -80,7 +77,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [userData, setUserDataState] = useState<UserData | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [standaloneGender, setStandaloneGender] = useState<'male' | 'female' | null>(null);
   const hydrated = useRef(false);
 
   useEffect(() => {
@@ -96,8 +92,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
             console.error('Failed to parse saved user data:', e);
           }
         }
-        const savedGender = localStorage.getItem('atomic_gender') as 'male' | 'female' | null;
-        if (savedGender) setStandaloneGender(savedGender);
         setIsLoading(false);
       }, 0);
       hydrated.current = true;
@@ -295,15 +289,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
-  const setGender = useCallback((gender: 'male' | 'female') => {
-    setStandaloneGender(gender);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('atomic_gender', gender);
-    }
-    setUserDataState(prev => prev ? { ...prev, gender } : prev);
-  }, []);
-
-  const gender = userData?.gender || standaloneGender;
   const studyXP = userData?.studyXP || 0;
   const studyBondLevel = userData?.studyBondLevel || xpToLevel(studyXP);
 
@@ -331,8 +316,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     deleteMonthlyTask,
     isLoading,
     addStudyXP,
-    setGender,
-    gender,
     studyXP,
     studyBondLevel,
   }}>{children}</AppContext.Provider>;

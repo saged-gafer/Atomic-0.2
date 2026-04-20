@@ -354,7 +354,7 @@ function OnboardingFlow() {
                     subjects: [
                         ...fd.subjects,
                         {
-                            id: Math.random().toString(36).substr(2, 9),
+                            id: Math.random().toString(36).substring(2, 11),
                             name: newSubjectName.trim(),
                             color: colors[Math.floor(Math.random() * colors.length)],
                             icon: 'Book',

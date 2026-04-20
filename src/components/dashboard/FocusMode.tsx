@@ -120,6 +120,23 @@ const SubjectIcon: React.FC<{ icon: string; size?: number; className?: string }>
   return <>{map[icon] ?? <BookOpen size={size} className={className} />}</>;
 };
 
+// ─── Time Input Field (extracted to avoid re-mount on every render) ───────────
+const TimeInputField = ({ value, onChange, label, max }: { value: number; onChange: (v: number) => void; label: string; max: number }) => (
+  <div className="flex flex-col items-center gap-2">
+    <motion.div className="relative" whileHover={{ scale: 1.06 }}>
+      <input
+        type="number"
+        min={0} max={max}
+        value={value}
+        onChange={(e) => onChange(parseInt(e.target.value) || 0)}
+        className="w-20 h-24 text-center text-4xl font-black bg-white/5 border-2 border-white/10 rounded-2xl text-white focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/25 transition-all"
+      />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+    </motion.div>
+    <span className="text-xs font-bold uppercase tracking-widest text-slate-500">{label}</span>
+  </div>
+);
+
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function FocusMode() {
   const { userData, addLog, addStudyXP } = useAppContext();
@@ -313,23 +330,6 @@ export default function FocusMode() {
   // glow color based on state
   const glowColor  = isActive ? 'rgba(99,102,241,0.9)' : 'rgba(245,158,11,0.8)';
   const glowColor2 = isActive ? 'rgba(99,102,241,0.4)' : 'rgba(245,158,11,0.3)';
-
-  // ── Time Input Field ────────────────────────────────────────────────────────
-  const TimeInputField = ({ value, onChange, label, max }: { value: number; onChange: (v: number) => void; label: string; max: number }) => (
-    <div className="flex flex-col items-center gap-2">
-      <motion.div className="relative" whileHover={{ scale: 1.06 }}>
-        <input
-          type="number"
-          min={0} max={max}
-          value={value}
-          onChange={(e) => onChange(parseInt(e.target.value) || 0)}
-          className="w-20 h-24 text-center text-4xl font-black bg-white/5 border-2 border-white/10 rounded-2xl text-white focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/25 transition-all"
-        />
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
-      </motion.div>
-      <span className="text-xs font-bold uppercase tracking-widest text-slate-500">{label}</span>
-    </div>
-  );
 
   // ── Analytics Modal ─────────────────────────────────────────────────────────
   const AnalyticsModal = () => (

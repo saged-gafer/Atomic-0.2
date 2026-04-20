@@ -1000,7 +1000,7 @@ const SubjectCard = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$
         const updatedSubjects = userData.subjects.map((s)=>s.id === subject.id ? {
                 ...s,
                 tasks: [
-                    ...s.tasks,
+                    ...s.tasks || [],
                     ...newTasks
                 ]
             } : s);
@@ -2533,12 +2533,8 @@ function ScheduleEditor() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ScheduleEditor.useEffect": ()=>{
             if (userData) {
-                setTimeout({
-                    "ScheduleEditor.useEffect": ()=>{
-                        setSchedule(userData.weeklySchedule);
-                        setSuggested((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$aiOptimizer$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["generateSuggestedSchedule"])(userData));
-                    }
-                }["ScheduleEditor.useEffect"], 0);
+                setSchedule(userData.weeklySchedule);
+                setSuggested((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$aiOptimizer$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["generateSuggestedSchedule"])(userData));
             }
         }
     }["ScheduleEditor.useEffect"], [
@@ -2597,7 +2593,7 @@ function ScheduleEditor() {
                         size: 16
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                        lineNumber: 166,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2605,13 +2601,13 @@ function ScheduleEditor() {
                         children: t.edit_schedule
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                        lineNumber: 167,
+                        lineNumber: 165,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                lineNumber: 155,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -2631,7 +2627,7 @@ function ScheduleEditor() {
                             className: "fixed inset-0 z-[400] bg-black/80 backdrop-blur-sm"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                            lineNumber: 174,
+                            lineNumber: 172,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2685,7 +2681,7 @@ function ScheduleEditor() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                        lineNumber: 201,
+                                        lineNumber: 199,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2712,12 +2708,12 @@ function ScheduleEditor() {
                                                             className: "text-indigo-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 213,
+                                                            lineNumber: 211,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 209,
+                                                        lineNumber: 207,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2727,7 +2723,7 @@ function ScheduleEditor() {
                                                                 children: t.edit_schedule
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 216,
+                                                                lineNumber: 214,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2735,19 +2731,19 @@ function ScheduleEditor() {
                                                                 children: "Weekly Planner"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 217,
+                                                                lineNumber: 215,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 215,
+                                                        lineNumber: 213,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 206,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -2769,18 +2765,18 @@ function ScheduleEditor() {
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 227,
+                                                    lineNumber: 225,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 220,
+                                                lineNumber: 218,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                        lineNumber: 207,
+                                        lineNumber: 205,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2800,7 +2796,7 @@ function ScheduleEditor() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 233,
+                                                lineNumber: 231,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2811,14 +2807,14 @@ function ScheduleEditor() {
                                                         size: 14
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 245,
+                                                        lineNumber: 243,
                                                         columnNumber: 19
                                                     }, this),
                                                     t.current_schedule
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 241,
+                                                lineNumber: 239,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2829,20 +2825,20 @@ function ScheduleEditor() {
                                                         size: 14
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 252,
+                                                        lineNumber: 250,
                                                         columnNumber: 19
                                                     }, this),
                                                     t.suggested_schedule
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 248,
+                                                lineNumber: 246,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                        lineNumber: 232,
+                                        lineNumber: 230,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2883,7 +2879,7 @@ function ScheduleEditor() {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 282,
+                                                        lineNumber: 280,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2891,7 +2887,7 @@ function ScheduleEditor() {
                                                         children: DAY_SHORT[i]
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 288,
+                                                        lineNumber: 286,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -2916,24 +2912,24 @@ function ScheduleEditor() {
                                                             children: count > 0 ? count : '–'
                                                         }, count, false, {
                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 292,
+                                                            lineNumber: 290,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 291,
+                                                        lineNumber: 289,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, day, true, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 265,
+                                                lineNumber: 263,
                                                 columnNumber: 21
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 256,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2992,7 +2988,7 @@ function ScheduleEditor() {
                                                                             children: currentDay
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 325,
+                                                                            lineNumber: 323,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3000,18 +2996,18 @@ function ScheduleEditor() {
                                                                             children: (schedule[currentDay]?.length || 0) === 0 ? '✦ Rest day — no subjects' : `${schedule[currentDay]?.length} subject${schedule[currentDay]?.length > 1 ? 's' : ''} scheduled`
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 326,
+                                                                            lineNumber: 324,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, currentDay, true, {
                                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 319,
+                                                                    lineNumber: 317,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 318,
+                                                                lineNumber: 316,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3041,23 +3037,23 @@ function ScheduleEditor() {
                                                                             size: 16
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 345,
+                                                                            lineNumber: 343,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     }, dir, false, {
                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 338,
+                                                                        lineNumber: 336,
                                                                         columnNumber: 29
                                                                     }, this))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 333,
+                                                                lineNumber: 331,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 317,
+                                                        lineNumber: 315,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -3081,7 +3077,7 @@ function ScheduleEditor() {
                                                                 children: "No subjects added yet."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 359,
+                                                                lineNumber: 357,
                                                                 columnNumber: 31
                                                             }, this) : userData.subjects.map((sub, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SubjectCard, {
                                                                     subject: sub,
@@ -3091,17 +3087,17 @@ function ScheduleEditor() {
                                                                     mode: "edit"
                                                                 }, sub.id, false, {
                                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 361,
+                                                                    lineNumber: 359,
                                                                     columnNumber: 31
                                                                 }, this))
                                                         }, currentDay + 'cards', false, {
                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 353,
+                                                            lineNumber: 351,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 352,
+                                                        lineNumber: 350,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3123,7 +3119,7 @@ function ScheduleEditor() {
                                                                 children: "Weekly Overview"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 378,
+                                                                lineNumber: 376,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3149,7 +3145,7 @@ function ScheduleEditor() {
                                                                                 children: day.slice(0, 3)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                lineNumber: 388,
+                                                                                lineNumber: 386,
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             subs.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3157,7 +3153,7 @@ function ScheduleEditor() {
                                                                                 children: "Rest"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                lineNumber: 390,
+                                                                                lineNumber: 388,
                                                                                 columnNumber: 35
                                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 className: "flex flex-wrap gap-1",
@@ -3170,36 +3166,36 @@ function ScheduleEditor() {
                                                                                         children: sub.name
                                                                                     }, sub.id, false, {
                                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                        lineNumber: 394,
+                                                                                        lineNumber: 392,
                                                                                         columnNumber: 39
                                                                                     }, this))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                lineNumber: 392,
+                                                                                lineNumber: 390,
                                                                                 columnNumber: 35
                                                                             }, this)
                                                                         ]
                                                                     }, day, true, {
                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 383,
+                                                                        lineNumber: 381,
                                                                         columnNumber: 31
                                                                     }, this);
                                                                 })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 379,
+                                                                lineNumber: 377,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 375,
+                                                        lineNumber: 373,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, "edit", true, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 312,
+                                                lineNumber: 310,
                                                 columnNumber: 21
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                                 initial: {
@@ -3254,7 +3250,7 @@ function ScheduleEditor() {
                                                                             children: currentDay
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 421,
+                                                                            lineNumber: 419,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3262,18 +3258,18 @@ function ScheduleEditor() {
                                                                             children: "✦ AI recommended schedule"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 422,
+                                                                            lineNumber: 420,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, currentDay + 'ai', true, {
                                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 415,
+                                                                    lineNumber: 413,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 414,
+                                                                lineNumber: 412,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3303,23 +3299,23 @@ function ScheduleEditor() {
                                                                             size: 16
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 437,
+                                                                            lineNumber: 435,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     }, dir, false, {
                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 430,
+                                                                        lineNumber: 428,
                                                                         columnNumber: 29
                                                                     }, this))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 425,
+                                                                lineNumber: 423,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 413,
+                                                        lineNumber: 411,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -3354,12 +3350,12 @@ function ScheduleEditor() {
                                                                             className: "text-slate-600"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 455,
+                                                                            lineNumber: 453,
                                                                             columnNumber: 33
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 454,
+                                                                        lineNumber: 452,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3367,13 +3363,13 @@ function ScheduleEditor() {
                                                                         children: "Rest day — no subjects suggested"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 457,
+                                                                        lineNumber: 455,
                                                                         columnNumber: 31
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 451,
+                                                                lineNumber: 449,
                                                                 columnNumber: 29
                                                             }, this) : userData.subjects.filter((s)=>suggested[currentDay]?.includes(s.id)).map((sub, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SubjectCard, {
                                                                     subject: sub,
@@ -3383,17 +3379,17 @@ function ScheduleEditor() {
                                                                     mode: "ai"
                                                                 }, sub.id, false, {
                                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 463,
+                                                                    lineNumber: 461,
                                                                     columnNumber: 33
                                                                 }, this))
                                                         }, currentDay + 'ai-cards', false, {
                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 445,
+                                                            lineNumber: 443,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 444,
+                                                        lineNumber: 442,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3414,7 +3410,7 @@ function ScheduleEditor() {
                                                                 children: "Full Week"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 478,
+                                                                lineNumber: 476,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3440,7 +3436,7 @@ function ScheduleEditor() {
                                                                                 children: day.slice(0, 3)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                lineNumber: 487,
+                                                                                lineNumber: 485,
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             subs.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3448,7 +3444,7 @@ function ScheduleEditor() {
                                                                                 children: "Rest"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                lineNumber: 489,
+                                                                                lineNumber: 487,
                                                                                 columnNumber: 35
                                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 className: "flex flex-wrap gap-1",
@@ -3462,30 +3458,30 @@ function ScheduleEditor() {
                                                                                         children: sub.name
                                                                                     }, sub.id, false, {
                                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                        lineNumber: 493,
+                                                                                        lineNumber: 491,
                                                                                         columnNumber: 39
                                                                                     }, this))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                lineNumber: 491,
+                                                                                lineNumber: 489,
                                                                                 columnNumber: 35
                                                                             }, this)
                                                                         ]
                                                                     }, day, true, {
                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 483,
+                                                                        lineNumber: 481,
                                                                         columnNumber: 31
                                                                     }, this);
                                                                 })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 479,
+                                                                lineNumber: 477,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 477,
+                                                        lineNumber: 475,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -3510,7 +3506,7 @@ function ScheduleEditor() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 513,
+                                                                lineNumber: 511,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3531,12 +3527,12 @@ function ScheduleEditor() {
                                                                     className: "text-amber-400"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 516,
+                                                                    lineNumber: 514,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 515,
+                                                                lineNumber: 513,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3544,29 +3540,29 @@ function ScheduleEditor() {
                                                                 children: t.accept_suggestion
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 518,
+                                                                lineNumber: 516,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 506,
+                                                        lineNumber: 504,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, "ai", true, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 408,
+                                                lineNumber: 406,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 310,
+                                            lineNumber: 308,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                        lineNumber: 309,
+                                        lineNumber: 307,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3584,7 +3580,7 @@ function ScheduleEditor() {
                                                 children: t.back
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 527,
+                                                lineNumber: 525,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -3619,7 +3615,7 @@ function ScheduleEditor() {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 541,
+                                                        lineNumber: 539,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$save$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Save$3e$__["Save"], {
@@ -3627,7 +3623,7 @@ function ScheduleEditor() {
                                                         className: "relative z-10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 546,
+                                                        lineNumber: 544,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3635,43 +3631,43 @@ function ScheduleEditor() {
                                                         children: t.save_changes
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 547,
+                                                        lineNumber: 545,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 534,
+                                                lineNumber: 532,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                        lineNumber: 526,
+                                        lineNumber: 524,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                lineNumber: 186,
+                                lineNumber: 184,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                            lineNumber: 183,
+                            lineNumber: 181,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                lineNumber: 170,
+                lineNumber: 168,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-        lineNumber: 154,
+        lineNumber: 152,
         columnNumber: 5
     }, this);
 }
@@ -3912,6 +3908,56 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
     }, void 0, false);
 };
 _c1 = SubjectIcon;
+// ─── Time Input Field (extracted to avoid re-mount on every render) ───────────
+const TimeInputField = ({ value, onChange, label, max })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex flex-col items-center gap-2",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "relative",
+                whileHover: {
+                    scale: 1.06
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "number",
+                        min: 0,
+                        max: max,
+                        value: value,
+                        onChange: (e)=>onChange(parseInt(e.target.value) || 0),
+                        className: "w-20 h-24 text-center text-4xl font-black bg-white/5 border-2 border-white/10 rounded-2xl text-white focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/25 transition-all"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/FocusMode.tsx",
+                        lineNumber: 127,
+                        columnNumber: 7
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/FocusMode.tsx",
+                        lineNumber: 134,
+                        columnNumber: 7
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/dashboard/FocusMode.tsx",
+                lineNumber: 126,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "text-xs font-bold uppercase tracking-widest text-slate-500",
+                children: label
+            }, void 0, false, {
+                fileName: "[project]/src/components/dashboard/FocusMode.tsx",
+                lineNumber: 136,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/dashboard/FocusMode.tsx",
+        lineNumber: 125,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+_c2 = TimeInputField;
 function FocusMode() {
     _s1();
     const { userData, addLog, addStudyXP } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
@@ -4179,55 +4225,6 @@ function FocusMode() {
     // glow color based on state
     const glowColor = isActive ? 'rgba(99,102,241,0.9)' : 'rgba(245,158,11,0.8)';
     const glowColor2 = isActive ? 'rgba(99,102,241,0.4)' : 'rgba(245,158,11,0.3)';
-    // ── Time Input Field ────────────────────────────────────────────────────────
-    const TimeInputField = ({ value, onChange, label, max })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex flex-col items-center gap-2",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "relative",
-                    whileHover: {
-                        scale: 1.06
-                    },
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                            type: "number",
-                            min: 0,
-                            max: max,
-                            value: value,
-                            onChange: (e)=>onChange(parseInt(e.target.value) || 0),
-                            className: "w-20 h-24 text-center text-4xl font-black bg-white/5 border-2 border-white/10 rounded-2xl text-white focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/25 transition-all"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 321,
-                            columnNumber: 9
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 328,
-                            columnNumber: 9
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 320,
-                    columnNumber: 7
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-xs font-bold uppercase tracking-widest text-slate-500",
-                    children: label
-                }, void 0, false, {
-                    fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 330,
-                    columnNumber: 7
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 319,
-            columnNumber: 5
-        }, this);
     // ── Analytics Modal ─────────────────────────────────────────────────────────
     const AnalyticsModal = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
             children: showAnalytics && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5649,11 +5646,12 @@ _s1(FocusMode, "3xcFx2PC0CGeW7BppAYAjFCnXW8=", false, function() {
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"]
     ];
 });
-_c2 = FocusMode;
-var _c, _c1, _c2;
+_c3 = FocusMode;
+var _c, _c1, _c2, _c3;
 __turbopack_context__.k.register(_c, "ParticleBackground");
 __turbopack_context__.k.register(_c1, "SubjectIcon");
-__turbopack_context__.k.register(_c2, "FocusMode");
+__turbopack_context__.k.register(_c2, "TimeInputField");
+__turbopack_context__.k.register(_c3, "FocusMode");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -6365,8 +6363,7 @@ function Dashboard() {
                                                                         style: {
                                                                             background: `linear-gradient(135deg,${theme.primary},${theme.secondary})`,
                                                                             WebkitBackgroundClip: 'text',
-                                                                            WebkitTextFillColor: 'transparent',
-                                                                            backgroundClip: 'text'
+                                                                            WebkitTextFillColor: 'transparent'
                                                                         },
                                                                         children: userData.name
                                                                     }, void 0, false, {

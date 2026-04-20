@@ -113,10 +113,8 @@ export default function ScheduleEditor() {
 
   useEffect(() => {
     if (userData) {
-      setTimeout(() => {
-        setSchedule(userData.weeklySchedule);
-        setSuggested(generateSuggestedSchedule(userData));
-      }, 0);
+      setSchedule(userData.weeklySchedule);
+      setSuggested(generateSuggestedSchedule(userData));
     }
   }, [userData]);
 

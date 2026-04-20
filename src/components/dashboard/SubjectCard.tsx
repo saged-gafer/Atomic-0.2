@@ -77,7 +77,7 @@ const SubjectCard = React.memo(({
     if (!analysis || !userData) return;
     const newTasks = createTasksFromVideo(analysis, subject.id);
     const updatedSubjects = userData.subjects.map(s =>
-      s.id === subject.id ? { ...s, tasks: [...s.tasks, ...newTasks] } : s
+      s.id === subject.id ? { ...s, tasks: [...(s.tasks || []), ...newTasks] } : s
     );
     setUserData({ ...userData, subjects: updatedSubjects });
     setShowAnalysis(false);
@@ -95,11 +95,11 @@ const SubjectCard = React.memo(({
         boxShadow: `0 3px 0 0 ${subject.color}25, 0 8px 30px rgba(0,0,0,0.5)`,
       }}
     >
-      {/* Manga-style top beam */}
+      {/* Accent top border */}
       <div className="absolute top-0 left-0 right-0 h-[3px] rounded-full pointer-events-none z-10"
         style={{ background: `linear-gradient(90deg, transparent, ${subject.color}, transparent)` }}
       />
-      {/* Screen tone background */}
+      {/* Dot pattern overlay */}
       <div className="absolute inset-0 opacity-15 pointer-events-none rounded-[2rem]"
         style={{ backgroundImage:`radial-gradient(circle, ${subject.color}20 1px, transparent 1px)`, backgroundSize:'12px 12px' }}
       />

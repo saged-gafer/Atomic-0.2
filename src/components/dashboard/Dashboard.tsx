@@ -248,7 +248,7 @@ export default function Dashboard() {
                     animate={{ x:[0,2,-2,0] }} transition={{ duration:8, repeat:Infinity }}
                   >
                     {(userData.loginCount??1)<=1 ? 'Welcome' : 'Welcome back'},{' '}
-                    <span style={{ background:`linear-gradient(135deg,${theme.primary},${theme.secondary})`, WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>
+                    <span style={{ background:`linear-gradient(135deg,${theme.primary},${theme.secondary})`, WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent' }}>
                       {userData.name}
                     </span>
                     <motion.span animate={{ rotate:[0,15,-10,5,0] }} transition={{ duration:3, repeat:Infinity }} style={{ display:'inline-block', marginLeft:8 }}>

@@ -62,7 +62,6 @@ function AppProvider({ children }) {
     const [userData, setUserDataState] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isAuthenticated, setIsAuthenticated] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
-    const [standaloneGender, setStandaloneGender] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const hydrated = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "AppProvider.useEffect": ()=>{
@@ -79,8 +78,6 @@ function AppProvider({ children }) {
                                 console.error('Failed to parse saved user data:', e);
                             }
                         }
-                        const savedGender = localStorage.getItem('atomic_gender');
-                        if (savedGender) setStandaloneGender(savedGender);
                         setIsLoading(false);
                     }
                 }["AppProvider.useEffect"], 0);
@@ -497,21 +494,6 @@ function AppProvider({ children }) {
             }["AppProvider.useCallback[addStudyXP]"]);
         }
     }["AppProvider.useCallback[addStudyXP]"], []);
-    const setGender = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "AppProvider.useCallback[setGender]": (gender)=>{
-            setStandaloneGender(gender);
-            if ("TURBOPACK compile-time truthy", 1) {
-                localStorage.setItem('atomic_gender', gender);
-            }
-            setUserDataState({
-                "AppProvider.useCallback[setGender]": (prev)=>prev ? {
-                        ...prev,
-                        gender
-                    } : prev
-            }["AppProvider.useCallback[setGender]"]);
-        }
-    }["AppProvider.useCallback[setGender]"], []);
-    const gender = userData?.gender || standaloneGender;
     const studyXP = userData?.studyXP || 0;
     const studyBondLevel = userData?.studyBondLevel || xpToLevel(studyXP);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AppContext.Provider, {
@@ -539,19 +521,17 @@ function AppProvider({ children }) {
             deleteMonthlyTask,
             isLoading,
             addStudyXP,
-            setGender,
-            gender,
             studyXP,
             studyBondLevel
         },
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AppContext.tsx",
-        lineNumber: 310,
+        lineNumber: 295,
         columnNumber: 10
     }, this);
 }
-_s(AppProvider, "LUk++rooZTfOdo3p2Ir2B8h+djI=");
+_s(AppProvider, "uogHDyIuoOFbL+56+oyGlqkq4IU=");
 _c = AppProvider;
 const useAppContext = ()=>{
     _s1();

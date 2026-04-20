@@ -66,7 +66,7 @@ export default function AnalyticsDashboard() {
         </div>
 
         {/* Chart */}
-        <div className="h-52 w-full">
+        <div className="h-52 w-full" style={{ minWidth: 0 }}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={chartData} barCategoryGap="30%">
               <CartesianGrid strokeDasharray="2 4" vertical={false} stroke="rgba(255,255,255,0.04)" />
