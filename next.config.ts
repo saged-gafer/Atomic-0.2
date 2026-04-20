@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
     '*.kirk.replit.dev',
     '*.picard.replit.dev',
     '*.janeway.replit.dev',
+    '*.riker.replit.dev',
   ],
   async headers() {
     return [

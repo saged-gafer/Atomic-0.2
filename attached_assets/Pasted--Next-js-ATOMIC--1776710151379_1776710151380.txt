@@ -1,0 +1,133 @@
+أنت مُطوِّر خبير. لديك مشروع Next.js اسمه ATOMIC (منظم دراسي).
+المشروع يعمل بشكل عام لكن يحتوي على الأخطاء التالية التي تحتاج إصلاحاً دقيقاً.
+أصلح كل خطأ بالترتيب مع شرح التغيير:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 خطأ 1 — تحذير المتصفح في Dashboard.tsx (سطر 251)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: الـstyle يحتوي على:
+  background: `linear-gradient(...)`,
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+  backgroundClip: 'text'   ← هذا السطر يُسبب تحذير المتصفح
+
+السبب: خاصية `backgroundClip` كـshorthand property تتعارض مع `background` وتُظهر:
+"Shorthand property 'background' after 'backgroundClip' may override it"
+
+الحل: أزل سطر `backgroundClip: 'text'` تماماً من الـstyle object.
+الخصائص WebkitBackgroundClip وWebkitTextFillColor تكفي لجميع المتصفحات الحديثة.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 خطأ 2 — اسم التطبيق "ATOMICS" خطأ في i18n.ts
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في ملف src/lib/i18n.ts — سطر 41 (en) وسطر 153 (ar):
+  welcome_title: "ATOMICS"   ← الاسم غلط
+
+الحل: غيّر القيمة في كلا القاموسين (en و ar) إلى:
+  welcome_title: "ATOMIC"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 خطأ 3 — Crash عند قاعدة مواد فارغة في aiOptimizer.ts
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في src/services/aiOptimizer.ts دالة generateSuggestedSchedule:
+  const startIndex = (index * 2) % subjects.length;   // ← قسمة على صفر إذا subjects=[]
+  const secondSubject = subjects[(startIndex + 1) % subjects.length].id; // ← crash
+
+الحل: أضف guard في بداية الدالة:
+  if (!subjects || subjects.length === 0) return {};
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟡 خطأ 4 — SubjectCard.tsx: عدم وجود null-check على s.tasks (سطر 80)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في دالة handleAddTasks:
+  tasks: [...s.tasks, ...newTasks]   ← s.tasks قد تكون undefined
+
+بينما في نفس الملف (سطر 63) يُستخدم بشكل صحيح:
+  const tasks = subject.tasks || [];
+
+الحل: غيّر السطر المعطوب إلى:
+  tasks: [...(s.tasks || []), ...newTasks]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟡 خطأ 5 — FocusMode.tsx: مكوّن TimeInputField مُعرَّف داخل جسم الكومبوننت (سطر 318)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: const TimeInputField = (...) => (...)
+مُعرَّف داخل FocusMode component — يُعاد إنشاؤه عند كل render.
+هذا يُسبب فقدان الـfocus عند الكتابة في حقول الوقت.
+
+الحل: أخرج TimeInputField خارج دالة FocusMode تماماً
+(قبل سطر بداية function FocusMode أو export default FocusMode).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟡 خطأ 6 — AppContext.tsx: كود ميت (Dead Code) — gender و studyXP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في src/context/AppContext.tsx لا تزال هذه الحقول موجودة:
+  • gender?: 'male' | 'female'  (في UserData type، سطر 29)
+  • studyXP?: number             (في UserData type، سطر 30)
+  • studyBondLevel?: number      (في UserData type، سطر 31)
+  • setGender: (gender) => void  (في AppContextType، سطر 67)
+  • gender: 'male'|'female'|null (في AppContextType، سطر 68)
+  • studyXP: number              (في AppContextType، سطر 69)
+  • studyBondLevel: number       (في AppContextType، سطر 70)
+  • addStudyXP: (amount) => void (في AppContextType، سطر 66)
+
+وكذلك الدوال المرتبطة بها في جسم AppProvider.
+
+الحل: احذف جميع هذه الحقول والدوال من الـtypes والـprovider.
+تأكد من عدم استخدامها في أي مكوّن آخر قبل الحذف.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟡 خطأ 7 — OnboardingFlow.tsx: استخدام substr() المُهملة
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: الدالة substr() مُهملة (deprecated) في JavaScript الحديث.
+
+الحل: ابحث عن جميع استخدامات .substr( في ملف OnboardingFlow.tsx
+واستبدلها بـ .substring( أو .slice( حسب السياق.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟡 خطأ 8 — recharts: تحذير width(-1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في src/components/analytics/AnalyticsDashboard.tsx
+الـcontainer الخارجي للرسم البياني:
+  <div className="h-52 w-full">
+يُعطي recharts عرضاً سالباً (-1) أحياناً عند أول render.
+
+الحل: أضف min-width للـcontainer:
+  <div className="h-52 w-full" style={{ minWidth: 0 }}>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟢 تحسين 1 — تعليقات أنمي متبقية في SubjectCard.tsx
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في src/components/dashboard/SubjectCard.tsx:
+  سطر 98: {/* Manga-style top beam */}
+  سطر 102: {/* Screen tone background */}
+
+الحل: استبدل هذه التعليقات بأسماء محايدة:
+  {/* Accent top border */}
+  {/* Dot pattern overlay */}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟢 تحسين 2 — no_video_link في ar لم يُترجم (i18n.ts سطر 152)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في القاموس العربي:
+  no_video_link: "No video link available for this subject."  ← إنجليزي!
+
+الحل: غيّره إلى:
+  no_video_link: "لا يوجد رابط فيديو متاح لهذه المادة."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟢 تحسين 3 — ScheduleEditor: إزالة setTimeout hack
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+المشكلة: في src/components/dashboard/ScheduleEditor.tsx
+يوجد useEffect يستخدم setTimeout(..., 0) لتعيين state.
+هذا نمط غير صحيح ويُسبب rendering إضافي غير ضروري.
+
+الحل: احسب القيمة المطلوبة مباشرة داخل useEffect دون setTimeout.
+استخدم useMemo أو احسب القيمة synchronously.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ملاحظات التنفيذ:
+• ابدأ بالأخطاء 🔴 (حرجة) ثم 🟡 (مهمة) ثم 🟢 (تحسينات).
+• لا تُغير أي شيء آخر في الكود خارج ما ذُكر.
+• بعد كل تعديل اذكر اسم الملف والسطر الذي تغيّر.
