@@ -115,7 +115,7 @@ export default function OnboardingFlow() {
   const [step, setStep] = useState(0);
   const [prevStep, setPrevStep] = useState(0);
   const [formData, setFormData] = useState<UserData>({
-    name:'', username:'', password:'', language:'en', city:'', country:'',
+    name:'', language:'en', city:'', country:'',
     weeklySchedule:{}, dailyStudyHours:4, subjects:defaultSubjects, sideTasks:[], logs:[],
   });
   const [newSubjectName, setNewSubjectName] = useState('');
@@ -126,8 +126,6 @@ export default function OnboardingFlow() {
   const validateStep0 = useCallback(() => {
     const e: Record<string,string> = {};
     if (!formData.name.trim())     e.name     = 'Name is required!';
-    if (!formData.username?.trim()) e.username = 'Username is required!';
-    if (!formData.password?.trim()) e.password = 'Password is required!';
     if (!formData.city?.trim())    e.city     = 'City is required!';
     if (!formData.country?.trim()) e.country  = 'Country is required!';
     setErrors(e); return Object.keys(e).length === 0;
@@ -251,16 +249,6 @@ export default function OnboardingFlow() {
                       onChange={e => { setFormData(fd => ({...fd,name:e.target.value})); setErrors({}); }}
                       error={errors.name}
                     />
-                    <div className="grid grid-cols-2 gap-3">
-                      <FloatingInput label="Username *" value={formData.username||''}
-                        onChange={e => { setFormData(fd => ({...fd,username:e.target.value})); setErrors({}); }}
-                        error={errors.username} autoComplete="username"
-                      />
-                      <FloatingInput label="Password *" type="password" value={formData.password||''}
-                        onChange={e => { setFormData(fd => ({...fd,password:e.target.value})); setErrors({}); }}
-                        error={errors.password} autoComplete="new-password"
-                      />
-                    </div>
                     <div className="grid grid-cols-2 gap-3">
                       <FloatingInput label="City *" value={formData.city||''}
                         onChange={e => { setFormData(fd => ({...fd,city:e.target.value})); setErrors({}); }}
@@ -471,7 +459,6 @@ export default function OnboardingFlow() {
                       <p className="text-xs font-black uppercase tracking-widest mb-3" style={{ color:`${theme.primary}80` }}>✨ Your Setup Summary</p>
                       {[
                         { label:'Name',     val:formData.name },
-                        { label:'Username', val:formData.username||'' },
                         { label:'City',     val:`${formData.city||''}, ${formData.country||''}` },
                         { label:'Subjects', val:`${formData.subjects.length} subjects` },
                         { label:'Language', val:formData.language==='ar'?'العربية':'English' },

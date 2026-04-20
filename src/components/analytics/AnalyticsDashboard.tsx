@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, ReferenceLine } from 'recharts';
 import { useAppContext } from '@/context/AppContext';
 import { translations } from '@/lib/i18n';
 import { motion } from 'framer-motion';
@@ -81,6 +81,13 @@ export default function AnalyticsDashboard() {
                 tickLine={false}
                 tick={{ fill: '#475569', fontSize: 11, fontWeight: '700' }}
                 width={28}
+                domain={[0, (userData.dailyStudyHours || 4) * 1.15]}
+              />
+              <ReferenceLine
+                y={userData.dailyStudyHours || 4}
+                stroke="rgba(99,102,241,0.45)"
+                strokeDasharray="4 3"
+                strokeWidth={1.5}
               />
               <Tooltip
                 cursor={{ fill: 'rgba(99,102,241,0.06)', radius: 8 }}

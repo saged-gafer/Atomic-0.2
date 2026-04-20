@@ -94,29 +94,6 @@ function AppProvider({ children }) {
     }["AppProvider.useEffect"], [
         userData
     ]);
-    const login = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "AppProvider.useCallback[login]": (username, password)=>{
-            const saved = localStorage.getItem('study_planner_user_data');
-            if (!saved) return false;
-            let data;
-            try {
-                data = JSON.parse(saved);
-            } catch  {
-                return false;
-            }
-            if (data.username === username && data.password === password) {
-                const updatedData = {
-                    ...data,
-                    loginCount: (data.loginCount || 0) + 1
-                };
-                localStorage.setItem('study_planner_user_data', JSON.stringify(updatedData));
-                setUserDataState(updatedData);
-                setIsAuthenticated(true);
-                return true;
-            }
-            return false;
-        }
-    }["AppProvider.useCallback[login]"], []);
     const setUserData = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "AppProvider.useCallback[setUserData]": (data)=>{
             const dataWithCount = {
@@ -500,7 +477,6 @@ function AppProvider({ children }) {
         value: {
             userData,
             isAuthenticated,
-            login,
             setUserData,
             clearData,
             addTask,
@@ -527,11 +503,11 @@ function AppProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AppContext.tsx",
-        lineNumber: 295,
+        lineNumber: 274,
         columnNumber: 10
     }, this);
 }
-_s(AppProvider, "uogHDyIuoOFbL+56+oyGlqkq4IU=");
+_s(AppProvider, "UU8T6lnkE8oclXvm9x3RPTMgOhI=");
 _c = AppProvider;
 const useAppContext = ()=>{
     _s1();

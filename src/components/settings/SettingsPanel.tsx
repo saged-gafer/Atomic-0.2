@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppContext } from '@/context/AppContext';
 import { translations } from '@/lib/i18n';
-import { Settings, Trash2, LogOut, X, User, ShieldAlert, MapPin, Globe } from 'lucide-react';
+import { Settings, Trash2, X, User, ShieldAlert, MapPin, Globe } from 'lucide-react';
 
 export default function SettingsPanel() {
-  const { userData, setUserData, clearData } = useAppContext();
+  const { userData, clearData } = useAppContext();
   const [isOpen, setIsOpen] = useState(false);
   const [confirmClear, setConfirmClear] = useState(false);
 
@@ -15,12 +15,6 @@ export default function SettingsPanel() {
   const t = translations[userData.language || 'en'];
   const isRTL = userData.language === 'ar';
 
-  const handleLogout = () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { username, password, ...rest } = userData;
-    setUserData({ ...rest, username: undefined, password: undefined } as typeof userData);
-    setIsOpen(false);
-  };
 
   const handleClear = () => {
     if (!confirmClear) {
@@ -57,7 +51,7 @@ export default function SettingsPanel() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={close}
-              className="fixed inset-0 bg-black/65 z-[200] backdrop-blur-sm"
+              className="fixed inset-0 bg-black/65 z-[700] backdrop-blur-sm"
             />
 
             {/* Modal — centered on all screen sizes */}
@@ -67,7 +61,7 @@ export default function SettingsPanel() {
               exit={{ opacity: 0, scale: 0.94, y: 16 }}
               transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="fixed z-[210] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-sm rounded-3xl overflow-hidden shadow-2xl"
+              className="fixed z-[710] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-sm rounded-3xl overflow-hidden shadow-2xl"
               style={{
                 background: 'rgba(8,10,24,0.98)',
                 backdropFilter: 'blur(28px)',
@@ -106,29 +100,19 @@ export default function SettingsPanel() {
                     <span className="text-[11px] font-black text-slate-500 uppercase tracking-widest">{t.username}</span>
                   </div>
 
-                  {userData.username ? (
-                    <div className="p-4 space-y-3">
+                  {userData.name ? (
+                    <div className="p-4">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center text-white text-sm font-black shrink-0 shadow-lg">
-                          {userData.username.charAt(0).toUpperCase()}
+                          {userData.name.charAt(0).toUpperCase()}
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className="text-sm font-black text-white truncate">@{userData.username}</p>
-                          {userData.name && (
-                            <p className="text-xs text-slate-500 truncate">{userData.name}</p>
+                          <p className="text-sm font-black text-white truncate">{userData.name}</p>
+                          {userData.city && (
+                            <p className="text-xs text-slate-500 truncate">{userData.city}, {userData.country}</p>
                           )}
                         </div>
                       </div>
-
-                      <motion.button
-                        whileHover={{ scale: 1.01 }}
-                        whileTap={{ scale: 0.98 }}
-                        onClick={handleLogout}
-                        className="w-full h-10 flex items-center justify-center gap-2 rounded-xl border border-red-500/25 bg-red-500/5 text-red-400 text-sm font-bold hover:bg-red-500/12 transition-all"
-                      >
-                        <LogOut size={14} />
-                        {t.logout}
-                      </motion.button>
                     </div>
                   ) : (
                     <div className="p-4">

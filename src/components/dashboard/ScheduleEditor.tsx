@@ -174,12 +174,12 @@ export default function ScheduleEditor() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 z-[400] bg-black/80 backdrop-blur-sm"
+              className="fixed inset-0 z-[700] bg-black/80 backdrop-blur-sm"
             />
 
             {/* Modal wrapper — centers on desktop, full screen on mobile */}
             <div
-              className="fixed inset-0 z-[410] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none"
+              className="fixed inset-0 z-[710] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none"
             >
             <motion.div
               initial={{ opacity: 0, y: 50, scale: 0.95 }}

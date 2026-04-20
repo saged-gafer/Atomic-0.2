@@ -9,8 +9,6 @@ export type Subject = { id: string; name: string; color: string; icon: string; l
 export type StudyLog = { date: string; duration: number; type: 'study' | 'break'; subjectId: string; };
 export type UserData = {
   name: string;
-  username?: string;
-  password?: string;
   email?: string;
   language: 'en' | 'ar';
   city?: string;
@@ -42,7 +40,6 @@ export const defaultSubjects: Subject[] = [
 type AppContextType = {
   userData: UserData | null;
   isAuthenticated: boolean;
-  login: (username: string, password: string) => boolean;
   setUserData: (data: UserData) => void;
   clearData: () => void;
   addTask: (subjectId: string, title: string) => void;
@@ -104,24 +101,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   }, [userData]);
 
-  const login = useCallback((username: string, password: string): boolean => {
-    const saved = localStorage.getItem('study_planner_user_data');
-    if (!saved) return false;
-    let data: UserData;
-    try {
-      data = JSON.parse(saved);
-    } catch {
-      return false;
-    }
-    if (data.username === username && data.password === password) {
-      const updatedData = { ...data, loginCount: (data.loginCount || 0) + 1 };
-      localStorage.setItem('study_planner_user_data', JSON.stringify(updatedData));
-      setUserDataState(updatedData);
-      setIsAuthenticated(true);
-      return true;
-    }
-    return false;
-  }, []);
 
   const setUserData = useCallback((data: UserData) => {
     const dataWithCount = { ...data, loginCount: data.loginCount ?? 1 };
@@ -295,7 +274,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   return <AppContext.Provider value={{
     userData,
     isAuthenticated,
-    login,
     setUserData,
     clearData,
     addTask,

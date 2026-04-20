@@ -15,6 +15,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Tooltip.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/ResponsiveContainer.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Cell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Cell.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$ReferenceLine$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/ReferenceLine.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/AppContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/i18n.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
@@ -274,10 +275,24 @@ function AnalyticsDashboard() {
                                             fontSize: 11,
                                             fontWeight: '700'
                                         },
-                                        width: 28
+                                        width: 28,
+                                        domain: [
+                                            0,
+                                            (userData.dailyStudyHours || 4) * 1.15
+                                        ]
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
                                         lineNumber: 79,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$ReferenceLine$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ReferenceLine"], {
+                                        y: userData.dailyStudyHours || 4,
+                                        stroke: "rgba(99,102,241,0.45)",
+                                        strokeDasharray: "4 3",
+                                        strokeWidth: 1.5
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
@@ -296,7 +311,7 @@ function AnalyticsDashboard() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                        lineNumber: 85,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Bar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Bar"], {
@@ -315,12 +330,12 @@ function AnalyticsDashboard() {
                                                 }
                                             }, `cell-${index}`, false, {
                                                 fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                                lineNumber: 99,
+                                                lineNumber: 106,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 104,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -352,7 +367,7 @@ function AnalyticsDashboard() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -360,13 +375,13 @@ function AnalyticsDashboard() {
                                         children: "Goal reached"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 125,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                lineNumber: 116,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -376,7 +391,7 @@ function AnalyticsDashboard() {
                                         className: "w-3 h-3 rounded-sm bg-slate-700"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 128,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -384,13 +399,13 @@ function AnalyticsDashboard() {
                                         children: "Below goal"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 129,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                lineNumber: 120,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -398,7 +413,7 @@ function AnalyticsDashboard() {
                                 children: "·"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                lineNumber: 124,
+                                lineNumber: 131,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -414,19 +429,19 @@ function AnalyticsDashboard() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                        lineNumber: 125,
+                                        lineNumber: 132,
                                         columnNumber: 54
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                                lineNumber: 125,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/analytics/AnalyticsDashboard.tsx",
-                        lineNumber: 115,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this)
                 ]

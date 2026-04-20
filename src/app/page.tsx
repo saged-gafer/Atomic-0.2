@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Dashboard from '@/components/dashboard/Dashboard';
-import AuthScreen from '@/components/auth/AuthScreen';
+import OnboardingFlow from '@/components/onboarding/OnboardingFlow';
 import SplashScreen from '@/components/splash/SplashScreen';
 import { useAppContext } from '@/context/AppContext';
 
@@ -31,7 +31,7 @@ export default function Home() {
 
   if (isLoading) return null;
 
-  if (!isAuthenticated) return <AuthScreen />;
+  if (!isAuthenticated) return <OnboardingFlow />;
 
   return <Dashboard />;
 }

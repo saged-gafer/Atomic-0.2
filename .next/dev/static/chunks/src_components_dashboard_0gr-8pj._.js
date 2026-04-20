@@ -2624,14 +2624,14 @@ function ScheduleEditor() {
                                 opacity: 0
                             },
                             onClick: ()=>setIsOpen(false),
-                            className: "fixed inset-0 z-[400] bg-black/80 backdrop-blur-sm"
+                            className: "fixed inset-0 z-[700] bg-black/80 backdrop-blur-sm"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
                             lineNumber: 172,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "fixed inset-0 z-[410] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none",
+                            className: "fixed inset-0 z-[710] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
                                     opacity: 0,
