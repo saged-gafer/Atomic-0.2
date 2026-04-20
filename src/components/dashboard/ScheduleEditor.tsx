@@ -179,19 +179,22 @@ export default function ScheduleEditor() {
               className="fixed inset-0 z-[400] bg-black/80 backdrop-blur-sm"
             />
 
-            {/* Modal */}
+            {/* Modal wrapper — centers on desktop, full screen on mobile */}
+            <div
+              className="fixed inset-0 z-[410] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none"
+            >
             <motion.div
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 40, scale: 0.96 }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="fixed z-[410] flex flex-col overflow-hidden shadow-2xl
-                top-0 left-0 right-0 bottom-0
-                md:top-1/2 md:left-1/2 md:right-auto md:bottom-auto
-                md:-translate-x-1/2 md:-translate-y-1/2
-                md:w-[90vw] md:max-w-3xl md:max-h-[88vh] md:rounded-3xl"
-              style={{ background: '#06081c', border: '1px solid rgba(99,102,241,0.18)', boxShadow: '0 30px 80px -10px rgba(0,0,0,0.9), 0 0 60px rgba(99,102,241,0.08)' }}
+              className="relative flex flex-col overflow-hidden shadow-2xl w-full md:max-w-3xl md:max-h-[88vh] md:rounded-3xl pointer-events-auto"
+              style={{
+                background: '#06081c',
+                border: '1px solid rgba(99,102,241,0.18)',
+                boxShadow: '0 30px 80px -10px rgba(0,0,0,0.9), 0 0 60px rgba(99,102,241,0.08)',
+              }}
               dir={isRTL ? 'rtl' : 'ltr'}
             >
               {/* Animated top border */}
@@ -545,6 +548,7 @@ export default function ScheduleEditor() {
                 </motion.button>
               </div>
             </motion.div>
+            </div>
           </>
         )}
       </AnimatePresence>

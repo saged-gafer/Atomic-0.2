@@ -21,11 +21,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.js [app-client] (ecmascript) <export default as ArrowLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$prayerTimes$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/services/prayerTimes.ts [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/anime/AnimeMascot.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
-;
 ;
 ;
 ;
@@ -47,29 +45,21 @@ const STEP_CONFIG = [
     {
         label: 'Profile',
         emoji: '👤',
-        mascotPose: 'wave',
-        mascotExpr: 'happy',
         hint: 'Tell us about yourself!'
     },
     {
         label: 'Subjects',
         emoji: '📚',
-        mascotPose: 'study',
-        mascotExpr: 'focused',
         hint: 'Pick your subjects!'
     },
     {
         label: 'Schedule',
         emoji: '📅',
-        mascotPose: 'think',
-        mascotExpr: 'focused',
         hint: 'Plan your week!'
     },
     {
         label: 'Goals',
         emoji: '🎯',
-        mascotPose: 'success',
-        mascotExpr: 'excited',
         hint: "Let's set your goals!"
     }
 ];
@@ -103,12 +93,12 @@ const STEP_CONFIG = [
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                            lineNumber: 33,
+                            lineNumber: 32,
                             columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                        lineNumber: 32,
+                        lineNumber: 31,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -151,18 +141,18 @@ const STEP_CONFIG = [
                                     children: "✓"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 62,
                                     columnNumber: 21
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: cfg.emoji
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 63,
                                     columnNumber: 21
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 44,
+                                lineNumber: 43,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -173,25 +163,25 @@ const STEP_CONFIG = [
                                 children: cfg.label
                             }, void 0, false, {
                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 67,
+                                lineNumber: 66,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                        lineNumber: 40,
+                        lineNumber: 39,
                         columnNumber: 13
                     }, this)
                 ]
             }, i, true, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 30,
+                lineNumber: 29,
                 columnNumber: 11
             }, this);
         })
     }, void 0, false, {
         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-        lineNumber: 24,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -234,7 +224,7 @@ _c = StepIndicator;
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 89,
+                lineNumber: 88,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -244,18 +234,18 @@ _c = StepIndicator;
                     className: "animate-spin"
                 }, void 0, false, {
                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                    lineNumber: 94,
+                    lineNumber: 93,
                     columnNumber: 20
                 }, this) : children
             }, void 0, false, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 93,
+                lineNumber: 92,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-        lineNumber: 84,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }
@@ -280,14 +270,14 @@ function BackBtn({ onClick, color }) {
                 size: 15
             }, void 0, false, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 107,
+                lineNumber: 106,
                 columnNumber: 7
             }, this),
             " Back"
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-        lineNumber: 102,
+        lineNumber: 101,
         columnNumber: 5
     }, this);
 }
@@ -298,7 +288,6 @@ function OnboardingFlow() {
     const { theme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
     const [step, setStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [prevStep, setPrevStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         name: '',
         username: '',
@@ -315,11 +304,6 @@ function OnboardingFlow() {
     const [newSubjectName, setNewSubjectName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [errors, setErrors] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
     const [isFinishing, setIsFinishing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "OnboardingFlow.useEffect": ()=>{
-            setMounted(true);
-        }
-    }["OnboardingFlow.useEffect"], []);
     const t = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["translations"][formData.language];
     const validateStep0 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "OnboardingFlow.useCallback[validateStep0]": ()=>{
@@ -447,7 +431,7 @@ function OnboardingFlow() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 185,
+                lineNumber: 181,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -457,7 +441,7 @@ function OnboardingFlow() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 189,
+                lineNumber: 185,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -467,7 +451,7 @@ function OnboardingFlow() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 194,
+                lineNumber: 190,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -477,7 +461,7 @@ function OnboardingFlow() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 196,
+                lineNumber: 192,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -503,23 +487,6 @@ function OnboardingFlow() {
                             ]
                         },
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-center mb-1",
-                                children: mounted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    pose: stepCfg.mascotPose,
-                                    expression: stepCfg.mascotExpr,
-                                    size: 100,
-                                    primaryColor: theme.primary
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                    lineNumber: 207,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 205,
-                                columnNumber: 11
-                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 className: "inline-block px-4 py-1.5 rounded-2xl text-xs font-black uppercase tracking-widest mb-1",
                                 style: {
@@ -530,7 +497,7 @@ function OnboardingFlow() {
                                 children: stepCfg.hint
                             }, void 0, false, {
                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 215,
+                                lineNumber: 201,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -544,7 +511,7 @@ function OnboardingFlow() {
                                         children: "A"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                        lineNumber: 222,
+                                        lineNumber: 208,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -552,19 +519,19 @@ function OnboardingFlow() {
                                         children: "ATOMIC Setup"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 210,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 221,
+                                lineNumber: 207,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                        lineNumber: 201,
+                        lineNumber: 197,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -589,7 +556,7 @@ function OnboardingFlow() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 237,
+                                lineNumber: 223,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -600,7 +567,7 @@ function OnboardingFlow() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 245,
+                                lineNumber: 231,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -613,7 +580,7 @@ function OnboardingFlow() {
                                         secondary: theme.secondary
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                        lineNumber: 251,
+                                        lineNumber: 237,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -638,7 +605,7 @@ function OnboardingFlow() {
                                                                     children: "Set Up Your Profile"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 260,
+                                                                    lineNumber: 246,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -649,13 +616,13 @@ function OnboardingFlow() {
                                                                     children: "Tell us who you are, hero! 🎌"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 261,
+                                                                    lineNumber: 247,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 259,
+                                                            lineNumber: 245,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
@@ -671,7 +638,7 @@ function OnboardingFlow() {
                                                             error: errors.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 264,
+                                                            lineNumber: 250,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -691,7 +658,7 @@ function OnboardingFlow() {
                                                                     autoComplete: "username"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 269,
+                                                                    lineNumber: 255,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
@@ -709,13 +676,13 @@ function OnboardingFlow() {
                                                                     autoComplete: "new-password"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 273,
+                                                                    lineNumber: 259,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 268,
+                                                            lineNumber: 254,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -734,7 +701,7 @@ function OnboardingFlow() {
                                                                     error: errors.city
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 279,
+                                                                    lineNumber: 265,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
@@ -750,13 +717,13 @@ function OnboardingFlow() {
                                                                     error: errors.country
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 283,
+                                                                    lineNumber: 269,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 278,
+                                                            lineNumber: 264,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -769,7 +736,7 @@ function OnboardingFlow() {
                                                                     children: "Language / اللغة"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 291,
+                                                                    lineNumber: 277,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -828,7 +795,7 @@ function OnboardingFlow() {
                                                                                     }
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                    lineNumber: 312,
+                                                                                    lineNumber: 298,
                                                                                     columnNumber: 29
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -836,7 +803,7 @@ function OnboardingFlow() {
                                                                                     children: flag
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                    lineNumber: 316,
+                                                                                    lineNumber: 302,
                                                                                     columnNumber: 29
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -844,7 +811,7 @@ function OnboardingFlow() {
                                                                                     children: label
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                    lineNumber: 317,
+                                                                                    lineNumber: 303,
                                                                                     columnNumber: 29
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
@@ -852,30 +819,30 @@ function OnboardingFlow() {
                                                                                     className: "relative z-10 opacity-50"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                    lineNumber: 318,
+                                                                                    lineNumber: 304,
                                                                                     columnNumber: 29
                                                                                 }, this)
                                                                             ]
                                                                         }, lang, true, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 296,
+                                                                            lineNumber: 282,
                                                                             columnNumber: 27
                                                                         }, this))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 294,
+                                                                    lineNumber: 280,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 290,
+                                                            lineNumber: 276,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, "s0", true, {
                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                    lineNumber: 258,
+                                                    lineNumber: 244,
                                                     columnNumber: 19
                                                 }, this),
                                                 step === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -894,7 +861,7 @@ function OnboardingFlow() {
                                                                     children: "Your Study Subjects"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 330,
+                                                                    lineNumber: 316,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -905,13 +872,13 @@ function OnboardingFlow() {
                                                                     children: "What are you studying? Pick your weapons! ⚔️"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 331,
+                                                                    lineNumber: 317,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 329,
+                                                            lineNumber: 315,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -945,7 +912,7 @@ function OnboardingFlow() {
                                                                             }
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 342,
+                                                                            lineNumber: 328,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$FloatingInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FloatingInput"], {
@@ -960,7 +927,7 @@ function OnboardingFlow() {
                                                                                     }))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 343,
+                                                                            lineNumber: 329,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         !__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defaultSubjects"].find((d)=>d.id === sub.id) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -979,23 +946,23 @@ function OnboardingFlow() {
                                                                                 size: 12
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                lineNumber: 353,
+                                                                                lineNumber: 339,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 349,
+                                                                            lineNumber: 335,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, sub.id, true, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 336,
+                                                                    lineNumber: 322,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 334,
+                                                            lineNumber: 320,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1013,7 +980,7 @@ function OnboardingFlow() {
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 362,
+                                                                    lineNumber: 348,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -1034,24 +1001,24 @@ function OnboardingFlow() {
                                                                         size: 16
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                        lineNumber: 375,
+                                                                        lineNumber: 361,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 370,
+                                                                    lineNumber: 356,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 361,
+                                                            lineNumber: 347,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, "s1", true, {
                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                    lineNumber: 328,
+                                                    lineNumber: 314,
                                                     columnNumber: 19
                                                 }, this),
                                                 step === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1070,7 +1037,7 @@ function OnboardingFlow() {
                                                                     children: "Weekly Schedule"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 385,
+                                                                    lineNumber: 371,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1081,13 +1048,13 @@ function OnboardingFlow() {
                                                                     children: "Plan your battles! Choose subjects for each day 📅"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 386,
+                                                                    lineNumber: 372,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 384,
+                                                            lineNumber: 370,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1120,7 +1087,7 @@ function OnboardingFlow() {
                                                                                     }
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                    lineNumber: 398,
+                                                                                    lineNumber: 384,
                                                                                     columnNumber: 29
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1128,13 +1095,13 @@ function OnboardingFlow() {
                                                                                     children: day
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                    lineNumber: 399,
+                                                                                    lineNumber: 385,
                                                                                     columnNumber: 29
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 397,
+                                                                            lineNumber: 383,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1176,7 +1143,7 @@ function OnboardingFlow() {
                                                                                             }
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                            lineNumber: 419,
+                                                                                            lineNumber: 405,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         sub.name,
@@ -1184,36 +1151,36 @@ function OnboardingFlow() {
                                                                                             size: 8
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                            lineNumber: 421,
+                                                                                            lineNumber: 407,
                                                                                             columnNumber: 47
                                                                                         }, this)
                                                                                     ]
                                                                                 }, sub.id, true, {
                                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                    lineNumber: 405,
+                                                                                    lineNumber: 391,
                                                                                     columnNumber: 33
                                                                                 }, this);
                                                                             })
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 401,
+                                                                            lineNumber: 387,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, day, true, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 391,
+                                                                    lineNumber: 377,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 389,
+                                                            lineNumber: 375,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, "s2", true, {
                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                    lineNumber: 383,
+                                                    lineNumber: 369,
                                                     columnNumber: 19
                                                 }, this),
                                                 step === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1232,7 +1199,7 @@ function OnboardingFlow() {
                                                                     children: "Daily Study Goal"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 436,
+                                                                    lineNumber: 422,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1243,13 +1210,13 @@ function OnboardingFlow() {
                                                                     children: "How many hours per day will you study? 🔥"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 437,
+                                                                    lineNumber: 423,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 435,
+                                                            lineNumber: 421,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1263,7 +1230,7 @@ function OnboardingFlow() {
                                                                             children: "Daily Hours"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 443,
+                                                                            lineNumber: 429,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1277,13 +1244,13 @@ function OnboardingFlow() {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 444,
+                                                                            lineNumber: 430,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 442,
+                                                                    lineNumber: 428,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1307,12 +1274,12 @@ function OnboardingFlow() {
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                        lineNumber: 447,
+                                                                        lineNumber: 433,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 446,
+                                                                    lineNumber: 432,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1331,7 +1298,7 @@ function OnboardingFlow() {
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 453,
+                                                                    lineNumber: 439,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1344,47 +1311,47 @@ function OnboardingFlow() {
                                                                             children: "1h"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 459,
+                                                                            lineNumber: 445,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: "3h"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 459,
+                                                                            lineNumber: 445,
                                                                             columnNumber: 40
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: "6h"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 459,
+                                                                            lineNumber: 445,
                                                                             columnNumber: 55
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: "9h"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 459,
+                                                                            lineNumber: 445,
                                                                             columnNumber: 70
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: "12h"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                            lineNumber: 459,
+                                                                            lineNumber: 445,
                                                                             columnNumber: 85
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 458,
+                                                                    lineNumber: 444,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 441,
+                                                            lineNumber: 427,
                                                             columnNumber: 21
                                                         }, this),
                                                         [
@@ -1438,7 +1405,7 @@ function OnboardingFlow() {
                                                                 children: m.msg
                                                             }, m.msg, false, {
                                                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                lineNumber: 471,
+                                                                lineNumber: 457,
                                                                 columnNumber: 25
                                                             }, this)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1456,7 +1423,7 @@ function OnboardingFlow() {
                                                                     children: "✨ Your Setup Summary"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                    lineNumber: 485,
+                                                                    lineNumber: 471,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 [
@@ -1495,7 +1462,7 @@ function OnboardingFlow() {
                                                                                 children: r.label
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                lineNumber: 495,
+                                                                                lineNumber: 481,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1503,36 +1470,36 @@ function OnboardingFlow() {
                                                                                 children: r.val
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                                lineNumber: 496,
+                                                                                lineNumber: 482,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         ]
                                                                     }, r.label, true, {
                                                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                                        lineNumber: 494,
+                                                                        lineNumber: 480,
                                                                         columnNumber: 25
                                                                     }, this))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                            lineNumber: 482,
+                                                            lineNumber: 468,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, "s3", true, {
                                                     fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                    lineNumber: 434,
+                                                    lineNumber: 420,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                            lineNumber: 255,
+                                            lineNumber: 241,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                        lineNumber: 254,
+                                        lineNumber: 240,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1546,7 +1513,7 @@ function OnboardingFlow() {
                                                 color: theme.primary
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                lineNumber: 507,
+                                                lineNumber: 493,
                                                 columnNumber: 28
                                             }, this),
                                             step < 3 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimeBtn, {
@@ -1559,13 +1526,13 @@ function OnboardingFlow() {
                                                         size: 15
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                        lineNumber: 510,
+                                                        lineNumber: 496,
                                                         columnNumber: 26
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                lineNumber: 509,
+                                                lineNumber: 495,
                                                 columnNumber: 19
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimeBtn, {
                                                 onClick: handleComplete,
@@ -1575,41 +1542,41 @@ function OnboardingFlow() {
                                                 children: "Start Adventure! 🚀"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                                lineNumber: 512,
+                                                lineNumber: 498,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                        lineNumber: 506,
+                                        lineNumber: 492,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                                lineNumber: 249,
+                                lineNumber: 235,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                        lineNumber: 229,
+                        lineNumber: 215,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-                lineNumber: 199,
+                lineNumber: 195,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/onboarding/OnboardingFlow.tsx",
-        lineNumber: 181,
+        lineNumber: 177,
         columnNumber: 5
     }, this);
 }
-_s(OnboardingFlow, "AiEKcn8rjJ0MkHMLO5ZRSABedDA=", false, function() {
+_s(OnboardingFlow, "cJdTxyDtefWACVNi8KricHbXlPU=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"]

@@ -67,14 +67,12 @@ export default function SettingsPanel() {
               exit={{ opacity: 0, scale: 0.94, y: 16 }}
               transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="fixed z-[210] inset-x-4 sm:inset-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-full sm:max-w-sm rounded-3xl overflow-hidden shadow-2xl"
+              className="fixed z-[210] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-2rem)] max-w-sm rounded-3xl overflow-hidden shadow-2xl"
               style={{
                 background: 'rgba(8,10,24,0.98)',
                 backdropFilter: 'blur(28px)',
                 WebkitBackdropFilter: 'blur(28px)',
                 border: '1px solid rgba(255,255,255,0.08)',
-                top: '50%',
-                transform: 'translateY(-50%)',
               }}
               dir={isRTL ? 'rtl' : 'ltr'}
             >

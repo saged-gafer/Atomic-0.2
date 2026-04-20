@@ -7,15 +7,14 @@ import { FloatingInput } from '@/components/ui/FloatingInput';
 import { translations } from '@/lib/i18n';
 import { Plus, Trash2, Calendar, Check, Loader2, User, Lock, MapPin, Globe, Link2, ArrowRight, ArrowLeft } from 'lucide-react';
 import { fetchPrayerTimes } from '@/services/prayerTimes';
-import AnimeMascot from '@/components/anime/AnimeMascot';
 
 const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
 
 const STEP_CONFIG = [
-  { label:'Profile',  emoji:'👤', mascotPose:'wave'    as const, mascotExpr:'happy'    as const, hint:'Tell us about yourself!' },
-  { label:'Subjects', emoji:'📚', mascotPose:'study'   as const, mascotExpr:'focused'  as const, hint:'Pick your subjects!' },
-  { label:'Schedule', emoji:'📅', mascotPose:'think'   as const, mascotExpr:'focused'  as const, hint:'Plan your week!' },
-  { label:'Goals',    emoji:'🎯', mascotPose:'success' as const, mascotExpr:'excited'  as const, hint:"Let's set your goals!" },
+  { label:'Profile',  emoji:'👤', hint:'Tell us about yourself!' },
+  { label:'Subjects', emoji:'📚', hint:'Pick your subjects!' },
+  { label:'Schedule', emoji:'📅', hint:'Plan your week!' },
+  { label:'Goals',    emoji:'🎯', hint:"Let's set your goals!" },
 ];
 
 /* ── Anime step indicator ────────────────────────────── */
@@ -115,7 +114,6 @@ export default function OnboardingFlow() {
   const { theme } = useTheme();
   const [step, setStep] = useState(0);
   const [prevStep, setPrevStep] = useState(0);
-  const [mounted, setMounted] = useState(false);
   const [formData, setFormData] = useState<UserData>({
     name:'', username:'', password:'', language:'en', city:'', country:'',
     weeklySchedule:{}, dailyStudyHours:4, subjects:defaultSubjects, sideTasks:[], logs:[],
@@ -123,8 +121,6 @@ export default function OnboardingFlow() {
   const [newSubjectName, setNewSubjectName] = useState('');
   const [errors, setErrors] = useState<Record<string,string>>({});
   const [isFinishing, setIsFinishing] = useState(false);
-
-  useEffect(() => { setMounted(true); }, []);
   const t = translations[formData.language];
 
   const validateStep0 = useCallback(() => {
@@ -197,21 +193,11 @@ export default function OnboardingFlow() {
         style={{ background:`${theme.secondary}14` }}/>
 
       <div className="relative z-10 w-full max-w-lg px-4">
-        {/* Header with mascot */}
+        {/* Header */}
         <motion.div className="text-center mb-4"
           initial={{ y:-20, opacity:0 }} animate={{ y:0, opacity:1 }}
           transition={{ duration:0.6, ease:[0.22,1,0.36,1] }}
         >
-          <div className="flex justify-center mb-1">
-            {mounted && (
-              <AnimeMascot
-                pose={stepCfg.mascotPose}
-                expression={stepCfg.mascotExpr}
-                size={100}
-                primaryColor={theme.primary}
-              />
-            )}
-          </div>
           <motion.div
             className="inline-block px-4 py-1.5 rounded-2xl text-xs font-black uppercase tracking-widest mb-1"
             style={{ background:`${theme.primary}15`, border:`2px solid ${theme.primary}35`, color:theme.primary }}

@@ -16,8 +16,7 @@ import { parseFile, generateExam, generateSummary, generateNotes, generateAllCon
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/context/ThemeContext';
-import StudyBondMeter from '@/components/ui/StudyBondMeter';
-import { MiniMascot } from '@/components/anime/AnimeMascot';
+import { User } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = { Book, Atom, Pi, Quill: PenTool, FlaskConical };
 
@@ -66,7 +65,6 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
     toggleSideTask,
     deleteSideTask,
     togglePrayer,
-    gender,
     addStudyXP,
   } = useAppContext();
   const { theme } = useTheme();
@@ -226,7 +224,7 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
         )}
       </div>
 
-      {/* Study Bond Meter + Mascot (non-collapsed) */}
+      {/* User info (non-collapsed) */}
       <AnimatePresence>
         {(!isCollapsed || isMobile) && (
           <motion.div
@@ -237,10 +235,15 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
             style={{ borderColor: `${theme.primary}15` }}
           >
             <div className="flex items-center gap-3">
-              <MiniMascot color={theme.primary} size={36} gender={gender || 'male'}/>
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
+                style={{ background:`${theme.primary}20`, border:`1.5px solid ${theme.primary}30` }}>
+                <User size={16} style={{ color: theme.primary }} />
+              </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[11px] font-black text-white truncate">{userData?.name || 'Student'}</p>
-                <StudyBondMeter compact showLabel={false}/>
+                <p className="text-[9px] uppercase tracking-widest font-bold" style={{ color:`${theme.primary}60` }}>
+                  ATOMIC Learner
+                </p>
               </div>
             </div>
           </motion.div>

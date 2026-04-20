@@ -16,8 +16,7 @@ import TrackingView from '@/components/analytics/TrackingView';
 import ScheduleEditor from './ScheduleEditor';
 import FocusMode from './FocusMode';
 import MonthlyTasksWidget from '@/components/monthly/MonthlyTasksWidget';
-import AnimeMascot, { StarBurst } from '@/components/anime/AnimeMascot';
-import { Menu, Clock, CheckCircle2, Zap, TrendingUp, Wand2, Star, Calendar } from 'lucide-react';
+import { Menu, Clock, CheckCircle2, Zap, TrendingUp, Wand2, Star, Calendar, Atom } from 'lucide-react';
 
 /* ── Floating star decoration ───────────────────────── */
 function FloatStars({ primary, secondary }: { primary:string; secondary:string }) {
@@ -79,7 +78,7 @@ function AnimeStatCard({
         <motion.div className="opacity-20 group-hover:opacity-60 transition-opacity"
           animate={{ rotate:[0,360] }} transition={{ duration:12, repeat:Infinity, ease:'linear' }}
         >
-          <StarBurst color={color} size={20}/>
+          <Atom size={20} style={{ color }}/>
         </motion.div>
       </div>
     </motion.div>
@@ -110,7 +109,6 @@ export default function Dashboard() {
   const [showWelcome, setShowWelcome] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mascotMsg, setMascotMsg] = useState(0);
   const initialized = React.useRef(false);
 
   useEffect(() => {
@@ -124,12 +122,6 @@ export default function Dashboard() {
   useEffect(() => {
     if (userData) checkAndMigrate(userData, setUserData);
   }, [userData, setUserData]);
-
-  // Cycle mascot messages
-  useEffect(() => {
-    const i = setInterval(() => setMascotMsg(m => (m+1)%4), 5000);
-    return () => clearInterval(i);
-  }, []);
 
   if (!userData) return null;
 
@@ -149,13 +141,6 @@ export default function Dashboard() {
     { icon:CheckCircle2, label:'Tasks Done',   value:`${doneTasks}/${allTasks.length}`,          color:'#10b981' },
     { icon:Zap,          label:"Today's Load", value:`${todaySubjects.length} subj`,             color:'#f59e0b' },
     { icon:TrendingUp,   label:'Prayers',      value:`${completedPrayers}/5`,                   color:'#06b6d4' },
-  ];
-
-  const MASCOT_MSGS = [
-    `Ganbatte, ${userData.name}! 🔥`,
-    'You can do it! Keep going! ⚡',
-    `${todaySubjects.length > 0 ? `${todaySubjects.length} subjects today!` : 'Free day! 🎉'}`,
-    'Study hard, dream big! 🌟',
   ];
 
   return (
@@ -244,29 +229,14 @@ export default function Dashboard() {
 
             <div className="relative z-10 flex items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                {/* Mascot + speech */}
                 <div className="relative shrink-0 hidden sm:block">
-                  <AnimeMascot
-                    pose={doneTasks > allTasks.length * 0.5 ? 'success' : 'idle'}
-                    expression="happy"
-                    size={80}
-                    primaryColor={theme.primary}
-                    animate
-                  />
-                  {/* Speech bubble */}
                   <motion.div
-                    className="absolute -top-8 left-1/2 -translate-x-1/2 bg-white rounded-xl px-3 py-1.5 whitespace-nowrap"
-                    style={{ border:`2px solid ${theme.primary}`, fontSize:9, fontWeight:900, color:'#1e1b4b', minWidth:100 }}
-                    key={mascotMsg}
-                    initial={{ scale:0, opacity:0 }}
-                    animate={{ scale:1, opacity:1 }}
-                    exit={{ scale:0, opacity:0 }}
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-white text-2xl"
+                    style={{ background:`linear-gradient(135deg,${theme.primary},${theme.secondary})`, boxShadow:`0 0 24px ${theme.primary}50` }}
+                    animate={{ rotate:[0,5,-5,0], scale:[1,1.03,1] }}
+                    transition={{ duration:6, repeat:Infinity, ease:'easeInOut' }}
                   >
-                    {MASCOT_MSGS[mascotMsg]}
-                    <div className="absolute -bottom-[9px] left-1/2 -translate-x-1/2 w-0 h-0"
-                      style={{ borderLeft:'6px solid transparent', borderRight:'6px solid transparent', borderTop:`9px solid ${theme.primary}` }}/>
-                    <div className="absolute -bottom-[7px] left-1/2 -translate-x-1/2 w-0 h-0"
-                      style={{ borderLeft:'5px solid transparent', borderRight:'5px solid transparent', borderTop:'8px solid white' }}/>
+                    <Atom size={28} className="text-white" />
                   </motion.div>
                 </div>
 
@@ -342,7 +312,14 @@ export default function Dashboard() {
                   className="col-span-full py-16 flex flex-col items-center gap-4 rounded-[24px] border-dashed"
                   style={{ border:`2px dashed ${theme.primary}30`, background:`${theme.primary}05` }}
                 >
-                  <AnimeMascot pose="success" expression="happy" size={120} primaryColor={theme.primary}/>
+                  <motion.div
+                    className="w-20 h-20 rounded-3xl flex items-center justify-center"
+                    style={{ background:`linear-gradient(135deg,${theme.primary}30,${theme.secondary}20)`, border:`2px solid ${theme.primary}30` }}
+                    animate={{ scale:[1,1.08,1], rotate:[0,8,-8,0] }}
+                    transition={{ duration:4, repeat:Infinity, ease:'easeInOut' }}
+                  >
+                    <Star size={36} fill={theme.primary} style={{ color:theme.primary }}/>
+                  </motion.div>
                   <div className="text-center">
                     <p className="text-xl font-black text-white">Free Day! 🎉</p>
                     <p className="text-sm font-medium mt-1" style={{ color:`${theme.primary}70` }}>

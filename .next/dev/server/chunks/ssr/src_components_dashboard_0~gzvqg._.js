@@ -2537,1022 +2537,1029 @@ function ScheduleEditor() {
                             lineNumber: 174,
                             columnNumber: 13
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0,
-                                y: 50,
-                                scale: 0.95
-                            },
-                            animate: {
-                                opacity: 1,
-                                y: 0,
-                                scale: 1
-                            },
-                            exit: {
-                                opacity: 0,
-                                y: 40,
-                                scale: 0.96
-                            },
-                            transition: {
-                                duration: 0.4,
-                                ease: [
-                                    0.22,
-                                    1,
-                                    0.36,
-                                    1
-                                ]
-                            },
-                            onClick: (e)=>e.stopPropagation(),
-                            className: "fixed z-[410] flex flex-col overflow-hidden shadow-2xl top-0 left-0 right-0 bottom-0 md:top-1/2 md:left-1/2 md:right-auto md:bottom-auto md:-translate-x-1/2 md:-translate-y-1/2 md:w-[90vw] md:max-w-3xl md:max-h-[88vh] md:rounded-3xl",
-                            style: {
-                                background: '#06081c',
-                                border: '1px solid rgba(99,102,241,0.18)',
-                                boxShadow: '0 30px 80px -10px rgba(0,0,0,0.9), 0 0 60px rgba(99,102,241,0.08)'
-                            },
-                            dir: isRTL ? 'rtl' : 'ltr',
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    className: "absolute top-0 left-0 right-0 h-[2px] z-30",
-                                    animate: {
-                                        background: [
-                                            'linear-gradient(90deg, transparent, #6366f1, #8b5cf6, transparent)',
-                                            'linear-gradient(90deg, transparent, #8b5cf6, #6366f1, transparent)'
-                                        ]
-                                    },
-                                    transition: {
-                                        duration: 3,
-                                        repeat: Infinity,
-                                        ease: 'linear'
-                                    }
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                    lineNumber: 198,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center justify-between px-5 py-4 border-b border-white/5 shrink-0",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "w-9 h-9 rounded-2xl flex items-center justify-center",
-                                                    animate: {
-                                                        background: [
-                                                            'rgba(99,102,241,0.2)',
-                                                            'rgba(139,92,246,0.2)',
-                                                            'rgba(99,102,241,0.2)'
-                                                        ]
-                                                    },
-                                                    transition: {
-                                                        duration: 3,
-                                                        repeat: Infinity
-                                                    },
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                        size: 16,
-                                                        className: "text-indigo-400"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 210,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 206,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                            className: "text-base font-black text-white",
-                                                            children: t.edit_schedule
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "fixed inset-0 z-[410] flex items-stretch md:items-center md:justify-center md:p-4 pointer-events-none",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 50,
+                                    scale: 0.95
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    y: 0,
+                                    scale: 1
+                                },
+                                exit: {
+                                    opacity: 0,
+                                    y: 40,
+                                    scale: 0.96
+                                },
+                                transition: {
+                                    duration: 0.4,
+                                    ease: [
+                                        0.22,
+                                        1,
+                                        0.36,
+                                        1
+                                    ]
+                                },
+                                onClick: (e)=>e.stopPropagation(),
+                                className: "relative flex flex-col overflow-hidden shadow-2xl w-full md:max-w-3xl md:max-h-[88vh] md:rounded-3xl pointer-events-auto",
+                                style: {
+                                    background: '#06081c',
+                                    border: '1px solid rgba(99,102,241,0.18)',
+                                    boxShadow: '0 30px 80px -10px rgba(0,0,0,0.9), 0 0 60px rgba(99,102,241,0.08)'
+                                },
+                                dir: isRTL ? 'rtl' : 'ltr',
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        className: "absolute top-0 left-0 right-0 h-[2px] z-30",
+                                        animate: {
+                                            background: [
+                                                'linear-gradient(90deg, transparent, #6366f1, #8b5cf6, transparent)',
+                                                'linear-gradient(90deg, transparent, #8b5cf6, #6366f1, transparent)'
+                                            ]
+                                        },
+                                        transition: {
+                                            duration: 3,
+                                            repeat: Infinity,
+                                            ease: 'linear'
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                        lineNumber: 201,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-between px-5 py-4 border-b border-white/5 shrink-0",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        className: "w-9 h-9 rounded-2xl flex items-center justify-center",
+                                                        animate: {
+                                                            background: [
+                                                                'rgba(99,102,241,0.2)',
+                                                                'rgba(139,92,246,0.2)',
+                                                                'rgba(99,102,241,0.2)'
+                                                            ]
+                                                        },
+                                                        transition: {
+                                                            duration: 3,
+                                                            repeat: Infinity
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                            size: 16,
+                                                            className: "text-indigo-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
                                                             lineNumber: 213,
                                                             columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-[10px] text-slate-600 font-medium uppercase tracking-widest",
-                                                            children: "Weekly Planner"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 214,
-                                                            columnNumber: 21
                                                         }, this)
-                                                    ]
-                                                }, void 0, true, {
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 209,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                                className: "text-base font-black text-white",
+                                                                children: t.edit_schedule
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 216,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-[10px] text-slate-600 font-medium uppercase tracking-widest",
+                                                                children: "Weekly Planner"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 217,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 215,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 208,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                onClick: ()=>setIsOpen(false),
+                                                whileHover: {
+                                                    scale: 1.1,
+                                                    rotate: 90
+                                                },
+                                                whileTap: {
+                                                    scale: 0.9
+                                                },
+                                                transition: {
+                                                    type: 'spring',
+                                                    stiffness: 400,
+                                                    damping: 20
+                                                },
+                                                className: "p-2 rounded-xl hover:bg-white/5 text-slate-500 hover:text-white transition-colors",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                                    size: 18
+                                                }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 212,
+                                                    lineNumber: 227,
                                                     columnNumber: 19
                                                 }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 205,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            onClick: ()=>setIsOpen(false),
-                                            whileHover: {
-                                                scale: 1.1,
-                                                rotate: 90
-                                            },
-                                            whileTap: {
-                                                scale: 0.9
-                                            },
-                                            transition: {
-                                                type: 'spring',
-                                                stiffness: 400,
-                                                damping: 20
-                                            },
-                                            className: "p-2 rounded-xl hover:bg-white/5 text-slate-500 hover:text-white transition-colors",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                                size: 18
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                lineNumber: 224,
-                                                columnNumber: 19
+                                                lineNumber: 220,
+                                                columnNumber: 17
                                             }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 217,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                    lineNumber: 204,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex border-b border-white/5 shrink-0 relative",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            className: "absolute bottom-0 h-0.5 rounded-full",
-                                            animate: {
-                                                left: activeTab === 'edit' ? '0%' : '50%',
-                                                right: activeTab === 'edit' ? '50%' : '0%',
-                                                background: activeTab === 'edit' ? '#6366f1' : '#f59e0b'
-                                            },
-                                            transition: {
-                                                type: 'spring',
-                                                stiffness: 400,
-                                                damping: 35
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 230,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: ()=>setActiveTab('edit'),
-                                            className: `flex-1 py-3 text-xs font-black uppercase tracking-widest transition-colors flex items-center justify-center gap-2 ${activeTab === 'edit' ? 'text-indigo-400' : 'text-slate-500 hover:text-slate-300'}`,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                    size: 14
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 242,
-                                                    columnNumber: 19
-                                                }, this),
-                                                t.current_schedule
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 238,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: ()=>setActiveTab('ai'),
-                                            className: `flex-1 py-3 text-xs font-black uppercase tracking-widest transition-colors flex items-center justify-center gap-2 ${activeTab === 'ai' ? 'text-amber-400' : 'text-slate-500 hover:text-slate-300'}`,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                    size: 14
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 249,
-                                                    columnNumber: 19
-                                                }, this),
-                                                t.suggested_schedule
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 245,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                    lineNumber: 229,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex gap-1.5 px-4 py-3 border-b border-white/5 overflow-x-auto shrink-0 scrollbar-hide",
-                                    children: DAYS.map((day, i)=>{
-                                        const count = activeTab === 'edit' ? schedule[day]?.length || 0 : suggested[day]?.length || 0;
-                                        const isActive = selectedDay === i;
-                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            onClick: ()=>changeDay(i),
-                                            whileHover: {
-                                                y: -2,
-                                                scale: 1.05
-                                            },
-                                            whileTap: {
-                                                scale: 0.95
-                                            },
-                                            transition: {
-                                                type: 'spring',
-                                                stiffness: 400,
-                                                damping: 20
-                                            },
-                                            className: "flex-shrink-0 flex flex-col items-center px-3 py-2 rounded-xl text-center transition-colors duration-200 relative overflow-hidden",
-                                            style: {
-                                                background: isActive ? activeTab === 'edit' ? 'rgba(99,102,241,0.18)' : 'rgba(245,158,11,0.15)' : 'rgba(255,255,255,0.03)',
-                                                border: `1px solid ${isActive ? activeTab === 'edit' ? 'rgba(99,102,241,0.45)' : 'rgba(245,158,11,0.4)' : 'rgba(255,255,255,0.06)'}`
-                                            },
-                                            children: [
-                                                isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "absolute inset-0 pointer-events-none",
-                                                    layoutId: "dayIndicator",
-                                                    style: {
-                                                        background: activeTab === 'edit' ? 'rgba(99,102,241,0.08)' : 'rgba(245,158,11,0.06)'
-                                                    },
-                                                    transition: {
-                                                        type: 'spring',
-                                                        stiffness: 400,
-                                                        damping: 35
-                                                    }
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 279,
-                                                    columnNumber: 25
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: `text-[10px] font-black uppercase tracking-wide relative z-10 ${isActive ? activeTab === 'edit' ? 'text-indigo-300' : 'text-amber-300' : 'text-slate-500'}`,
-                                                    children: DAY_SHORT[i]
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 285,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                    mode: "wait",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
-                                                        initial: {
-                                                            opacity: 0,
-                                                            y: 4
-                                                        },
-                                                        animate: {
-                                                            opacity: 1,
-                                                            y: 0
-                                                        },
-                                                        exit: {
-                                                            opacity: 0,
-                                                            y: -4
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                        lineNumber: 207,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex border-b border-white/5 shrink-0 relative",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                className: "absolute bottom-0 h-0.5 rounded-full",
+                                                animate: {
+                                                    left: activeTab === 'edit' ? '0%' : '50%',
+                                                    right: activeTab === 'edit' ? '50%' : '0%',
+                                                    background: activeTab === 'edit' ? '#6366f1' : '#f59e0b'
+                                                },
+                                                transition: {
+                                                    type: 'spring',
+                                                    stiffness: 400,
+                                                    damping: 35
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 233,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: ()=>setActiveTab('edit'),
+                                                className: `flex-1 py-3 text-xs font-black uppercase tracking-widest transition-colors flex items-center justify-center gap-2 ${activeTab === 'edit' ? 'text-indigo-400' : 'text-slate-500 hover:text-slate-300'}`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                        size: 14
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 245,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    t.current_schedule
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 241,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: ()=>setActiveTab('ai'),
+                                                className: `flex-1 py-3 text-xs font-black uppercase tracking-widest transition-colors flex items-center justify-center gap-2 ${activeTab === 'ai' ? 'text-amber-400' : 'text-slate-500 hover:text-slate-300'}`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                                        size: 14
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 252,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    t.suggested_schedule
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 248,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                        lineNumber: 232,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex gap-1.5 px-4 py-3 border-b border-white/5 overflow-x-auto shrink-0 scrollbar-hide",
+                                        children: DAYS.map((day, i)=>{
+                                            const count = activeTab === 'edit' ? schedule[day]?.length || 0 : suggested[day]?.length || 0;
+                                            const isActive = selectedDay === i;
+                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                onClick: ()=>changeDay(i),
+                                                whileHover: {
+                                                    y: -2,
+                                                    scale: 1.05
+                                                },
+                                                whileTap: {
+                                                    scale: 0.95
+                                                },
+                                                transition: {
+                                                    type: 'spring',
+                                                    stiffness: 400,
+                                                    damping: 20
+                                                },
+                                                className: "flex-shrink-0 flex flex-col items-center px-3 py-2 rounded-xl text-center transition-colors duration-200 relative overflow-hidden",
+                                                style: {
+                                                    background: isActive ? activeTab === 'edit' ? 'rgba(99,102,241,0.18)' : 'rgba(245,158,11,0.15)' : 'rgba(255,255,255,0.03)',
+                                                    border: `1px solid ${isActive ? activeTab === 'edit' ? 'rgba(99,102,241,0.45)' : 'rgba(245,158,11,0.4)' : 'rgba(255,255,255,0.06)'}`
+                                                },
+                                                children: [
+                                                    isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        className: "absolute inset-0 pointer-events-none",
+                                                        layoutId: "dayIndicator",
+                                                        style: {
+                                                            background: activeTab === 'edit' ? 'rgba(99,102,241,0.08)' : 'rgba(245,158,11,0.06)'
                                                         },
                                                         transition: {
-                                                            duration: 0.2
-                                                        },
-                                                        className: `text-[9px] font-bold mt-0.5 relative z-10 ${isActive ? activeTab === 'edit' ? 'text-indigo-400' : 'text-amber-400' : 'text-slate-600'}`,
-                                                        children: count > 0 ? count : '–'
-                                                    }, count, false, {
+                                                            type: 'spring',
+                                                            stiffness: 400,
+                                                            damping: 35
+                                                        }
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 289,
+                                                        lineNumber: 282,
                                                         columnNumber: 25
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 288,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, day, true, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 262,
-                                            columnNumber: 21
-                                        }, this);
-                                    })
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                    lineNumber: 255,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex-1 overflow-y-auto p-4 sm:p-5",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                        mode: "wait",
-                                        children: activeTab === 'edit' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            initial: {
-                                                opacity: 0,
-                                                x: -16
-                                            },
-                                            animate: {
-                                                opacity: 1,
-                                                x: 0
-                                            },
-                                            exit: {
-                                                opacity: 0,
-                                                x: 16
-                                            },
-                                            transition: {
-                                                duration: 0.25,
-                                                ease: [
-                                                    0.22,
-                                                    1,
-                                                    0.36,
-                                                    1
-                                                ]
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between mb-5",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                            mode: "wait",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                initial: {
-                                                                    opacity: 0,
-                                                                    x: direction * 20
-                                                                },
-                                                                animate: {
-                                                                    opacity: 1,
-                                                                    x: 0
-                                                                },
-                                                                exit: {
-                                                                    opacity: 0,
-                                                                    x: direction * -20
-                                                                },
-                                                                transition: {
-                                                                    type: 'spring',
-                                                                    stiffness: 300,
-                                                                    damping: 30
-                                                                },
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                        className: "text-lg font-black text-white",
-                                                                        children: currentDay
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 322,
-                                                                        columnNumber: 29
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-xs text-slate-500 mt-0.5",
-                                                                        children: (schedule[currentDay]?.length || 0) === 0 ? '✦ Rest day — no subjects' : `${schedule[currentDay]?.length} subject${schedule[currentDay]?.length > 1 ? 's' : ''} scheduled`
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 323,
-                                                                        columnNumber: 29
-                                                                    }, this)
-                                                                ]
-                                                            }, currentDay, true, {
-                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 316,
-                                                                columnNumber: 27
-                                                            }, this)
-                                                        }, void 0, false, {
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: `text-[10px] font-black uppercase tracking-wide relative z-10 ${isActive ? activeTab === 'edit' ? 'text-indigo-300' : 'text-amber-300' : 'text-slate-500'}`,
+                                                        children: DAY_SHORT[i]
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 288,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                        mode: "wait",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
+                                                            initial: {
+                                                                opacity: 0,
+                                                                y: 4
+                                                            },
+                                                            animate: {
+                                                                opacity: 1,
+                                                                y: 0
+                                                            },
+                                                            exit: {
+                                                                opacity: 0,
+                                                                y: -4
+                                                            },
+                                                            transition: {
+                                                                duration: 0.2
+                                                            },
+                                                            className: `text-[9px] font-bold mt-0.5 relative z-10 ${isActive ? activeTab === 'edit' ? 'text-indigo-400' : 'text-amber-400' : 'text-slate-600'}`,
+                                                            children: count > 0 ? count : '–'
+                                                        }, count, false, {
                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 315,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center gap-1",
-                                                            children: [
-                                                                {
-                                                                    dir: -1,
-                                                                    disabled: selectedDay === 0,
-                                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"]
-                                                                },
-                                                                {
-                                                                    dir: 1,
-                                                                    disabled: selectedDay === 6,
-                                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"]
-                                                                }
-                                                            ].map(({ dir, disabled, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                                    onClick: ()=>!disabled && changeDay(selectedDay + dir),
-                                                                    disabled: disabled,
-                                                                    whileHover: !disabled ? {
-                                                                        scale: 1.1
-                                                                    } : {},
-                                                                    whileTap: !disabled ? {
-                                                                        scale: 0.9
-                                                                    } : {},
-                                                                    className: "p-2 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-white disabled:opacity-20 transition-all",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                                                        size: 16
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 342,
-                                                                        columnNumber: 31
-                                                                    }, this)
-                                                                }, dir, false, {
-                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 335,
-                                                                    columnNumber: 29
-                                                                }, this))
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 330,
+                                                            lineNumber: 292,
                                                             columnNumber: 25
                                                         }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 314,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                    mode: "wait",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                        initial: {
-                                                            opacity: 0
-                                                        },
-                                                        animate: {
-                                                            opacity: 1
-                                                        },
-                                                        exit: {
-                                                            opacity: 0
-                                                        },
-                                                        transition: {
-                                                            duration: 0.2
-                                                        },
-                                                        className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5",
-                                                        children: userData.subjects.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm text-slate-500 text-center py-8 col-span-2",
-                                                            children: "No subjects added yet."
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 356,
-                                                            columnNumber: 31
-                                                        }, this) : userData.subjects.map((sub, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SubjectCard, {
-                                                                subject: sub,
-                                                                active: !!schedule[currentDay]?.includes(sub.id),
-                                                                onClick: ()=>toggleSubject(currentDay, sub.id),
-                                                                index: i,
-                                                                mode: "edit"
-                                                            }, sub.id, false, {
-                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 358,
-                                                                columnNumber: 31
-                                                            }, this))
-                                                    }, currentDay + 'cards', false, {
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 350,
-                                                        columnNumber: 25
+                                                        lineNumber: 291,
+                                                        columnNumber: 23
                                                     }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 349,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "mt-6",
-                                                    initial: {
-                                                        opacity: 0,
-                                                        y: 10
-                                                    },
-                                                    animate: {
-                                                        opacity: 1,
-                                                        y: 0
-                                                    },
-                                                    transition: {
-                                                        delay: 0.3
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-[10px] font-black uppercase tracking-widest text-slate-600 mb-3",
-                                                            children: "Weekly Overview"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 375,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "space-y-2",
-                                                            children: DAYS.map((day, i)=>{
-                                                                const subs = (schedule[day] || []).map((id)=>userData.subjects.find((s)=>s.id === id)).filter(Boolean);
-                                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                ]
+                                            }, day, true, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 265,
+                                                columnNumber: 21
+                                            }, this);
+                                        })
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                        lineNumber: 258,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex-1 overflow-y-auto p-4 sm:p-5",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                            mode: "wait",
+                                            children: activeTab === 'edit' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                initial: {
+                                                    opacity: 0,
+                                                    x: -16
+                                                },
+                                                animate: {
+                                                    opacity: 1,
+                                                    x: 0
+                                                },
+                                                exit: {
+                                                    opacity: 0,
+                                                    x: 16
+                                                },
+                                                transition: {
+                                                    duration: 0.25,
+                                                    ease: [
+                                                        0.22,
+                                                        1,
+                                                        0.36,
+                                                        1
+                                                    ]
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between mb-5",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                                mode: "wait",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                                                     initial: {
                                                                         opacity: 0,
-                                                                        x: -10
+                                                                        x: direction * 20
                                                                     },
                                                                     animate: {
                                                                         opacity: 1,
                                                                         x: 0
                                                                     },
-                                                                    transition: {
-                                                                        delay: 0.35 + i * 0.04
+                                                                    exit: {
+                                                                        opacity: 0,
+                                                                        x: direction * -20
                                                                     },
-                                                                    className: "flex items-start gap-3 text-xs",
+                                                                    transition: {
+                                                                        type: 'spring',
+                                                                        stiffness: 300,
+                                                                        damping: 30
+                                                                    },
                                                                     children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-bold text-slate-600 w-8 shrink-0",
-                                                                            children: day.slice(0, 3)
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                            className: "text-lg font-black text-white",
+                                                                            children: currentDay
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 385,
-                                                                            columnNumber: 33
+                                                                            lineNumber: 325,
+                                                                            columnNumber: 29
                                                                         }, this),
-                                                                        subs.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-slate-700 italic",
-                                                                            children: "Rest"
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            className: "text-xs text-slate-500 mt-0.5",
+                                                                            children: (schedule[currentDay]?.length || 0) === 0 ? '✦ Rest day — no subjects' : `${schedule[currentDay]?.length} subject${schedule[currentDay]?.length > 1 ? 's' : ''} scheduled`
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 387,
-                                                                            columnNumber: 35
-                                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex flex-wrap gap-1",
-                                                                            children: subs.map((sub)=>sub && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "px-2 py-0.5 rounded-lg text-slate-400 font-medium",
-                                                                                    style: {
-                                                                                        background: `${sub.color}12`,
-                                                                                        border: `1px solid ${sub.color}25`
-                                                                                    },
-                                                                                    children: sub.name
-                                                                                }, sub.id, false, {
-                                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                    lineNumber: 391,
-                                                                                    columnNumber: 39
-                                                                                }, this))
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 389,
-                                                                            columnNumber: 35
+                                                                            lineNumber: 326,
+                                                                            columnNumber: 29
                                                                         }, this)
                                                                     ]
-                                                                }, day, true, {
+                                                                }, currentDay, true, {
                                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 380,
-                                                                    columnNumber: 31
-                                                                }, this);
-                                                            })
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 376,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 372,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, "edit", true, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 309,
-                                            columnNumber: 21
-                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            initial: {
-                                                opacity: 0,
-                                                x: 16
-                                            },
-                                            animate: {
-                                                opacity: 1,
-                                                x: 0
-                                            },
-                                            exit: {
-                                                opacity: 0,
-                                                x: -16
-                                            },
-                                            transition: {
-                                                duration: 0.25,
-                                                ease: [
-                                                    0.22,
-                                                    1,
-                                                    0.36,
-                                                    1
-                                                ]
-                                            },
-                                            className: "space-y-4",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center justify-between mb-3",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                            mode: "wait",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                initial: {
-                                                                    opacity: 0,
-                                                                    x: direction * 20
-                                                                },
-                                                                animate: {
-                                                                    opacity: 1,
-                                                                    x: 0
-                                                                },
-                                                                exit: {
-                                                                    opacity: 0,
-                                                                    x: direction * -20
-                                                                },
-                                                                transition: {
-                                                                    type: 'spring',
-                                                                    stiffness: 300,
-                                                                    damping: 30
-                                                                },
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                        className: "text-lg font-black text-white",
-                                                                        children: currentDay
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 418,
-                                                                        columnNumber: 29
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-xs text-amber-400/70 mt-0.5",
-                                                                        children: "✦ AI recommended schedule"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 419,
-                                                                        columnNumber: 29
-                                                                    }, this)
-                                                                ]
-                                                            }, currentDay + 'ai', true, {
+                                                                    lineNumber: 319,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 412,
-                                                                columnNumber: 27
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 411,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center gap-1",
-                                                            children: [
-                                                                {
-                                                                    dir: -1,
-                                                                    disabled: selectedDay === 0,
-                                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"]
-                                                                },
-                                                                {
-                                                                    dir: 1,
-                                                                    disabled: selectedDay === 6,
-                                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"]
-                                                                }
-                                                            ].map(({ dir, disabled, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                                    onClick: ()=>!disabled && changeDay(selectedDay + dir),
-                                                                    disabled: disabled,
-                                                                    whileHover: !disabled ? {
-                                                                        scale: 1.1
-                                                                    } : {},
-                                                                    whileTap: !disabled ? {
-                                                                        scale: 0.9
-                                                                    } : {},
-                                                                    className: "p-2 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-white disabled:opacity-20 transition-all",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                                                        size: 16
-                                                                    }, void 0, false, {
+                                                                lineNumber: 318,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-center gap-1",
+                                                                children: [
+                                                                    {
+                                                                        dir: -1,
+                                                                        disabled: selectedDay === 0,
+                                                                        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"]
+                                                                    },
+                                                                    {
+                                                                        dir: 1,
+                                                                        disabled: selectedDay === 6,
+                                                                        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"]
+                                                                    }
+                                                                ].map(({ dir, disabled, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                                        onClick: ()=>!disabled && changeDay(selectedDay + dir),
+                                                                        disabled: disabled,
+                                                                        whileHover: !disabled ? {
+                                                                            scale: 1.1
+                                                                        } : {},
+                                                                        whileTap: !disabled ? {
+                                                                            scale: 0.9
+                                                                        } : {},
+                                                                        className: "p-2 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-white disabled:opacity-20 transition-all",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                                            size: 16
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                            lineNumber: 345,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    }, dir, false, {
                                                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 434,
-                                                                        columnNumber: 31
-                                                                    }, this)
-                                                                }, dir, false, {
-                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 427,
-                                                                    columnNumber: 29
-                                                                }, this))
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 422,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 410,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                    mode: "wait",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                        initial: {
-                                                            opacity: 0
-                                                        },
-                                                        animate: {
-                                                            opacity: 1
-                                                        },
-                                                        exit: {
-                                                            opacity: 0
-                                                        },
-                                                        transition: {
-                                                            duration: 0.2
-                                                        },
-                                                        className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5",
-                                                        children: userData.subjects.filter((s)=>suggested[currentDay]?.includes(s.id)).length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                            className: "col-span-2 py-8 flex flex-col items-center gap-2 text-center",
+                                                                        lineNumber: 338,
+                                                                        columnNumber: 29
+                                                                    }, this))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 333,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 317,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                        mode: "wait",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                                             initial: {
                                                                 opacity: 0
                                                             },
                                                             animate: {
                                                                 opacity: 1
                                                             },
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "w-12 h-12 rounded-full bg-white/5 flex items-center justify-center",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                                        size: 20,
-                                                                        className: "text-slate-600"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                        lineNumber: 452,
-                                                                        columnNumber: 33
-                                                                    }, this)
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 451,
-                                                                    columnNumber: 31
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-sm text-slate-500 italic",
-                                                                    children: "Rest day — no subjects suggested"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 454,
-                                                                    columnNumber: 31
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 448,
-                                                            columnNumber: 29
-                                                        }, this) : userData.subjects.filter((s)=>suggested[currentDay]?.includes(s.id)).map((sub, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SubjectCard, {
-                                                                subject: sub,
-                                                                active: true,
-                                                                onClick: ()=>{},
-                                                                index: i,
-                                                                mode: "ai"
-                                                            }, sub.id, false, {
+                                                            exit: {
+                                                                opacity: 0
+                                                            },
+                                                            transition: {
+                                                                duration: 0.2
+                                                            },
+                                                            className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5",
+                                                            children: userData.subjects.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-sm text-slate-500 text-center py-8 col-span-2",
+                                                                children: "No subjects added yet."
+                                                            }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                lineNumber: 460,
-                                                                columnNumber: 33
-                                                            }, this))
-                                                    }, currentDay + 'ai-cards', false, {
-                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                        lineNumber: 442,
-                                                        columnNumber: 25
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 441,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    initial: {
-                                                        opacity: 0,
-                                                        y: 10
-                                                    },
-                                                    animate: {
-                                                        opacity: 1,
-                                                        y: 0
-                                                    },
-                                                    transition: {
-                                                        delay: 0.3
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-[10px] font-black uppercase tracking-widest text-slate-600 mb-3 mt-4",
-                                                            children: "Full Week"
-                                                        }, void 0, false, {
+                                                                lineNumber: 359,
+                                                                columnNumber: 31
+                                                            }, this) : userData.subjects.map((sub, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SubjectCard, {
+                                                                    subject: sub,
+                                                                    active: !!schedule[currentDay]?.includes(sub.id),
+                                                                    onClick: ()=>toggleSubject(currentDay, sub.id),
+                                                                    index: i,
+                                                                    mode: "edit"
+                                                                }, sub.id, false, {
+                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                    lineNumber: 361,
+                                                                    columnNumber: 31
+                                                                }, this))
+                                                        }, currentDay + 'cards', false, {
                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 475,
+                                                            lineNumber: 353,
                                                             columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "space-y-2",
-                                                            children: DAYS.map((day, i)=>{
-                                                                const subs = userData.subjects.filter((s)=>suggested[day]?.includes(s.id));
-                                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                    className: "flex items-start gap-3 text-xs",
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 352,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        className: "mt-6",
+                                                        initial: {
+                                                            opacity: 0,
+                                                            y: 10
+                                                        },
+                                                        animate: {
+                                                            opacity: 1,
+                                                            y: 0
+                                                        },
+                                                        transition: {
+                                                            delay: 0.3
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-[10px] font-black uppercase tracking-widest text-slate-600 mb-3",
+                                                                children: "Weekly Overview"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 378,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "space-y-2",
+                                                                children: DAYS.map((day, i)=>{
+                                                                    const subs = (schedule[day] || []).map((id)=>userData.subjects.find((s)=>s.id === id)).filter(Boolean);
+                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                        initial: {
+                                                                            opacity: 0,
+                                                                            x: -10
+                                                                        },
+                                                                        animate: {
+                                                                            opacity: 1,
+                                                                            x: 0
+                                                                        },
+                                                                        transition: {
+                                                                            delay: 0.35 + i * 0.04
+                                                                        },
+                                                                        className: "flex items-start gap-3 text-xs",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "font-bold text-slate-600 w-8 shrink-0",
+                                                                                children: day.slice(0, 3)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                lineNumber: 388,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            subs.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "text-slate-700 italic",
+                                                                                children: "Rest"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                lineNumber: 390,
+                                                                                columnNumber: 35
+                                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex flex-wrap gap-1",
+                                                                                children: subs.map((sub)=>sub && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "px-2 py-0.5 rounded-lg text-slate-400 font-medium",
+                                                                                        style: {
+                                                                                            background: `${sub.color}12`,
+                                                                                            border: `1px solid ${sub.color}25`
+                                                                                        },
+                                                                                        children: sub.name
+                                                                                    }, sub.id, false, {
+                                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                        lineNumber: 394,
+                                                                                        columnNumber: 39
+                                                                                    }, this))
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                lineNumber: 392,
+                                                                                columnNumber: 35
+                                                                            }, this)
+                                                                        ]
+                                                                    }, day, true, {
+                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                        lineNumber: 383,
+                                                                        columnNumber: 31
+                                                                    }, this);
+                                                                })
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 379,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 375,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, "edit", true, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 312,
+                                                columnNumber: 21
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                initial: {
+                                                    opacity: 0,
+                                                    x: 16
+                                                },
+                                                animate: {
+                                                    opacity: 1,
+                                                    x: 0
+                                                },
+                                                exit: {
+                                                    opacity: 0,
+                                                    x: -16
+                                                },
+                                                transition: {
+                                                    duration: 0.25,
+                                                    ease: [
+                                                        0.22,
+                                                        1,
+                                                        0.36,
+                                                        1
+                                                    ]
+                                                },
+                                                className: "space-y-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between mb-3",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                                mode: "wait",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                                                     initial: {
                                                                         opacity: 0,
-                                                                        x: -10
+                                                                        x: direction * 20
                                                                     },
                                                                     animate: {
                                                                         opacity: 1,
                                                                         x: 0
                                                                     },
+                                                                    exit: {
+                                                                        opacity: 0,
+                                                                        x: direction * -20
+                                                                    },
                                                                     transition: {
-                                                                        delay: 0.35 + i * 0.04
+                                                                        type: 'spring',
+                                                                        stiffness: 300,
+                                                                        damping: 30
                                                                     },
                                                                     children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "font-bold text-slate-600 w-8 shrink-0",
-                                                                            children: day.slice(0, 3)
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                            className: "text-lg font-black text-white",
+                                                                            children: currentDay
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 484,
-                                                                            columnNumber: 33
+                                                                            lineNumber: 421,
+                                                                            columnNumber: 29
                                                                         }, this),
-                                                                        subs.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "text-slate-700 italic",
-                                                                            children: "Rest"
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                            className: "text-xs text-amber-400/70 mt-0.5",
+                                                                            children: "✦ AI recommended schedule"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 486,
-                                                                            columnNumber: 35
-                                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex flex-wrap gap-1",
-                                                                            children: subs.map((sub)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "px-2 py-0.5 rounded-lg font-medium",
-                                                                                    style: {
-                                                                                        background: 'rgba(245,158,11,0.1)',
-                                                                                        color: 'rgba(251,191,36,0.8)',
-                                                                                        border: '1px solid rgba(245,158,11,0.2)'
-                                                                                    },
-                                                                                    children: sub.name
-                                                                                }, sub.id, false, {
-                                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                                    lineNumber: 490,
-                                                                                    columnNumber: 39
-                                                                                }, this))
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                            lineNumber: 488,
-                                                                            columnNumber: 35
+                                                                            lineNumber: 422,
+                                                                            columnNumber: 29
                                                                         }, this)
                                                                     ]
-                                                                }, day, true, {
+                                                                }, currentDay + 'ai', true, {
                                                                     fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                                    lineNumber: 480,
-                                                                    columnNumber: 31
-                                                                }, this);
-                                                            })
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 476,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 474,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                    whileHover: {
-                                                        scale: 1.02,
-                                                        y: -1
-                                                    },
-                                                    whileTap: {
-                                                        scale: 0.97
-                                                    },
-                                                    onClick: handleAcceptAI,
-                                                    className: "w-full mt-4 py-3.5 rounded-2xl flex items-center justify-center gap-2 font-black text-sm relative overflow-hidden group",
-                                                    style: {
-                                                        background: 'rgba(245,158,11,0.1)',
-                                                        border: '1px solid rgba(245,158,11,0.3)'
-                                                    },
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                            className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity",
-                                                            style: {
-                                                                background: 'rgba(245,158,11,0.08)'
-                                                            }
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 510,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                    lineNumber: 415,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 414,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-center gap-1",
+                                                                children: [
+                                                                    {
+                                                                        dir: -1,
+                                                                        disabled: selectedDay === 0,
+                                                                        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"]
+                                                                    },
+                                                                    {
+                                                                        dir: 1,
+                                                                        disabled: selectedDay === 6,
+                                                                        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"]
+                                                                    }
+                                                                ].map(({ dir, disabled, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                                        onClick: ()=>!disabled && changeDay(selectedDay + dir),
+                                                                        disabled: disabled,
+                                                                        whileHover: !disabled ? {
+                                                                            scale: 1.1
+                                                                        } : {},
+                                                                        whileTap: !disabled ? {
+                                                                            scale: 0.9
+                                                                        } : {},
+                                                                        className: "p-2 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-white disabled:opacity-20 transition-all",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                                            size: 16
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                            lineNumber: 437,
+                                                                            columnNumber: 31
+                                                                        }, this)
+                                                                    }, dir, false, {
+                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                        lineNumber: 430,
+                                                                        columnNumber: 29
+                                                                    }, this))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 425,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 413,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                        mode: "wait",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                            initial: {
+                                                                opacity: 0
+                                                            },
                                                             animate: {
-                                                                rotate: [
-                                                                    0,
-                                                                    180,
-                                                                    360
-                                                                ]
+                                                                opacity: 1
+                                                            },
+                                                            exit: {
+                                                                opacity: 0
                                                             },
                                                             transition: {
-                                                                duration: 2,
-                                                                repeat: Infinity,
-                                                                ease: 'linear'
+                                                                duration: 0.2
                                                             },
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__["RefreshCw"], {
-                                                                size: 15,
-                                                                className: "text-amber-400"
+                                                            className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5",
+                                                            children: userData.subjects.filter((s)=>suggested[currentDay]?.includes(s.id)).length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                className: "col-span-2 py-8 flex flex-col items-center gap-2 text-center",
+                                                                initial: {
+                                                                    opacity: 0
+                                                                },
+                                                                animate: {
+                                                                    opacity: 1
+                                                                },
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "w-12 h-12 rounded-full bg-white/5 flex items-center justify-center",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                                            size: 20,
+                                                                            className: "text-slate-600"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                            lineNumber: 455,
+                                                                            columnNumber: 33
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                        lineNumber: 454,
+                                                                        columnNumber: 31
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-sm text-slate-500 italic",
+                                                                        children: "Rest day — no subjects suggested"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                        lineNumber: 457,
+                                                                        columnNumber: 31
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 451,
+                                                                columnNumber: 29
+                                                            }, this) : userData.subjects.filter((s)=>suggested[currentDay]?.includes(s.id)).map((sub, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SubjectCard, {
+                                                                    subject: sub,
+                                                                    active: true,
+                                                                    onClick: ()=>{},
+                                                                    index: i,
+                                                                    mode: "ai"
+                                                                }, sub.id, false, {
+                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                    lineNumber: 463,
+                                                                    columnNumber: 33
+                                                                }, this))
+                                                        }, currentDay + 'ai-cards', false, {
+                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                            lineNumber: 445,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 444,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        initial: {
+                                                            opacity: 0,
+                                                            y: 10
+                                                        },
+                                                        animate: {
+                                                            opacity: 1,
+                                                            y: 0
+                                                        },
+                                                        transition: {
+                                                            delay: 0.3
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-[10px] font-black uppercase tracking-widest text-slate-600 mb-3 mt-4",
+                                                                children: "Full Week"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 478,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "space-y-2",
+                                                                children: DAYS.map((day, i)=>{
+                                                                    const subs = userData.subjects.filter((s)=>suggested[day]?.includes(s.id));
+                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                        className: "flex items-start gap-3 text-xs",
+                                                                        initial: {
+                                                                            opacity: 0,
+                                                                            x: -10
+                                                                        },
+                                                                        animate: {
+                                                                            opacity: 1,
+                                                                            x: 0
+                                                                        },
+                                                                        transition: {
+                                                                            delay: 0.35 + i * 0.04
+                                                                        },
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "font-bold text-slate-600 w-8 shrink-0",
+                                                                                children: day.slice(0, 3)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                lineNumber: 487,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            subs.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "text-slate-700 italic",
+                                                                                children: "Rest"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                lineNumber: 489,
+                                                                                columnNumber: 35
+                                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex flex-wrap gap-1",
+                                                                                children: subs.map((sub)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "px-2 py-0.5 rounded-lg font-medium",
+                                                                                        style: {
+                                                                                            background: 'rgba(245,158,11,0.1)',
+                                                                                            color: 'rgba(251,191,36,0.8)',
+                                                                                            border: '1px solid rgba(245,158,11,0.2)'
+                                                                                        },
+                                                                                        children: sub.name
+                                                                                    }, sub.id, false, {
+                                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                        lineNumber: 493,
+                                                                                        columnNumber: 39
+                                                                                    }, this))
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                                lineNumber: 491,
+                                                                                columnNumber: 35
+                                                                            }, this)
+                                                                        ]
+                                                                    }, day, true, {
+                                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                        lineNumber: 483,
+                                                                        columnNumber: 31
+                                                                    }, this);
+                                                                })
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 479,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 477,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                        whileHover: {
+                                                            scale: 1.02,
+                                                            y: -1
+                                                        },
+                                                        whileTap: {
+                                                            scale: 0.97
+                                                        },
+                                                        onClick: handleAcceptAI,
+                                                        className: "w-full mt-4 py-3.5 rounded-2xl flex items-center justify-center gap-2 font-black text-sm relative overflow-hidden group",
+                                                        style: {
+                                                            background: 'rgba(245,158,11,0.1)',
+                                                            border: '1px solid rgba(245,158,11,0.3)'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                className: "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity",
+                                                                style: {
+                                                                    background: 'rgba(245,158,11,0.08)'
+                                                                }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
                                                                 lineNumber: 513,
-                                                                columnNumber: 27
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                animate: {
+                                                                    rotate: [
+                                                                        0,
+                                                                        180,
+                                                                        360
+                                                                    ]
+                                                                },
+                                                                transition: {
+                                                                    duration: 2,
+                                                                    repeat: Infinity,
+                                                                    ease: 'linear'
+                                                                },
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__["RefreshCw"], {
+                                                                    size: 15,
+                                                                    className: "text-amber-400"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                    lineNumber: 516,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 515,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-amber-300",
+                                                                children: t.accept_suggestion
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                                lineNumber: 518,
+                                                                columnNumber: 25
                                                             }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 512,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-amber-300",
-                                                            children: t.accept_suggestion
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                            lineNumber: 515,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 503,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, "ai", true, {
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 506,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, "ai", true, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 408,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 405,
-                                            columnNumber: 21
+                                            lineNumber: 310,
+                                            columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                        lineNumber: 307,
-                                        columnNumber: 17
+                                        lineNumber: 309,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-end gap-3 px-5 py-4 border-t border-white/5 shrink-0",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                onClick: ()=>setIsOpen(false),
+                                                whileHover: {
+                                                    scale: 1.02
+                                                },
+                                                whileTap: {
+                                                    scale: 0.97
+                                                },
+                                                className: "h-11 px-5 rounded-2xl text-sm font-bold text-slate-400 hover:text-white bg-white/5 border border-white/10 hover:bg-white/8 transition-all",
+                                                children: t.back
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 527,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                whileHover: {
+                                                    scale: 1.02,
+                                                    y: -1
+                                                },
+                                                whileTap: {
+                                                    scale: 0.97
+                                                },
+                                                onClick: handleSave,
+                                                className: "h-11 px-6 rounded-2xl text-sm font-black text-white flex items-center gap-2 relative overflow-hidden group",
+                                                style: {
+                                                    background: 'linear-gradient(135deg, #4338ca, #7c3aed)'
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        className: "absolute inset-0",
+                                                        style: {
+                                                            background: 'linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%)'
+                                                        },
+                                                        animate: {
+                                                            x: [
+                                                                '-100%',
+                                                                '200%'
+                                                            ]
+                                                        },
+                                                        transition: {
+                                                            duration: 2,
+                                                            repeat: Infinity,
+                                                            repeatDelay: 1
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 541,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$save$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Save$3e$__["Save"], {
+                                                        size: 15,
+                                                        className: "relative z-10"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 546,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "relative z-10",
+                                                        children: t.save_changes
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                        lineNumber: 547,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                                lineNumber: 534,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                        lineNumber: 526,
+                                        columnNumber: 15
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                    lineNumber: 306,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center justify-end gap-3 px-5 py-4 border-t border-white/5 shrink-0",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            onClick: ()=>setIsOpen(false),
-                                            whileHover: {
-                                                scale: 1.02
-                                            },
-                                            whileTap: {
-                                                scale: 0.97
-                                            },
-                                            className: "h-11 px-5 rounded-2xl text-sm font-bold text-slate-400 hover:text-white bg-white/5 border border-white/10 hover:bg-white/8 transition-all",
-                                            children: t.back
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 524,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileHover: {
-                                                scale: 1.02,
-                                                y: -1
-                                            },
-                                            whileTap: {
-                                                scale: 0.97
-                                            },
-                                            onClick: handleSave,
-                                            className: "h-11 px-6 rounded-2xl text-sm font-black text-white flex items-center gap-2 relative overflow-hidden group",
-                                            style: {
-                                                background: 'linear-gradient(135deg, #4338ca, #7c3aed)'
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "absolute inset-0",
-                                                    style: {
-                                                        background: 'linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%)'
-                                                    },
-                                                    animate: {
-                                                        x: [
-                                                            '-100%',
-                                                            '200%'
-                                                        ]
-                                                    },
-                                                    transition: {
-                                                        duration: 2,
-                                                        repeat: Infinity,
-                                                        repeatDelay: 1
-                                                    }
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 538,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$save$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Save$3e$__["Save"], {
-                                                    size: 15,
-                                                    className: "relative z-10"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 543,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "relative z-10",
-                                                    children: t.save_changes
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                                    lineNumber: 544,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                            lineNumber: 531,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
-                                    lineNumber: 523,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
+                                lineNumber: 186,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/ScheduleEditor.tsx",
                             lineNumber: 183,
                             columnNumber: 13
@@ -3605,9 +3612,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/graduation-cap.js [app-ssr] (ecmascript) <export default as GraduationCap>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/AppContext.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/i18n.ts [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/anime/AnimeMascot.tsx [app-ssr] (ecmascript)");
 "use client";
-;
 ;
 ;
 ;
@@ -3696,7 +3701,7 @@ const ParticleBackground = ({ isRunning, isPaused })=>{
         }
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-        lineNumber: 101,
+        lineNumber: 100,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -3708,7 +3713,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 112,
+            lineNumber: 111,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
         Brain: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__["Brain"], {
@@ -3716,7 +3721,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 113,
+            lineNumber: 112,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
         Atom: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$atom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Atom$3e$__["Atom"], {
@@ -3724,7 +3729,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 114,
+            lineNumber: 113,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
         FlaskConical: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flask$2d$conical$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FlaskConical$3e$__["FlaskConical"], {
@@ -3732,7 +3737,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 115,
+            lineNumber: 114,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
         Pi: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pi$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Pi$3e$__["Pi"], {
@@ -3740,7 +3745,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 116,
+            lineNumber: 115,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
         Quill: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pen$2d$tool$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PenTool$3e$__["PenTool"], {
@@ -3748,7 +3753,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 117,
+            lineNumber: 116,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
         Calculator: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calculator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calculator$3e$__["Calculator"], {
@@ -3756,7 +3761,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 118,
+            lineNumber: 117,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0)),
         GraduationCap: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"], {
@@ -3764,7 +3769,7 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 119,
+            lineNumber: 118,
             columnNumber: 19
         }, ("TURBOPACK compile-time value", void 0))
     };
@@ -3774,13 +3779,13 @@ const SubjectIcon = ({ icon, size = 20, className = '' })=>{
             className: className
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 121,
+            lineNumber: 120,
             columnNumber: 26
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false);
 };
 function FocusMode() {
-    const { userData, addLog, addStudyXP, gender } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAppContext"])();
+    const { userData, addLog, addStudyXP } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAppContext"])();
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isFullscreen, setIsFullscreen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [selectedSubject, setSelectedSubject] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -4022,20 +4027,20 @@ function FocusMode() {
                             className: "w-20 h-24 text-center text-4xl font-black bg-white/5 border-2 border-white/10 rounded-2xl text-white focus:border-indigo-500 focus:outline-none focus:ring-4 focus:ring-indigo-500/25 transition-all"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 322,
+                            lineNumber: 321,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none"
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 329,
+                            lineNumber: 328,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 321,
+                    lineNumber: 320,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4043,13 +4048,13 @@ function FocusMode() {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 331,
+                    lineNumber: 330,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 320,
+            lineNumber: 319,
             columnNumber: 5
         }, this);
     // ── Analytics Modal ─────────────────────────────────────────────────────────
@@ -4098,7 +4103,7 @@ function FocusMode() {
                                             size: 24
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 352,
+                                            lineNumber: 351,
                                             columnNumber: 17
                                         }, this),
                                         t.focus_mode,
@@ -4107,7 +4112,7 @@ function FocusMode() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 351,
+                                    lineNumber: 350,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -4125,18 +4130,18 @@ function FocusMode() {
                                         className: "text-slate-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 358,
+                                        lineNumber: 357,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 355,
+                                    lineNumber: 354,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 350,
+                            lineNumber: 349,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4179,7 +4184,7 @@ function FocusMode() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 371,
+                                            lineNumber: 370,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4190,7 +4195,7 @@ function FocusMode() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 372,
+                                            lineNumber: 371,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4198,18 +4203,18 @@ function FocusMode() {
                                             children: stat.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 373,
+                                            lineNumber: 372,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, stat.label, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 368,
+                                    lineNumber: 367,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 362,
+                            lineNumber: 361,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4224,7 +4229,7 @@ function FocusMode() {
                                                 children: language === 'ar' ? 'إجمالي الجلسات' : 'Total Sessions Completed'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 381,
+                                                lineNumber: 380,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4232,13 +4237,13 @@ function FocusMode() {
                                                 children: analytics.sessionCount
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 382,
+                                                lineNumber: 381,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 380,
+                                        lineNumber: 379,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
@@ -4246,18 +4251,18 @@ function FocusMode() {
                                         className: "text-yellow-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 384,
+                                        lineNumber: 383,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 379,
+                                lineNumber: 378,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 378,
+                            lineNumber: 377,
                             columnNumber: 13
                         }, this),
                         sessions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4270,14 +4275,14 @@ function FocusMode() {
                                             className: "text-indigo-400"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 391,
+                                            lineNumber: 390,
                                             columnNumber: 19
                                         }, this),
                                         language === 'ar' ? 'الجلسات الأخيرة' : 'Recent Sessions'
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 390,
+                                    lineNumber: 389,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4305,7 +4310,7 @@ function FocusMode() {
                                                             className: "w-2 h-2 rounded-full bg-emerald-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                            lineNumber: 402,
+                                                            lineNumber: 401,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4313,7 +4318,7 @@ function FocusMode() {
                                                             children: new Date(session.date).toLocaleDateString()
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                            lineNumber: 403,
+                                                            lineNumber: 402,
                                                             columnNumber: 27
                                                         }, this),
                                                         session.subjectName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4321,13 +4326,13 @@ function FocusMode() {
                                                             children: session.subjectName
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                            lineNumber: 404,
+                                                            lineNumber: 403,
                                                             columnNumber: 51
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 401,
+                                                    lineNumber: 400,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4341,41 +4346,41 @@ function FocusMode() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 406,
+                                                    lineNumber: 405,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, session.id, true, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 398,
+                                            lineNumber: 397,
                                             columnNumber: 23
                                         }, this);
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 394,
+                                    lineNumber: 393,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 389,
+                            lineNumber: 388,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 344,
+                    lineNumber: 343,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 339,
+                lineNumber: 338,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 337,
+            lineNumber: 336,
             columnNumber: 5
         }, this);
     // ── Fullscreen Timer ─────────────────────────────────────────────────────────
@@ -4399,7 +4404,7 @@ function FocusMode() {
                     isPaused: isPaused
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 429,
+                    lineNumber: 428,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4420,7 +4425,7 @@ function FocusMode() {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 438,
+                                    lineNumber: 437,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4428,13 +4433,13 @@ function FocusMode() {
                                     children: language === 'ar' ? 'خروج' : 'Exit'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 439,
+                                    lineNumber: 438,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 433,
+                            lineNumber: 432,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -4472,7 +4477,7 @@ function FocusMode() {
                                         className: "text-indigo-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 457,
+                                        lineNumber: 456,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4480,18 +4485,18 @@ function FocusMode() {
                                         children: selectedSubject.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 458,
+                                        lineNumber: 457,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 445,
+                                lineNumber: 444,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 443,
+                            lineNumber: 442,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -4509,7 +4514,7 @@ function FocusMode() {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 468,
+                                    lineNumber: 467,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4517,19 +4522,19 @@ function FocusMode() {
                                     children: t.analytics
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 469,
+                                    lineNumber: 468,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 463,
+                            lineNumber: 462,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 432,
+                    lineNumber: 431,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4568,7 +4573,7 @@ function FocusMode() {
                                                         stopColor: "#6366f1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 486,
+                                                        lineNumber: 485,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4576,7 +4581,7 @@ function FocusMode() {
                                                         stopColor: "#ec4899"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 487,
+                                                        lineNumber: 486,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4584,18 +4589,18 @@ function FocusMode() {
                                                         stopColor: "#06b6d4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 488,
+                                                        lineNumber: 487,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 485,
+                                                lineNumber: 484,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 484,
+                                            lineNumber: 483,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -4610,13 +4615,13 @@ function FocusMode() {
                                             opacity: "0.35"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 491,
+                                            lineNumber: 490,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 478,
+                                    lineNumber: 477,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -4635,7 +4640,7 @@ function FocusMode() {
                                                         stopColor: isActive ? '#6366f1' : '#f59e0b'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 501,
+                                                        lineNumber: 500,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4643,7 +4648,7 @@ function FocusMode() {
                                                         stopColor: isActive ? '#ec4899' : '#ef4444'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 502,
+                                                        lineNumber: 501,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4651,18 +4656,18 @@ function FocusMode() {
                                                         stopColor: isActive ? '#06b6d4' : '#f97316'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 503,
+                                                        lineNumber: 502,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 500,
+                                                lineNumber: 499,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 499,
+                                            lineNumber: 498,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -4674,7 +4679,7 @@ function FocusMode() {
                                             strokeWidth: "10"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 508,
+                                            lineNumber: 507,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].circle, {
@@ -4704,13 +4709,13 @@ function FocusMode() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 513,
+                                            lineNumber: 512,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 498,
+                                    lineNumber: 497,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4726,7 +4731,7 @@ function FocusMode() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 530,
+                                    lineNumber: 529,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4762,7 +4767,7 @@ function FocusMode() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 544,
+                                                    lineNumber: 543,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -4779,13 +4784,13 @@ function FocusMode() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 551,
+                                                    lineNumber: 550,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 539,
+                                            lineNumber: 538,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4800,19 +4805,19 @@ function FocusMode() {
                                             children: isPaused ? language === 'ar' ? 'مُتوقف مؤقتاً' : 'Paused' : language === 'ar' ? 'جلسة تركيز' : 'Focus Session'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 560,
+                                            lineNumber: 559,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 538,
+                                    lineNumber: 537,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 475,
+                            lineNumber: 474,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4832,12 +4837,12 @@ function FocusMode() {
                                         size: 24
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 585,
+                                        lineNumber: 584,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 579,
+                                    lineNumber: 578,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -4866,7 +4871,7 @@ function FocusMode() {
                                             className: "text-white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 604,
+                                            lineNumber: 603,
                                             columnNumber: 21
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pause$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Pause$3e$__["Pause"], {
                                             size: 32,
@@ -4874,17 +4879,17 @@ function FocusMode() {
                                             className: "text-white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 605,
+                                            lineNumber: 604,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 599,
+                                        lineNumber: 598,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 588,
+                                    lineNumber: 587,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -4901,18 +4906,18 @@ function FocusMode() {
                                         size: 24
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 615,
+                                        lineNumber: 614,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 609,
+                                    lineNumber: 608,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 578,
+                            lineNumber: 577,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -4944,48 +4949,18 @@ function FocusMode() {
                                 children: motivationalMessages[language][motivIdx]
                             }, motivIdx, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 621,
+                                lineNumber: 620,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 620,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "mt-6 flex justify-center",
-                            initial: {
-                                opacity: 0,
-                                y: 20
-                            },
-                            animate: {
-                                opacity: 1,
-                                y: 0
-                            },
-                            transition: {
-                                delay: 0.4,
-                                type: 'spring',
-                                stiffness: 200
-                            },
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MiniMascot"], {
-                                color: isActive ? '#6366f1' : '#f59e0b',
-                                size: 54,
-                                gender: gender || 'male',
-                                focusMode: isActive
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 641,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 635,
+                            lineNumber: 619,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 474,
+                    lineNumber: 473,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5009,12 +4984,12 @@ function FocusMode() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 654,
+                                lineNumber: 639,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 653,
+                            lineNumber: 638,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5042,25 +5017,25 @@ function FocusMode() {
                                     }
                                 }, i, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 671,
+                                    lineNumber: 656,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 667,
+                            lineNumber: 652,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 651,
+                    lineNumber: 636,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 425,
+            lineNumber: 424,
             columnNumber: 7
         }, this);
     };
@@ -5094,17 +5069,17 @@ function FocusMode() {
                         className: "text-white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                        lineNumber: 706,
+                        lineNumber: 691,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 702,
+                    lineNumber: 687,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 695,
+                lineNumber: 680,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -5161,19 +5136,19 @@ function FocusMode() {
                                                     size: 28
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 727,
+                                                    lineNumber: 712,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 726,
+                                                lineNumber: 711,
                                                 columnNumber: 19
                                             }, this),
                                             t.focus_mode
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 725,
+                                        lineNumber: 710,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5191,18 +5166,18 @@ function FocusMode() {
                                             className: "text-slate-400"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 734,
+                                            lineNumber: 719,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 731,
+                                        lineNumber: 716,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 724,
+                                lineNumber: 709,
                                 columnNumber: 15
                             }, this),
                             userData?.subjects && userData.subjects.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5213,7 +5188,7 @@ function FocusMode() {
                                         children: language === 'ar' ? 'اختر المادة (اختياري)' : 'Select Subject (Optional)'
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 741,
+                                        lineNumber: 726,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5241,7 +5216,7 @@ function FocusMode() {
                                                         className: active ? 'text-indigo-400' : 'text-slate-400'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 760,
+                                                        lineNumber: 745,
                                                         columnNumber: 27
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5249,7 +5224,7 @@ function FocusMode() {
                                                         children: subject.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 761,
+                                                        lineNumber: 746,
                                                         columnNumber: 27
                                                     }, this),
                                                     active && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5262,25 +5237,25 @@ function FocusMode() {
                                                         className: "ml-auto w-2 h-2 rounded-full bg-indigo-400"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 763,
+                                                        lineNumber: 748,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, subject.id, true, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 748,
+                                                lineNumber: 733,
                                                 columnNumber: 25
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 744,
+                                        lineNumber: 729,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 740,
+                                lineNumber: 725,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5293,7 +5268,7 @@ function FocusMode() {
                                         max: 23
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 777,
+                                        lineNumber: 762,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5303,12 +5278,12 @@ function FocusMode() {
                                             children: ":"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 778,
+                                            lineNumber: 763,
                                             columnNumber: 54
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 778,
+                                        lineNumber: 763,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TimeInputField, {
@@ -5318,7 +5293,7 @@ function FocusMode() {
                                         max: 59
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 779,
+                                        lineNumber: 764,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5328,12 +5303,12 @@ function FocusMode() {
                                             children: ":"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 780,
+                                            lineNumber: 765,
                                             columnNumber: 54
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 780,
+                                        lineNumber: 765,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TimeInputField, {
@@ -5343,13 +5318,13 @@ function FocusMode() {
                                         max: 59
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 781,
+                                        lineNumber: 766,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 776,
+                                lineNumber: 761,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5395,12 +5370,12 @@ function FocusMode() {
                                         children: preset.label
                                     }, preset.label, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 792,
+                                        lineNumber: 777,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 785,
+                                lineNumber: 770,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5424,19 +5399,19 @@ function FocusMode() {
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 814,
+                                            lineNumber: 799,
                                             columnNumber: 19
                                         }, this),
                                         language === 'ar' ? 'ابدأ جلسة التركيز' : 'Start Focus Session'
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 813,
+                                    lineNumber: 798,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 805,
+                                lineNumber: 790,
                                 columnNumber: 15
                             }, this),
                             sessions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5453,46 +5428,46 @@ function FocusMode() {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 826,
+                                        lineNumber: 811,
                                         columnNumber: 19
                                     }, this),
                                     language === 'ar' ? `عرض التحليلات (${sessions.length} جلسات)` : `View Analytics (${sessions.length} sessions)`
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 821,
+                                lineNumber: 806,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                        lineNumber: 718,
+                        lineNumber: 703,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 713,
+                    lineNumber: 698,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 711,
+                lineNumber: 696,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                 children: isFullscreen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FullscreenTimer, {}, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 839,
+                    lineNumber: 824,
                     columnNumber: 26
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 838,
+                lineNumber: 823,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AnalyticsModal, {}, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 842,
+                lineNumber: 827,
                 columnNumber: 7
             }, this)
         ]
@@ -5525,7 +5500,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$analyti
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$ScheduleEditor$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/dashboard/ScheduleEditor.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$FocusMode$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/dashboard/FocusMode.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$monthly$2f$MonthlyTasksWidget$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/monthly/MonthlyTasksWidget.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/anime/AnimeMascot.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript) <export default as Menu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-ssr] (ecmascript) <export default as CheckCircle2>");
@@ -5534,8 +5508,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wand$2d$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Wand2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wand-sparkles.js [app-ssr] (ecmascript) <export default as Wand2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-ssr] (ecmascript) <export default as Calendar>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$atom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Atom$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/atom.js [app-ssr] (ecmascript) <export default as Atom>");
 "use client";
-;
 ;
 ;
 ;
@@ -5623,17 +5597,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 36,
+                    lineNumber: 35,
                     columnNumber: 11
                 }, this)
             }, i, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 32,
+                lineNumber: 31,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 25,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
@@ -5674,7 +5648,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 61,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5684,7 +5658,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 65,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5707,12 +5681,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 72,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 71,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5723,13 +5697,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                                         children: label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 74,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 71,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5740,13 +5714,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                                 children: value
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 77,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 70,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5762,29 +5736,31 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                             repeat: Infinity,
                             ease: 'linear'
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StarBurst"], {
-                            color: color,
-                            size: 20
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$atom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Atom$3e$__["Atom"], {
+                            size: 20,
+                            style: {
+                                color
+                            }
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                            lineNumber: 82,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 79,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 69,
+                lineNumber: 68,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 48,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }
@@ -5824,19 +5800,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
                     size: 12
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 100,
+                    lineNumber: 99,
                     columnNumber: 81
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 100,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             next
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 96,
+        lineNumber: 95,
         columnNumber: 5
     }, this);
 }
@@ -5846,7 +5822,6 @@ function Dashboard() {
     const [showWelcome, setShowWelcome] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [sidebarCollapsed, setSidebarCollapsed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [mascotMsg, setMascotMsg] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const initialized = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
@@ -5860,11 +5835,6 @@ function Dashboard() {
         userData,
         setUserData
     ]);
-    // Cycle mascot messages
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const i = setInterval(()=>setMascotMsg((m)=>(m + 1) % 4), 5000);
-        return ()=>clearInterval(i);
-    }, []);
     if (!userData) return null;
     const t = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["translations"][userData.language];
     const isRTL = userData.language === 'ar';
@@ -5901,12 +5871,6 @@ function Dashboard() {
             color: '#06b6d4'
         }
     ];
-    const MASCOT_MSGS = [
-        `Ganbatte, ${userData.name}! 🔥`,
-        'You can do it! Keep going! ⚡',
-        `${todaySubjects.length > 0 ? `${todaySubjects.length} subjects today!` : 'Free day! 🎉'}`,
-        'Study hard, dream big! 🌟'
-    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen relative flex flex-col lg:flex-row",
         dir: isRTL ? 'rtl' : 'ltr',
@@ -5918,12 +5882,12 @@ function Dashboard() {
                     secondary: theme.secondary
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 166,
+                    lineNumber: 151,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 165,
+                lineNumber: 150,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -5946,12 +5910,12 @@ function Dashboard() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                            lineNumber: 177,
+                            lineNumber: 162,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 173,
+                        lineNumber: 158,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5965,7 +5929,7 @@ function Dashboard() {
                                 children: "A"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 180,
+                                lineNumber: 165,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5973,13 +5937,13 @@ function Dashboard() {
                                 children: "ATOMIC"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 182,
+                                lineNumber: 167,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 179,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5987,24 +5951,24 @@ function Dashboard() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$ScheduleEditor$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 185,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$settings$2f$SettingsPanel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 186,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 184,
+                        lineNumber: 169,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 170,
+                lineNumber: 155,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6023,7 +5987,7 @@ function Dashboard() {
                 className: "hidden lg:block shrink-0 pointer-events-none order-first"
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 191,
+                lineNumber: 176,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -6049,12 +6013,12 @@ function Dashboard() {
                     children: "▶"
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 200,
+                    lineNumber: 185,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 198,
+                lineNumber: 183,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$Sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -6064,7 +6028,7 @@ function Dashboard() {
                 onMobileClose: ()=>setMobileMenuOpen(false)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 213,
+                lineNumber: 198,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -6089,7 +6053,7 @@ function Dashboard() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 233,
+                                        lineNumber: 218,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6106,7 +6070,7 @@ function Dashboard() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 237,
+                                        lineNumber: 222,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6117,75 +6081,46 @@ function Dashboard() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "relative shrink-0 hidden sm:block",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                pose: doneTasks > allTasks.length * 0.5 ? 'success' : 'idle',
-                                                                expression: "happy",
-                                                                size: 80,
-                                                                primaryColor: theme.primary,
-                                                                animate: true
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                            className: "w-14 h-14 rounded-2xl flex items-center justify-center font-black text-white text-2xl",
+                                                            style: {
+                                                                background: `linear-gradient(135deg,${theme.primary},${theme.secondary})`,
+                                                                boxShadow: `0 0 24px ${theme.primary}50`
+                                                            },
+                                                            animate: {
+                                                                rotate: [
+                                                                    0,
+                                                                    5,
+                                                                    -5,
+                                                                    0
+                                                                ],
+                                                                scale: [
+                                                                    1,
+                                                                    1.03,
+                                                                    1
+                                                                ]
+                                                            },
+                                                            transition: {
+                                                                duration: 6,
+                                                                repeat: Infinity,
+                                                                ease: 'easeInOut'
+                                                            },
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$atom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Atom$3e$__["Atom"], {
+                                                                size: 28,
+                                                                className: "text-white"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 249,
-                                                                columnNumber: 19
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                className: "absolute -top-8 left-1/2 -translate-x-1/2 bg-white rounded-xl px-3 py-1.5 whitespace-nowrap",
-                                                                style: {
-                                                                    border: `2px solid ${theme.primary}`,
-                                                                    fontSize: 9,
-                                                                    fontWeight: 900,
-                                                                    color: '#1e1b4b',
-                                                                    minWidth: 100
-                                                                },
-                                                                initial: {
-                                                                    scale: 0,
-                                                                    opacity: 0
-                                                                },
-                                                                animate: {
-                                                                    scale: 1,
-                                                                    opacity: 1
-                                                                },
-                                                                exit: {
-                                                                    scale: 0,
-                                                                    opacity: 0
-                                                                },
-                                                                children: [
-                                                                    MASCOT_MSGS[mascotMsg],
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "absolute -bottom-[9px] left-1/2 -translate-x-1/2 w-0 h-0",
-                                                                        style: {
-                                                                            borderLeft: '6px solid transparent',
-                                                                            borderRight: '6px solid transparent',
-                                                                            borderTop: `9px solid ${theme.primary}`
-                                                                        }
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 266,
-                                                                        columnNumber: 21
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: "absolute -bottom-[7px] left-1/2 -translate-x-1/2 w-0 h-0",
-                                                                        style: {
-                                                                            borderLeft: '5px solid transparent',
-                                                                            borderRight: '5px solid transparent',
-                                                                            borderTop: '8px solid white'
-                                                                        }
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 268,
-                                                                        columnNumber: 21
-                                                                    }, this)
-                                                                ]
-                                                            }, mascotMsg, true, {
-                                                                fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 257,
-                                                                columnNumber: 19
+                                                                lineNumber: 239,
+                                                                columnNumber: 21
                                                             }, this)
-                                                        ]
-                                                    }, void 0, true, {
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                            lineNumber: 233,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 248,
+                                                        lineNumber: 232,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6198,7 +6133,7 @@ function Dashboard() {
                                                                 children: "⚡ Study Dashboard"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 274,
+                                                                lineNumber: 244,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -6229,7 +6164,7 @@ function Dashboard() {
                                                                         children: userData.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 281,
+                                                                        lineNumber: 251,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -6253,13 +6188,13 @@ function Dashboard() {
                                                                         children: "✨"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 284,
+                                                                        lineNumber: 254,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 277,
+                                                                lineNumber: 247,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6277,7 +6212,7 @@ function Dashboard() {
                                                                                 size: 10
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                                lineNumber: 292,
+                                                                                lineNumber: 262,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             " ",
@@ -6285,7 +6220,7 @@ function Dashboard() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 289,
+                                                                        lineNumber: 259,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6296,25 +6231,25 @@ function Dashboard() {
                                                                         children: todaySubjects.length > 0 ? `${todaySubjects.length} subjects today` : 'Free day!'
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 294,
+                                                                        lineNumber: 264,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 288,
+                                                                lineNumber: 258,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 273,
+                                                        lineNumber: 243,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 246,
+                                                lineNumber: 231,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6322,35 +6257,35 @@ function Dashboard() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ThemeToggleBtn, {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 303,
+                                                        lineNumber: 273,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$ScheduleEditor$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 304,
+                                                        lineNumber: 274,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$settings$2f$SettingsPanel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 305,
+                                                        lineNumber: 275,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 302,
+                                                lineNumber: 272,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 245,
+                                        lineNumber: 230,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 225,
+                                lineNumber: 210,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6360,17 +6295,17 @@ function Dashboard() {
                                         index: i
                                     }, s.label, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 313,
+                                        lineNumber: 283,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 311,
+                                lineNumber: 281,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$monthly$2f$MonthlyTasksWidget$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 318,
+                                lineNumber: 288,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -6385,7 +6320,7 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 324,
+                                                lineNumber: 294,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6393,7 +6328,7 @@ function Dashboard() {
                                                 children: "Today's Learning Path"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 325,
+                                                lineNumber: 295,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6403,7 +6338,7 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 326,
+                                                lineNumber: 296,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6418,13 +6353,13 @@ function Dashboard() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 327,
+                                                lineNumber: 297,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 323,
+                                        lineNumber: 293,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6438,12 +6373,12 @@ function Dashboard() {
                                                         language: userData.language
                                                     }, sub.id, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 335,
+                                                        lineNumber: 305,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 333,
+                                                lineNumber: 303,
                                                 columnNumber: 15
                                             }, this),
                                             todaySubjects.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6461,14 +6396,44 @@ function Dashboard() {
                                                     background: `${theme.primary}05`
                                                 },
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$anime$2f$AnimeMascot$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                        pose: "success",
-                                                        expression: "happy",
-                                                        size: 120,
-                                                        primaryColor: theme.primary
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        className: "w-20 h-20 rounded-3xl flex items-center justify-center",
+                                                        style: {
+                                                            background: `linear-gradient(135deg,${theme.primary}30,${theme.secondary}20)`,
+                                                            border: `2px solid ${theme.primary}30`
+                                                        },
+                                                        animate: {
+                                                            scale: [
+                                                                1,
+                                                                1.08,
+                                                                1
+                                                            ],
+                                                            rotate: [
+                                                                0,
+                                                                8,
+                                                                -8,
+                                                                0
+                                                            ]
+                                                        },
+                                                        transition: {
+                                                            duration: 4,
+                                                            repeat: Infinity,
+                                                            ease: 'easeInOut'
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                                            size: 36,
+                                                            fill: theme.primary,
+                                                            style: {
+                                                                color: theme.primary
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                            lineNumber: 321,
+                                                            columnNumber: 21
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 345,
+                                                        lineNumber: 315,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6479,7 +6444,7 @@ function Dashboard() {
                                                                 children: "Free Day! 🎉"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 347,
+                                                                lineNumber: 324,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6490,31 +6455,31 @@ function Dashboard() {
                                                                 children: "No subjects scheduled. Enjoy your rest or add subjects to your schedule."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 348,
+                                                                lineNumber: 325,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 346,
+                                                        lineNumber: 323,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 340,
+                                                lineNumber: 310,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 332,
+                                        lineNumber: 302,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 321,
+                                lineNumber: 291,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -6529,7 +6494,7 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 360,
+                                                lineNumber: 337,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6537,7 +6502,7 @@ function Dashboard() {
                                                 children: "Study Arsenal"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 361,
+                                                lineNumber: 338,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6547,13 +6512,13 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 362,
+                                                lineNumber: 339,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 359,
+                                        lineNumber: 336,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6564,41 +6529,41 @@ function Dashboard() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$studyassistant$2f$StudyAssistant$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 366,
+                                                        lineNumber: 343,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$analytics$2f$AnalyticsDashboard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 367,
+                                                        lineNumber: 344,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 365,
+                                                lineNumber: 342,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$analytics$2f$TrackingView$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 369,
+                                                lineNumber: 346,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 364,
+                                        lineNumber: 341,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 358,
+                                lineNumber: 335,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 222,
+                        lineNumber: 207,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$WelcomeModal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -6607,24 +6572,24 @@ function Dashboard() {
                         userData: userData
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 375,
+                        lineNumber: 352,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$FocusMode$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 376,
+                        lineNumber: 353,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 221,
+                lineNumber: 206,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 162,
+        lineNumber: 147,
         columnNumber: 5
     }, this);
 }
