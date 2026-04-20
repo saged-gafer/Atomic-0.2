@@ -13,7 +13,7 @@ import {
   Activity,
   Clock, CheckCircle2, ListTodo,
   Coffee, ArrowRightLeft,
-  LayoutGrid, BarChart3, TrendingUp, Hash
+  LayoutGrid, BarChart3, TrendingUp, Hash, Target
 } from 'lucide-react';
 
 type ChartStyle = 'area' | 'bar' | 'line';
@@ -31,9 +31,21 @@ export default function TrackingView() {
   const [timeRange, setTimeRange] = useState<'daily' | 'weekly' | 'monthly'>('weekly');
   const [chartStyle, setChartStyle] = useState<ChartStyle>('area');
   const [metricMode, setMetricMode] = useState<MetricMode>('duration');
+  const [goalAxis, setGoalAxis] = useState(false);
 
   if (!userData) return null;
   const t = translations[userData.language || 'en'];
+
+  const dailyGoal = userData.dailyStudyHours || 4;
+
+  // Compute the Y-axis max based on timeRange
+  const yGoalMax = timeRange === 'monthly' ? dailyGoal * 7 : dailyGoal;
+  const goalTicks = Array.from({ length: Math.ceil(yGoalMax) }, (_, i) => i + 1).filter(v => v <= yGoalMax);
+
+  // Y-axis props for duration charts
+  const yAxisProps = (goalAxis && metricMode === 'duration')
+    ? { domain: [0, yGoalMax] as [number, number], ticks: goalTicks }
+    : {};
 
   // Aggregate real logs
   const logs = userData.logs || [];
@@ -136,7 +148,7 @@ export default function TrackingView() {
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" opacity={0.3} />
           <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} />
-          <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} />
+          <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} {...yAxisProps} />
           <Tooltip
             contentStyle={{ borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)', backgroundColor: '#0f172a', color: '#f1f5f9' }}
           />
@@ -150,7 +162,7 @@ export default function TrackingView() {
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" opacity={0.3} />
           <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} />
-          <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} />
+          <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} {...yAxisProps} />
           <Tooltip
             contentStyle={{ borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)', backgroundColor: '#0f172a', color: '#f1f5f9' }}
           />
@@ -169,7 +181,7 @@ export default function TrackingView() {
         </defs>
         <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" opacity={0.3} />
         <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} />
-        <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} />
+        <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 10}} {...yAxisProps} />
         <Tooltip
           contentStyle={{ borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)', backgroundColor: '#0f172a', color: '#f1f5f9' }}
         />
@@ -261,6 +273,22 @@ export default function TrackingView() {
               <TrendingUp size={18} />
             </button>
           </div>
+
+          {/* Goal Axis Toggle — only relevant for duration mode */}
+          {metricMode === 'duration' && (
+            <button
+              onClick={() => setGoalAxis(v => !v)}
+              title={goalAxis ? 'Switch to auto scale' : `Scale Y-axis to goal (${yGoalMax}h)`}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-2xl border text-[10px] font-black uppercase tracking-widest transition-all ${
+                goalAxis
+                  ? 'bg-primary/20 border-primary/40 text-primary'
+                  : 'bg-slate-800/50 border-white/5 text-slate-500 hover:text-slate-300'
+              }`}
+            >
+              <Target size={14} />
+              {goalAxis ? `${yGoalMax}h` : 'Auto'}
+            </button>
+          )}
         </div>
       </div>
 
@@ -350,7 +378,7 @@ export default function TrackingView() {
               <BarChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" opacity={0.3} />
                 <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 12}} />
-                <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 12}} />
+                <YAxis axisLine={false} tickLine={false} tick={{fill: '#94a3b8', fontSize: 12}} {...yAxisProps} />
                 <Tooltip
                   cursor={{fill: 'rgba(255,255,255,0.05)', radius: 8}}
                   contentStyle={{ borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)', backgroundColor: '#0f172a', color: '#f1f5f9' }}

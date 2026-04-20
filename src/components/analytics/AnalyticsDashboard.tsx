@@ -1,13 +1,15 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, ReferenceLine } from 'recharts';
 import { useAppContext } from '@/context/AppContext';
 import { translations } from '@/lib/i18n';
 import { motion } from 'framer-motion';
-import { TrendingUp, Award } from 'lucide-react';
+import { TrendingUp, Award, Target } from 'lucide-react';
 
 export default function AnalyticsDashboard() {
   const { userData } = useAppContext();
+  const [goalAxis, setGoalAxis] = useState(false);
+
   if (!userData) return null;
   const t = translations[userData.language || 'en'];
 
@@ -24,6 +26,15 @@ export default function AnalyticsDashboard() {
 
   const totalHours = chartData.reduce((s, d) => s + d.hours, 0).toFixed(1);
   const goalDays = chartData.filter(d => d.hours >= (userData.dailyStudyHours || 2)).length;
+
+  const dailyGoal = userData.dailyStudyHours || 4;
+
+  // Build Y-axis ticks from 1 up to dailyGoal
+  const goalTicks = Array.from({ length: Math.ceil(dailyGoal) }, (_, i) => i + 1).filter(v => v <= dailyGoal);
+
+  const yAxisProps = goalAxis
+    ? { domain: [0, dailyGoal] as [number, number], ticks: goalTicks }
+    : { domain: [0, dailyGoal * 1.15] as [number, number] };
 
   return (
     <motion.div
@@ -49,6 +60,20 @@ export default function AnalyticsDashboard() {
           </div>
 
           <div className="flex items-center gap-3">
+            {/* Goal Axis Toggle */}
+            <button
+              onClick={() => setGoalAxis(v => !v)}
+              title={goalAxis ? 'Switch to auto scale' : 'Scale to goal hours'}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-2xl border text-[10px] font-black uppercase tracking-widest transition-all ${
+                goalAxis
+                  ? 'bg-primary/20 border-primary/40 text-primary'
+                  : 'bg-white/3 border-white/5 text-slate-500 hover:text-slate-300'
+              }`}
+            >
+              <Target size={13} />
+              {goalAxis ? `${dailyGoal}h` : 'Auto'}
+            </button>
+
             {/* Total hours stat */}
             <div className="px-4 py-2 rounded-2xl border border-white/5" style={{ background: 'rgba(255,255,255,0.03)' }}>
               <p className="text-[9px] font-black uppercase tracking-widest text-slate-500 mb-0.5">Total</p>
@@ -81,10 +106,10 @@ export default function AnalyticsDashboard() {
                 tickLine={false}
                 tick={{ fill: '#475569', fontSize: 11, fontWeight: '700' }}
                 width={28}
-                domain={[0, (userData.dailyStudyHours || 4) * 1.15]}
+                {...yAxisProps}
               />
               <ReferenceLine
-                y={userData.dailyStudyHours || 4}
+                y={dailyGoal}
                 stroke="rgba(99,102,241,0.45)"
                 strokeDasharray="4 3"
                 strokeWidth={1.5}
