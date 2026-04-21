@@ -10,6 +10,7 @@ export type StudyLog = { date: string; duration: number; type: 'study' | 'break'
 export type UserData = {
   name: string;
   email?: string;
+  avatar?: string;
   language: 'en' | 'ar';
   city?: string;
   country?: string;
