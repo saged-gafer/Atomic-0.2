@@ -11,14 +11,14 @@ import {
 type Mode = 'signup' | 'login';
 
 interface AuthCardProps {
-  onContinue: () => void;
+  onSignup: (name: string, password: string) => void;
 }
 
-export default function AuthCard({ onContinue }: AuthCardProps) {
-  const { userData } = useAppContext();
+export default function AuthCard({ onSignup }: AuthCardProps) {
+  const { userData, login, hasAccount } = useAppContext();
   const lang = userData?.language || 'en';
   const isAr = lang === 'ar';
-  const [mode, setMode] = useState<Mode>('signup');
+  const [mode, setMode] = useState<Mode>(hasAccount ? 'login' : 'signup');
 
   /* ── Signup state ──────────────────────────────────── */
   const [suName, setSuName] = useState('');
@@ -51,7 +51,7 @@ export default function AuthCard({ onContinue }: AuthCardProps) {
       setSuError(isAr ? 'كلمتا المرور غير متطابقتين' : 'Passwords do not match');
       return;
     }
-    onContinue();
+    onSignup(suName.trim(), suPass);
   };
 
   /* ── Login submit ──────────────────────────────────── */
@@ -66,11 +66,22 @@ export default function AuthCard({ onContinue }: AuthCardProps) {
 
   const handleLoginSubmit = () => {
     setLiError('');
-    if (liPass.length < 4) {
-      setLiError(isAr ? 'كلمة المرور 4 أحرف على الأقل' : 'Password must be at least 4 characters');
+    if (liPass.length < 1) {
+      setLiError(isAr ? 'أدخل كلمة المرور' : 'Enter your password');
       return;
     }
-    onContinue();
+    const result = login(liName, liPass);
+    if (!result.ok) {
+      if (result.error === 'no_account') {
+        setLiError(isAr ? 'لا يوجد حساب — سجل أولاً' : 'No account found — sign up first');
+      } else {
+        setLiError(result.error || (isAr ? 'فشل تسجيل الدخول' : 'Login failed'));
+      }
+      // Bounce back to step 0 if name is also wrong
+      if (result.error?.toLowerCase().includes('name') || result.error?.includes('الاسم')) {
+        setTimeout(() => setLoginStep(0), 1200);
+      }
+    }
   };
 
   /* ── Password strength (signup) ────────────────────── */

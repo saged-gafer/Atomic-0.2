@@ -62,9 +62,12 @@ const AppContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
 function xpToLevel(xp) {
     return Math.floor(Math.sqrt(xp / 100)) + 1;
 }
+const SESSION_KEY = 'atomic_session_active';
+const USER_KEY = 'study_planner_user_data';
 function AppProvider({ children }) {
     const [userData, setUserDataState] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isAuthenticated, setIsAuthenticated] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [hasAccount, setHasAccount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const hydrated = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -84,6 +87,24 @@ function AppProvider({ children }) {
         };
         setUserDataState(dataWithCount);
         setIsAuthenticated(true);
+        setHasAccount(true);
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+    }, []);
+    const logout = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        setIsAuthenticated(false);
+        setUserDataState(null);
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+    }, []);
+    const login = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((name, password)=>{
+        if ("TURBOPACK compile-time truthy", 1) return {
+            ok: false,
+            error: 'Unavailable'
+        };
+        //TURBOPACK unreachable
+        ;
+        const saved = undefined;
     }, []);
     const clearData = ()=>{
         const lang = userData?.language || (("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : 'en');
@@ -359,8 +380,11 @@ function AppProvider({ children }) {
         value: {
             userData,
             isAuthenticated,
+            hasAccount,
             setUserData,
             clearData,
+            logout,
+            login,
             addTask,
             toggleTask,
             deleteTask,
@@ -385,7 +409,7 @@ function AppProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AppContext.tsx",
-        lineNumber: 275,
+        lineNumber: 326,
         columnNumber: 10
     }, this);
 }

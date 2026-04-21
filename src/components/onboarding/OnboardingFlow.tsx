@@ -274,15 +274,22 @@ function BackBtn({ onClick, color }: { onClick:()=>void; color:string }) {
   );
 }
 
+interface OnboardingFlowProps {
+  initialName?: string;
+  initialPassword?: string;
+}
+
 /* ── Main ───────────────────────────────────────────────*/
-export default function OnboardingFlow() {
+export default function OnboardingFlow({ initialName, initialPassword }: OnboardingFlowProps = {}) {
   const { setUserData } = useAppContext();
   const { theme } = useTheme();
   const [step, setStep] = useState(0);
   const [prevStep, setPrevStep] = useState(0);
   const [burstKey, setBurstKey] = useState(0);
   const [formData, setFormData] = useState<UserData>({
-    name:'', language:'en', city:'', country:'', avatar:'🦊',
+    name: initialName || '',
+    password: initialPassword,
+    language:'en', city:'', country:'', avatar:'🦊',
     weeklySchedule:{}, dailyStudyHours:4, subjects:defaultSubjects, sideTasks:[], logs:[],
   });
   const [newSubjectName, setNewSubjectName] = useState('');

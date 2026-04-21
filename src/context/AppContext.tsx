@@ -11,6 +11,7 @@ export type UserData = {
   name: string;
   email?: string;
   avatar?: string;
+  password?: string;
   language: 'en' | 'ar';
   city?: string;
   country?: string;
@@ -41,8 +42,11 @@ export const defaultSubjects: Subject[] = [
 type AppContextType = {
   userData: UserData | null;
   isAuthenticated: boolean;
+  hasAccount: boolean;
   setUserData: (data: UserData) => void;
   clearData: () => void;
+  logout: () => void;
+  login: (name: string, password: string) => { ok: boolean; error?: string };
   addTask: (subjectId: string, title: string) => void;
   toggleTask: (subjectId: string, taskId: string) => void;
   deleteTask: (subjectId: string, taskId: string) => void;
@@ -71,21 +75,29 @@ function xpToLevel(xp: number): number {
   return Math.floor(Math.sqrt(xp / 100)) + 1;
 }
 
+const SESSION_KEY = 'atomic_session_active';
+const USER_KEY = 'study_planner_user_data';
+
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [userData, setUserDataState] = useState<UserData | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [hasAccount, setHasAccount] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const hydrated = useRef(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && !hydrated.current) {
       setTimeout(() => {
-        const saved = localStorage.getItem('study_planner_user_data');
+        const saved = localStorage.getItem(USER_KEY);
+        const sessionActive = localStorage.getItem(SESSION_KEY) === '1';
         if (saved) {
           try {
             const data = JSON.parse(saved);
-            setUserDataState(data);
-            setIsAuthenticated(true);
+            setHasAccount(true);
+            if (sessionActive) {
+              setUserDataState(data);
+              setIsAuthenticated(true);
+            }
           } catch (e) {
             console.error('Failed to parse saved user data:', e);
           }
@@ -98,7 +110,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (userData && typeof window !== 'undefined') {
-      localStorage.setItem('study_planner_user_data', JSON.stringify(userData));
+      localStorage.setItem(USER_KEY, JSON.stringify(userData));
     }
   }, [userData]);
 
@@ -107,17 +119,56 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     const dataWithCount = { ...data, loginCount: data.loginCount ?? 1 };
     setUserDataState(dataWithCount);
     setIsAuthenticated(true);
+    setHasAccount(true);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(SESSION_KEY, '1');
+    }
+  }, []);
+
+  const logout = useCallback(() => {
+    setIsAuthenticated(false);
+    setUserDataState(null);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(SESSION_KEY, '0');
+    }
+  }, []);
+
+  const login = useCallback((name: string, password: string): { ok: boolean; error?: string } => {
+    if (typeof window === 'undefined') return { ok: false, error: 'Unavailable' };
+    const saved = localStorage.getItem(USER_KEY);
+    if (!saved) return { ok: false, error: 'no_account' };
+    try {
+      const data: UserData = JSON.parse(saved);
+      const lang = data.language || 'en';
+      const isAr = lang === 'ar';
+      if (data.name.trim().toLowerCase() !== name.trim().toLowerCase()) {
+        return { ok: false, error: isAr ? 'الاسم غير صحيح' : 'Name does not match' };
+      }
+      if ((data.password || '') !== password) {
+        return { ok: false, error: isAr ? 'كلمة المرور غير صحيحة' : 'Wrong password' };
+      }
+      const updated = { ...data, loginCount: (data.loginCount || 0) + 1 };
+      setUserDataState(updated);
+      setIsAuthenticated(true);
+      setHasAccount(true);
+      localStorage.setItem(SESSION_KEY, '1');
+      return { ok: true };
+    } catch {
+      return { ok: false, error: 'Failed to read account' };
+    }
   }, []);
 
   const clearData = () => {
-    const lang = userData?.language || (typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('study_planner_user_data') || '{}')?.language : 'en');
+    const lang = userData?.language || (typeof window !== 'undefined' ? JSON.parse(localStorage.getItem(USER_KEY) || '{}')?.language : 'en');
     const t = lang === 'ar' ?
       'هل أنت متأكد؟ سيتم حذف جميع بياناتك.' : 
       'Are you sure? This will delete all your data.';
     if (typeof window !== 'undefined' && window.confirm(t)) {
-      localStorage.removeItem('study_planner_user_data');
+      localStorage.removeItem(USER_KEY);
+      localStorage.removeItem(SESSION_KEY);
       setUserDataState(null);
       setIsAuthenticated(false);
+      setHasAccount(false);
     }
   };
 
@@ -275,8 +326,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   return <AppContext.Provider value={{
     userData,
     isAuthenticated,
+    hasAccount,
     setUserData,
     clearData,
+    logout,
+    login,
     addTask,
     toggleTask,
     deleteTask,

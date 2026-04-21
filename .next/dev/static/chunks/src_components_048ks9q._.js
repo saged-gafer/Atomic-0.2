@@ -609,6 +609,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldAlert$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-alert.js [app-client] (ecmascript) <export default as ShieldAlert>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/globe.js [app-client] (ecmascript) <export default as Globe>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-out.js [app-client] (ecmascript) <export default as LogOut>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -620,9 +621,10 @@ var _s = __turbopack_context__.k.signature();
 ;
 function SettingsPanel() {
     _s();
-    const { userData, clearData } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
+    const { userData, clearData, logout } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [confirmClear, setConfirmClear] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [confirmLogout, setConfirmLogout] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     if (!userData) return null;
     const t = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["translations"][userData.language || 'en'];
     const isRTL = userData.language === 'ar';
@@ -638,6 +640,16 @@ function SettingsPanel() {
     const close = ()=>{
         setIsOpen(false);
         setConfirmClear(false);
+        setConfirmLogout(false);
+    };
+    const handleLogout = ()=>{
+        if (!confirmLogout) {
+            setConfirmLogout(true);
+            return;
+        }
+        logout();
+        setIsOpen(false);
+        setConfirmLogout(false);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -650,12 +662,12 @@ function SettingsPanel() {
                     size: 18
                 }, void 0, false, {
                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                    lineNumber: 43,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                lineNumber: 37,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             typeof document !== 'undefined' && /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createPortal(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -675,7 +687,7 @@ function SettingsPanel() {
                             className: "fixed inset-0 bg-black/65 z-[700] backdrop-blur-sm"
                         }, void 0, false, {
                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                            lineNumber: 51,
+                            lineNumber: 63,
                             columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -720,7 +732,7 @@ function SettingsPanel() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -736,12 +748,12 @@ function SettingsPanel() {
                                                         className: "text-indigo-400"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                        lineNumber: 82,
+                                                        lineNumber: 94,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 81,
+                                                    lineNumber: 93,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -749,13 +761,13 @@ function SettingsPanel() {
                                                     children: t.settings
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 84,
+                                                    lineNumber: 96,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 92,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -766,18 +778,18 @@ function SettingsPanel() {
                                                 size: 17
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                lineNumber: 91,
+                                                lineNumber: 103,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 98,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 91,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -800,7 +812,7 @@ function SettingsPanel() {
                                                             className: "text-indigo-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 101,
+                                                            lineNumber: 113,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -808,13 +820,13 @@ function SettingsPanel() {
                                                             children: t.username
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 114,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 112,
                                                     columnNumber: 19
                                                 }, this),
                                                 userData.name ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -827,7 +839,7 @@ function SettingsPanel() {
                                                                 children: userData.name.charAt(0).toUpperCase()
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                lineNumber: 108,
+                                                                lineNumber: 120,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -838,7 +850,7 @@ function SettingsPanel() {
                                                                         children: userData.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                        lineNumber: 112,
+                                                                        lineNumber: 124,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     userData.city && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -850,24 +862,24 @@ function SettingsPanel() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                        lineNumber: 114,
+                                                                        lineNumber: 126,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                lineNumber: 111,
+                                                                lineNumber: 123,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 119,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 106,
+                                                    lineNumber: 118,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "p-4",
@@ -876,18 +888,18 @@ function SettingsPanel() {
                                                         children: t.please_fill_all
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                        lineNumber: 121,
+                                                        lineNumber: 133,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 120,
+                                                    lineNumber: 132,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 111,
                                             columnNumber: 17
                                         }, this),
                                         userData.city && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -904,7 +916,7 @@ function SettingsPanel() {
                                                             className: "text-slate-500 shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 130,
+                                                            lineNumber: 142,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -915,7 +927,7 @@ function SettingsPanel() {
                                                                     children: "Location"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                    lineNumber: 132,
+                                                                    lineNumber: 144,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -927,19 +939,19 @@ function SettingsPanel() {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                    lineNumber: 133,
+                                                                    lineNumber: 145,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 131,
+                                                            lineNumber: 143,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 129,
+                                                    lineNumber: 141,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -950,7 +962,7 @@ function SettingsPanel() {
                                                             className: "text-indigo-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 137,
+                                                            lineNumber: 149,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -958,20 +970,180 @@ function SettingsPanel() {
                                                             children: userData.language === 'ar' ? 'العربية' : 'English'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 138,
+                                                            lineNumber: 150,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 148,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                            lineNumber: 128,
+                                            lineNumber: 140,
                                             columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "rounded-2xl border border-amber-500/20 overflow-hidden",
+                                            style: {
+                                                background: 'rgba(245,158,11,0.05)'
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "px-4 py-3 border-b border-amber-500/10 flex items-center gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                                                            size: 13,
+                                                            className: "text-amber-400"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                            lineNumber: 160,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-[11px] font-black text-amber-400/80 uppercase tracking-widest",
+                                                            children: t.logout
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                            lineNumber: 161,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                    lineNumber: 159,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "p-4 space-y-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-xs text-slate-500 leading-relaxed",
+                                                            children: isRTL ? 'سجل الخروج من حسابك. بياناتك ستظل محفوظة و يمكنك الدخول مجدداً باستخدام اسمك و كلمة المرور.' : 'Sign out of your account. Your data stays saved — log back in with your name and password.'
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                            lineNumber: 164,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                            mode: "wait",
+                                                            children: !confirmLogout ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                                initial: {
+                                                                    opacity: 0
+                                                                },
+                                                                animate: {
+                                                                    opacity: 1
+                                                                },
+                                                                exit: {
+                                                                    opacity: 0
+                                                                },
+                                                                whileHover: {
+                                                                    scale: 1.01
+                                                                },
+                                                                whileTap: {
+                                                                    scale: 0.98
+                                                                },
+                                                                onClick: handleLogout,
+                                                                className: "w-full h-10 flex items-center justify-center gap-2 rounded-xl border border-amber-500/30 bg-amber-500/8 text-amber-400 text-sm font-bold hover:bg-amber-500/15 transition-all",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                                                                        size: 14
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                        lineNumber: 181,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    t.logout
+                                                                ]
+                                                            }, "lo-first", true, {
+                                                                fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                lineNumber: 171,
+                                                                columnNumber: 25
+                                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                initial: {
+                                                                    opacity: 0,
+                                                                    y: 6
+                                                                },
+                                                                animate: {
+                                                                    opacity: 1,
+                                                                    y: 0
+                                                                },
+                                                                exit: {
+                                                                    opacity: 0
+                                                                },
+                                                                className: "space-y-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-xs font-black text-amber-400 text-center",
+                                                                        children: isRTL ? 'تأكيد تسجيل الخروج؟' : 'Confirm logout?'
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                        lineNumber: 192,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex gap-2",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                                onClick: ()=>setConfirmLogout(false),
+                                                                                className: "flex-1 h-10 rounded-xl border border-white/10 bg-white/5 text-slate-400 text-sm font-bold hover:text-white transition-all",
+                                                                                children: isRTL ? 'إلغاء' : 'Cancel'
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                                lineNumber: 196,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                                                whileTap: {
+                                                                                    scale: 0.97
+                                                                                },
+                                                                                onClick: handleLogout,
+                                                                                className: "flex-1 h-10 rounded-xl bg-amber-500 text-white text-sm font-black flex items-center justify-center gap-1.5 hover:bg-amber-600 transition-all",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
+                                                                                        size: 13
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                                        lineNumber: 207,
+                                                                                        columnNumber: 31
+                                                                                    }, this),
+                                                                                    t.logout
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                                lineNumber: 202,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                        lineNumber: 195,
+                                                                        columnNumber: 27
+                                                                    }, this)
+                                                                ]
+                                                            }, "lo-confirm", true, {
+                                                                fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                                lineNumber: 185,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                            lineNumber: 169,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                                    lineNumber: 163,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/settings/SettingsPanel.tsx",
+                                            lineNumber: 158,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "rounded-2xl border border-red-500/18 overflow-hidden",
@@ -987,7 +1159,7 @@ function SettingsPanel() {
                                                             className: "text-red-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 148,
+                                                            lineNumber: 220,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -995,13 +1167,13 @@ function SettingsPanel() {
                                                             children: t.clear_data
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 221,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 147,
+                                                    lineNumber: 219,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1012,7 +1184,7 @@ function SettingsPanel() {
                                                             children: "This will permanently delete all your subjects, tasks, logs, and settings."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 152,
+                                                            lineNumber: 224,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1040,14 +1212,14 @@ function SettingsPanel() {
                                                                         size: 14
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                        lineNumber: 168,
+                                                                        lineNumber: 240,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     t.clear_data
                                                                 ]
                                                             }, "first", true, {
                                                                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                lineNumber: 158,
+                                                                lineNumber: 230,
                                                                 columnNumber: 25
                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                                                 initial: {
@@ -1068,7 +1240,7 @@ function SettingsPanel() {
                                                                         children: "Are you sure? This cannot be undone."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                        lineNumber: 179,
+                                                                        lineNumber: 251,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1080,7 +1252,7 @@ function SettingsPanel() {
                                                                                 children: "Cancel"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                                lineNumber: 181,
+                                                                                lineNumber: 253,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -1094,49 +1266,49 @@ function SettingsPanel() {
                                                                                         size: 13
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                                        lineNumber: 192,
+                                                                                        lineNumber: 264,
                                                                                         columnNumber: 31
                                                                                     }, this),
                                                                                     "Delete All"
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                                lineNumber: 187,
+                                                                                lineNumber: 259,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                        lineNumber: 180,
+                                                                        lineNumber: 252,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, "confirm", true, {
                                                                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                                lineNumber: 172,
+                                                                lineNumber: 244,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                            lineNumber: 156,
+                                                            lineNumber: 228,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                                    lineNumber: 151,
+                                                    lineNumber: 223,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 218,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 108,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1146,26 +1318,26 @@ function SettingsPanel() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                                    lineNumber: 205,
+                                    lineNumber: 277,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                            lineNumber: 60,
+                            lineNumber: 72,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true)
             }, void 0, false, {
                 fileName: "[project]/src/components/settings/SettingsPanel.tsx",
-                lineNumber: 47,
+                lineNumber: 59,
                 columnNumber: 9
             }, this), document.body)
         ]
     }, void 0, true);
 }
-_s(SettingsPanel, "C7dEgV4SyY8SL085uwROjAUA8n0=", false, function() {
+_s(SettingsPanel, "4giImkGNQhK11O45XlKTgOxaScA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"]
     ];
@@ -5705,12 +5877,12 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 ;
 ;
-function AuthCard({ onContinue }) {
+function AuthCard({ onSignup }) {
     _s();
-    const { userData } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
+    const { userData, login, hasAccount } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
     const lang = userData?.language || 'en';
     const isAr = lang === 'ar';
-    const [mode, setMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('signup');
+    const [mode, setMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(hasAccount ? 'login' : 'signup');
     /* ── Signup state ──────────────────────────────────── */ const [suName, setSuName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [suPass, setSuPass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [suConfirm, setSuConfirm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
@@ -5736,7 +5908,7 @@ function AuthCard({ onContinue }) {
             setSuError(isAr ? 'كلمتا المرور غير متطابقتين' : 'Passwords do not match');
             return;
         }
-        onContinue();
+        onSignup(suName.trim(), suPass);
     };
     /* ── Login submit ──────────────────────────────────── */ const handleLoginNext = ()=>{
         setLiError('');
@@ -5748,11 +5920,22 @@ function AuthCard({ onContinue }) {
     };
     const handleLoginSubmit = ()=>{
         setLiError('');
-        if (liPass.length < 4) {
-            setLiError(isAr ? 'كلمة المرور 4 أحرف على الأقل' : 'Password must be at least 4 characters');
+        if (liPass.length < 1) {
+            setLiError(isAr ? 'أدخل كلمة المرور' : 'Enter your password');
             return;
         }
-        onContinue();
+        const result = login(liName, liPass);
+        if (!result.ok) {
+            if (result.error === 'no_account') {
+                setLiError(isAr ? 'لا يوجد حساب — سجل أولاً' : 'No account found — sign up first');
+            } else {
+                setLiError(result.error || (isAr ? 'فشل تسجيل الدخول' : 'Login failed'));
+            }
+            // Bounce back to step 0 if name is also wrong
+            if (result.error?.toLowerCase().includes('name') || result.error?.includes('الاسم')) {
+                setTimeout(()=>setLoginStep(0), 1200);
+            }
+        }
     };
     /* ── Password strength (signup) ────────────────────── */ const passStrength = (()=>{
         let s = 0;
@@ -5811,7 +5994,7 @@ function AuthCard({ onContinue }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 101,
+                lineNumber: 112,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5835,7 +6018,7 @@ function AuthCard({ onContinue }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 114,
+                lineNumber: 125,
                 columnNumber: 7
             }, this),
             Array.from({
@@ -5867,7 +6050,7 @@ function AuthCard({ onContinue }) {
                     }
                 }, i, false, {
                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                    lineNumber: 130,
+                    lineNumber: 141,
                     columnNumber: 9
                 }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5909,7 +6092,7 @@ function AuthCard({ onContinue }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 173,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5925,20 +6108,20 @@ function AuthCard({ onContinue }) {
                                             size: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 181,
+                                            lineNumber: 192,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: isAr ? 'إنشاء حساب' : 'Sign Up'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 182,
+                                            lineNumber: 193,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 187,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5955,31 +6138,31 @@ function AuthCard({ onContinue }) {
                                             size: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 189,
+                                            lineNumber: 200,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: isAr ? 'تسجيل الدخول' : 'Log In'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 190,
+                                            lineNumber: 201,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 195,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                            lineNumber: 154,
+                            lineNumber: 165,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 148,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6029,7 +6212,7 @@ function AuthCard({ onContinue }) {
                                             subtitle: isAr ? 'أنشئ حسابك في خطوة واحدة و انطلق نحو التفوق' : 'Create your account and unlock smarter studying'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 211,
+                                            lineNumber: 222,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6048,7 +6231,7 @@ function AuthCard({ onContinue }) {
                                                     isAr: isAr
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 233,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -6070,24 +6253,24 @@ function AuthCard({ onContinue }) {
                                                             size: 15
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                            lineNumber: 245,
+                                                            lineNumber: 256,
                                                             columnNumber: 37
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
                                                             size: 15
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                            lineNumber: 245,
+                                                            lineNumber: 256,
                                                             columnNumber: 60
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                        lineNumber: 240,
+                                                        lineNumber: 251,
                                                         columnNumber: 21
                                                     }, this),
                                                     isAr: isAr
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 242,
                                                     columnNumber: 17
                                                 }, this),
                                                 suPass.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6118,12 +6301,12 @@ function AuthCard({ onContinue }) {
                                                                     }
                                                                 }, i, false, {
                                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                    lineNumber: 259,
+                                                                    lineNumber: 270,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                            lineNumber: 257,
+                                                            lineNumber: 268,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6134,13 +6317,13 @@ function AuthCard({ onContinue }) {
                                                             children: strengthLabel
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                            lineNumber: 269,
+                                                            lineNumber: 280,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                    lineNumber: 252,
+                                                    lineNumber: 263,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -6171,31 +6354,31 @@ function AuthCard({ onContinue }) {
                                                             strokeWidth: 3.5
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                            lineNumber: 289,
+                                                            lineNumber: 300,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                        lineNumber: 284,
+                                                        lineNumber: 295,
                                                         columnNumber: 23
                                                     }, this) : null,
                                                     isAr: isAr
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                    lineNumber: 274,
+                                                    lineNumber: 285,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 221,
+                                            lineNumber: 232,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ErrorBox, {
                                             error: suError
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 297,
+                                            lineNumber: 308,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CTA, {
@@ -6209,13 +6392,13 @@ function AuthCard({ onContinue }) {
                                             isAr: isAr
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 299,
+                                            lineNumber: 310,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 204,
+                                    lineNumber: 215,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FaceShell, {
@@ -6241,7 +6424,7 @@ function AuthCard({ onContinue }) {
                                             subtitle: loginStep === 0 ? isAr ? 'أدخل اسمك للمتابعة' : 'Enter your name to continue' : isAr ? 'أدخل كلمة المرور للدخول' : 'Enter your password to sign in'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 315,
+                                            lineNumber: 326,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6262,12 +6445,12 @@ function AuthCard({ onContinue }) {
                                                     }
                                                 }, i, false, {
                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                    lineNumber: 334,
+                                                    lineNumber: 345,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 332,
+                                            lineNumber: 343,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6275,7 +6458,7 @@ function AuthCard({ onContinue }) {
                                             children: isAr ? `خطوة ${loginStep + 1} / 2` : `Step ${loginStep + 1} of 2`
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 346,
+                                            lineNumber: 357,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6326,20 +6509,20 @@ function AuthCard({ onContinue }) {
                                                                 isAr: isAr
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                lineNumber: 362,
+                                                                lineNumber: 373,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ErrorBox, {
                                                                 error: liError
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                lineNumber: 373,
+                                                                lineNumber: 384,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, "li-0", true, {
                                                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                        lineNumber: 354,
+                                                        lineNumber: 365,
                                                         columnNumber: 21
                                                     }, this),
                                                     loginStep === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6390,48 +6573,48 @@ function AuthCard({ onContinue }) {
                                                                         size: 15
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                        lineNumber: 402,
+                                                                        lineNumber: 413,
                                                                         columnNumber: 43
                                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
                                                                         size: 15
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                        lineNumber: 402,
+                                                                        lineNumber: 413,
                                                                         columnNumber: 66
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                    lineNumber: 397,
+                                                                    lineNumber: 408,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 isAr: isAr
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                lineNumber: 386,
+                                                                lineNumber: 397,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ErrorBox, {
                                                                 error: liError
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                                lineNumber: 407,
+                                                                lineNumber: 418,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, "li-1", true, {
                                                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                        lineNumber: 378,
+                                                        lineNumber: 389,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                lineNumber: 352,
+                                                lineNumber: 363,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 351,
+                                            lineNumber: 362,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6461,14 +6644,14 @@ function AuthCard({ onContinue }) {
                                                             className: isAr ? 'rotate-180' : ''
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                            lineNumber: 427,
+                                                            lineNumber: 438,
                                                             columnNumber: 21
                                                         }, this),
                                                         isAr ? 'رجوع' : 'Back'
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                    lineNumber: 416,
+                                                    lineNumber: 427,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CTA, {
@@ -6483,30 +6666,30 @@ function AuthCard({ onContinue }) {
                                                     inline: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                                    lineNumber: 431,
+                                                    lineNumber: 442,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 414,
+                                            lineNumber: 425,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 308,
+                                    lineNumber: 319,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                            lineNumber: 197,
+                            lineNumber: 208,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 196,
+                        lineNumber: 207,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -6526,23 +6709,23 @@ function AuthCard({ onContinue }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 447,
+                        lineNumber: 458,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 146,
+                lineNumber: 157,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 91,
+        lineNumber: 102,
         columnNumber: 5
     }, this);
 }
-_s(AuthCard, "oZvcCV9491fo7Cn7J92xEs1CjMw=", false, function() {
+_s(AuthCard, "DZhzxmxv0dXChw0n9/g0TDm7EPA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"]
     ];
@@ -6571,7 +6754,7 @@ _c = AuthCard;
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 486,
+                lineNumber: 497,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6579,13 +6762,13 @@ _c = AuthCard;
                 children: children
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 489,
+                lineNumber: 500,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 474,
+        lineNumber: 485,
         columnNumber: 5
     }, this);
 }
@@ -6617,12 +6800,12 @@ function FaceHeader({ icon: Icon, accent, badge, title, subtitle }) {
                     className: "text-white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                    lineNumber: 514,
+                    lineNumber: 525,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 505,
+                lineNumber: 516,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6642,7 +6825,7 @@ function FaceHeader({ icon: Icon, accent, badge, title, subtitle }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 520,
+                                lineNumber: 531,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6653,13 +6836,13 @@ function FaceHeader({ icon: Icon, accent, badge, title, subtitle }) {
                                 children: badge
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 521,
+                                lineNumber: 532,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 517,
+                        lineNumber: 528,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -6675,7 +6858,7 @@ function FaceHeader({ icon: Icon, accent, badge, title, subtitle }) {
                         children: title
                     }, title, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 524,
+                        lineNumber: 535,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -6689,19 +6872,19 @@ function FaceHeader({ icon: Icon, accent, badge, title, subtitle }) {
                         children: subtitle
                     }, subtitle, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 531,
+                        lineNumber: 542,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 516,
+                lineNumber: 527,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 504,
+        lineNumber: 515,
         columnNumber: 5
     }, this);
 }
@@ -6720,7 +6903,7 @@ function Field({ icon: Icon, label, value, onChange, accent, type = 'text', plac
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 562,
+                lineNumber: 573,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6746,12 +6929,12 @@ function Field({ icon: Icon, label, value, onChange, accent, type = 'text', plac
                             size: 16
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                            lineNumber: 578,
+                            lineNumber: 589,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 576,
+                        lineNumber: 587,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -6773,7 +6956,7 @@ function Field({ icon: Icon, label, value, onChange, accent, type = 'text', plac
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 580,
+                        lineNumber: 591,
                         columnNumber: 9
                     }, this),
                     trailing && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6781,19 +6964,19 @@ function Field({ icon: Icon, label, value, onChange, accent, type = 'text', plac
                         children: trailing
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 593,
+                        lineNumber: 604,
                         columnNumber: 22
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 566,
+                lineNumber: 577,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 561,
+        lineNumber: 572,
         columnNumber: 5
     }, this);
 }
@@ -6828,7 +7011,7 @@ function ErrorBox({ error }) {
                     className: "text-red-400 shrink-0"
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                    lineNumber: 613,
+                    lineNumber: 624,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6836,18 +7019,18 @@ function ErrorBox({ error }) {
                     children: error
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                    lineNumber: 614,
+                    lineNumber: 625,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/auth/AuthCard.tsx",
-            lineNumber: 603,
+            lineNumber: 614,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 601,
+        lineNumber: 612,
         columnNumber: 5
     }, this);
 }
@@ -6887,7 +7070,7 @@ function CTA({ onClick, accent, label, isAr, inline }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 642,
+                lineNumber: 653,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6895,7 +7078,7 @@ function CTA({ onClick, accent, label, isAr, inline }) {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 647,
+                lineNumber: 658,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6920,18 +7103,18 @@ function CTA({ onClick, accent, label, isAr, inline }) {
                     className: isAr ? 'rotate-180' : ''
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                    lineNumber: 653,
+                    lineNumber: 664,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 648,
+                lineNumber: 659,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 631,
+        lineNumber: 642,
         columnNumber: 5
     }, this);
 }

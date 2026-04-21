@@ -2626,6 +2626,16 @@
     border-color: var(--color-amber-200);
   }
 
+  .border-amber-500\/10 {
+    border-color: #f99c001a;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-amber-500\/10 {
+      border-color: color-mix(in oklab, var(--color-amber-500) 10%, transparent);
+    }
+  }
+
   .border-amber-500\/20 {
     border-color: #f99c0033;
   }
@@ -2633,6 +2643,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .border-amber-500\/20 {
       border-color: color-mix(in oklab, var(--color-amber-500) 20%, transparent);
+    }
+  }
+
+  .border-amber-500\/30 {
+    border-color: #f99c004d;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-amber-500\/30 {
+      border-color: color-mix(in oklab, var(--color-amber-500) 30%, transparent);
     }
   }
 
@@ -2985,6 +3005,16 @@
 
   .bg-amber-500 {
     background-color: var(--color-amber-500);
+  }
+
+  .bg-amber-500\/8 {
+    background-color: #f99c0014;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-amber-500\/8 {
+      background-color: color-mix(in oklab, var(--color-amber-500) 8%, transparent);
+    }
   }
 
   .bg-amber-500\/10 {
@@ -4254,6 +4284,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .text-amber-400\/70 {
       color: color-mix(in oklab, var(--color-amber-400) 70%, transparent);
+    }
+  }
+
+  .text-amber-400\/80 {
+    color: #fcbb00cc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-amber-400\/80 {
+      color: color-mix(in oklab, var(--color-amber-400) 80%, transparent);
     }
   }
 
@@ -5573,6 +5613,18 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:bg-amber-500\/10:hover {
         background-color: color-mix(in oklab, var(--color-amber-500) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-amber-500\/15:hover {
+      background-color: #f99c0026;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-amber-500\/15:hover {
+        background-color: color-mix(in oklab, var(--color-amber-500) 15%, transparent);
       }
     }
   }

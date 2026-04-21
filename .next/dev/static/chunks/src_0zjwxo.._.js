@@ -57,10 +57,13 @@ const AppContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
 function xpToLevel(xp) {
     return Math.floor(Math.sqrt(xp / 100)) + 1;
 }
+const SESSION_KEY = 'atomic_session_active';
+const USER_KEY = 'study_planner_user_data';
 function AppProvider({ children }) {
     _s();
     const [userData, setUserDataState] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isAuthenticated, setIsAuthenticated] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [hasAccount, setHasAccount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const hydrated = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -68,12 +71,16 @@ function AppProvider({ children }) {
             if (("TURBOPACK compile-time value", "object") !== 'undefined' && !hydrated.current) {
                 setTimeout({
                     "AppProvider.useEffect": ()=>{
-                        const saved = localStorage.getItem('study_planner_user_data');
+                        const saved = localStorage.getItem(USER_KEY);
+                        const sessionActive = localStorage.getItem(SESSION_KEY) === '1';
                         if (saved) {
                             try {
                                 const data = JSON.parse(saved);
-                                setUserDataState(data);
-                                setIsAuthenticated(true);
+                                setHasAccount(true);
+                                if (sessionActive) {
+                                    setUserDataState(data);
+                                    setIsAuthenticated(true);
+                                }
                             } catch (e) {
                                 console.error('Failed to parse saved user data:', e);
                             }
@@ -88,7 +95,7 @@ function AppProvider({ children }) {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "AppProvider.useEffect": ()=>{
             if (userData && ("TURBOPACK compile-time value", "object") !== 'undefined') {
-                localStorage.setItem('study_planner_user_data', JSON.stringify(userData));
+                localStorage.setItem(USER_KEY, JSON.stringify(userData));
             }
         }
     }["AppProvider.useEffect"], [
@@ -102,15 +109,74 @@ function AppProvider({ children }) {
             };
             setUserDataState(dataWithCount);
             setIsAuthenticated(true);
+            setHasAccount(true);
+            if ("TURBOPACK compile-time truthy", 1) {
+                localStorage.setItem(SESSION_KEY, '1');
+            }
         }
     }["AppProvider.useCallback[setUserData]"], []);
+    const logout = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "AppProvider.useCallback[logout]": ()=>{
+            setIsAuthenticated(false);
+            setUserDataState(null);
+            if ("TURBOPACK compile-time truthy", 1) {
+                localStorage.setItem(SESSION_KEY, '0');
+            }
+        }
+    }["AppProvider.useCallback[logout]"], []);
+    const login = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "AppProvider.useCallback[login]": (name, password)=>{
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+            const saved = localStorage.getItem(USER_KEY);
+            if (!saved) return {
+                ok: false,
+                error: 'no_account'
+            };
+            try {
+                const data = JSON.parse(saved);
+                const lang = data.language || 'en';
+                const isAr = lang === 'ar';
+                if (data.name.trim().toLowerCase() !== name.trim().toLowerCase()) {
+                    return {
+                        ok: false,
+                        error: isAr ? 'الاسم غير صحيح' : 'Name does not match'
+                    };
+                }
+                if ((data.password || '') !== password) {
+                    return {
+                        ok: false,
+                        error: isAr ? 'كلمة المرور غير صحيحة' : 'Wrong password'
+                    };
+                }
+                const updated = {
+                    ...data,
+                    loginCount: (data.loginCount || 0) + 1
+                };
+                setUserDataState(updated);
+                setIsAuthenticated(true);
+                setHasAccount(true);
+                localStorage.setItem(SESSION_KEY, '1');
+                return {
+                    ok: true
+                };
+            } catch  {
+                return {
+                    ok: false,
+                    error: 'Failed to read account'
+                };
+            }
+        }
+    }["AppProvider.useCallback[login]"], []);
     const clearData = ()=>{
-        const lang = userData?.language || (("TURBOPACK compile-time truthy", 1) ? JSON.parse(localStorage.getItem('study_planner_user_data') || '{}')?.language : "TURBOPACK unreachable");
+        const lang = userData?.language || (("TURBOPACK compile-time truthy", 1) ? JSON.parse(localStorage.getItem(USER_KEY) || '{}')?.language : "TURBOPACK unreachable");
         const t = lang === 'ar' ? 'هل أنت متأكد؟ سيتم حذف جميع بياناتك.' : 'Are you sure? This will delete all your data.';
         if (("TURBOPACK compile-time value", "object") !== 'undefined' && window.confirm(t)) {
-            localStorage.removeItem('study_planner_user_data');
+            localStorage.removeItem(USER_KEY);
+            localStorage.removeItem(SESSION_KEY);
             setUserDataState(null);
             setIsAuthenticated(false);
+            setHasAccount(false);
         }
     };
     const sanitizeText = (text, maxLength = 500)=>text.replace(/[<>"'`]/g, '').trim().slice(0, maxLength);
@@ -477,8 +543,11 @@ function AppProvider({ children }) {
         value: {
             userData,
             isAuthenticated,
+            hasAccount,
             setUserData,
             clearData,
+            logout,
+            login,
             addTask,
             toggleTask,
             deleteTask,
@@ -503,11 +572,11 @@ function AppProvider({ children }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AppContext.tsx",
-        lineNumber: 275,
+        lineNumber: 326,
         columnNumber: 10
     }, this);
 }
-_s(AppProvider, "UU8T6lnkE8oclXvm9x3RPTMgOhI=");
+_s(AppProvider, "HJPxCQyqve6OXo3Hc+o2z0AIqD0=");
 _c = AppProvider;
 const useAppContext = ()=>{
     _s1();

@@ -13,6 +13,7 @@ export default function Home() {
   const { isAuthenticated, isLoading } = useAppContext();
   const [splashState, setSplashState] = useState<'pending' | 'showing' | 'done'>('pending');
   const [authStep, setAuthStep] = useState<AuthStep>('auth');
+  const [pendingCreds, setPendingCreds] = useState<{ name: string; password: string } | null>(null);
 
   useEffect(() => {
     const seen = sessionStorage.getItem('atomic_splash_seen');
@@ -47,7 +48,12 @@ export default function Home() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <AuthCard onContinue={() => setAuthStep('onboarding')} />
+            <AuthCard
+              onSignup={(name, password) => {
+                setPendingCreds({ name, password });
+                setAuthStep('onboarding');
+              }}
+            />
           </motion.div>
         )}
         {authStep === 'onboarding' && (
@@ -58,7 +64,10 @@ export default function Home() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <OnboardingFlow />
+            <OnboardingFlow
+              initialName={pendingCreds?.name}
+              initialPassword={pendingCreds?.password}
+            />
           </motion.div>
         )}
       </AnimatePresence>

@@ -4,12 +4,13 @@ import ReactDOM from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppContext } from '@/context/AppContext';
 import { translations } from '@/lib/i18n';
-import { Settings, Trash2, X, User, ShieldAlert, MapPin, Globe } from 'lucide-react';
+import { Settings, Trash2, X, User, ShieldAlert, MapPin, Globe, LogOut } from 'lucide-react';
 
 export default function SettingsPanel() {
-  const { userData, clearData } = useAppContext();
+  const { userData, clearData, logout } = useAppContext();
   const [isOpen, setIsOpen] = useState(false);
   const [confirmClear, setConfirmClear] = useState(false);
+  const [confirmLogout, setConfirmLogout] = useState(false);
 
   if (!userData) return null;
 
@@ -30,6 +31,17 @@ export default function SettingsPanel() {
   const close = () => {
     setIsOpen(false);
     setConfirmClear(false);
+    setConfirmLogout(false);
+  };
+
+  const handleLogout = () => {
+    if (!confirmLogout) {
+      setConfirmLogout(true);
+      return;
+    }
+    logout();
+    setIsOpen(false);
+    setConfirmLogout(false);
   };
 
   return (
@@ -141,6 +153,66 @@ export default function SettingsPanel() {
                     </div>
                   </div>
                 )}
+
+                {/* Logout */}
+                <div className="rounded-2xl border border-amber-500/20 overflow-hidden" style={{ background: 'rgba(245,158,11,0.05)' }}>
+                  <div className="px-4 py-3 border-b border-amber-500/10 flex items-center gap-2">
+                    <LogOut size={13} className="text-amber-400" />
+                    <span className="text-[11px] font-black text-amber-400/80 uppercase tracking-widest">{t.logout}</span>
+                  </div>
+                  <div className="p-4 space-y-3">
+                    <p className="text-xs text-slate-500 leading-relaxed">
+                      {isRTL
+                        ? 'سجل الخروج من حسابك. بياناتك ستظل محفوظة و يمكنك الدخول مجدداً باستخدام اسمك و كلمة المرور.'
+                        : 'Sign out of your account. Your data stays saved — log back in with your name and password.'}
+                    </p>
+                    <AnimatePresence mode="wait">
+                      {!confirmLogout ? (
+                        <motion.button
+                          key="lo-first"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          whileHover={{ scale: 1.01 }}
+                          whileTap={{ scale: 0.98 }}
+                          onClick={handleLogout}
+                          className="w-full h-10 flex items-center justify-center gap-2 rounded-xl border border-amber-500/30 bg-amber-500/8 text-amber-400 text-sm font-bold hover:bg-amber-500/15 transition-all"
+                        >
+                          <LogOut size={14} />
+                          {t.logout}
+                        </motion.button>
+                      ) : (
+                        <motion.div
+                          key="lo-confirm"
+                          initial={{ opacity: 0, y: 6 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0 }}
+                          className="space-y-2"
+                        >
+                          <p className="text-xs font-black text-amber-400 text-center">
+                            {isRTL ? 'تأكيد تسجيل الخروج؟' : 'Confirm logout?'}
+                          </p>
+                          <div className="flex gap-2">
+                            <button
+                              onClick={() => setConfirmLogout(false)}
+                              className="flex-1 h-10 rounded-xl border border-white/10 bg-white/5 text-slate-400 text-sm font-bold hover:text-white transition-all"
+                            >
+                              {isRTL ? 'إلغاء' : 'Cancel'}
+                            </button>
+                            <motion.button
+                              whileTap={{ scale: 0.97 }}
+                              onClick={handleLogout}
+                              className="flex-1 h-10 rounded-xl bg-amber-500 text-white text-sm font-black flex items-center justify-center gap-1.5 hover:bg-amber-600 transition-all"
+                            >
+                              <LogOut size={13} />
+                              {t.logout}
+                            </motion.button>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
 
                 {/* Danger Zone */}
                 <div className="rounded-2xl border border-red-500/18 overflow-hidden" style={{ background: 'rgba(239,68,68,0.05)' }}>
