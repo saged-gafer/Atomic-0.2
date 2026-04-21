@@ -1155,6 +1155,10 @@
     margin-bottom: calc(var(--spacing) * 1);
   }
 
+  .mb-1\.5 {
+    margin-bottom: calc(var(--spacing) * 1.5);
+  }
+
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -1585,6 +1589,10 @@
 
   .min-h-\[80px\] {
     min-height: 80px;
+  }
+
+  .min-h-\[180px\] {
+    min-height: 180px;
   }
 
   .min-h-\[380px\] {
@@ -2211,6 +2219,10 @@
 
   .gap-3 {
     gap: calc(var(--spacing) * 3);
+  }
+
+  .gap-3\.5 {
+    gap: calc(var(--spacing) * 3.5);
   }
 
   .gap-4 {
@@ -4213,6 +4225,16 @@
     color: var(--color-cyan-300);
   }
 
+  .text-cyan-300\/60 {
+    color: #53eafd99;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-cyan-300\/60 {
+      color: color-mix(in oklab, var(--color-cyan-300) 60%, transparent);
+    }
+  }
+
   .text-emerald-200 {
     color: var(--color-emerald-200);
   }
@@ -4339,6 +4361,10 @@
 
   .text-purple-500 {
     color: var(--color-purple-500);
+  }
+
+  .text-red-300 {
+    color: var(--color-red-300);
   }
 
   .text-red-400 {
@@ -5256,6 +5282,11 @@
 
   .file\:text-foreground::file-selector-button {
     color: var(--foreground);
+  }
+
+  .placeholder\:font-medium::placeholder {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
 
   .placeholder\:text-muted-foreground::placeholder {
@@ -6609,6 +6640,12 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:p-7 {
+      padding: calc(var(--spacing) * 7);
+    }
+  }
+
+  @media (min-width: 40rem) {
     .sm\:p-8 {
       padding: calc(var(--spacing) * 8);
     }
@@ -6641,6 +6678,13 @@
   @media (min-width: 40rem) {
     .sm\:text-left {
       text-align: left;
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
 

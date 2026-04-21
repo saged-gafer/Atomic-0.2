@@ -5684,25 +5684,22 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/AppContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.js [app-client] (ecmascript) <export default as ArrowLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user-plus.js [app-client] (ecmascript) <export default as UserPlus>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/log-in.js [app-client] (ecmascript) <export default as LogIn>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/brain.js [app-client] (ecmascript) <export default as Brain>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.js [app-client] (ecmascript) <export default as Trophy>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$languages$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Languages$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/languages.js [app-client] (ecmascript) <export default as Languages>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.js [app-client] (ecmascript) <export default as Shield>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$history$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__History$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/history.js [app-client] (ecmascript) <export default as History>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book-open.js [app-client] (ecmascript) <export default as BookOpen>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/flame.js [app-client] (ecmascript) <export default as Flame>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye.js [app-client] (ecmascript) <export default as Eye>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye-off.js [app-client] (ecmascript) <export default as EyeOff>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-client] (ecmascript) <export default as AlertCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$key$2d$round$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__KeyRound$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/key-round.js [app-client] (ecmascript) <export default as KeyRound>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$user$2d$round$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-user-round.js [app-client] (ecmascript) <export default as UserCircle2>");
 ;
-var _s = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -5714,157 +5711,77 @@ function AuthCard({ onContinue }) {
     const lang = userData?.language || 'en';
     const isAr = lang === 'ar';
     const [mode, setMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('signup');
-    const signupFeatures = isAr ? [
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__["Brain"],
-            title: 'جدولة ذكية',
-            desc: 'الذكاء الاصطناعي يخطط يومك',
-            color: '#8b5cf6'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"],
-            title: 'جدول أسبوعي',
-            desc: 'نظم موادك بسهولة',
-            color: '#6366f1'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"],
-            title: 'نظام تحفيزي',
-            desc: 'اكسب نقاط XP',
-            color: '#a855f7'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"],
-            title: 'مؤقت تركيز',
-            desc: 'جلسات منظمة',
-            color: '#7c3aed'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"],
-            title: 'أهداف يومية',
-            desc: 'تابع تقدمك',
-            color: '#9333ea'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$languages$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Languages$3e$__["Languages"],
-            title: 'متعدد اللغات',
-            desc: 'عربي و إنجليزي',
-            color: '#c084fc'
-        }
-    ] : [
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__["Brain"],
-            title: 'Smart Scheduling',
-            desc: 'AI plans your day',
-            color: '#8b5cf6'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"],
-            title: 'Weekly Planner',
-            desc: 'Organize subjects',
-            color: '#6366f1'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"],
-            title: 'Gamified XP',
-            desc: 'Level up consistency',
-            color: '#a855f7'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"],
-            title: 'Focus Timer',
-            desc: 'Smart study sessions',
-            color: '#7c3aed'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"],
-            title: 'Daily Goals',
-            desc: 'Track your progress',
-            color: '#9333ea'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$languages$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Languages$3e$__["Languages"],
-            title: 'Multi-Language',
-            desc: 'Arabic & English',
-            color: '#c084fc'
-        }
-    ];
-    const loginFeatures = isAr ? [
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$history$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__History$3e$__["History"],
-            title: 'استكمل تقدمك',
-            desc: 'ابدأ من حيث توقفت',
-            color: '#22d3ee'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"],
-            title: 'بياناتك آمنة',
-            desc: 'محفوظة محلياً',
-            color: '#10b981'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"],
-            title: 'حافظ على إيقاعك',
-            desc: 'سلسلة الأيام تنتظرك',
-            color: '#06b6d4'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"],
-            title: 'موادك جاهزة',
-            desc: 'كل الجداول كما هي',
-            color: '#14b8a6'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
-            title: 'دخول سريع',
-            desc: 'لحظة و أنت داخل',
-            color: '#0ea5e9'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"],
-            title: 'إنجازاتك محفوظة',
-            desc: 'كل النقاط و الجلسات',
-            color: '#34d399'
-        }
-    ] : [
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$history$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__History$3e$__["History"],
-            title: 'Resume Progress',
-            desc: 'Pick up where you left',
-            color: '#22d3ee'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"],
-            title: 'Data Stays Safe',
-            desc: 'Stored locally only',
-            color: '#10b981'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"],
-            title: 'Keep Your Streak',
-            desc: 'XP and stats await',
-            color: '#06b6d4'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"],
-            title: 'Subjects Ready',
-            desc: 'All schedules intact',
-            color: '#14b8a6'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
-            title: 'Quick Access',
-            desc: 'Jump back in instantly',
-            color: '#0ea5e9'
-        },
-        {
-            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"],
-            title: 'Achievements Saved',
-            desc: 'Every session preserved',
-            color: '#34d399'
-        }
-    ];
+    /* ── Signup state ──────────────────────────────────── */ const [suName, setSuName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [suPass, setSuPass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [suConfirm, setSuConfirm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [suShowPass, setSuShowPass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [suError, setSuError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    /* ── Login state ───────────────────────────────────── */ const [loginStep, setLoginStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0); // 0 = identify, 1 = password
+    const [liName, setLiName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [liPass, setLiPass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [liShowPass, setLiShowPass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [liError, setLiError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const isSignup = mode === 'signup';
+    /* ── Signup submit ─────────────────────────────────── */ const handleSignup = ()=>{
+        setSuError('');
+        if (!suName.trim()) {
+            setSuError(isAr ? 'الاسم مطلوب' : 'Name is required');
+            return;
+        }
+        if (suPass.length < 4) {
+            setSuError(isAr ? 'كلمة المرور 4 أحرف على الأقل' : 'Password must be at least 4 characters');
+            return;
+        }
+        if (suPass !== suConfirm) {
+            setSuError(isAr ? 'كلمتا المرور غير متطابقتين' : 'Passwords do not match');
+            return;
+        }
+        onContinue();
+    };
+    /* ── Login submit ──────────────────────────────────── */ const handleLoginNext = ()=>{
+        setLiError('');
+        if (!liName.trim()) {
+            setLiError(isAr ? 'الاسم مطلوب' : 'Name is required');
+            return;
+        }
+        setLoginStep(1);
+    };
+    const handleLoginSubmit = ()=>{
+        setLiError('');
+        if (liPass.length < 4) {
+            setLiError(isAr ? 'كلمة المرور 4 أحرف على الأقل' : 'Password must be at least 4 characters');
+            return;
+        }
+        onContinue();
+    };
+    /* ── Password strength (signup) ────────────────────── */ const passStrength = (()=>{
+        let s = 0;
+        if (suPass.length >= 4) s++;
+        if (suPass.length >= 8) s++;
+        if (/[A-Z]/.test(suPass) && /[a-z]/.test(suPass)) s++;
+        if (/\d/.test(suPass) || /[^A-Za-z0-9]/.test(suPass)) s++;
+        return s; // 0..4
+    })();
+    const strengthColor = [
+        '#475569',
+        '#ef4444',
+        '#f59e0b',
+        '#22d3ee',
+        '#10b981'
+    ][passStrength];
+    const strengthLabel = isAr ? [
+        '—',
+        'ضعيفة',
+        'متوسطة',
+        'جيدة',
+        'قوية'
+    ][passStrength] : [
+        '—',
+        'Weak',
+        'Fair',
+        'Good',
+        'Strong'
+    ][passStrength];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen w-full relative overflow-hidden flex items-center justify-center px-4 py-8",
         style: {
@@ -5894,7 +5811,7 @@ function AuthCard({ onContinue }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 72,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5918,7 +5835,7 @@ function AuthCard({ onContinue }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 85,
+                lineNumber: 114,
                 columnNumber: 7
             }, this),
             Array.from({
@@ -5950,11 +5867,11 @@ function AuthCard({ onContinue }) {
                     }
                 }, i, false, {
                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                    lineNumber: 101,
+                    lineNumber: 130,
                     columnNumber: 9
                 }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 w-full max-w-2xl",
+                className: "relative z-10 w-full max-w-md",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
@@ -5992,11 +5909,13 @@ function AuthCard({ onContinue }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>setMode('signup'),
+                                    onClick: ()=>{
+                                        setMode('signup');
+                                    },
                                     className: "relative z-10 flex items-center gap-2 px-5 sm:px-7 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest transition-colors",
                                     style: {
                                         color: isSignup ? '#fff' : 'rgba(148,163,184,0.7)'
@@ -6006,24 +5925,27 @@ function AuthCard({ onContinue }) {
                                             size: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 154,
+                                            lineNumber: 181,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: isAr ? 'إنشاء حساب' : 'Sign Up'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 182,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 176,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>setMode('login'),
+                                    onClick: ()=>{
+                                        setMode('login');
+                                        setLoginStep(0);
+                                    },
                                     className: "relative z-10 flex items-center gap-2 px-5 sm:px-7 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest transition-colors",
                                     style: {
                                         color: !isSignup ? '#fff' : 'rgba(148,163,184,0.7)'
@@ -6033,31 +5955,31 @@ function AuthCard({ onContinue }) {
                                             size: 14
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 189,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: isAr ? 'تسجيل الدخول' : 'Log In'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 163,
+                                            lineNumber: 190,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 184,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                            lineNumber: 125,
+                            lineNumber: 154,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 119,
+                        lineNumber: 148,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6081,64 +6003,510 @@ function AuthCard({ onContinue }) {
                             },
                             style: {
                                 transformStyle: 'preserve-3d',
-                                minHeight: 600
+                                minHeight: 560
                             },
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CardFace, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FaceShell, {
                                     side: "front",
                                     accent: {
                                         from: '#8b5cf6',
                                         to: '#6366f1',
                                         glow: 'rgba(139,92,246,0.5)'
                                     },
-                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__["UserPlus"],
-                                    badge: isAr ? 'حساب جديد' : 'New Account',
-                                    title: isAr ? 'ابدأ رحلتك' : 'Start Your Journey',
-                                    subtitle: isAr ? 'انضم إلى ذرة و اكتشف نظاماً متكاملاً يحول دراستك إلى تجربة ذكية' : 'Join ATOMIC and unlock an intelligent system for smart studying',
-                                    features: signupFeatures,
-                                    ctaLabel: isAr ? 'هيا نبدأ' : "Let's Begin",
-                                    onContinue: onContinue,
-                                    isAr: isAr,
                                     bgFrom: "rgba(139,92,246,0.06)",
                                     bgTo: "rgba(15,8,30,0.92)",
-                                    borderColor: "rgba(139,92,246,0.25)"
-                                }, void 0, false, {
+                                    borderColor: "rgba(139,92,246,0.25)",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FaceHeader, {
+                                            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__["UserPlus"],
+                                            accent: {
+                                                from: '#8b5cf6',
+                                                to: '#6366f1',
+                                                glow: 'rgba(139,92,246,0.5)'
+                                            },
+                                            badge: isAr ? 'حساب جديد' : 'New Account',
+                                            title: isAr ? 'ابدأ رحلتك' : 'Start Your Journey',
+                                            subtitle: isAr ? 'أنشئ حسابك في خطوة واحدة و انطلق نحو التفوق' : 'Create your account and unlock smarter studying'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 211,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-3 mt-5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
+                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$user$2d$round$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCircle2$3e$__["UserCircle2"],
+                                                    label: isAr ? 'الاسم الكامل' : 'Full Name',
+                                                    value: suName,
+                                                    onChange: (v)=>{
+                                                        setSuName(v);
+                                                        setSuError('');
+                                                    },
+                                                    accent: "#8b5cf6",
+                                                    placeholder: isAr ? 'اكتب اسمك' : 'Your name',
+                                                    isAr: isAr
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                    lineNumber: 222,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
+                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$key$2d$round$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__KeyRound$3e$__["KeyRound"],
+                                                    label: isAr ? 'كلمة المرور' : 'Password',
+                                                    value: suPass,
+                                                    onChange: (v)=>{
+                                                        setSuPass(v);
+                                                        setSuError('');
+                                                    },
+                                                    accent: "#8b5cf6",
+                                                    type: suShowPass ? 'text' : 'password',
+                                                    placeholder: isAr ? '4 أحرف على الأقل' : 'At least 4 characters',
+                                                    trailing: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        type: "button",
+                                                        onClick: ()=>setSuShowPass((s)=>!s),
+                                                        className: "text-slate-400 hover:text-white transition-colors p-1",
+                                                        children: suShowPass ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
+                                                            size: 15
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                            lineNumber: 245,
+                                                            columnNumber: 37
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
+                                                            size: 15
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                            lineNumber: 245,
+                                                            columnNumber: 60
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                        lineNumber: 240,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    isAr: isAr
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                    lineNumber: 231,
+                                                    columnNumber: 17
+                                                }, this),
+                                                suPass.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                    initial: {
+                                                        opacity: 0,
+                                                        y: -4
+                                                    },
+                                                    animate: {
+                                                        opacity: 1,
+                                                        y: 0
+                                                    },
+                                                    className: "flex items-center gap-2 px-1",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex-1 flex gap-1",
+                                                            children: [
+                                                                1,
+                                                                2,
+                                                                3,
+                                                                4
+                                                            ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                    className: "h-1 flex-1 rounded-full",
+                                                                    animate: {
+                                                                        background: i <= passStrength ? strengthColor : 'rgba(255,255,255,0.08)'
+                                                                    },
+                                                                    transition: {
+                                                                        duration: 0.3
+                                                                    }
+                                                                }, i, false, {
+                                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                    lineNumber: 259,
+                                                                    columnNumber: 25
+                                                                }, this))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                            lineNumber: 257,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-[9px] font-black uppercase tracking-widest",
+                                                            style: {
+                                                                color: strengthColor
+                                                            },
+                                                            children: strengthLabel
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                            lineNumber: 269,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                    lineNumber: 252,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
+                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"],
+                                                    label: isAr ? 'تأكيد كلمة المرور' : 'Confirm Password',
+                                                    value: suConfirm,
+                                                    onChange: (v)=>{
+                                                        setSuConfirm(v);
+                                                        setSuError('');
+                                                    },
+                                                    accent: "#8b5cf6",
+                                                    type: suShowPass ? 'text' : 'password',
+                                                    placeholder: isAr ? 'أعد كتابتها' : 'Re-enter password',
+                                                    trailing: suConfirm.length > 0 && suConfirm === suPass ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        initial: {
+                                                            scale: 0
+                                                        },
+                                                        animate: {
+                                                            scale: 1
+                                                        },
+                                                        className: "w-5 h-5 rounded-full flex items-center justify-center",
+                                                        style: {
+                                                            background: '#10b981'
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                            size: 12,
+                                                            className: "text-white",
+                                                            strokeWidth: 3.5
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                            lineNumber: 289,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                        lineNumber: 284,
+                                                        columnNumber: 23
+                                                    }, this) : null,
+                                                    isAr: isAr
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                    lineNumber: 274,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 221,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ErrorBox, {
+                                            error: suError
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 297,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CTA, {
+                                            onClick: handleSignup,
+                                            accent: {
+                                                from: '#8b5cf6',
+                                                to: '#6366f1',
+                                                glow: 'rgba(139,92,246,0.5)'
+                                            },
+                                            label: isAr ? 'إنشاء الحساب' : 'Create Account',
+                                            isAr: isAr
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 299,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 180,
+                                    lineNumber: 204,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CardFace, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FaceShell, {
                                     side: "back",
                                     accent: {
                                         from: '#22d3ee',
                                         to: '#10b981',
                                         glow: 'rgba(34,211,238,0.5)'
                                     },
-                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__["LogIn"],
-                                    badge: isAr ? 'مرحباً بعودتك' : 'Welcome Back',
-                                    title: isAr ? 'تابع تقدمك' : 'Resume Progress',
-                                    subtitle: isAr ? 'كل بياناتك و إنجازاتك محفوظة. دخول سلس بدون أي تعقيدات' : 'All your data and achievements await. Smooth, frictionless re-entry',
-                                    features: loginFeatures,
-                                    ctaLabel: isAr ? 'تابع' : 'Continue',
-                                    onContinue: onContinue,
-                                    isAr: isAr,
                                     bgFrom: "rgba(34,211,238,0.06)",
                                     bgTo: "rgba(2,20,26,0.92)",
-                                    borderColor: "rgba(34,211,238,0.25)"
-                                }, void 0, false, {
+                                    borderColor: "rgba(34,211,238,0.25)",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FaceHeader, {
+                                            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__["LogIn"],
+                                            accent: {
+                                                from: '#22d3ee',
+                                                to: '#10b981',
+                                                glow: 'rgba(34,211,238,0.5)'
+                                            },
+                                            badge: isAr ? 'مرحباً بعودتك' : 'Welcome Back',
+                                            title: loginStep === 0 ? isAr ? 'من أنت؟' : 'Who Are You?' : isAr ? `أهلاً ${liName}` : `Hello ${liName}`,
+                                            subtitle: loginStep === 0 ? isAr ? 'أدخل اسمك للمتابعة' : 'Enter your name to continue' : isAr ? 'أدخل كلمة المرور للدخول' : 'Enter your password to sign in'
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 315,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-center gap-2 mt-4 mb-1",
+                                            children: [
+                                                0,
+                                                1
+                                            ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                    className: "h-1.5 rounded-full",
+                                                    animate: {
+                                                        width: loginStep === i ? 28 : 12,
+                                                        background: i <= loginStep ? 'linear-gradient(90deg, #22d3ee, #10b981)' : 'rgba(255,255,255,0.12)'
+                                                    },
+                                                    transition: {
+                                                        type: 'spring',
+                                                        stiffness: 280,
+                                                        damping: 25
+                                                    }
+                                                }, i, false, {
+                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                    lineNumber: 334,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 332,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-center text-[9px] font-black uppercase tracking-[0.25em] text-cyan-300/60 mb-4",
+                                            children: isAr ? `خطوة ${loginStep + 1} / 2` : `Step ${loginStep + 1} of 2`
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 346,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "relative min-h-[180px]",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                mode: "wait",
+                                                initial: false,
+                                                children: [
+                                                    loginStep === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        initial: {
+                                                            opacity: 0,
+                                                            x: 30,
+                                                            filter: 'blur(6px)'
+                                                        },
+                                                        animate: {
+                                                            opacity: 1,
+                                                            x: 0,
+                                                            filter: 'blur(0px)'
+                                                        },
+                                                        exit: {
+                                                            opacity: 0,
+                                                            x: -30,
+                                                            filter: 'blur(6px)'
+                                                        },
+                                                        transition: {
+                                                            duration: 0.4,
+                                                            ease: [
+                                                                0.22,
+                                                                1,
+                                                                0.36,
+                                                                1
+                                                            ]
+                                                        },
+                                                        className: "space-y-3",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
+                                                                icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$user$2d$round$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCircle2$3e$__["UserCircle2"],
+                                                                label: isAr ? 'الاسم' : 'Name',
+                                                                value: liName,
+                                                                onChange: (v)=>{
+                                                                    setLiName(v);
+                                                                    setLiError('');
+                                                                },
+                                                                accent: "#22d3ee",
+                                                                placeholder: isAr ? 'اكتب اسمك' : 'Your name',
+                                                                autoFocus: true,
+                                                                onEnter: handleLoginNext,
+                                                                isAr: isAr
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                lineNumber: 362,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ErrorBox, {
+                                                                error: liError
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                lineNumber: 373,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, "li-0", true, {
+                                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                        lineNumber: 354,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    loginStep === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                        initial: {
+                                                            opacity: 0,
+                                                            x: 30,
+                                                            filter: 'blur(6px)'
+                                                        },
+                                                        animate: {
+                                                            opacity: 1,
+                                                            x: 0,
+                                                            filter: 'blur(0px)'
+                                                        },
+                                                        exit: {
+                                                            opacity: 0,
+                                                            x: -30,
+                                                            filter: 'blur(6px)'
+                                                        },
+                                                        transition: {
+                                                            duration: 0.4,
+                                                            ease: [
+                                                                0.22,
+                                                                1,
+                                                                0.36,
+                                                                1
+                                                            ]
+                                                        },
+                                                        className: "space-y-3",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
+                                                                icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$key$2d$round$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__KeyRound$3e$__["KeyRound"],
+                                                                label: isAr ? 'كلمة المرور' : 'Password',
+                                                                value: liPass,
+                                                                onChange: (v)=>{
+                                                                    setLiPass(v);
+                                                                    setLiError('');
+                                                                },
+                                                                accent: "#22d3ee",
+                                                                type: liShowPass ? 'text' : 'password',
+                                                                placeholder: isAr ? 'كلمة المرور' : 'Your password',
+                                                                autoFocus: true,
+                                                                onEnter: handleLoginSubmit,
+                                                                trailing: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    type: "button",
+                                                                    onClick: ()=>setLiShowPass((s)=>!s),
+                                                                    className: "text-slate-400 hover:text-white transition-colors p-1",
+                                                                    children: liShowPass ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
+                                                                        size: 15
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                        lineNumber: 402,
+                                                                        columnNumber: 43
+                                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
+                                                                        size: 15
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                        lineNumber: 402,
+                                                                        columnNumber: 66
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                    lineNumber: 397,
+                                                                    columnNumber: 27
+                                                                }, this),
+                                                                isAr: isAr
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                lineNumber: 386,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ErrorBox, {
+                                                                error: liError
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                                lineNumber: 407,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, "li-1", true, {
+                                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                        lineNumber: 378,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                lineNumber: 352,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 351,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex gap-2 mt-2",
+                                            children: [
+                                                loginStep > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                    onClick: ()=>{
+                                                        setLoginStep(0);
+                                                        setLiError('');
+                                                    },
+                                                    whileHover: {
+                                                        scale: 1.03,
+                                                        x: isAr ? 3 : -3
+                                                    },
+                                                    whileTap: {
+                                                        scale: 0.97
+                                                    },
+                                                    className: "h-12 px-5 rounded-2xl font-black text-xs uppercase tracking-widest border flex items-center gap-2",
+                                                    style: {
+                                                        background: 'rgba(255,255,255,0.03)',
+                                                        borderColor: 'rgba(34,211,238,0.25)',
+                                                        color: 'rgba(200,220,230,0.8)'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
+                                                            size: 13,
+                                                            className: isAr ? 'rotate-180' : ''
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                            lineNumber: 427,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        isAr ? 'رجوع' : 'Back'
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                    lineNumber: 416,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CTA, {
+                                                    onClick: loginStep === 0 ? handleLoginNext : handleLoginSubmit,
+                                                    accent: {
+                                                        from: '#22d3ee',
+                                                        to: '#10b981',
+                                                        glow: 'rgba(34,211,238,0.5)'
+                                                    },
+                                                    label: loginStep === 0 ? isAr ? 'التالي' : 'Next' : isAr ? 'تسجيل الدخول' : 'Log In',
+                                                    isAr: isAr,
+                                                    inline: true
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                                    lineNumber: 431,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                            lineNumber: 414,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 199,
+                                    lineNumber: 308,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/auth/AuthCard.tsx",
-                            lineNumber: 173,
+                            lineNumber: 197,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 169,
+                        lineNumber: 196,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -6158,32 +6526,34 @@ function AuthCard({ onContinue }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 220,
+                        lineNumber: 447,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 117,
+                lineNumber: 146,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 62,
+        lineNumber: 91,
         columnNumber: 5
     }, this);
 }
-_s(AuthCard, "o5uW3m6WkGtn2mkvnVmO3qJli+M=", false, function() {
+_s(AuthCard, "oZvcCV9491fo7Cn7J92xEs1CjMw=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"]
     ];
 });
 _c = AuthCard;
-function CardFace({ side, accent, icon: Icon, badge, title, subtitle, features, ctaLabel, onContinue, isAr, bgFrom, bgTo, borderColor }) {
+/* ═══════════════════════════════════════════════════════
+   Sub-components
+═══════════════════════════════════════════════════════ */ function FaceShell({ side, accent, bgFrom, bgTo, borderColor, children }) {
     const isBack = side === 'back';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "absolute inset-0 w-full rounded-[2.5rem] p-6 sm:p-8 border overflow-hidden",
+        className: "absolute inset-0 w-full rounded-[2.5rem] p-6 sm:p-7 border overflow-hidden flex flex-col",
         style: {
             background: `linear-gradient(135deg, ${bgFrom} 0%, ${bgTo} 100%)`,
             borderColor,
@@ -6201,270 +6571,378 @@ function CardFace({ side, accent, icon: Icon, badge, title, subtitle, features, 
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 270,
+                lineNumber: 486,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 flex items-start gap-4 mb-6",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center shrink-0",
-                        style: {
-                            background: `linear-gradient(135deg, ${accent.from}, ${accent.to})`,
-                            boxShadow: `0 12px 30px -8px ${accent.glow}, inset 0 1px 0 rgba(255,255,255,0.25)`
-                        },
-                        animate: {
-                            y: [
-                                0,
-                                -3,
-                                0
-                            ]
-                        },
-                        transition: {
-                            duration: 3,
-                            repeat: Infinity,
-                            ease: 'easeInOut'
-                        },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                            size: 26,
-                            className: "text-white"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/auth/AuthCard.tsx",
-                            lineNumber: 285,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 276,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex-1 min-w-0",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border mb-2",
-                                style: {
-                                    borderColor: `${accent.from}40`,
-                                    background: `${accent.from}15`
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                        size: 10,
-                                        style: {
-                                            color: accent.from
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                        lineNumber: 295,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[9px] font-black uppercase tracking-[0.2em]",
-                                        style: {
-                                            color: accent.from
-                                        },
-                                        children: badge
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                        lineNumber: 296,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 289,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-2xl sm:text-3xl font-black text-white mb-1 tracking-tight",
-                                children: title
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 302,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[12px] sm:text-sm text-slate-400 font-medium leading-snug",
-                                children: subtitle
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 305,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 288,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 275,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-6",
-                children: features.map((f, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        initial: {
-                            opacity: 0,
-                            y: 10
-                        },
-                        animate: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        transition: {
-                            delay: 0.3 + i * 0.05
-                        },
-                        className: "relative overflow-hidden rounded-xl p-3 border border-white/5",
-                        style: {
-                            background: 'rgba(0,0,0,0.25)'
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 opacity-25 pointer-events-none",
-                                style: {
-                                    background: `radial-gradient(circle at top right, ${f.color}40 0%, transparent 60%)`
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 322,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative z-10",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-8 h-8 rounded-lg flex items-center justify-center mb-2",
-                                        style: {
-                                            background: `${f.color}20`,
-                                            border: `1px solid ${f.color}40`
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(f.icon, {
-                                            size: 14,
-                                            style: {
-                                                color: f.color
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                            lineNumber: 330,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                        lineNumber: 327,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-[11px] font-black text-white mb-0.5 leading-tight",
-                                        children: f.title
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                        lineNumber: 332,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[9px] text-slate-400 font-medium leading-tight",
-                                        children: f.desc
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                        lineNumber: 333,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 326,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, f.title, true, {
-                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 314,
-                        columnNumber: 11
-                    }, this))
+                className: "relative z-10 flex flex-col h-full",
+                children: children
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 312,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 flex justify-center",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                    onClick: onContinue,
-                    whileHover: {
-                        scale: 1.03,
-                        y: -2
-                    },
-                    whileTap: {
-                        scale: 0.97
-                    },
-                    className: "group relative overflow-hidden px-8 sm:px-10 py-3.5 rounded-2xl font-black text-white text-xs sm:text-sm uppercase tracking-widest",
-                    style: {
-                        background: `linear-gradient(135deg, ${accent.from} 0%, ${accent.to} 100%)`,
-                        boxShadow: `0 12px 35px -8px ${accent.glow}, inset 0 1px 0 rgba(255,255,255,0.25)`
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "relative flex items-center gap-2.5",
-                        children: [
-                            ctaLabel,
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                animate: {
-                                    x: isAr ? [
-                                        -3,
-                                        0,
-                                        -3
-                                    ] : [
-                                        0,
-                                        3,
-                                        0
-                                    ]
-                                },
-                                transition: {
-                                    duration: 1.5,
-                                    repeat: Infinity
-                                },
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                    size: 15,
-                                    className: isAr ? 'rotate-180' : ''
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                    lineNumber: 357,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                                lineNumber: 353,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/auth/AuthCard.tsx",
-                        lineNumber: 351,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/components/auth/AuthCard.tsx",
-                    lineNumber: 341,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/components/auth/AuthCard.tsx",
-                lineNumber: 340,
+                lineNumber: 489,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/AuthCard.tsx",
-        lineNumber: 257,
+        lineNumber: 474,
         columnNumber: 5
     }, this);
 }
-_c1 = CardFace;
-var _c, _c1;
+_c1 = FaceShell;
+function FaceHeader({ icon: Icon, accent, badge, title, subtitle }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex items-start gap-3.5",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "w-14 h-14 rounded-2xl flex items-center justify-center shrink-0",
+                style: {
+                    background: `linear-gradient(135deg, ${accent.from}, ${accent.to})`,
+                    boxShadow: `0 12px 30px -8px ${accent.glow}, inset 0 1px 0 rgba(255,255,255,0.25)`
+                },
+                animate: {
+                    y: [
+                        0,
+                        -3,
+                        0
+                    ]
+                },
+                transition: {
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: 'easeInOut'
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                    size: 24,
+                    className: "text-white"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                    lineNumber: 514,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                lineNumber: 505,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex-1 min-w-0",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border mb-1.5",
+                        style: {
+                            borderColor: `${accent.from}40`,
+                            background: `${accent.from}15`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                size: 9,
+                                style: {
+                                    color: accent.from
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                lineNumber: 520,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-[9px] font-black uppercase tracking-[0.2em]",
+                                style: {
+                                    color: accent.from
+                                },
+                                children: badge
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                                lineNumber: 521,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                        lineNumber: 517,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
+                        initial: {
+                            opacity: 0,
+                            y: 6
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        className: "text-xl sm:text-2xl font-black text-white mb-0.5 tracking-tight",
+                        children: title
+                    }, title, false, {
+                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                        lineNumber: 524,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                        initial: {
+                            opacity: 0
+                        },
+                        animate: {
+                            opacity: 1
+                        },
+                        className: "text-[11px] sm:text-xs text-slate-400 font-medium leading-snug",
+                        children: subtitle
+                    }, subtitle, false, {
+                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                        lineNumber: 531,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                lineNumber: 516,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/auth/AuthCard.tsx",
+        lineNumber: 504,
+        columnNumber: 5
+    }, this);
+}
+_c2 = FaceHeader;
+function Field({ icon: Icon, label, value, onChange, accent, type = 'text', placeholder, trailing, autoFocus, onEnter, isAr }) {
+    _s1();
+    const [focus, setFocus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const filled = value.length > 0;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                className: "text-[9px] font-black uppercase tracking-[0.2em] mb-1.5 block",
+                style: {
+                    color: focus || filled ? accent : 'rgba(148,163,184,0.6)'
+                },
+                children: label
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                lineNumber: 562,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "relative flex items-center rounded-2xl border overflow-hidden",
+                animate: {
+                    borderColor: focus ? `${accent}90` : filled ? `${accent}50` : 'rgba(255,255,255,0.08)',
+                    background: focus ? `${accent}10` : 'rgba(0,0,0,0.25)',
+                    boxShadow: focus ? `0 0 0 4px ${accent}15, 0 0 18px ${accent}30` : 'none'
+                },
+                style: {
+                    borderWidth: 1.5
+                },
+                transition: {
+                    duration: 0.2
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `flex items-center justify-center w-11 h-12 shrink-0`,
+                        style: {
+                            color: focus || filled ? accent : 'rgba(148,163,184,0.5)'
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                            size: 16
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/auth/AuthCard.tsx",
+                            lineNumber: 578,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                        lineNumber: 576,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: type,
+                        value: value,
+                        onChange: (e)=>onChange(e.target.value),
+                        onFocus: ()=>setFocus(true),
+                        onBlur: ()=>setFocus(false),
+                        onKeyDown: (e)=>{
+                            if (e.key === 'Enter' && onEnter) onEnter();
+                        },
+                        placeholder: placeholder,
+                        autoFocus: autoFocus,
+                        dir: isAr ? 'rtl' : 'ltr',
+                        className: "flex-1 h-12 bg-transparent outline-none text-sm font-bold text-white placeholder:text-slate-600 placeholder:font-medium pr-3",
+                        style: {
+                            paddingInlineStart: 0,
+                            paddingInlineEnd: 12
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                        lineNumber: 580,
+                        columnNumber: 9
+                    }, this),
+                    trailing && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "pr-3",
+                        children: trailing
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/AuthCard.tsx",
+                        lineNumber: 593,
+                        columnNumber: 22
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                lineNumber: 566,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/auth/AuthCard.tsx",
+        lineNumber: 561,
+        columnNumber: 5
+    }, this);
+}
+_s1(Field, "JcMW5INHEFpLqO0Ud660bC8g4FE=");
+_c3 = Field;
+function ErrorBox({ error }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        children: error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            initial: {
+                opacity: 0,
+                y: -6,
+                height: 0
+            },
+            animate: {
+                opacity: 1,
+                y: 0,
+                height: 'auto'
+            },
+            exit: {
+                opacity: 0,
+                y: -6,
+                height: 0
+            },
+            className: "flex items-center gap-2 px-3 py-2 mt-3 rounded-xl border",
+            style: {
+                background: 'rgba(239,68,68,0.08)',
+                borderColor: 'rgba(239,68,68,0.35)'
+            },
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__["AlertCircle"], {
+                    size: 13,
+                    className: "text-red-400 shrink-0"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                    lineNumber: 613,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-[11px] font-bold text-red-300",
+                    children: error
+                }, void 0, false, {
+                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                    lineNumber: 614,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/auth/AuthCard.tsx",
+            lineNumber: 603,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/auth/AuthCard.tsx",
+        lineNumber: 601,
+        columnNumber: 5
+    }, this);
+}
+_c4 = ErrorBox;
+function CTA({ onClick, accent, label, isAr, inline }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+        onClick: onClick,
+        whileHover: {
+            scale: 1.03,
+            y: -2
+        },
+        whileTap: {
+            scale: 0.97
+        },
+        className: `group relative overflow-hidden rounded-2xl font-black text-white text-xs sm:text-sm uppercase tracking-widest flex items-center justify-center gap-2.5 ${inline ? 'flex-1 h-12 px-6' : 'w-full h-13 mt-5'}`,
+        style: {
+            height: inline ? 48 : 52,
+            background: `linear-gradient(135deg, ${accent.from} 0%, ${accent.to} 100%)`,
+            boxShadow: `0 12px 35px -8px ${accent.glow}, inset 0 1px 0 rgba(255,255,255,0.25)`
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "absolute inset-0",
+                style: {
+                    background: 'linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.25) 50%, transparent 70%)'
+                },
+                animate: {
+                    x: [
+                        '-120%',
+                        '220%'
+                    ]
+                },
+                transition: {
+                    duration: 2.2,
+                    repeat: Infinity,
+                    repeatDelay: 1
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                lineNumber: 642,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "relative z-10",
+                children: label
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                lineNumber: 647,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "relative z-10",
+                animate: {
+                    x: isAr ? [
+                        -3,
+                        0,
+                        -3
+                    ] : [
+                        0,
+                        3,
+                        0
+                    ]
+                },
+                transition: {
+                    duration: 1.5,
+                    repeat: Infinity
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                    size: 15,
+                    className: isAr ? 'rotate-180' : ''
+                }, void 0, false, {
+                    fileName: "[project]/src/components/auth/AuthCard.tsx",
+                    lineNumber: 653,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/auth/AuthCard.tsx",
+                lineNumber: 648,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/auth/AuthCard.tsx",
+        lineNumber: 631,
+        columnNumber: 5
+    }, this);
+}
+_c5 = CTA;
+var _c, _c1, _c2, _c3, _c4, _c5;
 __turbopack_context__.k.register(_c, "AuthCard");
-__turbopack_context__.k.register(_c1, "CardFace");
+__turbopack_context__.k.register(_c1, "FaceShell");
+__turbopack_context__.k.register(_c2, "FaceHeader");
+__turbopack_context__.k.register(_c3, "Field");
+__turbopack_context__.k.register(_c4, "ErrorBox");
+__turbopack_context__.k.register(_c5, "CTA");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
