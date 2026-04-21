@@ -4,17 +4,15 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Dashboard from '@/components/dashboard/Dashboard';
 import OnboardingFlow from '@/components/onboarding/OnboardingFlow';
 import SplashScreen from '@/components/splash/SplashScreen';
-import AuthLanding from '@/components/auth/AuthLanding';
-import SignUpScreen from '@/components/auth/SignUpScreen';
-import LoginScreen from '@/components/auth/LoginScreen';
+import AuthCard from '@/components/auth/AuthCard';
 import { useAppContext } from '@/context/AppContext';
 
-type AuthStep = 'landing' | 'signup' | 'login' | 'onboarding';
+type AuthStep = 'auth' | 'onboarding';
 
 export default function Home() {
   const { isAuthenticated, isLoading } = useAppContext();
   const [splashState, setSplashState] = useState<'pending' | 'showing' | 'done'>('pending');
-  const [authStep, setAuthStep] = useState<AuthStep>('landing');
+  const [authStep, setAuthStep] = useState<AuthStep>('auth');
 
   useEffect(() => {
     const seen = sessionStorage.getItem('atomic_splash_seen');
@@ -41,45 +39,15 @@ export default function Home() {
   if (!isAuthenticated) {
     return (
       <AnimatePresence mode="wait">
-        {authStep === 'landing' && (
+        {authStep === 'auth' && (
           <motion.div
-            key="landing"
+            key="auth"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <AuthLanding onChoose={(mode) => setAuthStep(mode)} />
-          </motion.div>
-        )}
-        {authStep === 'signup' && (
-          <motion.div
-            key="signup"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <SignUpScreen
-              onBack={() => setAuthStep('landing')}
-              onContinue={() => setAuthStep('onboarding')}
-              onSwitchToLogin={() => setAuthStep('login')}
-            />
-          </motion.div>
-        )}
-        {authStep === 'login' && (
-          <motion.div
-            key="login"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <LoginScreen
-              onBack={() => setAuthStep('landing')}
-              onContinue={() => setAuthStep('onboarding')}
-              onSwitchToSignup={() => setAuthStep('signup')}
-            />
+            <AuthCard onContinue={() => setAuthStep('onboarding')} />
           </motion.div>
         )}
         {authStep === 'onboarding' && (
