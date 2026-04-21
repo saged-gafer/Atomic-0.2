@@ -4500,29 +4500,125 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book-open.js [app-client] (ecmascript) <export default as BookOpen>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/brain.js [app-client] (ecmascript) <export default as Brain>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/moon.js [app-client] (ecmascript) <export default as Moon>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-const FEATURES = [
+;
+/* ── Orbiting study icons ─────────────────────────────── */ const ORBIT_ICONS = [
     {
-        icon: '⚡',
-        label: 'Smart Scheduling'
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"],
+        color: '#818cf8',
+        angle: 0
     },
     {
-        icon: '🎯',
-        label: 'Focus Mode'
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__["Brain"],
+        color: '#ec4899',
+        angle: 60
     },
     {
-        icon: '📊',
-        label: 'Analytics'
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"],
+        color: '#f59e0b',
+        angle: 120
     },
     {
-        icon: '🌙',
-        label: 'Prayer Tracker'
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"],
+        color: '#06b6d4',
+        angle: 180
+    },
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"],
+        color: '#a78bfa',
+        angle: 240
+    },
+    {
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
+        color: '#34d399',
+        angle: 300
     }
 ];
+function OrbitingIcons({ radius = 130 }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        className: "absolute inset-0 flex items-center justify-center pointer-events-none",
+        animate: {
+            rotate: 360
+        },
+        transition: {
+            duration: 24,
+            repeat: Infinity,
+            ease: 'linear'
+        },
+        children: ORBIT_ICONS.map(({ Icon, color, angle }, i)=>{
+            const rad = angle * Math.PI / 180;
+            const x = Math.cos(rad) * radius;
+            const y = Math.sin(rad) * radius;
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "absolute w-9 h-9 rounded-2xl flex items-center justify-center",
+                style: {
+                    left: `calc(50% + ${x}px - 18px)`,
+                    top: `calc(50% + ${y}px - 18px)`,
+                    background: `${color}20`,
+                    border: `1.5px solid ${color}50`,
+                    boxShadow: `0 0 20px ${color}40`,
+                    backdropFilter: 'blur(8px)'
+                },
+                initial: {
+                    scale: 0,
+                    opacity: 0
+                },
+                animate: {
+                    scale: 1,
+                    opacity: 1
+                },
+                transition: {
+                    delay: 0.8 + i * 0.08,
+                    type: 'spring',
+                    stiffness: 300
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    animate: {
+                        rotate: -360
+                    },
+                    transition: {
+                        duration: 24,
+                        repeat: Infinity,
+                        ease: 'linear'
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                        size: 16,
+                        style: {
+                            color
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                        lineNumber: 44,
+                        columnNumber: 15
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                    lineNumber: 43,
+                    columnNumber: 13
+                }, this)
+            }, i, false, {
+                fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                lineNumber: 28,
+                columnNumber: 11
+            }, this);
+        })
+    }, void 0, false, {
+        fileName: "[project]/src/components/splash/SplashScreen.tsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+}
+_c = OrbitingIcons;
 function AtomRings({ size = 180 }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "absolute inset-0 flex items-center justify-center pointer-events-none",
@@ -4538,13 +4634,31 @@ function AtomRings({ size = 180 }) {
                     borderColor: `rgba(99,102,241,${0.35 - i * 0.08})`,
                     borderWidth: i === 0 ? 2 : 1
                 },
+                initial: {
+                    scale: 0,
+                    opacity: 0,
+                    rotate: 0
+                },
                 animate: {
+                    scale: 1,
+                    opacity: 1,
                     rotate: i % 2 === 0 ? 360 : -360
                 },
                 transition: {
-                    duration: 8 + i * 4,
-                    repeat: Infinity,
-                    ease: 'linear'
+                    scale: {
+                        delay: 0.2 + i * 0.1,
+                        duration: 0.6,
+                        type: 'spring'
+                    },
+                    opacity: {
+                        delay: 0.2 + i * 0.1,
+                        duration: 0.6
+                    },
+                    rotate: {
+                        duration: 8 + i * 4,
+                        repeat: Infinity,
+                        ease: 'linear'
+                    }
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                     className: "absolute w-3 h-3 rounded-full",
@@ -4557,38 +4671,39 @@ function AtomRings({ size = 180 }) {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                    lineNumber: 28,
+                    lineNumber: 74,
                     columnNumber: 11
                 }, this)
             }, i, false, {
                 fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                lineNumber: 16,
+                lineNumber: 57,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-        lineNumber: 14,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
-_c = AtomRings;
+_c1 = AtomRings;
 function ParticleField() {
     const particles = Array.from({
-        length: 60
+        length: 80
     }, (_, i)=>({
             id: i,
-            x: Math.random() * 100,
-            y: Math.random() * 100,
-            size: Math.random() * 3 + 1,
-            duration: 4 + Math.random() * 8,
-            delay: Math.random() * 4,
+            x: i * 53 % 100,
+            y: i * 37 % 100,
+            size: i * 7 % 3 + 1,
+            duration: 4 + i % 6,
+            delay: i % 10 * 0.4,
             color: [
                 '#6366f1',
                 '#8b5cf6',
                 '#ec4899',
                 '#06b6d4',
-                '#34d399'
-            ][Math.floor(Math.random() * 5)]
+                '#34d399',
+                '#f59e0b'
+            ][i % 6]
         }));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "absolute inset-0 overflow-hidden pointer-events-none",
@@ -4600,22 +4715,22 @@ function ParticleField() {
                     width: p.size,
                     height: p.size,
                     background: p.color,
-                    boxShadow: `0 0 ${p.size * 3}px ${p.color}`
+                    boxShadow: `0 0 ${p.size * 4}px ${p.color}`
                 },
                 animate: {
                     y: [
                         0,
-                        -30,
+                        -40,
                         0
                     ],
                     opacity: [
                         0,
-                        0.8,
+                        0.9,
                         0
                     ],
                     scale: [
                         0,
-                        1,
+                        1.4,
                         0
                     ]
                 },
@@ -4627,40 +4742,87 @@ function ParticleField() {
                 }
             }, p.id, false, {
                 fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                lineNumber: 58,
+                lineNumber: 104,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-        lineNumber: 56,
+        lineNumber: 102,
         columnNumber: 5
     }, this);
 }
-_c1 = ParticleField;
+_c2 = ParticleField;
+function StarField() {
+    const stars = Array.from({
+        length: 50
+    }, (_, i)=>({
+            id: i,
+            x: i * 71 % 100,
+            y: i * 43 % 100,
+            size: i * 3 % 2 + 0.5,
+            twinkleDelay: i % 8 * 0.3
+        }));
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "absolute inset-0 overflow-hidden pointer-events-none",
+        children: stars.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "absolute rounded-full bg-white",
+                style: {
+                    left: `${s.x}%`,
+                    top: `${s.y}%`,
+                    width: s.size,
+                    height: s.size
+                },
+                animate: {
+                    opacity: [
+                        0.1,
+                        0.7,
+                        0.1
+                    ]
+                },
+                transition: {
+                    duration: 2.5,
+                    delay: s.twinkleDelay,
+                    repeat: Infinity,
+                    ease: 'easeInOut'
+                }
+            }, s.id, false, {
+                fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                lineNumber: 144,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/src/components/splash/SplashScreen.tsx",
+        lineNumber: 142,
+        columnNumber: 5
+    }, this);
+}
+_c3 = StarField;
 function GridLines() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "absolute inset-0 pointer-events-none opacity-[0.04]",
+        className: "absolute inset-0 pointer-events-none opacity-[0.05]",
         style: {
             backgroundImage: `
           linear-gradient(rgba(99,102,241,1) 1px, transparent 1px),
           linear-gradient(90deg, rgba(99,102,241,1) 1px, transparent 1px)
         `,
-            backgroundSize: '60px 60px'
+            backgroundSize: '60px 60px',
+            maskImage: 'radial-gradient(ellipse at center, black 0%, transparent 70%)',
+            WebkitMaskImage: 'radial-gradient(ellipse at center, black 0%, transparent 70%)'
         }
     }, void 0, false, {
         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-        lineNumber: 88,
+        lineNumber: 163,
         columnNumber: 5
     }, this);
 }
-_c2 = GridLines;
+_c4 = GridLines;
 function GlowBlobs() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                 className: "absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full pointer-events-none",
                 style: {
-                    background: 'radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%)'
+                    background: 'radial-gradient(circle, rgba(99,102,241,0.22) 0%, transparent 70%)'
                 },
                 animate: {
                     scale: [
@@ -4681,13 +4843,13 @@ function GlowBlobs() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                lineNumber: 104,
+                lineNumber: 181,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                 className: "absolute bottom-[-20%] right-[-10%] w-[50vw] h-[50vw] rounded-full pointer-events-none",
                 style: {
-                    background: 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%)'
+                    background: 'radial-gradient(circle, rgba(139,92,246,0.18) 0%, transparent 70%)'
                 },
                 animate: {
                     scale: [
@@ -4709,13 +4871,13 @@ function GlowBlobs() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                lineNumber: 110,
+                lineNumber: 187,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "absolute top-[30%] right-[5%] w-[30vw] h-[30vw] rounded-full pointer-events-none",
+                className: "absolute top-[30%] right-[5%] w-[35vw] h-[35vw] rounded-full pointer-events-none",
                 style: {
-                    background: 'radial-gradient(circle, rgba(236,72,153,0.1) 0%, transparent 70%)'
+                    background: 'radial-gradient(circle, rgba(236,72,153,0.12) 0%, transparent 70%)'
                 },
                 animate: {
                     scale: [
@@ -4732,25 +4894,110 @@ function GlowBlobs() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                lineNumber: 116,
+                lineNumber: 193,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "absolute bottom-[20%] left-[10%] w-[28vw] h-[28vw] rounded-full pointer-events-none",
+                style: {
+                    background: 'radial-gradient(circle, rgba(6,182,212,0.12) 0%, transparent 70%)'
+                },
+                animate: {
+                    scale: [
+                        1,
+                        1.25,
+                        1
+                    ]
+                },
+                transition: {
+                    duration: 9,
+                    repeat: Infinity,
+                    ease: 'easeInOut',
+                    delay: 3
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                lineNumber: 199,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_c3 = GlowBlobs;
+_c5 = GlowBlobs;
+function LightBurst({ active }) {
+    if (!active) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        className: "absolute inset-0 flex items-center justify-center pointer-events-none",
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: [
+                0,
+                1,
+                0
+            ]
+        },
+        transition: {
+            duration: 1.2,
+            times: [
+                0,
+                0.3,
+                1
+            ]
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "absolute w-2 h-2 rounded-full bg-white",
+            style: {
+                boxShadow: '0 0 60px 30px rgba(255,255,255,0.9), 0 0 120px 60px rgba(139,92,246,0.6), 0 0 200px 100px rgba(99,102,241,0.4)'
+            },
+            animate: {
+                scale: [
+                    0,
+                    12,
+                    0
+                ]
+            },
+            transition: {
+                duration: 1.2,
+                ease: [
+                    0.22,
+                    1,
+                    0.36,
+                    1
+                ]
+            }
+        }, void 0, false, {
+            fileName: "[project]/src/components/splash/SplashScreen.tsx",
+            lineNumber: 218,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/splash/SplashScreen.tsx",
+        lineNumber: 212,
+        columnNumber: 5
+    }, this);
+}
+_c6 = LightBurst;
 function SplashScreen({ onComplete }) {
     _s();
     const [phase, setPhase] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('intro');
     const [progress, setProgress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [showBurst, setShowBurst] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const hasCompleted = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "SplashScreen.useEffect": ()=>{
             const t1 = setTimeout({
                 "SplashScreen.useEffect.t1": ()=>setPhase('main')
             }["SplashScreen.useEffect.t1"], 600);
+            const t2 = setTimeout({
+                "SplashScreen.useEffect.t2": ()=>setShowBurst(true)
+            }["SplashScreen.useEffect.t2"], 1100);
             return ({
-                "SplashScreen.useEffect": ()=>clearTimeout(t1)
+                "SplashScreen.useEffect": ()=>{
+                    clearTimeout(t1);
+                    clearTimeout(t2);
+                }
             })["SplashScreen.useEffect"];
         }
     }["SplashScreen.useEffect"], []);
@@ -4758,7 +5005,7 @@ function SplashScreen({ onComplete }) {
         "SplashScreen.useEffect": ()=>{
             if (phase !== 'main') return;
             const start = Date.now();
-            const duration = 3200;
+            const duration = 3600;
             const interval = setInterval({
                 "SplashScreen.useEffect.interval": ()=>{
                     const elapsed = Date.now() - start;
@@ -4769,7 +5016,7 @@ function SplashScreen({ onComplete }) {
                         if (!hasCompleted.current) {
                             hasCompleted.current = true;
                             setPhase('exit');
-                            setTimeout(onComplete, 600);
+                            setTimeout(onComplete, 700);
                         }
                     }
                 }
@@ -4792,7 +5039,7 @@ function SplashScreen({ onComplete }) {
         children: phase !== 'exit' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
             className: "fixed inset-0 z-[9999] flex flex-col items-center justify-center overflow-hidden select-none",
             style: {
-                background: '#020617'
+                background: 'radial-gradient(ellipse at center, #0a0f24 0%, #050816 70%, #02030a 100%)'
             },
             initial: {
                 opacity: 0
@@ -4802,29 +5049,70 @@ function SplashScreen({ onComplete }) {
             },
             exit: {
                 opacity: 0,
-                scale: 1.04
+                scale: 1.06,
+                filter: 'blur(20px)'
             },
             transition: {
-                duration: 0.5
+                duration: 0.6,
+                ease: [
+                    0.22,
+                    1,
+                    0.36,
+                    1
+                ]
             },
             children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StarField, {}, void 0, false, {
+                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                    lineNumber: 286,
+                    columnNumber: 11
+                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GridLines, {}, void 0, false, {
                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                    lineNumber: 178,
+                    lineNumber: 287,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GlowBlobs, {}, void 0, false, {
                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                    lineNumber: 179,
+                    lineNumber: 288,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ParticleField, {}, void 0, false, {
                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                    lineNumber: 180,
+                    lineNumber: 289,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(LightBurst, {
+                    active: showBurst
+                }, void 0, false, {
+                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                    lineNumber: 290,
+                    columnNumber: 11
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    className: "absolute left-0 right-0 h-[2px] pointer-events-none",
+                    style: {
+                        background: 'linear-gradient(90deg, transparent, rgba(139,92,246,0.6), transparent)',
+                        boxShadow: '0 0 20px rgba(139,92,246,0.8)'
+                    },
+                    animate: {
+                        top: [
+                            '-2%',
+                            '102%'
+                        ]
+                    },
+                    transition: {
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: 'linear'
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                    lineNumber: 293,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative flex flex-col items-center justify-center gap-10 w-full px-6 max-w-lg",
+                    className: "relative flex flex-col items-center justify-center gap-8 sm:gap-10 w-full px-6 max-w-lg",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                             className: "relative flex items-center justify-center",
@@ -4846,24 +5134,31 @@ function SplashScreen({ onComplete }) {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "relative",
                                 style: {
-                                    width: 180,
-                                    height: 180
+                                    width: 280,
+                                    height: 280
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AtomRings, {
                                         size: 120
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                        lineNumber: 192,
+                                        lineNumber: 313,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitingIcons, {
+                                        radius: 130
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                        lineNumber: 314,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute inset-0 flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            className: "relative w-24 h-24 rounded-3xl flex items-center justify-center font-black text-white text-5xl",
+                                            className: "relative w-24 h-24 rounded-3xl flex items-center justify-center font-black text-white text-5xl overflow-hidden",
                                             style: {
                                                 background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%)',
-                                                boxShadow: '0 0 60px rgba(99,102,241,0.7), 0 0 120px rgba(139,92,246,0.4), inset 0 1px 0 rgba(255,255,255,0.2)'
+                                                boxShadow: '0 0 60px rgba(99,102,241,0.7), 0 0 120px rgba(139,92,246,0.4), inset 0 1px 0 rgba(255,255,255,0.25)'
                                             },
                                             animate: {
                                                 boxShadow: [
@@ -4891,16 +5186,19 @@ function SplashScreen({ onComplete }) {
                                                         repeat: Infinity,
                                                         ease: 'easeInOut'
                                                     },
+                                                    style: {
+                                                        textShadow: '0 2px 12px rgba(0,0,0,0.4)'
+                                                    },
                                                     children: "A"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                                    lineNumber: 211,
+                                                    lineNumber: 333,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "absolute inset-0 rounded-3xl overflow-hidden",
+                                                    className: "absolute inset-0",
                                                     style: {
-                                                        background: 'linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%)'
+                                                        background: 'linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.35) 50%, transparent 70%)'
                                                     },
                                                     animate: {
                                                         x: [
@@ -4915,29 +5213,50 @@ function SplashScreen({ onComplete }) {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                                    lineNumber: 218,
+                                                    lineNumber: 341,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                    className: "absolute inset-0 rounded-3xl pointer-events-none",
+                                                    style: {
+                                                        background: 'radial-gradient(circle at center, rgba(255,255,255,0.4) 0%, transparent 60%)'
+                                                    },
+                                                    animate: {
+                                                        opacity: [
+                                                            0.3,
+                                                            0.7,
+                                                            0.3
+                                                        ]
+                                                    },
+                                                    transition: {
+                                                        duration: 2.5,
+                                                        repeat: Infinity
+                                                    }
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                                    lineNumber: 348,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                            lineNumber: 196,
+                                            lineNumber: 318,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                        lineNumber: 195,
+                                        lineNumber: 317,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                lineNumber: 191,
+                                lineNumber: 312,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                            lineNumber: 185,
+                            lineNumber: 306,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4951,7 +5270,7 @@ function SplashScreen({ onComplete }) {
                                 opacity: 1
                             },
                             transition: {
-                                delay: 0.7,
+                                delay: 1.0,
                                 duration: 0.7,
                                 ease: [
                                     0.22,
@@ -4962,9 +5281,9 @@ function SplashScreen({ onComplete }) {
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                                    className: "text-6xl font-black tracking-tighter text-white",
+                                    className: "text-6xl sm:text-7xl font-black tracking-tighter text-white",
                                     style: {
-                                        letterSpacing: '-0.03em'
+                                        letterSpacing: '-0.04em'
                                     },
                                     children: 'ATOMIC'.split('').map((char, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
                                             className: "inline-block",
@@ -4972,10 +5291,11 @@ function SplashScreen({ onComplete }) {
                                                 background: `linear-gradient(135deg, #fff ${i * 16}%, #818cf8 ${50 + i * 8}%, #ec4899 100%)`,
                                                 WebkitBackgroundClip: 'text',
                                                 WebkitTextFillColor: 'transparent',
-                                                backgroundClip: 'text'
+                                                backgroundClip: 'text',
+                                                filter: 'drop-shadow(0 0 16px rgba(139,92,246,0.5))'
                                             },
                                             initial: {
-                                                y: 40,
+                                                y: 50,
                                                 opacity: 0,
                                                 rotateX: 90
                                             },
@@ -4985,7 +5305,7 @@ function SplashScreen({ onComplete }) {
                                                 rotateX: 0
                                             },
                                             transition: {
-                                                delay: 0.8 + i * 0.07,
+                                                delay: 1.1 + i * 0.07,
                                                 type: 'spring',
                                                 stiffness: 300,
                                                 damping: 20
@@ -4993,107 +5313,118 @@ function SplashScreen({ onComplete }) {
                                             children: char
                                         }, i, false, {
                                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                            lineNumber: 241,
+                                            lineNumber: 371,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                    lineNumber: 236,
+                                    lineNumber: 366,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                    className: "flex items-center justify-center gap-3 sm:gap-4 mt-2",
+                                    initial: {
+                                        opacity: 0
+                                    },
+                                    animate: {
+                                        opacity: 1
+                                    },
+                                    transition: {
+                                        delay: 1.7,
+                                        duration: 0.6
+                                    },
+                                    children: [
+                                        'Plan',
+                                        'Focus',
+                                        'Excel'
+                                    ].map((word, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].Fragment, {
+                                            children: [
+                                                i > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                                                    className: "w-1 h-1 rounded-full bg-indigo-400",
+                                                    initial: {
+                                                        scale: 0
+                                                    },
+                                                    animate: {
+                                                        scale: 1
+                                                    },
+                                                    transition: {
+                                                        delay: 1.8 + i * 0.15
+                                                    },
+                                                    style: {
+                                                        boxShadow: '0 0 6px rgba(129,140,248,0.8)'
+                                                    }
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                                    lineNumber: 400,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                                                    className: "text-sm sm:text-base font-black uppercase tracking-[0.3em]",
+                                                    style: {
+                                                        background: `linear-gradient(135deg, ${[
+                                                            '#a5b4fc',
+                                                            '#f9a8d4',
+                                                            '#67e8f9'
+                                                        ][i]}, #fff)`,
+                                                        WebkitBackgroundClip: 'text',
+                                                        WebkitTextFillColor: 'transparent'
+                                                    },
+                                                    initial: {
+                                                        opacity: 0,
+                                                        y: 8
+                                                    },
+                                                    animate: {
+                                                        opacity: 1,
+                                                        y: 0
+                                                    },
+                                                    transition: {
+                                                        delay: 1.75 + i * 0.15
+                                                    },
+                                                    children: word
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                                    lineNumber: 408,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, word, true, {
+                                            fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                            lineNumber: 398,
+                                            columnNumber: 19
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                    lineNumber: 391,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                    className: "text-sm font-bold uppercase tracking-[0.35em] text-slate-400",
+                                    className: "text-[10px] sm:text-xs font-bold uppercase tracking-[0.4em] text-slate-500 mt-3",
                                     initial: {
                                         opacity: 0,
-                                        letterSpacing: '0.6em'
+                                        letterSpacing: '0.7em'
                                     },
                                     animate: {
                                         opacity: 1,
-                                        letterSpacing: '0.35em'
+                                        letterSpacing: '0.4em'
                                     },
                                     transition: {
-                                        delay: 1.4,
+                                        delay: 2.2,
                                         duration: 0.8
                                     },
-                                    children: "The Global Standard in Learning"
+                                    children: "Smart Study Companion"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                    lineNumber: 259,
+                                    lineNumber: 425,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                            lineNumber: 230,
+                            lineNumber: 360,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "flex flex-wrap gap-2 justify-center",
-                            initial: {
-                                opacity: 0,
-                                y: 20
-                            },
-                            animate: {
-                                opacity: 1,
-                                y: 0
-                            },
-                            transition: {
-                                delay: 1.6,
-                                duration: 0.6
-                            },
-                            children: FEATURES.map((f, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    className: "flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold",
-                                    style: {
-                                        background: 'rgba(99,102,241,0.1)',
-                                        border: '1.5px solid rgba(99,102,241,0.3)',
-                                        color: '#a5b4fc'
-                                    },
-                                    initial: {
-                                        scale: 0,
-                                        opacity: 0
-                                    },
-                                    animate: {
-                                        scale: 1,
-                                        opacity: 1
-                                    },
-                                    transition: {
-                                        delay: 1.7 + i * 0.1,
-                                        type: 'spring',
-                                        stiffness: 400,
-                                        damping: 20
-                                    },
-                                    whileHover: {
-                                        scale: 1.08,
-                                        borderColor: 'rgba(139,92,246,0.6)'
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: f.icon
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                            lineNumber: 290,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: f.label
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                            lineNumber: 291,
-                                            columnNumber: 19
-                                        }, this)
-                                    ]
-                                }, f.label, true, {
-                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                    lineNumber: 277,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                            lineNumber: 270,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "w-full space-y-2",
+                            className: "w-full space-y-2 mt-2",
                             initial: {
                                 opacity: 0
                             },
@@ -5101,91 +5432,143 @@ function SplashScreen({ onComplete }) {
                                 opacity: 1
                             },
                             transition: {
-                                delay: 1.9,
+                                delay: 2.5,
                                 duration: 0.5
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-full h-[3px] rounded-full overflow-hidden",
+                                    className: "relative w-full h-[4px] rounded-full overflow-hidden",
                                     style: {
-                                        background: 'rgba(255,255,255,0.06)'
+                                        background: 'rgba(255,255,255,0.05)',
+                                        border: '1px solid rgba(99,102,241,0.15)'
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "h-full rounded-full",
+                                        className: "h-full rounded-full relative",
                                         style: {
-                                            background: 'linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899)',
+                                            background: 'linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899, #06b6d4)',
+                                            backgroundSize: '300% 100%',
                                             width: `${progress}%`,
-                                            boxShadow: '0 0 12px rgba(99,102,241,0.8)'
+                                            boxShadow: '0 0 14px rgba(139,92,246,0.8)'
+                                        },
+                                        animate: {
+                                            backgroundPosition: [
+                                                '0% 0%',
+                                                '100% 0%'
+                                            ]
                                         },
                                         transition: {
-                                            duration: 0.1,
-                                            ease: 'linear'
-                                        }
+                                            backgroundPosition: {
+                                                duration: 3,
+                                                repeat: Infinity,
+                                                ease: 'linear'
+                                            }
+                                        },
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            className: "absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white",
+                                            style: {
+                                                boxShadow: '0 0 12px 4px rgba(255,255,255,0.8)'
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                            lineNumber: 458,
+                                            columnNumber: 19
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                        lineNumber: 307,
+                                        lineNumber: 446,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                    lineNumber: 303,
+                                    lineNumber: 442,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center justify-between",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                            className: "text-[10px] font-bold uppercase tracking-widest",
+                                            className: "text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5",
                                             style: {
-                                                color: 'rgba(255,255,255,0.25)'
+                                                color: 'rgba(165,180,252,0.6)'
                                             },
                                             animate: {
                                                 opacity: [
-                                                    0.4,
+                                                    0.5,
                                                     1,
-                                                    0.4
+                                                    0.5
                                                 ]
                                             },
                                             transition: {
                                                 duration: 1.5,
                                                 repeat: Infinity
                                             },
-                                            children: "Initializing..."
-                                        }, void 0, false, {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                                                    className: "inline-block w-1 h-1 rounded-full bg-indigo-400",
+                                                    animate: {
+                                                        scale: [
+                                                            1,
+                                                            1.5,
+                                                            1
+                                                        ]
+                                                    },
+                                                    transition: {
+                                                        duration: 1,
+                                                        repeat: Infinity
+                                                    }
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                                    lineNumber: 471,
+                                                    columnNumber: 19
+                                                }, this),
+                                                "Initializing experience"
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                            lineNumber: 318,
+                                            lineNumber: 465,
                                             columnNumber: 17
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: handleSkip,
-                                            className: "text-[10px] font-bold uppercase tracking-widest transition-colors",
-                                            style: {
-                                                color: 'rgba(99,102,241,0.5)'
-                                            },
-                                            onMouseEnter: (e)=>e.currentTarget.style.color = 'rgba(99,102,241,1)',
-                                            onMouseLeave: (e)=>e.currentTarget.style.color = 'rgba(99,102,241,0.5)',
-                                            children: "Skip →"
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-[10px] font-black tracking-widest text-indigo-300/60 tabular-nums",
+                                            children: [
+                                                Math.floor(progress),
+                                                "%"
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                            lineNumber: 326,
+                                            lineNumber: 478,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                    lineNumber: 317,
+                                    lineNumber: 464,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: handleSkip,
+                                    className: "w-full text-center text-[10px] font-black uppercase tracking-[0.3em] mt-3 transition-colors",
+                                    style: {
+                                        color: 'rgba(99,102,241,0.4)'
+                                    },
+                                    onMouseEnter: (e)=>e.currentTarget.style.color = 'rgba(165,180,252,0.9)',
+                                    onMouseLeave: (e)=>e.currentTarget.style.color = 'rgba(99,102,241,0.4)',
+                                    children: "Tap to skip →"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                    lineNumber: 482,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                            lineNumber: 297,
+                            lineNumber: 436,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                    lineNumber: 182,
+                    lineNumber: 303,
                     columnNumber: 11
                 }, this),
                 [
@@ -5210,17 +5593,17 @@ function SplashScreen({ onComplete }) {
                         rotate: 180
                     }
                 ].map((pos, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "absolute w-8 h-8",
+                        className: "absolute w-10 h-10",
                         style: {
                             ...pos,
-                            opacity: 0.2
+                            opacity: 0.25
                         },
                         initial: {
                             opacity: 0,
                             scale: 0
                         },
                         animate: {
-                            opacity: 0.2,
+                            opacity: 0.25,
                             scale: 1
                         },
                         transition: {
@@ -5228,50 +5611,65 @@ function SplashScreen({ onComplete }) {
                             duration: 0.5
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                            viewBox: "0 0 32 32",
+                            viewBox: "0 0 40 40",
                             fill: "none",
                             style: {
                                 transform: `rotate(${pos.rotate}deg)`
                             },
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                d: "M0 8 L0 0 L8 0",
-                                stroke: "#6366f1",
-                                strokeWidth: "2"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                                lineNumber: 355,
-                                columnNumber: 17
-                            }, this)
-                        }, void 0, false, {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                    d: "M0 12 L0 0 L12 0",
+                                    stroke: "#818cf8",
+                                    strokeWidth: "2"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                    lineNumber: 510,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                    cx: "0",
+                                    cy: "0",
+                                    r: "2",
+                                    fill: "#ec4899"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/splash/SplashScreen.tsx",
+                                    lineNumber: 511,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                            lineNumber: 354,
+                            lineNumber: 509,
                             columnNumber: 15
                         }, this)
                     }, i, false, {
                         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-                        lineNumber: 346,
+                        lineNumber: 501,
                         columnNumber: 13
                     }, this))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/splash/SplashScreen.tsx",
-            lineNumber: 170,
+            lineNumber: 276,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/splash/SplashScreen.tsx",
-        lineNumber: 168,
+        lineNumber: 274,
         columnNumber: 5
     }, this);
 }
-_s(SplashScreen, "0sOvCvKbw8KE6lzK67VVfZJjxDY=");
-_c4 = SplashScreen;
-var _c, _c1, _c2, _c3, _c4;
-__turbopack_context__.k.register(_c, "AtomRings");
-__turbopack_context__.k.register(_c1, "ParticleField");
-__turbopack_context__.k.register(_c2, "GridLines");
-__turbopack_context__.k.register(_c3, "GlowBlobs");
-__turbopack_context__.k.register(_c4, "SplashScreen");
+_s(SplashScreen, "Mg/hlAKKC6A9ELBkHpkCfusB8Cs=");
+_c7 = SplashScreen;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
+__turbopack_context__.k.register(_c, "OrbitingIcons");
+__turbopack_context__.k.register(_c1, "AtomRings");
+__turbopack_context__.k.register(_c2, "ParticleField");
+__turbopack_context__.k.register(_c3, "StarField");
+__turbopack_context__.k.register(_c4, "GridLines");
+__turbopack_context__.k.register(_c5, "GlowBlobs");
+__turbopack_context__.k.register(_c6, "LightBurst");
+__turbopack_context__.k.register(_c7, "SplashScreen");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

@@ -897,6 +897,10 @@
     bottom: -20%;
   }
 
+  .bottom-\[20\%\] {
+    bottom: 20%;
+  }
+
   .-left-12 {
     left: calc(var(--spacing) * -12);
   }
@@ -1483,12 +1487,20 @@
     height: 3px;
   }
 
+  .h-\[4px\] {
+    height: 4px;
+  }
+
   .h-\[26rem\] {
     height: 26rem;
   }
 
   .h-\[28rem\] {
     height: 28rem;
+  }
+
+  .h-\[28vw\] {
+    height: 28vw;
   }
 
   .h-\[30rem\] {
@@ -1777,6 +1789,10 @@
 
   .w-\[28rem\] {
     width: 28rem;
+  }
+
+  .w-\[28vw\] {
+    width: 28vw;
   }
 
   .w-\[30rem\] {
@@ -4267,6 +4283,16 @@
     color: var(--color-indigo-300);
   }
 
+  .text-indigo-300\/60 {
+    color: #a4b3ff99;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-indigo-300\/60 {
+      color: color-mix(in oklab, var(--color-indigo-300) 60%, transparent);
+    }
+  }
+
   .text-indigo-400 {
     color: var(--color-indigo-400);
   }
@@ -4517,6 +4543,10 @@
 
   .opacity-\[0\.04\] {
     opacity: .04;
+  }
+
+  .opacity-\[0\.05\] {
+    opacity: .05;
   }
 
   .shadow {
@@ -6523,6 +6553,12 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+
+  @media (min-width: 40rem) {
     :where(.sm\:space-x-2 > :not(:last-child)) {
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
@@ -6610,6 +6646,13 @@
     .sm\:text-sm {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:text-xs {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
 
