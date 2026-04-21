@@ -3986,6 +3986,17 @@ function FocusMode() {
     const isActive = isRunning && !isPaused;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "FocusMode.useEffect": ()=>{
+            const open = {
+                "FocusMode.useEffect.open": ()=>setIsOpen(true)
+            }["FocusMode.useEffect.open"];
+            window.addEventListener('atomic:open-focus', open);
+            return ({
+                "FocusMode.useEffect": ()=>window.removeEventListener('atomic:open-focus', open)
+            })["FocusMode.useEffect"];
+        }
+    }["FocusMode.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "FocusMode.useEffect": ()=>{
             if (isActive && isFullscreen) {
                 document.body.classList.add('deep-work-active');
             } else {
@@ -4273,7 +4284,7 @@ function FocusMode() {
                                             size: 24
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 351,
+                                            lineNumber: 357,
                                             columnNumber: 17
                                         }, this),
                                         t.focus_mode,
@@ -4282,7 +4293,7 @@ function FocusMode() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 350,
+                                    lineNumber: 356,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -4300,18 +4311,18 @@ function FocusMode() {
                                         className: "text-slate-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 357,
+                                        lineNumber: 363,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 354,
+                                    lineNumber: 360,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 349,
+                            lineNumber: 355,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4354,7 +4365,7 @@ function FocusMode() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 370,
+                                            lineNumber: 376,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4365,7 +4376,7 @@ function FocusMode() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 371,
+                                            lineNumber: 377,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4373,18 +4384,18 @@ function FocusMode() {
                                             children: stat.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 372,
+                                            lineNumber: 378,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, stat.label, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 367,
+                                    lineNumber: 373,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 361,
+                            lineNumber: 367,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4399,7 +4410,7 @@ function FocusMode() {
                                                 children: language === 'ar' ? 'إجمالي الجلسات' : 'Total Sessions Completed'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 380,
+                                                lineNumber: 386,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4407,13 +4418,13 @@ function FocusMode() {
                                                 children: analytics.sessionCount
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 381,
+                                                lineNumber: 387,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 379,
+                                        lineNumber: 385,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
@@ -4421,18 +4432,18 @@ function FocusMode() {
                                         className: "text-yellow-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 383,
+                                        lineNumber: 389,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 378,
+                                lineNumber: 384,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 377,
+                            lineNumber: 383,
                             columnNumber: 13
                         }, this),
                         sessions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4445,14 +4456,14 @@ function FocusMode() {
                                             className: "text-indigo-400"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 390,
+                                            lineNumber: 396,
                                             columnNumber: 19
                                         }, this),
                                         language === 'ar' ? 'الجلسات الأخيرة' : 'Recent Sessions'
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 389,
+                                    lineNumber: 395,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4480,7 +4491,7 @@ function FocusMode() {
                                                             className: "w-2 h-2 rounded-full bg-emerald-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                            lineNumber: 401,
+                                                            lineNumber: 407,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4488,7 +4499,7 @@ function FocusMode() {
                                                             children: new Date(session.date).toLocaleDateString()
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                            lineNumber: 402,
+                                                            lineNumber: 408,
                                                             columnNumber: 27
                                                         }, this),
                                                         session.subjectName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4496,13 +4507,13 @@ function FocusMode() {
                                                             children: session.subjectName
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                            lineNumber: 403,
+                                                            lineNumber: 409,
                                                             columnNumber: 51
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 400,
+                                                    lineNumber: 406,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4516,41 +4527,41 @@ function FocusMode() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 405,
+                                                    lineNumber: 411,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, session.id, true, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 397,
+                                            lineNumber: 403,
                                             columnNumber: 23
                                         }, this);
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 393,
+                                    lineNumber: 399,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 388,
+                            lineNumber: 394,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 343,
+                    lineNumber: 349,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 338,
+                lineNumber: 344,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 336,
+            lineNumber: 342,
             columnNumber: 5
         }, this);
     // ── Fullscreen Timer ─────────────────────────────────────────────────────────
@@ -4574,7 +4585,7 @@ function FocusMode() {
                     isPaused: isPaused
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 428,
+                    lineNumber: 434,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4595,7 +4606,7 @@ function FocusMode() {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 437,
+                                    lineNumber: 443,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4603,13 +4614,13 @@ function FocusMode() {
                                     children: language === 'ar' ? 'خروج' : 'Exit'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 438,
+                                    lineNumber: 444,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 432,
+                            lineNumber: 438,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -4647,7 +4658,7 @@ function FocusMode() {
                                         className: "text-indigo-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 456,
+                                        lineNumber: 462,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4655,18 +4666,18 @@ function FocusMode() {
                                         children: selectedSubject.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 457,
+                                        lineNumber: 463,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 444,
+                                lineNumber: 450,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 442,
+                            lineNumber: 448,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -4684,7 +4695,7 @@ function FocusMode() {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 467,
+                                    lineNumber: 473,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4692,19 +4703,19 @@ function FocusMode() {
                                     children: t.analytics
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 468,
+                                    lineNumber: 474,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 462,
+                            lineNumber: 468,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 431,
+                    lineNumber: 437,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4743,7 +4754,7 @@ function FocusMode() {
                                                         stopColor: "#6366f1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 485,
+                                                        lineNumber: 491,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4751,7 +4762,7 @@ function FocusMode() {
                                                         stopColor: "#ec4899"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 486,
+                                                        lineNumber: 492,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4759,18 +4770,18 @@ function FocusMode() {
                                                         stopColor: "#06b6d4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 487,
+                                                        lineNumber: 493,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 484,
+                                                lineNumber: 490,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 483,
+                                            lineNumber: 489,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -4785,13 +4796,13 @@ function FocusMode() {
                                             opacity: "0.35"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 490,
+                                            lineNumber: 496,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 477,
+                                    lineNumber: 483,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -4810,7 +4821,7 @@ function FocusMode() {
                                                         stopColor: isActive ? '#6366f1' : '#f59e0b'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 500,
+                                                        lineNumber: 506,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4818,7 +4829,7 @@ function FocusMode() {
                                                         stopColor: isActive ? '#ec4899' : '#ef4444'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 501,
+                                                        lineNumber: 507,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4826,18 +4837,18 @@ function FocusMode() {
                                                         stopColor: isActive ? '#06b6d4' : '#f97316'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 502,
+                                                        lineNumber: 508,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 499,
+                                                lineNumber: 505,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 498,
+                                            lineNumber: 504,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -4849,7 +4860,7 @@ function FocusMode() {
                                             strokeWidth: "10"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 507,
+                                            lineNumber: 513,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].circle, {
@@ -4879,13 +4890,13 @@ function FocusMode() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 512,
+                                            lineNumber: 518,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 497,
+                                    lineNumber: 503,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4901,7 +4912,7 @@ function FocusMode() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 529,
+                                    lineNumber: 535,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4937,7 +4948,7 @@ function FocusMode() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 543,
+                                                    lineNumber: 549,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -4954,13 +4965,13 @@ function FocusMode() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 550,
+                                                    lineNumber: 556,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 538,
+                                            lineNumber: 544,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -4975,19 +4986,19 @@ function FocusMode() {
                                             children: isPaused ? language === 'ar' ? 'مُتوقف مؤقتاً' : 'Paused' : language === 'ar' ? 'جلسة تركيز' : 'Focus Session'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 559,
+                                            lineNumber: 565,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 537,
+                                    lineNumber: 543,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 474,
+                            lineNumber: 480,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5007,12 +5018,12 @@ function FocusMode() {
                                         size: 24
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 584,
+                                        lineNumber: 590,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 578,
+                                    lineNumber: 584,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5041,7 +5052,7 @@ function FocusMode() {
                                             className: "text-white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 603,
+                                            lineNumber: 609,
                                             columnNumber: 21
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pause$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pause$3e$__["Pause"], {
                                             size: 32,
@@ -5049,17 +5060,17 @@ function FocusMode() {
                                             className: "text-white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 604,
+                                            lineNumber: 610,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 598,
+                                        lineNumber: 604,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 587,
+                                    lineNumber: 593,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5076,18 +5087,18 @@ function FocusMode() {
                                         size: 24
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 614,
+                                        lineNumber: 620,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 608,
+                                    lineNumber: 614,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 577,
+                            lineNumber: 583,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -5119,18 +5130,18 @@ function FocusMode() {
                                 children: motivationalMessages[language][motivIdx]
                             }, motivIdx, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 620,
+                                lineNumber: 626,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 619,
+                            lineNumber: 625,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 473,
+                    lineNumber: 479,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5154,12 +5165,12 @@ function FocusMode() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 639,
+                                lineNumber: 645,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 638,
+                            lineNumber: 644,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5187,25 +5198,25 @@ function FocusMode() {
                                     }
                                 }, i, false, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 656,
+                                    lineNumber: 662,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                            lineNumber: 652,
+                            lineNumber: 658,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 636,
+                    lineNumber: 642,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-            lineNumber: 424,
+            lineNumber: 430,
             columnNumber: 7
         }, this);
     };
@@ -5239,17 +5250,17 @@ function FocusMode() {
                         className: "text-white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                        lineNumber: 691,
+                        lineNumber: 697,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 687,
+                    lineNumber: 693,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 680,
+                lineNumber: 686,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -5306,19 +5317,19 @@ function FocusMode() {
                                                     size: 28
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                    lineNumber: 712,
+                                                    lineNumber: 718,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 711,
+                                                lineNumber: 717,
                                                 columnNumber: 19
                                             }, this),
                                             t.focus_mode
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 710,
+                                        lineNumber: 716,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5336,18 +5347,18 @@ function FocusMode() {
                                             className: "text-slate-400"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 719,
+                                            lineNumber: 725,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 716,
+                                        lineNumber: 722,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 709,
+                                lineNumber: 715,
                                 columnNumber: 15
                             }, this),
                             userData?.subjects && userData.subjects.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5358,7 +5369,7 @@ function FocusMode() {
                                         children: language === 'ar' ? 'اختر المادة (اختياري)' : 'Select Subject (Optional)'
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 726,
+                                        lineNumber: 732,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5386,7 +5397,7 @@ function FocusMode() {
                                                         className: active ? 'text-indigo-400' : 'text-slate-400'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 745,
+                                                        lineNumber: 751,
                                                         columnNumber: 27
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5394,7 +5405,7 @@ function FocusMode() {
                                                         children: subject.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 746,
+                                                        lineNumber: 752,
                                                         columnNumber: 27
                                                     }, this),
                                                     active && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5407,25 +5418,25 @@ function FocusMode() {
                                                         className: "ml-auto w-2 h-2 rounded-full bg-indigo-400"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                        lineNumber: 748,
+                                                        lineNumber: 754,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, subject.id, true, {
                                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                                lineNumber: 733,
+                                                lineNumber: 739,
                                                 columnNumber: 25
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 729,
+                                        lineNumber: 735,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 725,
+                                lineNumber: 731,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5438,7 +5449,7 @@ function FocusMode() {
                                         max: 23
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 762,
+                                        lineNumber: 768,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5448,12 +5459,12 @@ function FocusMode() {
                                             children: ":"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 763,
+                                            lineNumber: 769,
                                             columnNumber: 54
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 763,
+                                        lineNumber: 769,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TimeInputField, {
@@ -5463,7 +5474,7 @@ function FocusMode() {
                                         max: 59
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 764,
+                                        lineNumber: 770,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5473,12 +5484,12 @@ function FocusMode() {
                                             children: ":"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 765,
+                                            lineNumber: 771,
                                             columnNumber: 54
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 765,
+                                        lineNumber: 771,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TimeInputField, {
@@ -5488,13 +5499,13 @@ function FocusMode() {
                                         max: 59
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 766,
+                                        lineNumber: 772,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 761,
+                                lineNumber: 767,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5540,12 +5551,12 @@ function FocusMode() {
                                         children: preset.label
                                     }, preset.label, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 777,
+                                        lineNumber: 783,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 770,
+                                lineNumber: 776,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5569,19 +5580,19 @@ function FocusMode() {
                                             fill: "white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                            lineNumber: 799,
+                                            lineNumber: 805,
                                             columnNumber: 19
                                         }, this),
                                         language === 'ar' ? 'ابدأ جلسة التركيز' : 'Start Focus Session'
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                    lineNumber: 798,
+                                    lineNumber: 804,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 790,
+                                lineNumber: 796,
                                 columnNumber: 15
                             }, this),
                             sessions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5598,52 +5609,52 @@ function FocusMode() {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                        lineNumber: 811,
+                                        lineNumber: 817,
                                         columnNumber: 19
                                     }, this),
                                     language === 'ar' ? `عرض التحليلات (${sessions.length} جلسات)` : `View Analytics (${sessions.length} sessions)`
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                                lineNumber: 806,
+                                lineNumber: 812,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                        lineNumber: 703,
+                        lineNumber: 709,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 698,
+                    lineNumber: 704,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 696,
+                lineNumber: 702,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                 children: isFullscreen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FullscreenTimer, {}, void 0, false, {
                     fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                    lineNumber: 824,
+                    lineNumber: 830,
                     columnNumber: 26
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 823,
+                lineNumber: 829,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnalyticsModal, {}, void 0, false, {
                 fileName: "[project]/src/components/dashboard/FocusMode.tsx",
-                lineNumber: 827,
+                lineNumber: 833,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s1(FocusMode, "3xcFx2PC0CGeW7BppAYAjFCnXW8=", false, function() {
+_s1(FocusMode, "3VzleW2kfZ5jfPjSkNB5UlASM0M=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"]
     ];
@@ -5693,9 +5704,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$atom$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Atom$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/atom.js [app-client] (ecmascript) <export default as Atom>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/flame.js [app-client] (ecmascript) <export default as Flame>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-client] (ecmascript) <export default as Search>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$command$2f$CommandPalette$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/command/CommandPalette.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$streak$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/streak.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
 "use client";
+;
+;
 ;
 ;
 ;
@@ -5782,17 +5799,17 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 35,
+                    lineNumber: 37,
                     columnNumber: 11
                 }, this)
             }, i, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 31,
+                lineNumber: 33,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 24,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
@@ -5834,7 +5851,7 @@ _c = FloatStars;
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 60,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5844,7 +5861,7 @@ _c = FloatStars;
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 64,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5867,12 +5884,12 @@ _c = FloatStars;
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 74,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 73,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5883,13 +5900,13 @@ _c = FloatStars;
                                         children: label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 70,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5900,13 +5917,13 @@ _c = FloatStars;
                                 children: value
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 76,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 69,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5929,24 +5946,24 @@ _c = FloatStars;
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                            lineNumber: 81,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 78,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 68,
+                lineNumber: 70,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 47,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
@@ -5988,19 +6005,19 @@ _c1 = AnimeStatCard;
                     size: 12
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 99,
+                    lineNumber: 101,
                     columnNumber: 81
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 99,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             next
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 95,
+        lineNumber: 97,
         columnNumber: 5
     }, this);
 }
@@ -6017,7 +6034,27 @@ function Dashboard() {
     const [showWelcome, setShowWelcome] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [sidebarCollapsed, setSidebarCollapsed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [paletteOpen, setPaletteOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const initialized = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useRef(false);
+    // Global ⌘K / Ctrl+K shortcut for command palette
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Dashboard.useEffect": ()=>{
+            const onKey = {
+                "Dashboard.useEffect.onKey": (e)=>{
+                    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+                        e.preventDefault();
+                        setPaletteOpen({
+                            "Dashboard.useEffect.onKey": (p)=>!p
+                        }["Dashboard.useEffect.onKey"]);
+                    }
+                }
+            }["Dashboard.useEffect.onKey"];
+            window.addEventListener('keydown', onKey);
+            return ({
+                "Dashboard.useEffect": ()=>window.removeEventListener('keydown', onKey)
+            })["Dashboard.useEffect"];
+        }
+    }["Dashboard.useEffect"], []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Dashboard.useEffect": ()=>{
             if (!initialized.current && ("TURBOPACK compile-time value", "object") !== 'undefined' && userData) {
@@ -6052,6 +6089,7 @@ function Dashboard() {
     const todayStr = new Date().toISOString().split('T')[0];
     const todayStudySec = (userData.logs || []).filter((l)=>l.type === 'study' && l.date.startsWith(todayStr)).reduce((s, l)=>s + l.duration, 0);
     const completedPrayers = (userData.prayerLogs?.[todayStr] || []).length;
+    const streak = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$streak$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["computeStreak"])(userData.logs || []);
     const stats = [
         {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"],
@@ -6089,12 +6127,12 @@ function Dashboard() {
                     secondary: theme.secondary
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 151,
+                    lineNumber: 167,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 150,
+                lineNumber: 166,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -6117,12 +6155,12 @@ function Dashboard() {
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                            lineNumber: 162,
+                            lineNumber: 178,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 158,
+                        lineNumber: 174,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6136,7 +6174,7 @@ function Dashboard() {
                                 children: "A"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 165,
+                                lineNumber: 181,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6144,13 +6182,13 @@ function Dashboard() {
                                 children: "ATOMIC"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 167,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 164,
+                        lineNumber: 180,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6158,24 +6196,24 @@ function Dashboard() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$ScheduleEditor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 170,
+                                lineNumber: 186,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$settings$2f$SettingsPanel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 171,
+                                lineNumber: 187,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 169,
+                        lineNumber: 185,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 155,
+                lineNumber: 171,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6194,7 +6232,7 @@ function Dashboard() {
                 className: "hidden lg:block shrink-0 pointer-events-none order-first"
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 176,
+                lineNumber: 192,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -6220,12 +6258,12 @@ function Dashboard() {
                     children: "▶"
                 }, void 0, false, {
                     fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                    lineNumber: 185,
+                    lineNumber: 201,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 183,
+                lineNumber: 199,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$Sidebar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -6235,7 +6273,7 @@ function Dashboard() {
                 onMobileClose: ()=>setMobileMenuOpen(false)
             }, void 0, false, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 198,
+                lineNumber: 214,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -6260,7 +6298,7 @@ function Dashboard() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 218,
+                                        lineNumber: 234,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6277,7 +6315,7 @@ function Dashboard() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 222,
+                                        lineNumber: 238,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6317,17 +6355,17 @@ function Dashboard() {
                                                                 className: "text-white"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 239,
+                                                                lineNumber: 255,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                            lineNumber: 233,
+                                                            lineNumber: 249,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 232,
+                                                        lineNumber: 248,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6340,7 +6378,7 @@ function Dashboard() {
                                                                 children: "⚡ Study Dashboard"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 244,
+                                                                lineNumber: 260,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -6370,7 +6408,7 @@ function Dashboard() {
                                                                         children: userData.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 251,
+                                                                        lineNumber: 267,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -6394,17 +6432,17 @@ function Dashboard() {
                                                                         children: "✨"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 254,
+                                                                        lineNumber: 270,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 247,
+                                                                lineNumber: 263,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-2 mt-2",
+                                                                className: "flex items-center gap-2 mt-2 flex-wrap",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "flex items-center gap-1.5 px-2.5 py-1 rounded-xl font-bold text-xs",
@@ -6418,7 +6456,7 @@ function Dashboard() {
                                                                                 size: 10
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                                lineNumber: 262,
+                                                                                lineNumber: 278,
                                                                                 columnNumber: 23
                                                                             }, this),
                                                                             " ",
@@ -6426,8 +6464,71 @@ function Dashboard() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 259,
+                                                                        lineNumber: 275,
                                                                         columnNumber: 21
+                                                                    }, this),
+                                                                    streak > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                        initial: {
+                                                                            scale: 0,
+                                                                            rotate: -10
+                                                                        },
+                                                                        animate: {
+                                                                            scale: 1,
+                                                                            rotate: 0
+                                                                        },
+                                                                        transition: {
+                                                                            type: 'spring',
+                                                                            stiffness: 320,
+                                                                            damping: 18,
+                                                                            delay: 0.2
+                                                                        },
+                                                                        className: "flex items-center gap-1.5 px-2.5 py-1 rounded-xl font-black text-xs relative overflow-hidden",
+                                                                        style: {
+                                                                            background: 'linear-gradient(135deg, rgba(245,158,11,0.2), rgba(239,68,68,0.15))',
+                                                                            border: '1.5px solid rgba(245,158,11,0.4)',
+                                                                            color: '#fbbf24'
+                                                                        },
+                                                                        title: `${streak} day streak`,
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                                                animate: {
+                                                                                    scale: [
+                                                                                        1,
+                                                                                        1.2,
+                                                                                        1
+                                                                                    ],
+                                                                                    rotate: [
+                                                                                        0,
+                                                                                        -8,
+                                                                                        8,
+                                                                                        0
+                                                                                    ]
+                                                                                },
+                                                                                transition: {
+                                                                                    duration: 1.4,
+                                                                                    repeat: Infinity
+                                                                                },
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"], {
+                                                                                    size: 11,
+                                                                                    fill: "#fbbf24"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                                                    lineNumber: 293,
+                                                                                    columnNumber: 27
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                                                lineNumber: 289,
+                                                                                columnNumber: 25
+                                                                            }, this),
+                                                                            streak,
+                                                                            " ",
+                                                                            streak === 1 ? isRTL ? 'يوم' : 'day' : isRTL ? 'أيام' : 'days'
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                                        lineNumber: 281,
+                                                                        columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "text-xs font-bold",
@@ -6437,61 +6538,106 @@ function Dashboard() {
                                                                         children: todaySubjects.length > 0 ? `${todaySubjects.length} subjects today` : 'Free day!'
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                        lineNumber: 264,
+                                                                        lineNumber: 298,
                                                                         columnNumber: 21
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 258,
+                                                                lineNumber: 274,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 243,
+                                                        lineNumber: 259,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 231,
+                                                lineNumber: 247,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "hidden lg:flex items-center gap-2 shrink-0",
                                                 children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                                        whileHover: {
+                                                            scale: 1.04,
+                                                            y: -1
+                                                        },
+                                                        whileTap: {
+                                                            scale: 0.96
+                                                        },
+                                                        onClick: ()=>setPaletteOpen(true),
+                                                        className: "flex items-center gap-2 px-3 py-1.5 rounded-xl font-black text-[10px] uppercase tracking-widest",
+                                                        style: {
+                                                            background: 'rgba(255,255,255,0.04)',
+                                                            border: '1.5px solid rgba(255,255,255,0.1)',
+                                                            color: '#cbd5e1'
+                                                        },
+                                                        title: "Command palette (⌘K)",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                                                size: 11
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                                lineNumber: 315,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                children: isRTL ? 'بحث' : 'Search'
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                                lineNumber: 316,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("kbd", {
+                                                                className: "ml-1 px-1.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-[9px] text-slate-400",
+                                                                children: "⌘K"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                                lineNumber: 317,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                                                        lineNumber: 307,
+                                                        columnNumber: 17
+                                                    }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ThemeToggleBtn, {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 273,
+                                                        lineNumber: 319,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$ScheduleEditor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 274,
+                                                        lineNumber: 320,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$settings$2f$SettingsPanel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 275,
+                                                        lineNumber: 321,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 272,
+                                                lineNumber: 306,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 230,
+                                        lineNumber: 246,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 210,
+                                lineNumber: 226,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6501,17 +6647,17 @@ function Dashboard() {
                                         index: i
                                     }, s.label, false, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 283,
+                                        lineNumber: 329,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 281,
+                                lineNumber: 327,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$monthly$2f$MonthlyTasksWidget$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 288,
+                                lineNumber: 334,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -6526,7 +6672,7 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 294,
+                                                lineNumber: 340,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6534,7 +6680,7 @@ function Dashboard() {
                                                 children: "Today's Learning Path"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 295,
+                                                lineNumber: 341,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6544,7 +6690,7 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 296,
+                                                lineNumber: 342,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6559,13 +6705,13 @@ function Dashboard() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 297,
+                                                lineNumber: 343,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 293,
+                                        lineNumber: 339,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6579,12 +6725,12 @@ function Dashboard() {
                                                         language: userData.language
                                                     }, sub.id, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 305,
+                                                        lineNumber: 351,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 303,
+                                                lineNumber: 349,
                                                 columnNumber: 15
                                             }, this),
                                             todaySubjects.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -6634,12 +6780,12 @@ function Dashboard() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                            lineNumber: 321,
+                                                            lineNumber: 367,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 315,
+                                                        lineNumber: 361,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6650,7 +6796,7 @@ function Dashboard() {
                                                                 children: "Free Day! 🎉"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 324,
+                                                                lineNumber: 370,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6661,31 +6807,31 @@ function Dashboard() {
                                                                 children: "No subjects scheduled. Enjoy your rest or add subjects to your schedule."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                                lineNumber: 325,
+                                                                lineNumber: 371,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 323,
+                                                        lineNumber: 369,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 310,
+                                                lineNumber: 356,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 302,
+                                        lineNumber: 348,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 291,
+                                lineNumber: 337,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -6700,7 +6846,7 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 337,
+                                                lineNumber: 383,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6708,7 +6854,7 @@ function Dashboard() {
                                                 children: "Study Arsenal"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 338,
+                                                lineNumber: 384,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6718,13 +6864,13 @@ function Dashboard() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 339,
+                                                lineNumber: 385,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 336,
+                                        lineNumber: 382,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6735,41 +6881,41 @@ function Dashboard() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$studyassistant$2f$StudyAssistant$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 343,
+                                                        lineNumber: 389,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$analytics$2f$AnalyticsDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                        lineNumber: 344,
+                                                        lineNumber: 390,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 342,
+                                                lineNumber: 388,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$analytics$2f$TrackingView$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                                lineNumber: 346,
+                                                lineNumber: 392,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                        lineNumber: 341,
+                                        lineNumber: 387,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                                lineNumber: 335,
+                                lineNumber: 381,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 207,
+                        lineNumber: 223,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$WelcomeModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -6778,28 +6924,36 @@ function Dashboard() {
                         userData: userData
                     }, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 352,
+                        lineNumber: 398,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$dashboard$2f$FocusMode$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                        lineNumber: 353,
+                        lineNumber: 399,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$command$2f$CommandPalette$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        isOpen: paletteOpen,
+                        onClose: ()=>setPaletteOpen(false)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/dashboard/Dashboard.tsx",
+                        lineNumber: 400,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-                lineNumber: 206,
+                lineNumber: 222,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/dashboard/Dashboard.tsx",
-        lineNumber: 147,
+        lineNumber: 163,
         columnNumber: 5
     }, this);
 }
-_s1(Dashboard, "nak8jPLCbScQJNjIK9nduoAIrA4=", false, function() {
+_s1(Dashboard, "KoXMIgPeJ06Ima+aGaJ7231x3pI=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$AppContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"]

@@ -16,7 +16,9 @@ import TrackingView from '@/components/analytics/TrackingView';
 import ScheduleEditor from './ScheduleEditor';
 import FocusMode from './FocusMode';
 import MonthlyTasksWidget from '@/components/monthly/MonthlyTasksWidget';
-import { Menu, Clock, CheckCircle2, Zap, TrendingUp, Wand2, Star, Calendar, Atom } from 'lucide-react';
+import { Menu, Clock, CheckCircle2, Zap, TrendingUp, Wand2, Star, Calendar, Atom, Flame, Search } from 'lucide-react';
+import CommandPalette from '@/components/command/CommandPalette';
+import { computeStreak } from '@/lib/streak';
 
 /* ── Floating star decoration ───────────────────────── */
 function FloatStars({ primary, secondary }: { primary:string; secondary:string }) {
@@ -109,7 +111,20 @@ export default function Dashboard() {
   const [showWelcome, setShowWelcome] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [paletteOpen, setPaletteOpen] = useState(false);
   const initialized = React.useRef(false);
+
+  // Global ⌘K / Ctrl+K shortcut for command palette
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setPaletteOpen(p => !p);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   useEffect(() => {
     if (!initialized.current && typeof window !== 'undefined' && userData) {
@@ -135,6 +150,7 @@ export default function Dashboard() {
   const todayStr = new Date().toISOString().split('T')[0];
   const todayStudySec = (userData.logs||[]).filter(l => l.type==='study' && l.date.startsWith(todayStr)).reduce((s,l) => s+l.duration, 0);
   const completedPrayers = (userData.prayerLogs?.[todayStr]||[]).length;
+  const streak = computeStreak(userData.logs || []);
 
   const stats = [
     { icon:Clock,        label:'Study Today',  value:`${(todayStudySec/3600).toFixed(1)}h`,      color:'#6366f1' },
@@ -255,12 +271,30 @@ export default function Dashboard() {
                       ✨
                     </motion.span>
                   </motion.h1>
-                  <div className="flex items-center gap-2 mt-2">
+                  <div className="flex items-center gap-2 mt-2 flex-wrap">
                     <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl font-bold text-xs"
                       style={{ background:`${theme.secondary}12`, border:`1.5px solid ${theme.secondary}30`, color:theme.secondary }}
                     >
                       <Calendar size={10}/> {todayName}
                     </div>
+                    {streak > 0 && (
+                      <motion.div
+                        initial={{ scale: 0, rotate: -10 }}
+                        animate={{ scale: 1, rotate: 0 }}
+                        transition={{ type: 'spring', stiffness: 320, damping: 18, delay: 0.2 }}
+                        className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl font-black text-xs relative overflow-hidden"
+                        style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.2), rgba(239,68,68,0.15))', border: '1.5px solid rgba(245,158,11,0.4)', color: '#fbbf24' }}
+                        title={`${streak} day streak`}
+                      >
+                        <motion.div
+                          animate={{ scale: [1, 1.2, 1], rotate: [0, -8, 8, 0] }}
+                          transition={{ duration: 1.4, repeat: Infinity }}
+                        >
+                          <Flame size={11} fill="#fbbf24" />
+                        </motion.div>
+                        {streak} {streak === 1 ? (isRTL ? 'يوم' : 'day') : (isRTL ? 'أيام' : 'days')}
+                      </motion.div>
+                    )}
                     <span className="text-xs font-bold" style={{ color:`${theme.primary}60` }}>
                       {todaySubjects.length > 0 ? `${todaySubjects.length} subjects today` : 'Free day!'}
                     </span>
@@ -270,6 +304,18 @@ export default function Dashboard() {
 
               {/* Desktop actions */}
               <div className="hidden lg:flex items-center gap-2 shrink-0">
+                <motion.button
+                  whileHover={{ scale: 1.04, y: -1 }}
+                  whileTap={{ scale: 0.96 }}
+                  onClick={() => setPaletteOpen(true)}
+                  className="flex items-center gap-2 px-3 py-1.5 rounded-xl font-black text-[10px] uppercase tracking-widest"
+                  style={{ background: 'rgba(255,255,255,0.04)', border: '1.5px solid rgba(255,255,255,0.1)', color: '#cbd5e1' }}
+                  title="Command palette (⌘K)"
+                >
+                  <Search size={11} />
+                  <span>{isRTL ? 'بحث' : 'Search'}</span>
+                  <kbd className="ml-1 px-1.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-[9px] text-slate-400">⌘K</kbd>
+                </motion.button>
                 <ThemeToggleBtn/>
                 <ScheduleEditor/>
                 <SettingsPanel/>
@@ -351,6 +397,7 @@ export default function Dashboard() {
 
         <WelcomeModal isOpen={showWelcome} onClose={() => setShowWelcome(false)} userData={userData}/>
         <FocusMode/>
+        <CommandPalette isOpen={paletteOpen} onClose={() => setPaletteOpen(false)} />
       </main>
     </div>
   );

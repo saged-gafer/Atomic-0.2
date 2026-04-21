@@ -1,16 +1,76 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppContext } from '@/context/AppContext';
 import { translations } from '@/lib/i18n';
-import { Settings, Trash2, X, User, ShieldAlert, MapPin, Globe, LogOut } from 'lucide-react';
+import { Settings, Trash2, X, User, ShieldAlert, MapPin, Globe, LogOut, Download, Upload, Database } from 'lucide-react';
 
 export default function SettingsPanel() {
-  const { userData, clearData, logout } = useAppContext();
+  const { userData, clearData, logout, setUserData } = useAppContext();
   const [isOpen, setIsOpen] = useState(false);
   const [confirmClear, setConfirmClear] = useState(false);
   const [confirmLogout, setConfirmLogout] = useState(false);
+  const [importMsg, setImportMsg] = useState<{ type: 'ok' | 'err'; text: string } | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Listen for global commands from CommandPalette
+  useEffect(() => {
+    const openSettings = () => setIsOpen(true);
+    const exportFromCmd = () => handleExport();
+    const importFromCmd = () => fileInputRef.current?.click();
+    window.addEventListener('atomic:open-settings', openSettings);
+    window.addEventListener('atomic:export-data', exportFromCmd);
+    window.addEventListener('atomic:import-data', importFromCmd);
+    return () => {
+      window.removeEventListener('atomic:open-settings', openSettings);
+      window.removeEventListener('atomic:export-data', exportFromCmd);
+      window.removeEventListener('atomic:import-data', importFromCmd);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [userData]);
+
+  const handleExport = () => {
+    if (!userData) return;
+    try {
+      const payload = { version: 1, exportedAt: new Date().toISOString(), data: userData };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const safeName = (userData.name || 'user').replace(/[^a-z0-9_-]/gi, '_');
+      const date = new Date().toISOString().slice(0, 10);
+      a.href = url;
+      a.download = `atomic-backup-${safeName}-${date}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      console.error('Export failed:', e);
+    }
+  };
+
+  const handleImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+      const data = parsed?.data || parsed;
+      if (!data || typeof data !== 'object' || !data.name) {
+        throw new Error('invalid');
+      }
+      setUserData(data);
+      const ar = data.language === 'ar';
+      setImportMsg({ type: 'ok', text: ar ? 'تم استيراد البيانات بنجاح' : 'Data imported successfully' });
+      setTimeout(() => setImportMsg(null), 3500);
+    } catch {
+      const ar = userData?.language === 'ar';
+      setImportMsg({ type: 'err', text: ar ? 'الملف غير صالح' : 'Invalid backup file' });
+      setTimeout(() => setImportMsg(null), 3500);
+    }
+  };
 
   if (!userData) return null;
 
@@ -153,6 +213,62 @@ export default function SettingsPanel() {
                     </div>
                   </div>
                 )}
+
+                {/* Backup & Restore */}
+                <div className="rounded-2xl border border-cyan-500/15 overflow-hidden" style={{ background: 'rgba(6,182,212,0.04)' }}>
+                  <div className="px-4 py-3 border-b border-cyan-500/10 flex items-center gap-2">
+                    <Database size={13} className="text-cyan-400" />
+                    <span className="text-[11px] font-black text-cyan-400/80 uppercase tracking-widest">
+                      {isRTL ? 'نسخ احتياطي' : 'Backup & Restore'}
+                    </span>
+                  </div>
+                  <div className="p-4 space-y-3">
+                    <p className="text-xs text-slate-500 leading-relaxed">
+                      {isRTL
+                        ? 'احفظ كل بياناتك في ملف، أو استرجع نسخة سابقة. مهم لو غيّرت جهاز أو متصفح.'
+                        : 'Save all your data to a file, or restore a previous backup. Important if you switch devices or browsers.'}
+                    </p>
+                    <div className="grid grid-cols-2 gap-2">
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.97 }}
+                        onClick={handleExport}
+                        className="h-10 flex items-center justify-center gap-1.5 rounded-xl border border-cyan-500/30 bg-cyan-500/8 text-cyan-300 text-xs font-black hover:bg-cyan-500/15 transition-all"
+                      >
+                        <Download size={13} />
+                        {isRTL ? 'تصدير' : 'Export'}
+                      </motion.button>
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.97 }}
+                        onClick={() => fileInputRef.current?.click()}
+                        className="h-10 flex items-center justify-center gap-1.5 rounded-xl border border-pink-500/30 bg-pink-500/8 text-pink-300 text-xs font-black hover:bg-pink-500/15 transition-all"
+                      >
+                        <Upload size={13} />
+                        {isRTL ? 'استيراد' : 'Import'}
+                      </motion.button>
+                    </div>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="application/json,.json"
+                      onChange={handleImportFile}
+                      className="hidden"
+                    />
+                    <AnimatePresence>
+                      {importMsg && (
+                        <motion.p
+                          initial={{ opacity: 0, y: -4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0 }}
+                          className={`text-xs font-bold text-center ${importMsg.type === 'ok' ? 'text-emerald-400' : 'text-red-400'}`}
+                        >
+                          {importMsg.text}
+                        </motion.p>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
 
                 {/* Logout */}
                 <div className="rounded-2xl border border-amber-500/20 overflow-hidden" style={{ background: 'rgba(245,158,11,0.05)' }}>

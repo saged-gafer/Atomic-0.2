@@ -162,6 +162,12 @@ export default function FocusMode() {
   const isActive = isRunning && !isPaused;
 
   useEffect(() => {
+    const open = () => setIsOpen(true);
+    window.addEventListener('atomic:open-focus', open);
+    return () => window.removeEventListener('atomic:open-focus', open);
+  }, []);
+
+  useEffect(() => {
     if (isActive && isFullscreen) {
       document.body.classList.add('deep-work-active');
     } else {

@@ -83,6 +83,25 @@ export default function Sidebar({ isCollapsed, onToggle, mobileOpen, onMobileClo
     return () => window.removeEventListener('resize', check);
   }, []);
 
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const tab = (e as CustomEvent).detail as typeof activeTab;
+      if (['subjects', 'tasks', 'calendar', 'azkar', 'salat'].includes(tab)) {
+        setActiveTab(tab);
+      }
+    };
+    const subjectHandler = (e: Event) => {
+      const id = (e as CustomEvent).detail as string;
+      setSelectedSubject(id);
+    };
+    window.addEventListener('atomic:navigate-tab', handler);
+    window.addEventListener('atomic:open-subject', subjectHandler);
+    return () => {
+      window.removeEventListener('atomic:navigate-tab', handler);
+      window.removeEventListener('atomic:open-subject', subjectHandler);
+    };
+  }, []);
+
   if (!userData) return null;
 
   const t = translations[userData.language || 'en'];
