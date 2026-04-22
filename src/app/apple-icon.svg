@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="55%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  <rect width="180" height="180" rx="40" fill="url(#shine)"/>
+  <ellipse cx="90" cy="90" rx="62" ry="26" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="3.5"/>
+  <ellipse cx="90" cy="90" rx="62" ry="26" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="3.5" transform="rotate(60 90 90)"/>
+  <ellipse cx="90" cy="90" rx="62" ry="26" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="3.5" transform="rotate(-60 90 90)"/>
+  <text x="90" y="124" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-weight="900" font-size="100" text-anchor="middle" fill="#ffffff" filter="url(#glow)">A</text>
+</svg>
