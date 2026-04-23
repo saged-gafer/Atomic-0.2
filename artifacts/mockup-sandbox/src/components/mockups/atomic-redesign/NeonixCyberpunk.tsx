@@ -175,7 +175,7 @@ export function NeonixCyberpunk() {
                           <span>{sub.progress}%</span>
                         </div>
                         <div className="h-1.5 w-full bg-[#222] overflow-hidden">
-                          <div className="h-full" style={{ width: \`\${sub.progress}%\`, backgroundColor: sub.color, boxShadow: \`0 0 10px \${sub.color}\` }}></div>
+                          <div className="h-full" style={{ width: `${sub.progress}%`, backgroundColor: sub.color, boxShadow: `0 0 10px ${sub.color}` }}></div>
                         </div>
                       </div>
                       
@@ -216,7 +216,7 @@ export function NeonixCyberpunk() {
                       />
                       <Bar dataKey="minutes" fill="#0ff" radius={[0, 0, 0, 0]}>
                         {chartData.map((entry, index) => (
-                          <Cell key={\`cell-\${index}\`} fill={entry.day === 'Wed' ? '#f0f' : '#0ff'} />
+                          <Cell key={`cell-${index}`} fill={entry.day === 'Wed' ? '#f0f' : '#0ff'} />
                         ))}
                       </Bar>
                     </BarChart>
@@ -238,12 +238,12 @@ export function NeonixCyberpunk() {
                 
                 <div className="space-y-4 flex-1">
                   {tasks.map(task => (
-                    <div key={task.id} className={\`flex gap-3 p-3 border \${task.done ? 'border-[#333] bg-[#111]' : 'border-[#333] bg-[#0d0d0d] hover:border-[#555]'} transition-colors\`}>
-                      <button className={\`mt-0.5 w-4 h-4 border \${task.done ? 'bg-[#39ff14] border-[#39ff14] text-black' : 'border-gray-500'} flex items-center justify-center\`}>
+                    <div key={task.id} className={`flex gap-3 p-3 border ${task.done ? 'border-[#333] bg-[#111]' : 'border-[#333] bg-[#0d0d0d] hover:border-[#555]'} transition-colors`}>
+                      <button className={`mt-0.5 w-4 h-4 border ${task.done ? 'bg-[#39ff14] border-[#39ff14] text-black' : 'border-gray-500'} flex items-center justify-center`}>
                         {task.done && <CheckSquare size={12} className="opacity-0" />} 
                       </button>
                       <div className="flex-1">
-                        <p className={\`text-sm \${task.done ? 'text-gray-500 line-through' : 'text-gray-200'}\`}>
+                        <p className={`text-sm ${task.done ? 'text-gray-500 line-through' : 'text-gray-200'}`}>
                           {task.text}
                         </p>
                         <p className="text-xs font-mono text-gray-600 mt-1">{task.date}</p>
@@ -288,14 +288,14 @@ function StatCard({ label, value, icon, color }: { label: string, value: string,
         {icon}
       </div>
       <div className="font-mono text-xs text-gray-500 uppercase tracking-widest">{label}</div>
-      <div className="text-2xl font-black font-mono mt-2" style={{ color, textShadow: \`0 0 10px \${color}40\` }}>{value}</div>
+      <div className="text-2xl font-black font-mono mt-2" style={{ color, textShadow: `0 0 10px ${color}40` }}>{value}</div>
     </div>
   );
 }
 
 function SidebarIcon({ icon, active, color }: { icon: React.ReactNode, active?: boolean, color?: string }) {
   return (
-    <div className={\`p-3 flex items-center justify-center cursor-pointer transition-colors relative \${active ? 'bg-[#0ff]/10 text-[#0ff]' : 'text-gray-500 hover:text-white'}\`}>
+    <div className={`p-3 flex items-center justify-center cursor-pointer transition-colors relative ${active ? 'bg-[#0ff]/10 text-[#0ff]' : 'text-gray-500 hover:text-white'}`}>
       {active && <div className="absolute left-[-24px] top-0 bottom-0 w-1 bg-[#0ff] shadow-[0_0_10px_#0ff]"></div>}
       <div style={{ color: active ? '#0ff' : color }}>
         {icon}

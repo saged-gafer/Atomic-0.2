@@ -154,17 +154,17 @@ export function AuroraGlass() {
                   <Badge variant="outline" className="bg-white/5 border-white/10 text-slate-300">This Week</Badge>
                 </div>
                 
-                <div className="h-32 flex items-end gap-2 justify-between">
+                <div className="flex items-end gap-2 justify-between">
                   {[90, 120, 75, 180, 60, 200, 145].map((val, i) => {
                     const max = 200;
-                    const height = (val / max) * 100;
+                    const height = (val / max) * 128;
                     const isToday = i === 5;
                     return (
                       <div key={i} className="flex flex-col items-center gap-2 flex-1 group">
-                        <div className="w-full relative h-full flex items-end justify-center">
+                        <div className="w-full h-32 flex items-end justify-center">
                           <div 
-                            className={`w-full rounded-md transition-all duration-500 ${isToday ? 'bg-gradient-to-t from-cyan-500 to-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.4)]' : 'bg-white/10 group-hover:bg-white/20'}`}
-                            style={{ height: `${height}%` }}
+                            className={`w-full rounded-md transition-all duration-500 ${isToday ? 'bg-gradient-to-t from-cyan-500 to-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.4)]' : 'bg-white/15 group-hover:bg-white/25'}`}
+                            style={{ height: `${height}px` }}
                           />
                         </div>
                         <span className={`text-xs ${isToday ? 'text-cyan-400 font-medium' : 'text-slate-500'}`}>

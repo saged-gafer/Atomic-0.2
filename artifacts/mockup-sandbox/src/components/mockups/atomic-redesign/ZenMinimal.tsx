@@ -174,15 +174,15 @@ export function ZenMinimal() {
               {/* Chart */}
               <section className="border border-[#E7E5E4] rounded-xl p-6 bg-white space-y-6">
                 <h3 className="font-serif text-lg text-[#1C1917]">Weekly Study</h3>
-                <div className="h-40 flex items-end justify-between gap-2">
+                <div className="flex items-end justify-between gap-2">
                   {[90, 120, 75, 180, 60, 200, 145].map((val, i) => {
-                    const height = `${(val / 200) * 100}%`;
+                    const height = `${(val / 200) * 140}px`;
                     const isToday = i === 6;
                     return (
                       <div key={i} className="flex flex-col items-center gap-3 flex-1">
-                        <div className="w-full bg-[#F5F5F4] rounded-sm h-full flex items-end overflow-hidden">
+                        <div className="w-full h-36 bg-[#F5F5F4] rounded-sm flex items-end overflow-hidden">
                           <div 
-                            className={`w-full rounded-sm transition-all duration-500 ${isToday ? 'bg-[#9EABA2]' : 'bg-[#E7E5E4]'}`} 
+                            className={`w-full rounded-sm transition-all duration-500 ${isToday ? 'bg-[#D97757]' : 'bg-[#9EABA2]'}`} 
                             style={{ height }}
                           ></div>
                         </div>

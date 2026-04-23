@@ -5702,6 +5702,18 @@
   }
 
   @media (hover: hover) {
+    .group-hover\:bg-white\/25:is(:where(.group):hover *) {
+      background-color: #ffffff40;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\:bg-white\/25:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
     .group-hover\:text-slate-200:is(:where(.group):hover *) {
       color: var(--color-slate-200);
     }
